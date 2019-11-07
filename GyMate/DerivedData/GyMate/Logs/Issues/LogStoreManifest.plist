@@ -90,6 +90,34 @@
 			<key>uniqueIdentifier</key>
 			<string>5D9F24B0-1725-49CF-A324-F212BF8B6093</string>
 		</dict>
+		<key>61615674-19B9-4AB4-BFE3-E15E59C96FB4</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogMajorGroupSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.target.product-type.application</string>
+			<key>fileName</key>
+			<string>61615674-19B9-4AB4-BFE3-E15E59C96FB4.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>signature</key>
+			<string>GyMate-fdtovkmtepullvcwkkcpqplnbjxe</string>
+			<key>timeStartedRecording</key>
+			<real>594860961.91509497</real>
+			<key>timeStoppedRecording</key>
+			<real>594860965.18448496</real>
+			<key>title</key>
+			<string>Build target GyMate</string>
+			<key>uniqueIdentifier</key>
+			<string>61615674-19B9-4AB4-BFE3-E15E59C96FB4</string>
+		</dict>
 		<key>7A439E32-F2E2-4DC3-AB03-B7E53A39D69A</key>
 		<dict>
 			<key>className</key>
@@ -145,34 +173,6 @@
 			<string>Build target nanopb</string>
 			<key>uniqueIdentifier</key>
 			<string>872CB396-FE4E-4083-B72B-7CE31885F4C7</string>
-		</dict>
-		<key>A1360CC3-37E8-440B-BAB2-BBC3707C357C</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogMajorGroupSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.target.product-type.application</string>
-			<key>fileName</key>
-			<string>A1360CC3-37E8-440B-BAB2-BBC3707C357C.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-			</dict>
-			<key>signature</key>
-			<string>GyMate-fdtovkmtepullvcwkkcpqplnbjxe</string>
-			<key>timeStartedRecording</key>
-			<real>594848047.37041795</real>
-			<key>timeStoppedRecording</key>
-			<real>594848049.43265998</real>
-			<key>title</key>
-			<string>Build target GyMate</string>
-			<key>uniqueIdentifier</key>
-			<string>A1360CC3-37E8-440B-BAB2-BBC3707C357C</string>
 		</dict>
 		<key>AAC8B3E2-6C7A-4D24-813E-7861839AE6AB</key>
 		<dict>

@@ -214,14 +214,29 @@ SWIFT_CLASS("_TtC6GyMate11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UITextField;
 @class UIStoryboardSegue;
+@class UIButton;
 @class NSBundle;
 @class NSCoder;
 
 SWIFT_CLASS("_TtC6GyMate19LoginViewController")
 @interface LoginViewController : UIViewController
+@property (nonatomic, strong) IBOutlet UITextField * _Null_unspecified txtUsername;
+@property (nonatomic, strong) IBOutlet UITextField * _Null_unspecified txtPassword;
 - (void)viewDidLoad;
 - (IBAction)rewindToLoginVCWithSender:(UIStoryboardSegue * _Null_unspecified)sender;
+- (IBAction)performLoginWithSender:(UIButton * _Null_unspecified)sender;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC6GyMate27PasswordResetViewController")
+@interface PasswordResetViewController : UIViewController
+@property (nonatomic, strong) IBOutlet UITextField * _Null_unspecified txtEmail;
+- (void)viewDidLoad;
+- (IBAction)sendPasswordResetWithSender:(UIButton * _Null_unspecified)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -250,8 +265,14 @@ SWIFT_CLASS("_TtC6GyMate13SceneDelegate")
 
 
 SWIFT_CLASS("_TtC6GyMate20SignUpViewController")
-@interface SignUpViewController : UIViewController
+@interface SignUpViewController : UIViewController <UITextFieldDelegate>
+@property (nonatomic, strong) IBOutlet UITextField * _Null_unspecified txtUsername;
+@property (nonatomic, strong) IBOutlet UITextField * _Null_unspecified txtEmail;
+@property (nonatomic, strong) IBOutlet UITextField * _Null_unspecified txtPassword;
+@property (nonatomic, strong) IBOutlet UITextField * _Null_unspecified txtConfirmPassword;
+- (BOOL)textFieldShouldReturn:(UITextField * _Nonnull)textField SWIFT_WARN_UNUSED_RESULT;
 - (void)viewDidLoad;
+- (IBAction)userWantsSignUpWithSender:(UIButton * _Null_unspecified)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end

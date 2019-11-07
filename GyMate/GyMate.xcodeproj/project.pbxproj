@@ -16,6 +16,7 @@
 		B87D729123745C3400303955 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B87D728F23745C3400303955 /* LaunchScreen.storyboard */; };
 		B87D729D237465CD00303955 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87D729C237465CD00303955 /* SignUpViewController.swift */; };
 		B87D729F23746A8300303955 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87D729E23746A8300303955 /* QuizViewController.swift */; };
+		B8C450CC2374D0B800C5F714 /* PasswordResetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8C450CB2374D0B800C5F714 /* PasswordResetViewController.swift */; };
 		B8D15BC32374A47B004A06AD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B8D15BC22374A47B004A06AD /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +33,8 @@
 		B87D729223745C3400303955 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B87D729C237465CD00303955 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		B87D729E23746A8300303955 /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
+		B8C450CA2374B6C800C5F714 /* GyMate.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GyMate.entitlements; sourceTree = "<group>"; };
+		B8C450CB2374D0B800C5F714 /* PasswordResetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordResetViewController.swift; sourceTree = "<group>"; };
 		B8D15BC22374A47B004A06AD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EE913EA30AE51780CE2ABFEF /* Pods-GyMate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GyMate.release.xcconfig"; path = "Target Support Files/Pods-GyMate/Pods-GyMate.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -78,6 +81,7 @@
 		B87D728323745C3300303955 /* GyMate */ = {
 			isa = PBXGroup;
 			children = (
+				B8C450CA2374B6C800C5F714 /* GyMate.entitlements */,
 				B87D729A23745F6000303955 /* Storyboards */,
 				B87D729923745F4F00303955 /* Models */,
 				B87D729823745F4700303955 /* View Controllers */,
@@ -94,6 +98,7 @@
 				B87D728823745C3300303955 /* LoginViewController.swift */,
 				B87D729C237465CD00303955 /* SignUpViewController.swift */,
 				B87D729E23746A8300303955 /* QuizViewController.swift */,
+				B8C450CB2374D0B800C5F714 /* PasswordResetViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -249,6 +254,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B87D728923745C3300303955 /* LoginViewController.swift in Sources */,
+				B8C450CC2374D0B800C5F714 /* PasswordResetViewController.swift in Sources */,
 				B87D729F23746A8300303955 /* QuizViewController.swift in Sources */,
 				B87D728523745C3300303955 /* AppDelegate.swift in Sources */,
 				B87D729D237465CD00303955 /* SignUpViewController.swift in Sources */,
@@ -397,7 +403,9 @@
 			baseConfigurationReference = 50F59808A52EE74937FF330A /* Pods-GyMate.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = GyMate/GyMate.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L53TEA5UHM;
 				INFOPLIST_FILE = GyMate/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -415,7 +423,9 @@
 			baseConfigurationReference = EE913EA30AE51780CE2ABFEF /* Pods-GyMate.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = GyMate/GyMate.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L53TEA5UHM;
 				INFOPLIST_FILE = GyMate/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
