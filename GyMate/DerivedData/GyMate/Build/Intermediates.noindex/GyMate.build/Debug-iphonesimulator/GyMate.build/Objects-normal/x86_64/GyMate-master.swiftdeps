@@ -1,0 +1,9 @@
+version: "Apple Swift version 5.1.2 (swiftlang-1100.0.278 clang-1100.0.33.9)"
+options: "a20f02eda2798afb54d30f67f43181a3"
+build_time: [1573139239, 26386000]
+inputs:
+  "/Users/bensykes/DATASYNC/school/Sem5Courses/AdvancedMobileApp/Final Project/GyMate-Application/GyMate/GyMate/View Controllers/LoginViewController.swift": [1573138167, 294641509]
+  "/Users/bensykes/DATASYNC/school/Sem5Courses/AdvancedMobileApp/Final Project/GyMate-Application/GyMate/GyMate/View Controllers/QuizViewController.swift": [1573139208, 143000897]
+  "/Users/bensykes/DATASYNC/school/Sem5Courses/AdvancedMobileApp/Final Project/GyMate-Application/GyMate/GyMate/Models/AppDelegate.swift": [1573135539, 399756101]
+  "/Users/bensykes/DATASYNC/school/Sem5Courses/AdvancedMobileApp/Final Project/GyMate-Application/GyMate/GyMate/View Controllers/SignUpViewController.swift": [1573138003, 649195878]
+  "/Users/bensykes/DATASYNC/school/Sem5Courses/AdvancedMobileApp/Final Project/GyMate-Application/GyMate/GyMate/Models/SceneDelegate.swift": [1573135539, 408702921]

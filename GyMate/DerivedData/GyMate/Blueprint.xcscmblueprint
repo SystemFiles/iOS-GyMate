@@ -1,0 +1,23 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "58CA82ACC6CFC86C4972711E6DE0BECA086F9FB7",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "58CA82ACC6CFC86C4972711E6DE0BECA086F9FB7" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "3DD5B330-DAC2-40BD-81CF-F86B25E52FD9",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "58CA82ACC6CFC86C4972711E6DE0BECA086F9FB7" : "GyMate-Application\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "GyMate",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "GyMate\/GyMate.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/SystemFiles\/iOS-GyMate.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "58CA82ACC6CFC86C4972711E6DE0BECA086F9FB7"
+    }
+  ]
+}
