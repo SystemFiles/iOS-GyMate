@@ -54,6 +54,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 
                 // Create username data
                 self.userRef.child(Auth.auth().currentUser!.uid).child("username").setValue(username)
+                self.userRef.child(Auth.auth().currentUser!.uid).child("quizDone").setValue(false)
             }
         }
     }

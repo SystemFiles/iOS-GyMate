@@ -10,10 +10,22 @@ import UIKit
 
 class QuizViewController: UIViewController {
 
+    @IBOutlet var lbQuestion : UILabel!
+    
+    // Extras
+    var quizObj : BodyTypeQuiz = BodyTypeQuiz()
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        // Setup quiz
+        
     }
+    
+    @IBAction func optionSelected(sender: UIButton!) {
+        
+    }
+    
 
 }
