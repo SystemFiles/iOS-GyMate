@@ -20,7 +20,7 @@ class QuizAnswer: NSObject {
     var ansType : AnswerType = AnswerType.ECTOMORPH
     var ansWeight : Float = 0.0
     
-    func initWithData(ansType : AnswerType, ansWeight : Float) {
+    init(ansType : AnswerType, ansWeight : Float) {
         self.ansType = ansType
         self.ansWeight = ansWeight
     }

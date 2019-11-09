@@ -11,9 +11,11 @@ import UIKit
 class Question: NSObject {
     var question : String = ""
     var answers : [String] = []
+    var answerData : [QuizAnswer] = []
     
-    func initWithData(question: String, answers : [String]) {
+    init(question : String, answers : [String], answerData : [QuizAnswer]) {
         self.question = question
         self.answers = answers
+        self.answerData = answerData
     }
 }
