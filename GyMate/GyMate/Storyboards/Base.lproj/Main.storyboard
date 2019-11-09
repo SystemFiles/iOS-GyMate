@@ -324,13 +324,6 @@
                                 <rect key="frame" x="0.0" y="-56" width="414" height="898"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Body Type Quiz" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P2d-87-nsM">
-                                <rect key="frame" x="102" y="20" width="210" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="31"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Question" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vPn-GK-5Z0">
                                 <rect key="frame" x="29" y="101" width="357" height="198"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -345,6 +338,9 @@
                                 <state key="normal" title="Option 1" backgroundImage="White_Button_Background">
                                     <color key="titleColor" red="0.2426791787" green="0.2497816682" blue="0.31197911499999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="optionSelectedWithSender:" destination="GcC-6D-guY" eventType="touchUpInside" id="qCs-aN-PK5"/>
+                                </connections>
                             </button>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OvO-Kl-ne6">
                                 <rect key="frame" x="29" y="479" width="357" height="65"/>
@@ -352,6 +348,9 @@
                                 <state key="normal" title="Option 2" backgroundImage="White_Button_Background">
                                     <color key="titleColor" red="0.2426791787" green="0.2497816682" blue="0.31197911499999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="optionSelectedWithSender:" destination="GcC-6D-guY" eventType="touchUpInside" id="UWD-nQ-03O"/>
+                                </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Go1-so-mXj">
                                 <rect key="frame" x="29" y="572" width="357" height="65"/>
@@ -359,19 +358,35 @@
                                 <state key="normal" title="Option 3" backgroundImage="White_Button_Background">
                                     <color key="titleColor" red="0.2426791787" green="0.2497816682" blue="0.31197911499999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="optionSelectedWithSender:" destination="GcC-6D-guY" eventType="touchUpInside" id="1UG-2l-FwR"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n8L-mQ-jft">
-                                <rect key="frame" x="29" y="669" width="357" height="65"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Help us determine the best workout for YOU" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ipU-hm-HDP">
+                                <rect key="frame" x="54" y="65" width="307" height="19"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Option 4" backgroundImage="White_Button_Background">
-                                    <color key="titleColor" red="0.2426791787" green="0.2497816682" blue="0.31197911499999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                            </button>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="The Body Quiz" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P2d-87-nsM">
+                                <rect key="frame" x="109" y="20" width="197" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="31"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="5Cb-ht-eJU"/>
                     </view>
                     <navigationItem key="navigationItem" id="5qu-P0-05L"/>
+                    <connections>
+                        <outlet property="btnOptOne" destination="KIN-eY-Te7" id="h7P-uW-enb"/>
+                        <outlet property="btnOptThree" destination="Go1-so-mXj" id="AUZ-Wp-HoZ"/>
+                        <outlet property="btnOptTwo" destination="OvO-Kl-ne6" id="5iN-sz-obG"/>
+                        <outlet property="lbQuestion" destination="vPn-GK-5Z0" id="tAB-g2-KvK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s0F-Ch-yml" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

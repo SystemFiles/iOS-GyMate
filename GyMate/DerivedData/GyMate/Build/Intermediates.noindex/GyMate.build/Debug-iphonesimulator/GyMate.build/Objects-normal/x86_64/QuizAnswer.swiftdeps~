@@ -3,39 +3,104 @@ provides-top-level:
 - "QuizAnswer"
 provides-nominal:
 - "6GyMate10QuizAnswerC"
+- "6GyMate10QuizAnswerC0D4TypeO"
 provides-member:
 - ["6GyMate10QuizAnswerC", ""]
+- ["6GyMate10QuizAnswerC0D4TypeO", ""]
 provides-dynamic-lookup:
 depends-top-level:
+- "=="
+- "AssignmentPrecedence"
+- "Float"
+- "FloatLiteralType"
+- !private "IntegerLiteralType"
 - "NSObject"
 - "QuizAnswer"
 depends-member:
+- ["6GyMate10QuizAnswerC0D4TypeO", "=="]
+- ["6GyMate10QuizAnswerC0D4TypeO", "ECTOMORPH"]
+- ["6GyMate10QuizAnswerC0D4TypeO", "ENDOMORPH"]
+- ["6GyMate10QuizAnswerC0D4TypeO", "FEMALE"]
+- ["6GyMate10QuizAnswerC0D4TypeO", "MALE"]
+- ["6GyMate10QuizAnswerC0D4TypeO", "MESOMORPH"]
+- ["6GyMate10QuizAnswerC0D4TypeO", "__derived_enum_equals"]
+- ["6GyMate10QuizAnswerC0D4TypeO", "_rawHashValue"]
+- ["6GyMate10QuizAnswerC0D4TypeO", "deinit"]
+- ["6GyMate10QuizAnswerC0D4TypeO", "hash"]
+- ["6GyMate10QuizAnswerC0D4TypeO", "hashValue"]
+- ["s7CVarArgP", "AnswerType"]
 - ["s7CVarArgP", ""]
+- !private ["s7CVarArgP", "ansType"]
+- !private ["s7CVarArgP", "ansWeight"]
 - !private ["s7CVarArgP", "init"]
+- ["s28CustomDebugStringConvertibleP", "AnswerType"]
 - ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s28CustomDebugStringConvertibleP", "ansType"]
+- !private ["s28CustomDebugStringConvertibleP", "ansWeight"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
+- ["s23CustomStringConvertibleP", "AnswerType"]
 - ["s23CustomStringConvertibleP", ""]
+- !private ["s23CustomStringConvertibleP", "ansType"]
+- !private ["s23CustomStringConvertibleP", "ansWeight"]
 - !private ["s23CustomStringConvertibleP", "init"]
+- ["SQ", "=="]
+- ["SQ", "AnswerType"]
+- ["SQ", "ECTOMORPH"]
 - ["SQ", ""]
+- ["SQ", "_rawHashValue"]
+- !private ["SQ", "ansType"]
+- !private ["SQ", "ansWeight"]
+- ["SQ", "hash"]
+- ["SQ", "hashValue"]
 - !private ["SQ", "init"]
+- ["SH", "=="]
+- ["SH", "AnswerType"]
+- ["SH", "ECTOMORPH"]
 - ["SH", ""]
+- ["SH", "_rawHashValue"]
+- !private ["SH", "ansType"]
+- !private ["SH", "ansWeight"]
+- ["SH", "hash"]
+- ["SH", "hashValue"]
 - !private ["SH", "init"]
+- !private ["s6HasherV", "combine"]
+- ["So8NSObjectC", "AnswerType"]
+- ["So8NSObjectC", "Float"]
 - ["So8NSObjectC", ""]
+- ["So8NSObjectC", "ansType"]
+- ["So8NSObjectC", "ansWeight"]
 - ["So8NSObjectC", "init"]
+- ["So8NSObjectC", "initWithData"]
+- ["So8NSObjectP", "AnswerType"]
 - ["So8NSObjectP", ""]
+- !private ["So8NSObjectP", "ansType"]
+- !private ["So8NSObjectP", "ansWeight"]
 - !private ["So8NSObjectP", "init"]
+- ["6GyMate10QuizAnswerC", "AnswerType"]
+- ["6GyMate10QuizAnswerC", "Float"]
+- ["6GyMate10QuizAnswerC", "ansType"]
+- ["6GyMate10QuizAnswerC", "ansWeight"]
 - ["6GyMate10QuizAnswerC", "deinit"]
 - ["6GyMate10QuizAnswerC", "init"]
+- ["6GyMate10QuizAnswerC", "initWithData"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "AnswerType"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "ansType"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "ansWeight"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "AnswerType"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", ""]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "ansType"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "ansWeight"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "init"]
 depends-nominal:
+- "6GyMate10QuizAnswerC0D4TypeO"
 - "s7CVarArgP"
 - "s28CustomDebugStringConvertibleP"
 - "s23CustomStringConvertibleP"
 - "SQ"
 - "SH"
+- !private "s6HasherV"
 - "So8NSObjectC"
 - "So8NSObjectP"
 - "6GyMate10QuizAnswerC"
@@ -1302,4 +1367,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "214d148c44ece2ca15234f717a3f4f07"
+interface-hash: "63e7406dd9fc9103be768cf3cf9d8049"

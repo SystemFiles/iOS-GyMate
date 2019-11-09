@@ -7,40 +7,264 @@ provides-member:
 - ["6GyMate12BodyTypeQuizC", ""]
 provides-dynamic-lookup:
 depends-top-level:
+- !private "*"
+- !private "+="
+- "AssignmentPrecedence"
 - "BodyTypeQuiz"
+- !private "Bool"
+- !private "BooleanLiteralType"
+- !private "Float"
+- "FloatLiteralType"
 - "Int"
+- "IntegerLiteralType"
 - "NSObject"
 - "Question"
+- "QuizAnswer"
+- !private "~="
 depends-member:
+- ["6GyMate10QuizAnswerC0D4TypeO", "ECTOMORPH"]
+- ["6GyMate10QuizAnswerC0D4TypeO", "ENDOMORPH"]
+- ["6GyMate10QuizAnswerC0D4TypeO", "FEMALE"]
+- ["6GyMate10QuizAnswerC0D4TypeO", "MALE"]
+- ["6GyMate10QuizAnswerC0D4TypeO", "MESOMORPH"]
+- !private ["Sa", "append"]
+- !private ["Sa", "firstIndex"]
+- !private ["Sa", "max"]
+- !private ["SK", "append"]
+- !private ["SK", "firstIndex"]
+- !private ["SK", "max"]
+- !private ["6GyMate12BodyTypeQuizC", "Bool"]
+- !private ["6GyMate12BodyTypeQuizC", "Float"]
 - ["6GyMate12BodyTypeQuizC", "Int"]
 - ["6GyMate12BodyTypeQuizC", "Question"]
+- ["6GyMate12BodyTypeQuizC", "QuizAnswer"]
+- ["6GyMate12BodyTypeQuizC", "addAnswer"]
+- ["6GyMate12BodyTypeQuizC", "answers"]
 - ["6GyMate12BodyTypeQuizC", "deinit"]
+- ["6GyMate12BodyTypeQuizC", "init"]
+- ["6GyMate12BodyTypeQuizC", "initWithData"]
 - ["6GyMate12BodyTypeQuizC", "numQuestions"]
+- ["6GyMate12BodyTypeQuizC", "predictBodyType"]
 - ["6GyMate12BodyTypeQuizC", "questions"]
+- ["s7CVarArgP", "AnswerType"]
+- !private ["s7CVarArgP", "QuizAnswer"]
 - ["s7CVarArgP", ""]
+- !private ["s7CVarArgP", "ansType"]
+- !private ["s7CVarArgP", "ansWeight"]
+- !private ["s7CVarArgP", "answers"]
+- !private ["s7CVarArgP", "append"]
+- !private ["s7CVarArgP", "firstIndex"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "max"]
+- !private ["s7CVarArgP", "numQuestions"]
+- !private ["s7CVarArgP", "questions"]
+- !private ["Sl", "append"]
+- !private ["Sl", "firstIndex"]
+- !private ["Sl", "max"]
+- !private ["10Foundation15ContiguousBytesP", "append"]
+- !private ["10Foundation15ContiguousBytesP", "firstIndex"]
+- !private ["10Foundation15ContiguousBytesP", "max"]
+- ["s28CustomDebugStringConvertibleP", "AnswerType"]
+- !private ["s28CustomDebugStringConvertibleP", "QuizAnswer"]
 - ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s28CustomDebugStringConvertibleP", "ansType"]
+- !private ["s28CustomDebugStringConvertibleP", "ansWeight"]
+- !private ["s28CustomDebugStringConvertibleP", "answers"]
+- !private ["s28CustomDebugStringConvertibleP", "append"]
+- !private ["s28CustomDebugStringConvertibleP", "firstIndex"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "max"]
+- ["s28CustomDebugStringConvertibleP", "none"]
+- !private ["s28CustomDebugStringConvertibleP", "numQuestions"]
+- !private ["s28CustomDebugStringConvertibleP", "questions"]
+- ["s28CustomDebugStringConvertibleP", "some"]
+- !private ["s17CustomReflectableP", "append"]
+- !private ["s17CustomReflectableP", "firstIndex"]
+- !private ["s17CustomReflectableP", "max"]
+- ["s17CustomReflectableP", "none"]
+- ["s17CustomReflectableP", "some"]
+- ["s23CustomStringConvertibleP", "AnswerType"]
+- !private ["s23CustomStringConvertibleP", "QuizAnswer"]
 - ["s23CustomStringConvertibleP", ""]
+- !private ["s23CustomStringConvertibleP", "ansType"]
+- !private ["s23CustomStringConvertibleP", "ansWeight"]
+- !private ["s23CustomStringConvertibleP", "answers"]
+- !private ["s23CustomStringConvertibleP", "append"]
+- !private ["s23CustomStringConvertibleP", "firstIndex"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "max"]
+- !private ["s23CustomStringConvertibleP", "numQuestions"]
+- !private ["s23CustomStringConvertibleP", "questions"]
+- !private ["10Foundation12DataProtocolP", "append"]
+- !private ["10Foundation12DataProtocolP", "firstIndex"]
+- !private ["10Foundation12DataProtocolP", "max"]
+- !private ["Se", "append"]
+- !private ["Se", "firstIndex"]
+- !private ["Se", "max"]
+- ["Se", "none"]
+- ["Se", "some"]
+- !private ["SE", "append"]
+- !private ["SE", "firstIndex"]
+- !private ["SE", "max"]
+- ["SE", "none"]
+- ["SE", "some"]
+- ["SQ", "AnswerType"]
+- ["SQ", "ECTOMORPH"]
+- ["SQ", "ENDOMORPH"]
+- ["SQ", "FEMALE"]
+- ["SQ", "MALE"]
+- ["SQ", "MESOMORPH"]
+- !private ["SQ", "QuizAnswer"]
 - ["SQ", ""]
+- !private ["SQ", "ansType"]
+- !private ["SQ", "ansWeight"]
+- !private ["SQ", "answers"]
+- !private ["SQ", "append"]
+- !private ["SQ", "firstIndex"]
+- !private ["SQ", "init"]
+- !private ["SQ", "max"]
+- ["SQ", "none"]
+- !private ["SQ", "numQuestions"]
+- !private ["SQ", "questions"]
+- ["SQ", "some"]
+- !private ["s25ExpressibleByArrayLiteralP", "append"]
+- !private ["s25ExpressibleByArrayLiteralP", "firstIndex"]
+- !private ["s25ExpressibleByArrayLiteralP", "max"]
+- ["s23ExpressibleByNilLiteralP", "none"]
+- ["s23ExpressibleByNilLiteralP", "some"]
+- ["SH", "AnswerType"]
+- ["SH", "ECTOMORPH"]
+- ["SH", "ENDOMORPH"]
+- ["SH", "FEMALE"]
+- ["SH", "MALE"]
+- ["SH", "MESOMORPH"]
+- !private ["SH", "QuizAnswer"]
 - ["SH", ""]
+- !private ["SH", "ansType"]
+- !private ["SH", "ansWeight"]
+- !private ["SH", "answers"]
+- !private ["SH", "append"]
+- !private ["SH", "firstIndex"]
+- !private ["SH", "init"]
+- !private ["SH", "max"]
+- ["SH", "none"]
+- !private ["SH", "numQuestions"]
+- !private ["SH", "questions"]
+- ["SH", "some"]
+- !private ["SM", "append"]
+- !private ["SM", "firstIndex"]
+- !private ["SM", "max"]
+- !private ["10Foundation19MutableDataProtocolP", "append"]
+- !private ["10Foundation19MutableDataProtocolP", "firstIndex"]
+- !private ["10Foundation19MutableDataProtocolP", "max"]
+- ["So8NSObjectC", "AnswerType"]
+- !private ["So8NSObjectC", "Bool"]
+- !private ["So8NSObjectC", "Float"]
 - ["So8NSObjectC", "Int"]
 - ["So8NSObjectC", "Question"]
+- ["So8NSObjectC", "QuizAnswer"]
 - ["So8NSObjectC", ""]
+- ["So8NSObjectC", "addAnswer"]
+- !private ["So8NSObjectC", "ansType"]
+- !private ["So8NSObjectC", "ansWeight"]
+- ["So8NSObjectC", "answers"]
+- ["So8NSObjectC", "init"]
+- ["So8NSObjectC", "initWithData"]
 - ["So8NSObjectC", "numQuestions"]
+- ["So8NSObjectC", "predictBodyType"]
 - ["So8NSObjectC", "questions"]
+- ["So8NSObjectP", "AnswerType"]
+- !private ["So8NSObjectP", "QuizAnswer"]
 - ["So8NSObjectP", ""]
+- !private ["So8NSObjectP", "ansType"]
+- !private ["So8NSObjectP", "ansWeight"]
+- !private ["So8NSObjectP", "answers"]
+- !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "numQuestions"]
+- !private ["So8NSObjectP", "questions"]
+- ["Sq", "none"]
+- ["Sq", "some"]
+- ["6GyMate10QuizAnswerC", "AnswerType"]
+- !private ["6GyMate10QuizAnswerC", "ansType"]
+- !private ["6GyMate10QuizAnswerC", "ansWeight"]
+- !private ["Sk", "append"]
+- !private ["Sk", "firstIndex"]
+- !private ["Sk", "max"]
+- !private ["Sm", "append"]
+- !private ["Sm", "firstIndex"]
+- !private ["Sm", "max"]
+- !private ["ST", "append"]
+- !private ["ST", "firstIndex"]
+- !private ["ST", "max"]
+- !private ["s14_ArrayProtocolP", "append"]
+- !private ["s14_ArrayProtocolP", "firstIndex"]
+- !private ["s14_ArrayProtocolP", "max"]
+- !private ["s24_DestructorSafeContainerP", "append"]
+- !private ["s24_DestructorSafeContainerP", "firstIndex"]
+- !private ["s24_DestructorSafeContainerP", "max"]
+- !private ["s19_HasContiguousBytesP", "append"]
+- !private ["s19_HasContiguousBytesP", "firstIndex"]
+- !private ["s19_HasContiguousBytesP", "max"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "append"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "firstIndex"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "max"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "AnswerType"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "QuizAnswer"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "ansType"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "ansWeight"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "answers"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "numQuestions"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "questions"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "AnswerType"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "QuizAnswer"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", ""]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "ansType"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "ansWeight"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "answers"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "init"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "numQuestions"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "questions"]
+- !private ["s21_ObjectiveCBridgeableP", "append"]
+- !private ["s21_ObjectiveCBridgeableP", "firstIndex"]
+- !private ["s21_ObjectiveCBridgeableP", "max"]
+- ["s21_ObjectiveCBridgeableP", "none"]
+- ["s21_ObjectiveCBridgeableP", "some"]
 depends-nominal:
+- "6GyMate10QuizAnswerC0D4TypeO"
+- !private "Sa"
+- !private "SK"
 - "6GyMate12BodyTypeQuizC"
 - "s7CVarArgP"
+- !private "Sl"
+- !private "10Foundation15ContiguousBytesP"
 - "s28CustomDebugStringConvertibleP"
+- "s17CustomReflectableP"
 - "s23CustomStringConvertibleP"
+- !private "10Foundation12DataProtocolP"
+- "Se"
+- "SE"
 - "SQ"
+- !private "s25ExpressibleByArrayLiteralP"
+- "s23ExpressibleByNilLiteralP"
 - "SH"
+- !private "SM"
+- !private "10Foundation19MutableDataProtocolP"
 - "So8NSObjectC"
 - "So8NSObjectP"
+- "Sq"
+- "6GyMate10QuizAnswerC"
+- !private "Sk"
+- !private "Sm"
+- !private "ST"
+- !private "s14_ArrayProtocolP"
+- !private "s24_DestructorSafeContainerP"
+- !private "s19_HasContiguousBytesP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
 - "10Foundation27_KeyValueCodingAndObservingP"
 - "10Foundation37_KeyValueCodingAndObservingPublishingP"
+- "s21_ObjectiveCBridgeableP"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/lib/swift/ObjectiveC.swiftmodule/x86_64.swiftinterface"
@@ -1302,4 +1526,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "a6b4821eab55db84eb6aac8e923e7b17"
+interface-hash: "cfd6e79505b3a3934b07c0a1ee8cc0e4"

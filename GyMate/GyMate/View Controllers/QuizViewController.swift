@@ -14,16 +14,15 @@ class QuizViewController: UIViewController {
     @IBOutlet var btnOptOne : UIButton!
     @IBOutlet var btnOptTwo : UIButton!
     @IBOutlet var btnOptThree : UIButton!
-    @IBOutlet var btnOptFour : UIButton!
     
     // Extras
     var quizObj : BodyTypeQuiz = BodyTypeQuiz()
     var options : [UIButton] = []
-    var currentQuestion : Int = 0
+    var currentQuestion : Int = 1
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        options = [btnOptOne, btnOptTwo, btnOptThree, btnOptFour]
+        options = [btnOptOne, btnOptTwo, btnOptThree]
         // Setup quiz
         
         // Setup and start quiz
@@ -32,7 +31,7 @@ class QuizViewController: UIViewController {
     }
     
     @IBAction func optionSelected(sender: UIButton!) {
-        
+        print(sender.tag) // TODO: Implement actual function
     }
     
     func setupQuiz() {
@@ -57,8 +56,13 @@ class QuizViewController: UIViewController {
     }
     
     func startQuiz() {
-        while currentQuestion < quizObj.numQuestions {
-            
+        // Basically just load in the first question set
+        lbQuestion.text = quizObj.questions[self.currentQuestion].question
+        btnOptOne.setTitle(quizObj.questions[self.currentQuestion].answers[0], for: .normal)
+        btnOptTwo.setTitle(quizObj.questions[self.currentQuestion].answers[1], for: .normal)
+        
+        if (quizObj.questions[self.currentQuestion].answers.count > 2) {
+            btnOptThree.setTitle(quizObj.questions[self.currentQuestion].answers[2], for: .normal)
         }
     }
 }

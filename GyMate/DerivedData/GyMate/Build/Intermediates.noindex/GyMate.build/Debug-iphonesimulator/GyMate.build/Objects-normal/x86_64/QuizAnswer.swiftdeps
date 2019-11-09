@@ -16,6 +16,7 @@ depends-top-level:
 - !private "IntegerLiteralType"
 - "NSObject"
 - "QuizAnswer"
+- !private "StringLiteralType"
 depends-member:
 - ["6GyMate10QuizAnswerC0D4TypeO", "=="]
 - ["6GyMate10QuizAnswerC0D4TypeO", "ECTOMORPH"]
@@ -70,7 +71,6 @@ depends-member:
 - ["So8NSObjectC", "ansType"]
 - ["So8NSObjectC", "ansWeight"]
 - ["So8NSObjectC", "init"]
-- ["So8NSObjectC", "initWithData"]
 - ["So8NSObjectP", "AnswerType"]
 - ["So8NSObjectP", ""]
 - !private ["So8NSObjectP", "ansType"]
@@ -82,7 +82,6 @@ depends-member:
 - ["6GyMate10QuizAnswerC", "ansWeight"]
 - ["6GyMate10QuizAnswerC", "deinit"]
 - ["6GyMate10QuizAnswerC", "init"]
-- ["6GyMate10QuizAnswerC", "initWithData"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "AnswerType"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "ansType"]
@@ -1367,4 +1366,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "63e7406dd9fc9103be768cf3cf9d8049"
+interface-hash: "e82cf728dc45c199c9fcf875b971f1b6"

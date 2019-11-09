@@ -7,29 +7,56 @@ provides-member:
 - ["6GyMate8QuestionC", ""]
 provides-dynamic-lookup:
 depends-top-level:
+- "AssignmentPrecedence"
 - "NSObject"
 - "Question"
+- "String"
+- "StringLiteralType"
 depends-member:
 - ["s7CVarArgP", ""]
+- !private ["s7CVarArgP", "answers"]
 - !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "question"]
 - ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s28CustomDebugStringConvertibleP", "answers"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "question"]
 - ["s23CustomStringConvertibleP", ""]
+- !private ["s23CustomStringConvertibleP", "answers"]
 - !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "question"]
 - ["SQ", ""]
+- !private ["SQ", "answers"]
 - !private ["SQ", "init"]
+- !private ["SQ", "question"]
 - ["SH", ""]
+- !private ["SH", "answers"]
 - !private ["SH", "init"]
+- !private ["SH", "question"]
+- ["So8NSObjectC", "String"]
 - ["So8NSObjectC", ""]
+- ["So8NSObjectC", "answers"]
 - ["So8NSObjectC", "init"]
+- ["So8NSObjectC", "initWithData"]
+- ["So8NSObjectC", "question"]
 - ["So8NSObjectP", ""]
+- !private ["So8NSObjectP", "answers"]
 - !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "question"]
+- ["6GyMate8QuestionC", "String"]
+- ["6GyMate8QuestionC", "answers"]
 - ["6GyMate8QuestionC", "deinit"]
 - ["6GyMate8QuestionC", "init"]
+- ["6GyMate8QuestionC", "initWithData"]
+- ["6GyMate8QuestionC", "question"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "answers"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "question"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", ""]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "answers"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "init"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "question"]
 depends-nominal:
 - "s7CVarArgP"
 - "s28CustomDebugStringConvertibleP"
@@ -1302,4 +1329,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "d8b5d6e41101267b5e3b5996ff1168bf"
+interface-hash: "c989ac8412932783e2907b8a67afcc00"

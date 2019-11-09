@@ -251,19 +251,27 @@ SWIFT_CLASS("_TtC6GyMate27PasswordResetViewController")
 
 SWIFT_CLASS("_TtC6GyMate8Question")
 @interface Question : NSObject
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 
 SWIFT_CLASS("_TtC6GyMate10QuizAnswer")
 @interface QuizAnswer : NSObject
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+@class UILabel;
 
 SWIFT_CLASS("_TtC6GyMate18QuizViewController")
 @interface QuizViewController : UIViewController
+@property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified lbQuestion;
+@property (nonatomic, strong) IBOutlet UIButton * _Null_unspecified btnOptOne;
+@property (nonatomic, strong) IBOutlet UIButton * _Null_unspecified btnOptTwo;
+@property (nonatomic, strong) IBOutlet UIButton * _Null_unspecified btnOptThree;
 - (void)viewDidLoad;
+- (IBAction)optionSelectedWithSender:(UIButton * _Null_unspecified)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end

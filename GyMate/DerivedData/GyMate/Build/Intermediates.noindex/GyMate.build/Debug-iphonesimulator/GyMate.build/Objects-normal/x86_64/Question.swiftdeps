@@ -8,52 +8,65 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - "AssignmentPrecedence"
+- !private "FloatLiteralType"
+- !private "IntegerLiteralType"
 - "NSObject"
 - "Question"
+- "QuizAnswer"
 - "String"
 - "StringLiteralType"
 depends-member:
 - ["s7CVarArgP", ""]
+- !private ["s7CVarArgP", "answerData"]
 - !private ["s7CVarArgP", "answers"]
 - !private ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "question"]
 - ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s28CustomDebugStringConvertibleP", "answerData"]
 - !private ["s28CustomDebugStringConvertibleP", "answers"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "question"]
 - ["s23CustomStringConvertibleP", ""]
+- !private ["s23CustomStringConvertibleP", "answerData"]
 - !private ["s23CustomStringConvertibleP", "answers"]
 - !private ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "question"]
 - ["SQ", ""]
+- !private ["SQ", "answerData"]
 - !private ["SQ", "answers"]
 - !private ["SQ", "init"]
 - !private ["SQ", "question"]
 - ["SH", ""]
+- !private ["SH", "answerData"]
 - !private ["SH", "answers"]
 - !private ["SH", "init"]
 - !private ["SH", "question"]
+- ["So8NSObjectC", "QuizAnswer"]
 - ["So8NSObjectC", "String"]
 - ["So8NSObjectC", ""]
+- ["So8NSObjectC", "answerData"]
 - ["So8NSObjectC", "answers"]
 - ["So8NSObjectC", "init"]
-- ["So8NSObjectC", "initWithData"]
 - ["So8NSObjectC", "question"]
 - ["So8NSObjectP", ""]
+- !private ["So8NSObjectP", "answerData"]
 - !private ["So8NSObjectP", "answers"]
 - !private ["So8NSObjectP", "init"]
 - !private ["So8NSObjectP", "question"]
+- ["6GyMate8QuestionC", "QuizAnswer"]
 - ["6GyMate8QuestionC", "String"]
+- ["6GyMate8QuestionC", "answerData"]
 - ["6GyMate8QuestionC", "answers"]
 - ["6GyMate8QuestionC", "deinit"]
 - ["6GyMate8QuestionC", "init"]
-- ["6GyMate8QuestionC", "initWithData"]
 - ["6GyMate8QuestionC", "question"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "answerData"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "answers"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "question"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", ""]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "answerData"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "answers"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "init"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "question"]
@@ -1329,4 +1342,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "c989ac8412932783e2907b8a67afcc00"
+interface-hash: "10efac9b06c154a0629e9e5743a9884a"
