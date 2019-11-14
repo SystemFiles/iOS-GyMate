@@ -193,6 +193,11 @@ depends-member:
 - !private ["Sm", "append"]
 - !private ["Sm", "firstIndex"]
 - !private ["Sm", "max"]
+- ["SY", "ECTOMORPH"]
+- ["SY", "ENDOMORPH"]
+- ["SY", "FEMALE"]
+- ["SY", "MALE"]
+- ["SY", "MESOMORPH"]
 - !private ["ST", "append"]
 - !private ["ST", "firstIndex"]
 - !private ["ST", "max"]
@@ -257,6 +262,7 @@ depends-nominal:
 - "6GyMate10QuizAnswerC"
 - !private "Sk"
 - !private "Sm"
+- "SY"
 - !private "ST"
 - !private "s14_ArrayProtocolP"
 - !private "s24_DestructorSafeContainerP"

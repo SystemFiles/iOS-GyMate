@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class QuizViewController: UIViewController {
 
@@ -17,21 +18,49 @@ class QuizViewController: UIViewController {
     
     // Extras
     var quizObj : BodyTypeQuiz = BodyTypeQuiz()
-    var options : [UIButton] = []
-    var currentQuestion : Int = 1
+    var currentQuestion : Int = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        options = [btnOptOne, btnOptTwo, btnOptThree]
-        // Setup quiz
-        
         // Setup and start quiz
         self.setupQuiz()
         self.startQuiz()
     }
     
     @IBAction func optionSelected(sender: UIButton!) {
-        print(sender.tag) // TODO: Implement actual function
+        
+        // Make sure valid entry for first question (Since it is the only question with only 2 responses)
+        if self.currentQuestion == 0 && sender.tag > 1 {
+            return
+        }
+        
+        // Add answer to quiz obj
+        self.quizObj.addAnswer(answer: self.quizObj.questions[self.currentQuestion].answerData[sender.tag])
+        
+        // Load next question unless end of quiz
+        if (self.currentQuestion < (self.quizObj.questions.count - 1)) {
+            loadNextQuestion()
+        } else {
+            // Finished answering the last question
+            let mainDelegate : AppDelegate = UIApplication.shared.delegate as! AppDelegate
+            
+            // Predict body type given question answers
+            let bodyType : QuizAnswer.AnswerType = self.quizObj.predictBodyType()
+            
+            // Then store body type in data store
+            mainDelegate.userRef.child(Auth.auth().currentUser!.uid).child("bodyType").setValue(bodyType.rawValue)
+            
+            // Take user to confirmation page
+            self.performSegue(withIdentifier: "QuizConfirmationSegue", sender: nil)
+        }
+    }
+    
+    @IBAction func restartQuiz(sender: UIButton!) {
+        self.resetQuizToStart()
+    }
+    
+    @IBAction func rewindToQuizVC(sender: UIStoryboardSegue!) {
+        self.resetQuizToStart()
     }
     
     func setupQuiz() {
@@ -40,7 +69,7 @@ class QuizViewController: UIViewController {
                                                                                                                                                                                    QuizAnswer(ansType: .MESOMORPH, ansWeight: 1.2),
                                                                                                                                                                                    QuizAnswer(ansType: .ECTOMORPH, ansWeight: 1.2)]),
                                       Question(question: "A pair of relaxed-fit jeans fit me", answers: ["Tight around my glutes", "Perfect around my glutes", "Loose around my glutes"], answerData: [QuizAnswer(ansType: .ENDOMORPH, ansWeight: 1),
-                                                                                                                                                                                                       QuizAnswer(ansType: .MESOMORPH, ansWeight: 1)]),
+                                                                                                                                                                                                       QuizAnswer(ansType: .MESOMORPH, ansWeight: 1), QuizAnswer(ansType: .ECTOMORPH, ansWeight: 1)]),
                                       Question(question: "My forearms look", answers: ["Big", "Average", "Small"], answerData: [QuizAnswer(ansType: .ENDOMORPH, ansWeight: 2),
                                                                                                                                 QuizAnswer(ansType: .MESOMORPH, ansWeight: 2),
                                                                                                                                 QuizAnswer(ansType: .ECTOMORPH, ansWeight: 2)]),
@@ -60,9 +89,24 @@ class QuizViewController: UIViewController {
         lbQuestion.text = quizObj.questions[self.currentQuestion].question
         btnOptOne.setTitle(quizObj.questions[self.currentQuestion].answers[0], for: .normal)
         btnOptTwo.setTitle(quizObj.questions[self.currentQuestion].answers[1], for: .normal)
+        btnOptThree.setTitle("", for: .normal)
+    }
+    
+    func resetQuizToStart() {
+        // Reset everything
+        self.quizObj = BodyTypeQuiz()
+        self.currentQuestion = 0
+        setupQuiz()
+        startQuiz()
+    }
+    
+    func loadNextQuestion() {
+        self.currentQuestion += 1
         
-        if (quizObj.questions[self.currentQuestion].answers.count > 2) {
-            btnOptThree.setTitle(quizObj.questions[self.currentQuestion].answers[2], for: .normal)
-        }
+        // Load question
+        lbQuestion.text = quizObj.questions[self.currentQuestion].question
+        btnOptOne.setTitle(quizObj.questions[self.currentQuestion].answers[0], for: .normal)
+        btnOptTwo.setTitle(quizObj.questions[self.currentQuestion].answers[1], for: .normal)
+        btnOptThree.setTitle(quizObj.questions[self.currentQuestion].answers[2], for: .normal)
     }
 }

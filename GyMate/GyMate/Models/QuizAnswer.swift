@@ -9,7 +9,7 @@
 import UIKit
 
 class QuizAnswer: NSObject {
-    enum AnswerType {
+    enum AnswerType : String {
         case MALE
         case FEMALE
         case ECTOMORPH
