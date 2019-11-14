@@ -7,6 +7,7 @@ provides-member:
 - ["6GyMate30QuizConfirmationViewControllerC", ""]
 provides-dynamic-lookup:
 - "confirmQuizResults"
+- "lbBodyType"
 - "viewDidLoad"
 depends-top-level:
 - !private "AppDelegate"
@@ -16,6 +17,7 @@ depends-top-level:
 - "QuizConfirmationViewController"
 - !private "StringLiteralType"
 - !private "UIApplication"
+- "UILabel"
 - "UIViewController"
 depends-member:
 - !private ["6GyMate11AppDelegateC", "userRef"]
@@ -114,12 +116,14 @@ depends-member:
 - !private ["So8NSObjectC", "AppDelegate"]
 - !private ["So8NSObjectC", "Auth"]
 - !private ["So8NSObjectC", "UIApplication"]
+- ["So8NSObjectC", "UILabel"]
 - !private ["So8NSObjectC", "auth"]
 - !private ["So8NSObjectC", "child"]
 - ["So8NSObjectC", "confirmQuizResults"]
 - !private ["So8NSObjectC", "currentUser"]
 - !private ["So8NSObjectC", "delegate"]
 - ["So8NSObjectC", "init"]
+- ["So8NSObjectC", "lbBodyType"]
 - !private ["So8NSObjectC", "performSegue"]
 - !private ["So8NSObjectC", "setValue"]
 - !private ["So8NSObjectC", "shared"]
@@ -144,9 +148,11 @@ depends-member:
 - !private ["6GyMate30QuizConfirmationViewControllerC", "AppDelegate"]
 - !private ["6GyMate30QuizConfirmationViewControllerC", "Auth"]
 - !private ["6GyMate30QuizConfirmationViewControllerC", "UIApplication"]
+- ["6GyMate30QuizConfirmationViewControllerC", "UILabel"]
 - ["6GyMate30QuizConfirmationViewControllerC", "confirmQuizResults"]
 - ["6GyMate30QuizConfirmationViewControllerC", "deinit"]
 - ["6GyMate30QuizConfirmationViewControllerC", "init"]
+- ["6GyMate30QuizConfirmationViewControllerC", "lbBodyType"]
 - !private ["6GyMate30QuizConfirmationViewControllerC", "performSegue"]
 - ["6GyMate30QuizConfirmationViewControllerC", "viewDidLoad"]
 - !private ["So21UIAppearanceContainerP", "Auth"]
@@ -182,9 +188,11 @@ depends-member:
 - !private ["So11UIResponderC", "AppDelegate"]
 - !private ["So11UIResponderC", "Auth"]
 - !private ["So11UIResponderC", "UIApplication"]
+- ["So11UIResponderC", "UILabel"]
 - ["So11UIResponderC", "confirmQuizResults"]
 - !private ["So11UIResponderC", "delegate"]
 - ["So11UIResponderC", "init"]
+- ["So11UIResponderC", "lbBodyType"]
 - !private ["So11UIResponderC", "performSegue"]
 - !private ["So11UIResponderC", "shared"]
 - !private ["So11UIResponderC", "userRef"]
@@ -222,9 +230,11 @@ depends-member:
 - !private ["So16UIViewControllerC", "AppDelegate"]
 - !private ["So16UIViewControllerC", "Auth"]
 - !private ["So16UIViewControllerC", "UIApplication"]
+- ["So16UIViewControllerC", "UILabel"]
 - ["So16UIViewControllerC", ""]
 - ["So16UIViewControllerC", "confirmQuizResults"]
 - ["So16UIViewControllerC", "init"]
+- ["So16UIViewControllerC", "lbBodyType"]
 - !private ["So16UIViewControllerC", "performSegue"]
 - ["So16UIViewControllerC", "viewDidLoad"]
 - !private ["So7FIRUserC", "uid"]
@@ -1556,4 +1566,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "cf8f395d994aa9fa4fbb5149dcbe80a7"
+interface-hash: "79e19f0aac7b7b47aed81843cccf07e2"

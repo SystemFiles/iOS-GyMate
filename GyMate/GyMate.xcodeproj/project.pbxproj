@@ -11,6 +11,7 @@
 		B826DB662377244700181369 /* QuizAnswer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B826DB652377244700181369 /* QuizAnswer.swift */; };
 		B82BD8EE2375AF390070130A /* BodyTypeQuiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82BD8ED2375AF390070130A /* BodyTypeQuiz.swift */; };
 		B82BD8F02375AF4A0070130A /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82BD8EF2375AF4A0070130A /* Question.swift */; };
+		B8507879237CF531004E23B9 /* ManualTypeSelectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8507878237CF531004E23B9 /* ManualTypeSelectorViewController.swift */; };
 		B85607C5237CE88B0036B693 /* QuizConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85607C4237CE88B0036B693 /* QuizConfirmationViewController.swift */; };
 		B87D728523745C3300303955 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87D728423745C3300303955 /* AppDelegate.swift */; };
 		B87D728723745C3300303955 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87D728623745C3300303955 /* SceneDelegate.swift */; };
@@ -30,6 +31,7 @@
 		B826DB652377244700181369 /* QuizAnswer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizAnswer.swift; sourceTree = "<group>"; };
 		B82BD8ED2375AF390070130A /* BodyTypeQuiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyTypeQuiz.swift; sourceTree = "<group>"; };
 		B82BD8EF2375AF4A0070130A /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		B8507878237CF531004E23B9 /* ManualTypeSelectorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManualTypeSelectorViewController.swift; sourceTree = "<group>"; };
 		B85607C4237CE88B0036B693 /* QuizConfirmationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizConfirmationViewController.swift; sourceTree = "<group>"; };
 		B87D728123745C3300303955 /* GyMate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GyMate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B87D728423745C3300303955 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 				B87D729E23746A8300303955 /* QuizViewController.swift */,
 				B8C450CB2374D0B800C5F714 /* PasswordResetViewController.swift */,
 				B85607C4237CE88B0036B693 /* QuizConfirmationViewController.swift */,
+				B8507878237CF531004E23B9 /* ManualTypeSelectorViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -266,6 +269,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B87D728923745C3300303955 /* LoginViewController.swift in Sources */,
+				B8507879237CF531004E23B9 /* ManualTypeSelectorViewController.swift in Sources */,
 				B82BD8F02375AF4A0070130A /* Question.swift in Sources */,
 				B8C450CC2374D0B800C5F714 /* PasswordResetViewController.swift in Sources */,
 				B87D729F23746A8300303955 /* QuizViewController.swift in Sources */,

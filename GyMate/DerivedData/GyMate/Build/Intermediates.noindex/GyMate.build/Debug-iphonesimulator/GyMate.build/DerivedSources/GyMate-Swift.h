@@ -239,6 +239,14 @@ SWIFT_CLASS("_TtC6GyMate19LoginViewController")
 @end
 
 
+SWIFT_CLASS("_TtC6GyMate32ManualTypeSelectorViewController")
+@interface ManualTypeSelectorViewController : UIViewController
+- (void)viewDidLoad;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
 SWIFT_CLASS("_TtC6GyMate27PasswordResetViewController")
 @interface PasswordResetViewController : UIViewController
 @property (nonatomic, strong) IBOutlet UITextField * _Null_unspecified txtEmail;
@@ -262,16 +270,17 @@ SWIFT_CLASS("_TtC6GyMate10QuizAnswer")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+@class UILabel;
 
 SWIFT_CLASS("_TtC6GyMate30QuizConfirmationViewController")
 @interface QuizConfirmationViewController : UIViewController
+@property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified lbBodyType;
 - (void)viewDidLoad;
 - (IBAction)confirmQuizResults;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UILabel;
 
 SWIFT_CLASS("_TtC6GyMate18QuizViewController")
 @interface QuizViewController : UIViewController
