@@ -16,9 +16,11 @@ class QuizConfirmationViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
-        
-        
+        updateBodyTypeLabelFromDB()
+    }
+    
+    @IBAction func rewindToQuizConfirmationVC(sender : UIStoryboardSegue!) {
+        updateBodyTypeLabelFromDB()
     }
     
     @IBAction func confirmQuizResults() {
@@ -26,6 +28,19 @@ class QuizConfirmationViewController: UIViewController {
         let mainDelegate : AppDelegate = UIApplication.shared.delegate as! AppDelegate
         mainDelegate.userRef.child(Auth.auth().currentUser!.uid).child("quizDone").setValue(true)
         
+        // Move to dashboard
         self.performSegue(withIdentifier: "QuizToDashboardSegue", sender: nil)
+    }
+    
+    func updateBodyTypeLabelFromDB() {
+        /// Load data into label
+        let mainDelegate : AppDelegate = UIApplication.shared.delegate as! AppDelegate
+        let ref = mainDelegate.userRef.child(Auth.auth().currentUser!.uid)
+        
+        
+        ref.observeSingleEvent(of: .value, with: { snapshot in
+            let bodyType : String = snapshot.childSnapshot(forPath: "bodyType").value as! String
+            self.lbBodyType.text = bodyType
+        })
     }
 }

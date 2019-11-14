@@ -14,7 +14,7 @@ depends-top-level:
 - "AssignmentPrecedence"
 - !private "Auth"
 - "Bool"
-- !private "BooleanLiteralType"
+- "BooleanLiteralType"
 - !private "Database"
 - "DatabaseReference"
 - !private "FirebaseApp"
@@ -56,7 +56,7 @@ depends-member:
 - ["6GyMate11AppDelegateC", "createUser"]
 - ["6GyMate11AppDelegateC", "deinit"]
 - ["6GyMate11AppDelegateC", "init"]
-- ["6GyMate11AppDelegateC", "showAlertDialog"]
+- ["6GyMate11AppDelegateC", "signedIn"]
 - ["6GyMate11AppDelegateC", "userRef"]
 - ["6GyMate11AppDelegateC", "window"]
 - !private ["So7FIRAuthC", "auth"]
@@ -94,6 +94,7 @@ depends-member:
 - !private ["s7CVarArgP", "role"]
 - !private ["s7CVarArgP", "setValue"]
 - !private ["s7CVarArgP", "signIn"]
+- !private ["s7CVarArgP", "signedIn"]
 - !private ["s7CVarArgP", "uid"]
 - !private ["s7CVarArgP", "userRef"]
 - ["s7CVarArgP", "window"]
@@ -128,6 +129,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "role"]
 - !private ["s28CustomDebugStringConvertibleP", "setValue"]
 - !private ["s28CustomDebugStringConvertibleP", "signIn"]
+- !private ["s28CustomDebugStringConvertibleP", "signedIn"]
 - !private ["s28CustomDebugStringConvertibleP", "uid"]
 - !private ["s28CustomDebugStringConvertibleP", "userRef"]
 - ["s28CustomDebugStringConvertibleP", "window"]
@@ -163,6 +165,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "role"]
 - !private ["s23CustomStringConvertibleP", "setValue"]
 - !private ["s23CustomStringConvertibleP", "signIn"]
+- !private ["s23CustomStringConvertibleP", "signedIn"]
 - !private ["s23CustomStringConvertibleP", "uid"]
 - !private ["s23CustomStringConvertibleP", "userRef"]
 - ["s23CustomStringConvertibleP", "window"]
@@ -206,6 +209,7 @@ depends-member:
 - !private ["SQ", "role"]
 - !private ["SQ", "setValue"]
 - !private ["SQ", "signIn"]
+- !private ["SQ", "signedIn"]
 - !private ["SQ", "uid"]
 - !private ["SQ", "userRef"]
 - ["SQ", "window"]
@@ -242,6 +246,7 @@ depends-member:
 - !private ["SH", "role"]
 - !private ["SH", "setValue"]
 - !private ["SH", "signIn"]
+- !private ["SH", "signedIn"]
 - !private ["SH", "uid"]
 - !private ["SH", "userRef"]
 - ["SH", "window"]
@@ -285,8 +290,8 @@ depends-member:
 - !private ["So8NSObjectC", "reference"]
 - !private ["So8NSObjectC", "role"]
 - !private ["So8NSObjectC", "setValue"]
-- ["So8NSObjectC", "showAlertDialog"]
 - !private ["So8NSObjectC", "signIn"]
+- ["So8NSObjectC", "signedIn"]
 - !private ["So8NSObjectC", "uid"]
 - ["So8NSObjectC", "userRef"]
 - ["So8NSObjectC", "window"]
@@ -321,6 +326,7 @@ depends-member:
 - !private ["So8NSObjectP", "role"]
 - !private ["So8NSObjectP", "setValue"]
 - !private ["So8NSObjectP", "signIn"]
+- !private ["So8NSObjectP", "signedIn"]
 - !private ["So8NSObjectP", "uid"]
 - !private ["So8NSObjectP", "userRef"]
 - ["So8NSObjectP", "window"]
@@ -345,6 +351,7 @@ depends-member:
 - ["So21UIApplicationDelegateP", "applicationWillEnterForeground"]
 - ["So21UIApplicationDelegateP", "applicationWillResignActive"]
 - ["So21UIApplicationDelegateP", "applicationWillTerminate"]
+- !private ["So21UIApplicationDelegateP", "signedIn"]
 - !private ["So21UIApplicationDelegateP", "userRef"]
 - ["So21UIApplicationDelegateP", "window"]
 - !private ["So30UIPasteConfigurationSupportingP", "Auth"]
@@ -367,6 +374,7 @@ depends-member:
 - ["So30UIPasteConfigurationSupportingP", "applicationWillResignActive"]
 - ["So30UIPasteConfigurationSupportingP", "applicationWillTerminate"]
 - !private ["So30UIPasteConfigurationSupportingP", "init"]
+- !private ["So30UIPasteConfigurationSupportingP", "signedIn"]
 - !private ["So30UIPasteConfigurationSupportingP", "userRef"]
 - ["So30UIPasteConfigurationSupportingP", "window"]
 - !private ["So11UIResponderC", "Auth"]
@@ -398,7 +406,7 @@ depends-member:
 - ["So11UIResponderC", "applicationWillTerminate"]
 - ["So11UIResponderC", "createUser"]
 - ["So11UIResponderC", "init"]
-- ["So11UIResponderC", "showAlertDialog"]
+- ["So11UIResponderC", "signedIn"]
 - ["So11UIResponderC", "userRef"]
 - ["So11UIResponderC", "window"]
 - !private ["So30UIResponderStandardEditActionsP", "Auth"]
@@ -421,6 +429,7 @@ depends-member:
 - ["So30UIResponderStandardEditActionsP", "applicationWillResignActive"]
 - ["So30UIResponderStandardEditActionsP", "applicationWillTerminate"]
 - !private ["So30UIResponderStandardEditActionsP", "init"]
+- !private ["So30UIResponderStandardEditActionsP", "signedIn"]
 - !private ["So30UIResponderStandardEditActionsP", "userRef"]
 - ["So30UIResponderStandardEditActionsP", "window"]
 - ["So7UISceneC", "ConnectionOptions"]
@@ -446,6 +455,7 @@ depends-member:
 - ["So23UIUserActivityRestoringP", "applicationWillResignActive"]
 - ["So23UIUserActivityRestoringP", "applicationWillTerminate"]
 - !private ["So23UIUserActivityRestoringP", "init"]
+- !private ["So23UIUserActivityRestoringP", "signedIn"]
 - !private ["So23UIUserActivityRestoringP", "userRef"]
 - ["So23UIUserActivityRestoringP", "window"]
 - !private ["So7FIRUserC", "uid"]
@@ -481,6 +491,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "role"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "setValue"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "signIn"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "signedIn"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "uid"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "userRef"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "window"]
@@ -515,6 +526,7 @@ depends-member:
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "role"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "setValue"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "signIn"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "signedIn"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "uid"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "userRef"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "window"]
@@ -1816,4 +1828,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "2624321c1b68e626c2cd60d731c10bb0"
+interface-hash: "006db79efcc02905884576cfc351d338"

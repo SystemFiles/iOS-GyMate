@@ -6,7 +6,7 @@
 	<integer>10</integer>
 	<key>logs</key>
 	<dict>
-		<key>1BEEF244-7B76-432A-B770-3816D29ECD5A</key>
+		<key>24374FCC-AA3B-46C5-9544-576F34A88D42</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -15,7 +15,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>1BEEF244-7B76-432A-B770-3816D29ECD5A.xcactivitylog</string>
+			<string>24374FCC-AA3B-46C5-9544-576F34A88D42.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -32,15 +32,15 @@
 			<key>signature</key>
 			<string>Debug GyMate</string>
 			<key>timeStartedRecording</key>
-			<real>595389101.57195795</real>
+			<real>595435946.61685395</real>
 			<key>timeStoppedRecording</key>
-			<real>595389126.87497604</real>
+			<real>595436970.58739197</real>
 			<key>title</key>
 			<string>Debug GyMate</string>
 			<key>uniqueIdentifier</key>
-			<string>1BEEF244-7B76-432A-B770-3816D29ECD5A</string>
+			<string>24374FCC-AA3B-46C5-9544-576F34A88D42</string>
 		</dict>
-		<key>9A0E6924-15A8-400E-A8A5-5A15AEB186DC</key>
+		<key>347897D0-8763-4A21-9501-A994D76D8CF1</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -49,7 +49,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>9A0E6924-15A8-400E-A8A5-5A15AEB186DC.xcactivitylog</string>
+			<string>347897D0-8763-4A21-9501-A994D76D8CF1.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -66,13 +66,353 @@
 			<key>signature</key>
 			<string>Debug GyMate</string>
 			<key>timeStartedRecording</key>
-			<real>595389128.41192496</real>
+			<real>595430993.31762898</real>
 			<key>timeStoppedRecording</key>
-			<real>595389228.17641199</real>
+			<real>595431035.19822395</real>
 			<key>title</key>
 			<string>Debug GyMate</string>
 			<key>uniqueIdentifier</key>
-			<string>9A0E6924-15A8-400E-A8A5-5A15AEB186DC</string>
+			<string>347897D0-8763-4A21-9501-A994D76D8CF1</string>
+		</dict>
+		<key>3D8AD5BB-126C-4ED8-B027-102CB0F38350</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>3D8AD5BB-126C-4ED8-B027-102CB0F38350.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>GyMate project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>GyMate</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug GyMate</string>
+			<key>timeStartedRecording</key>
+			<real>595432962.64738202</real>
+			<key>timeStoppedRecording</key>
+			<real>595433481.40874803</real>
+			<key>title</key>
+			<string>Debug GyMate</string>
+			<key>uniqueIdentifier</key>
+			<string>3D8AD5BB-126C-4ED8-B027-102CB0F38350</string>
+		</dict>
+		<key>3EDC3858-ADE6-4F8C-9149-17E448F4EA7D</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>3EDC3858-ADE6-4F8C-9149-17E448F4EA7D.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>GyMate project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>GyMate</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug GyMate</string>
+			<key>timeStartedRecording</key>
+			<real>595430778.06359506</real>
+			<key>timeStoppedRecording</key>
+			<real>595430785.50305402</real>
+			<key>title</key>
+			<string>Debug GyMate</string>
+			<key>uniqueIdentifier</key>
+			<string>3EDC3858-ADE6-4F8C-9149-17E448F4EA7D</string>
+		</dict>
+		<key>590B37FE-4DAE-4044-B28B-E9369385A772</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>590B37FE-4DAE-4044-B28B-E9369385A772.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>GyMate project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>GyMate</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug GyMate</string>
+			<key>timeStartedRecording</key>
+			<real>595430832.83343995</real>
+			<key>timeStoppedRecording</key>
+			<real>595430906.70195103</real>
+			<key>title</key>
+			<string>Debug GyMate</string>
+			<key>uniqueIdentifier</key>
+			<string>590B37FE-4DAE-4044-B28B-E9369385A772</string>
+		</dict>
+		<key>5D419ACF-A3F1-4719-A82A-FB2C73028FF4</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>5D419ACF-A3F1-4719-A82A-FB2C73028FF4.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>GyMate project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>GyMate</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug GyMate</string>
+			<key>timeStartedRecording</key>
+			<real>595434916.04170406</real>
+			<key>timeStoppedRecording</key>
+			<real>595435944.13252604</real>
+			<key>title</key>
+			<string>Debug GyMate</string>
+			<key>uniqueIdentifier</key>
+			<string>5D419ACF-A3F1-4719-A82A-FB2C73028FF4</string>
+		</dict>
+		<key>5E79121D-E62C-413D-9F65-5C30A30F46F1</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>5E79121D-E62C-413D-9F65-5C30A30F46F1.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>GyMate project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>GyMate</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug GyMate</string>
+			<key>timeStartedRecording</key>
+			<real>595431035.01075006</real>
+			<key>timeStoppedRecording</key>
+			<real>595431256.97633195</real>
+			<key>title</key>
+			<string>Debug GyMate</string>
+			<key>uniqueIdentifier</key>
+			<string>5E79121D-E62C-413D-9F65-5C30A30F46F1</string>
+		</dict>
+		<key>60A69404-260E-4CAC-AA53-427E692A8BB3</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>60A69404-260E-4CAC-AA53-427E692A8BB3.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>GyMate project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>GyMate</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug GyMate</string>
+			<key>timeStartedRecording</key>
+			<real>595431308.63107204</real>
+			<key>timeStoppedRecording</key>
+			<real>595431410.08963799</real>
+			<key>title</key>
+			<string>Debug GyMate</string>
+			<key>uniqueIdentifier</key>
+			<string>60A69404-260E-4CAC-AA53-427E692A8BB3</string>
+		</dict>
+		<key>613E87AD-4A52-4E45-A84C-2EA1B8206F11</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>613E87AD-4A52-4E45-A84C-2EA1B8206F11.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>GyMate project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>GyMate</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug GyMate</string>
+			<key>timeStartedRecording</key>
+			<real>595432805.42315197</real>
+			<key>timeStoppedRecording</key>
+			<real>595432878.15308499</real>
+			<key>title</key>
+			<string>Debug GyMate</string>
+			<key>uniqueIdentifier</key>
+			<string>613E87AD-4A52-4E45-A84C-2EA1B8206F11</string>
+		</dict>
+		<key>6CA0FD1E-AC44-4B96-A468-95D8238C81EE</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>6CA0FD1E-AC44-4B96-A468-95D8238C81EE.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>GyMate project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>GyMate</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug GyMate</string>
+			<key>timeStartedRecording</key>
+			<real>595434862.01111197</real>
+			<key>timeStoppedRecording</key>
+			<real>595434915.61764205</real>
+			<key>title</key>
+			<string>Debug GyMate</string>
+			<key>uniqueIdentifier</key>
+			<string>6CA0FD1E-AC44-4B96-A468-95D8238C81EE</string>
+		</dict>
+		<key>840ED294-501E-4E55-9AC7-07DC86798EB7</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>840ED294-501E-4E55-9AC7-07DC86798EB7.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>GyMate project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>GyMate</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug GyMate</string>
+			<key>timeStartedRecording</key>
+			<real>595429102.81494403</real>
+			<key>timeStoppedRecording</key>
+			<real>595429477.16454005</real>
+			<key>title</key>
+			<string>Debug GyMate</string>
+			<key>uniqueIdentifier</key>
+			<string>840ED294-501E-4E55-9AC7-07DC86798EB7</string>
+		</dict>
+		<key>88E0076A-D447-41DF-9075-F346C989833C</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>88E0076A-D447-41DF-9075-F346C989833C.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>GyMate project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>GyMate</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug GyMate</string>
+			<key>timeStartedRecording</key>
+			<real>595431291.21660805</real>
+			<key>timeStoppedRecording</key>
+			<real>595431307.75406897</real>
+			<key>title</key>
+			<string>Debug GyMate</string>
+			<key>uniqueIdentifier</key>
+			<string>88E0076A-D447-41DF-9075-F346C989833C</string>
 		</dict>
 		<key>A0661500-FCD0-498D-A3A0-0D741B24AFC2</key>
 		<dict>
@@ -108,7 +448,7 @@
 			<key>uniqueIdentifier</key>
 			<string>A0661500-FCD0-498D-A3A0-0D741B24AFC2</string>
 		</dict>
-		<key>D1B0DCF2-4769-4E3A-91EB-079A0538899D</key>
+		<key>ABD0C66F-6616-475E-8A8D-B67330376CE8</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -117,7 +457,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>D1B0DCF2-4769-4E3A-91EB-079A0538899D.xcactivitylog</string>
+			<string>ABD0C66F-6616-475E-8A8D-B67330376CE8.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -134,47 +474,13 @@
 			<key>signature</key>
 			<string>Debug GyMate</string>
 			<key>timeStartedRecording</key>
-			<real>595389361.58527899</real>
+			<real>595436973.22449398</real>
 			<key>timeStoppedRecording</key>
-			<real>595389429.24825501</real>
+			<real>595437056.02894402</real>
 			<key>title</key>
 			<string>Debug GyMate</string>
 			<key>uniqueIdentifier</key>
-			<string>D1B0DCF2-4769-4E3A-91EB-079A0538899D</string>
-		</dict>
-		<key>E674B8C2-DE2D-470E-92BB-616660F0B5CD</key>
-		<dict>
-			<key>className</key>
-			<string>DBGConsoleLog</string>
-			<key>documentTypeString</key>
-			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
-			<key>fileName</key>
-			<string>E674B8C2-DE2D-470E-92BB-616660F0B5CD.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>GyMate project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>GyMate</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Debug GyMate</string>
-			<key>timeStartedRecording</key>
-			<real>595388919.14648795</real>
-			<key>timeStoppedRecording</key>
-			<real>595388928.11586595</real>
-			<key>title</key>
-			<string>Debug GyMate</string>
-			<key>uniqueIdentifier</key>
-			<string>E674B8C2-DE2D-470E-92BB-616660F0B5CD</string>
+			<string>ABD0C66F-6616-475E-8A8D-B67330376CE8</string>
 		</dict>
 	</dict>
 </dict>

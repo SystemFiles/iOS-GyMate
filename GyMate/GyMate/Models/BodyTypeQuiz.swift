@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class BodyTypeQuiz: NSObject {
     var questions : [Question] = []
@@ -36,16 +37,20 @@ class BodyTypeQuiz: NSObject {
             case QuizAnswer.AnswerType.FEMALE:
                 isMale = false
             case QuizAnswer.AnswerType.ECTOMORPH:
-                ectomorphPoints += (1 * answer.ansWeight)
+                ectomorphPoints += (answer.ansWeight)
             case QuizAnswer.AnswerType.ENDOMORPH:
-                endomorphPoints += (1 * answer.ansWeight)
+                endomorphPoints += (answer.ansWeight)
             case QuizAnswer.AnswerType.MESOMORPH:
-                mesomorphPoints += (1 * answer.ansWeight)
+                mesomorphPoints += (answer.ansWeight)
             }
         }
         
         let aggregatePoints = [ectomorphPoints, endomorphPoints, mesomorphPoints]
         let winnerIndex = aggregatePoints.firstIndex(of: aggregatePoints.max()!)
+        
+        // Before determining body type, store gender of user (used for workout)
+        let mainDelegate : AppDelegate = UIApplication.shared.delegate as! AppDelegate
+        mainDelegate.userRef.child(Auth.auth().currentUser!.uid).child("gender").setValue(isMale ? "Male" : "Female")
         
         switch winnerIndex {
         case 0:

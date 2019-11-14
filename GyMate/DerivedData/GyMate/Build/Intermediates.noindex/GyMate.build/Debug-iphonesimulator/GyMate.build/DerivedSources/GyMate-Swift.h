@@ -238,10 +238,17 @@ SWIFT_CLASS("_TtC6GyMate19LoginViewController")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UIPickerView;
+@class NSAttributedString;
 
 SWIFT_CLASS("_TtC6GyMate32ManualTypeSelectorViewController")
-@interface ManualTypeSelectorViewController : UIViewController
+@interface ManualTypeSelectorViewController : UIViewController <UIPickerViewDataSource, UIPickerViewDelegate>
 - (void)viewDidLoad;
+- (IBAction)confirmSelectionWithSender:(UIButton * _Null_unspecified)sender;
+- (NSInteger)numberOfComponentsInPickerView:(UIPickerView * _Nonnull)pickerView SWIFT_WARN_UNUSED_RESULT;
+- (NSInteger)pickerView:(UIPickerView * _Nonnull)pickerView numberOfRowsInComponent:(NSInteger)component SWIFT_WARN_UNUSED_RESULT;
+- (NSAttributedString * _Nullable)pickerView:(UIPickerView * _Nonnull)pickerView attributedTitleForRow:(NSInteger)row forComponent:(NSInteger)component SWIFT_WARN_UNUSED_RESULT;
+- (void)pickerView:(UIPickerView * _Nonnull)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -276,6 +283,7 @@ SWIFT_CLASS("_TtC6GyMate30QuizConfirmationViewController")
 @interface QuizConfirmationViewController : UIViewController
 @property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified lbBodyType;
 - (void)viewDidLoad;
+- (IBAction)rewindToQuizConfirmationVCWithSender:(UIStoryboardSegue * _Null_unspecified)sender;
 - (IBAction)confirmQuizResults;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;

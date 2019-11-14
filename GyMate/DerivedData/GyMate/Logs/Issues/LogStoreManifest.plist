@@ -146,6 +146,34 @@
 			<key>uniqueIdentifier</key>
 			<string>59B41EF6-DFDB-40FF-9243-576602A6C595</string>
 		</dict>
+		<key>707A9F71-8256-4D61-8E89-19AD46E7A7C8</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogMajorGroupSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.target.product-type.application</string>
+			<key>fileName</key>
+			<string>707A9F71-8256-4D61-8E89-19AD46E7A7C8.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>signature</key>
+			<string>GyMate-fdtovkmtepullvcwkkcpqplnbjxe</string>
+			<key>timeStartedRecording</key>
+			<real>595436970.39552402</real>
+			<key>timeStoppedRecording</key>
+			<real>595436973.21222401</real>
+			<key>title</key>
+			<string>Build target GyMate</string>
+			<key>uniqueIdentifier</key>
+			<string>707A9F71-8256-4D61-8E89-19AD46E7A7C8</string>
+		</dict>
 		<key>788107C9-EC27-4A9E-A53C-445EB86BC18E</key>
 		<dict>
 			<key>className</key>
@@ -201,34 +229,6 @@
 			<string>Build target FirebaseAuth</string>
 			<key>uniqueIdentifier</key>
 			<string>94BFF6A5-58A2-44F8-A73B-E08226BED09C</string>
-		</dict>
-		<key>A9F51DB7-D45D-42C3-BDDB-CBB7D17EA6E1</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogMajorGroupSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.target.product-type.application</string>
-			<key>fileName</key>
-			<string>A9F51DB7-D45D-42C3-BDDB-CBB7D17EA6E1.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-			</dict>
-			<key>signature</key>
-			<string>GyMate-fdtovkmtepullvcwkkcpqplnbjxe</string>
-			<key>timeStartedRecording</key>
-			<real>595389357.99969697</real>
-			<key>timeStoppedRecording</key>
-			<real>595389361.57213998</real>
-			<key>title</key>
-			<string>Build target GyMate</string>
-			<key>uniqueIdentifier</key>
-			<string>A9F51DB7-D45D-42C3-BDDB-CBB7D17EA6E1</string>
 		</dict>
 		<key>B7624F1F-38F6-49E1-9AC3-6E26B3269753</key>
 		<dict>

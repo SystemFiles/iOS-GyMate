@@ -36,27 +36,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
-
-    /**
-        Helper function for showing alert
-    */
-    func showAlertDialog(title : String, message : String, buttonText : String) {
-        // TODO
-    }
-    
-    /**
-        function for creating firebase auth user account for GyMate
-     */
-    func createUser(email : String, password : String, username: String) {
-        Auth.auth().createUser(withEmail: email, password: password) { user, error in
-            if error == nil {
-                Auth.auth().signIn(withEmail: email, password: password)
-                
-                // Create username data
-                self.userRef.child(Auth.auth().currentUser!.uid).child("username").setValue(username)
-                self.userRef.child(Auth.auth().currentUser!.uid).child("quizDone").setValue(false)
-            }
-        }
-    }
 }
 
