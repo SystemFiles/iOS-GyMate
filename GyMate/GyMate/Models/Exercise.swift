@@ -10,6 +10,7 @@ import UIKit
 
 class Exercise: NSObject {
     
+    var id : Int
     var name : String
     var desc : String
     var imgBodyDiagram : URL

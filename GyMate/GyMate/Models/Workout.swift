@@ -10,7 +10,6 @@ import UIKit
 
 class Workout: NSObject {
 
-    
     var ID : Int
     var name : String
     var desc : String
@@ -24,7 +23,6 @@ class Workout: NSObject {
         self.time = time
         self.exercises = exercises
     }
-    
     
     func addExercise(exercise : Exercise) {
         self.exercises.append(exercise)
