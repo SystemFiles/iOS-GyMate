@@ -1,6 +1,6 @@
 version: "Apple Swift version 5.1.2 (swiftlang-1100.0.278 clang-1100.0.33.9)"
 options: "cac4555f8e3bf7401544dd3c82c5938c"
-build_time: [1573744170, 403674000]
+build_time: [1574017573, 284907000]
 inputs:
   "/Users/bensykes/DATASYNC/school/Sem5Courses/AdvancedMobileApp/Final Project/GyMate-Application/GyMate/GyMate/View Controllers/LoginViewController.swift": [1573222260, 737243428]
   "/Users/bensykes/DATASYNC/school/Sem5Courses/AdvancedMobileApp/Final Project/GyMate-Application/GyMate/GyMate/View Controllers/ManualTypeSelectorViewController.swift": [1573742057, 169985715]
@@ -9,7 +9,7 @@ inputs:
   "/Users/bensykes/DATASYNC/school/Sem5Courses/AdvancedMobileApp/Final Project/GyMate-Application/GyMate/GyMate/View Controllers/QuizViewController.swift": [1573695534, 27049840]
   "/Users/bensykes/DATASYNC/school/Sem5Courses/AdvancedMobileApp/Final Project/GyMate-Application/GyMate/GyMate/Models/AppDelegate.swift": [1573743353, 551053828]
   "/Users/bensykes/DATASYNC/school/Sem5Courses/AdvancedMobileApp/Final Project/GyMate-Application/GyMate/GyMate/Models/BodyTypeQuiz.swift": [1573741463, 948262224]
-  "/Users/bensykes/DATASYNC/school/Sem5Courses/AdvancedMobileApp/Final Project/GyMate-Application/GyMate/GyMate/View Controllers/SignUpViewController.swift": [1573744168, 812268183]
+  "/Users/bensykes/DATASYNC/school/Sem5Courses/AdvancedMobileApp/Final Project/GyMate-Application/GyMate/GyMate/View Controllers/SignUpViewController.swift": [1573846905, 434373970]
   "/Users/bensykes/DATASYNC/school/Sem5Courses/AdvancedMobileApp/Final Project/GyMate-Application/GyMate/GyMate/Models/QuizAnswer.swift": [1573687333, 734687511]
   "/Users/bensykes/DATASYNC/school/Sem5Courses/AdvancedMobileApp/Final Project/GyMate-Application/GyMate/GyMate/View Controllers/QuizConfirmationViewController.swift": [1573739709, 580730565]
   "/Users/bensykes/DATASYNC/school/Sem5Courses/AdvancedMobileApp/Final Project/GyMate-Application/GyMate/GyMate/Models/SceneDelegate.swift": [1573135539, 408702921]

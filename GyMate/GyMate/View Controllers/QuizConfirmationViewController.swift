@@ -10,7 +10,6 @@ import UIKit
 import Firebase
 
 class QuizConfirmationViewController: UIViewController {
-
     @IBOutlet var lbBodyType : UILabel!
     
     override func viewDidLoad() {
