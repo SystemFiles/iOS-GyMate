@@ -181,6 +181,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
+@import ObjectiveC;
 @import UIKit;
 #endif
 
@@ -214,6 +215,12 @@ SWIFT_CLASS("_TtC6GyMate11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+
+SWIFT_CLASS("_TtC6GyMate12BodyTypeQuiz")
+@interface BodyTypeQuiz : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class UITextField;
 @class UIStoryboardSegue;
 @class UIButton;
@@ -231,6 +238,21 @@ SWIFT_CLASS("_TtC6GyMate19LoginViewController")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UIPickerView;
+@class NSAttributedString;
+
+SWIFT_CLASS("_TtC6GyMate32ManualTypeSelectorViewController")
+@interface ManualTypeSelectorViewController : UIViewController <UIPickerViewDataSource, UIPickerViewDelegate>
+- (void)viewDidLoad;
+- (IBAction)confirmSelectionWithSender:(UIButton * _Null_unspecified)sender;
+- (NSInteger)numberOfComponentsInPickerView:(UIPickerView * _Nonnull)pickerView SWIFT_WARN_UNUSED_RESULT;
+- (NSInteger)pickerView:(UIPickerView * _Nonnull)pickerView numberOfRowsInComponent:(NSInteger)component SWIFT_WARN_UNUSED_RESULT;
+- (NSAttributedString * _Nullable)pickerView:(UIPickerView * _Nonnull)pickerView attributedTitleForRow:(NSInteger)row forComponent:(NSInteger)component SWIFT_WARN_UNUSED_RESULT;
+- (void)pickerView:(UIPickerView * _Nonnull)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 
 SWIFT_CLASS("_TtC6GyMate27PasswordResetViewController")
 @interface PasswordResetViewController : UIViewController
@@ -242,9 +264,42 @@ SWIFT_CLASS("_TtC6GyMate27PasswordResetViewController")
 @end
 
 
+SWIFT_CLASS("_TtC6GyMate8Question")
+@interface Question : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+SWIFT_CLASS("_TtC6GyMate10QuizAnswer")
+@interface QuizAnswer : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+@class UILabel;
+
+SWIFT_CLASS("_TtC6GyMate30QuizConfirmationViewController")
+@interface QuizConfirmationViewController : UIViewController
+@property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified lbBodyType;
+- (void)viewDidLoad;
+- (IBAction)rewindToQuizConfirmationVCWithSender:(UIStoryboardSegue * _Null_unspecified)sender;
+- (IBAction)confirmQuizResults;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
 SWIFT_CLASS("_TtC6GyMate18QuizViewController")
 @interface QuizViewController : UIViewController
+@property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified lbQuestion;
+@property (nonatomic, strong) IBOutlet UIButton * _Null_unspecified btnOptOne;
+@property (nonatomic, strong) IBOutlet UIButton * _Null_unspecified btnOptTwo;
+@property (nonatomic, strong) IBOutlet UIButton * _Null_unspecified btnOptThree;
 - (void)viewDidLoad;
+- (IBAction)optionSelectedWithSender:(UIButton * _Null_unspecified)sender;
+- (IBAction)restartQuizWithSender:(UIButton * _Null_unspecified)sender;
+- (IBAction)rewindToQuizVCWithSender:(UIStoryboardSegue * _Null_unspecified)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end

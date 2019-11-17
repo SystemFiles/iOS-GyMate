@@ -39,6 +39,7 @@ class LoginViewController: UIViewController {
     }
     
     func signInUser(email : String, password : String) {
+        let mainDelegate : AppDelegate = UIApplication.shared.delegate as! AppDelegate
         Auth.auth().signIn(withEmail: email, password: password) { user, error in
             if let error = error, user == nil {
                 // Unsuccessful login shows error in credentials
@@ -49,7 +50,22 @@ class LoginViewController: UIViewController {
                 self.present(errorAlert, animated: true)
             } else {
                 // Login succcess
-                self.performSegue(withIdentifier: "LoginToDashboardSegue", sender: nil)
+                
+                // Get data for quiz completion
+                var quizDone : Bool = false
+                let ref = mainDelegate.userRef.child(Auth.auth().currentUser!.uid)
+                
+                // Async call to firebase realtime DB to check quiz completion
+                ref.observeSingleEvent(of: .value, with: { snapshot in
+                    quizDone = snapshot.childSnapshot(forPath: "quizDone").value as! Bool
+                    
+                    /// Check if user has completed quiz...if not, send user to quiz
+                    if quizDone {
+                        self.performSegue(withIdentifier: "LoginToDashboardSegue", sender: nil)
+                    } else {
+                        self.performSegue(withIdentifier: "LoginToQuizSegue", sender: nil)
+                    }
+                })
             }
         }
     }
