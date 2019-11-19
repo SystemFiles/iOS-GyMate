@@ -6,7 +6,7 @@
 	<integer>10</integer>
 	<key>logs</key>
 	<dict>
-		<key>4900BE15-1E76-4282-904D-F441D9439428</key>
+		<key>1BE1D22C-131D-45BA-BE08-C7ACA1ECCB4B</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogMajorGroupSection</string>
@@ -15,7 +15,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.target.product-type.application</string>
 			<key>fileName</key>
-			<string>4900BE15-1E76-4282-904D-F441D9439428.xcactivitylog</string>
+			<string>1BE1D22C-131D-45BA-BE08-C7ACA1ECCB4B.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -26,13 +26,13 @@
 			<key>signature</key>
 			<string>GyMate-fdtovkmtepullvcwkkcpqplnbjxe</string>
 			<key>timeStartedRecording</key>
-			<real>595719439.79461396</real>
+			<real>595887217.69739401</real>
 			<key>timeStoppedRecording</key>
-			<real>595719441.89435196</real>
+			<real>595887227.57389295</real>
 			<key>title</key>
 			<string>Build target GyMate</string>
 			<key>uniqueIdentifier</key>
-			<string>4900BE15-1E76-4282-904D-F441D9439428</string>
+			<string>1BE1D22C-131D-45BA-BE08-C7ACA1ECCB4B</string>
 		</dict>
 		<key>5B2F7735-1182-4BB1-85E2-F34282D603D8</key>
 		<dict>
