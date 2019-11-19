@@ -20,6 +20,7 @@ depends-top-level:
 depends-member:
 - ["s7CVarArgP", ""]
 - !private ["s7CVarArgP", "desc"]
+- !private ["s7CVarArgP", "id"]
 - !private ["s7CVarArgP", "imgBodyDiagram"]
 - !private ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "name"]
@@ -28,6 +29,7 @@ depends-member:
 - !private ["s7CVarArgP", "sets"]
 - ["s28CustomDebugStringConvertibleP", ""]
 - !private ["s28CustomDebugStringConvertibleP", "desc"]
+- !private ["s28CustomDebugStringConvertibleP", "id"]
 - !private ["s28CustomDebugStringConvertibleP", "imgBodyDiagram"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "name"]
@@ -36,6 +38,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "sets"]
 - ["s23CustomStringConvertibleP", ""]
 - !private ["s23CustomStringConvertibleP", "desc"]
+- !private ["s23CustomStringConvertibleP", "id"]
 - !private ["s23CustomStringConvertibleP", "imgBodyDiagram"]
 - !private ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "name"]
@@ -44,6 +47,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "sets"]
 - ["SQ", ""]
 - !private ["SQ", "desc"]
+- !private ["SQ", "id"]
 - !private ["SQ", "imgBodyDiagram"]
 - !private ["SQ", "init"]
 - !private ["SQ", "name"]
@@ -56,6 +60,7 @@ depends-member:
 - ["6GyMate8ExerciseC", "URL"]
 - ["6GyMate8ExerciseC", "deinit"]
 - ["6GyMate8ExerciseC", "desc"]
+- ["6GyMate8ExerciseC", "id"]
 - ["6GyMate8ExerciseC", "imgBodyDiagram"]
 - ["6GyMate8ExerciseC", "init"]
 - ["6GyMate8ExerciseC", "name"]
@@ -64,6 +69,7 @@ depends-member:
 - ["6GyMate8ExerciseC", "sets"]
 - ["SH", ""]
 - !private ["SH", "desc"]
+- !private ["SH", "id"]
 - !private ["SH", "imgBodyDiagram"]
 - !private ["SH", "init"]
 - !private ["SH", "name"]
@@ -76,6 +82,7 @@ depends-member:
 - ["So8NSObjectC", "URL"]
 - ["So8NSObjectC", ""]
 - ["So8NSObjectC", "desc"]
+- ["So8NSObjectC", "id"]
 - ["So8NSObjectC", "imgBodyDiagram"]
 - ["So8NSObjectC", "init"]
 - ["So8NSObjectC", "name"]
@@ -84,6 +91,7 @@ depends-member:
 - ["So8NSObjectC", "sets"]
 - ["So8NSObjectP", ""]
 - !private ["So8NSObjectP", "desc"]
+- !private ["So8NSObjectP", "id"]
 - !private ["So8NSObjectP", "imgBodyDiagram"]
 - !private ["So8NSObjectP", "init"]
 - !private ["So8NSObjectP", "name"]
@@ -92,6 +100,7 @@ depends-member:
 - !private ["So8NSObjectP", "sets"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "desc"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "id"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "imgBodyDiagram"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "name"]
@@ -100,6 +109,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "sets"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", ""]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "desc"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "id"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "imgBodyDiagram"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "init"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "name"]
@@ -1378,4 +1388,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "29e8b5045a6e2f1804213dbe94a78476"
+interface-hash: "66742bcdb472333f955823c2abeec7dc"

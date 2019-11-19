@@ -13,12 +13,13 @@ class Exercise: NSObject {
     var id : Int
     var name : String
     var desc : String
-    var imgBodyDiagram : URL
+    var imgBodyDiagram : String
     var sets : Int
     var reps : Int
     var restPeriod : Double
     
-    init(name : String, desc : String, imgBodyDiagram : URL, sets : Int, reps : Int, restPeriod : Double) {
+    init(id : Int, name : String, desc : String, imgBodyDiagram : String, sets : Int, reps : Int, restPeriod : Double) {
+        self.id = id
         self.name = name
         self.desc = desc
         self.imgBodyDiagram = imgBodyDiagram
