@@ -6,34 +6,6 @@
 	<integer>10</integer>
 	<key>logs</key>
 	<dict>
-		<key>1BE1D22C-131D-45BA-BE08-C7ACA1ECCB4B</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogMajorGroupSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.target.product-type.application</string>
-			<key>fileName</key>
-			<string>1BE1D22C-131D-45BA-BE08-C7ACA1ECCB4B.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-			</dict>
-			<key>signature</key>
-			<string>GyMate-fdtovkmtepullvcwkkcpqplnbjxe</string>
-			<key>timeStartedRecording</key>
-			<real>595887217.69739401</real>
-			<key>timeStoppedRecording</key>
-			<real>595887227.57389295</real>
-			<key>title</key>
-			<string>Build target GyMate</string>
-			<key>uniqueIdentifier</key>
-			<string>1BE1D22C-131D-45BA-BE08-C7ACA1ECCB4B</string>
-		</dict>
 		<key>5B2F7735-1182-4BB1-85E2-F34282D603D8</key>
 		<dict>
 			<key>className</key>
@@ -341,6 +313,34 @@
 			<string>Build target FirebaseCore</string>
 			<key>uniqueIdentifier</key>
 			<string>E6044C6F-AEA5-472C-A23A-0599CF35F287</string>
+		</dict>
+		<key>FE71165D-7EF7-417D-B73D-2FD60EBA6E38</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogMajorGroupSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.target.product-type.application</string>
+			<key>fileName</key>
+			<string>FE71165D-7EF7-417D-B73D-2FD60EBA6E38.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>signature</key>
+			<string>GyMate-fdtovkmtepullvcwkkcpqplnbjxe</string>
+			<key>timeStartedRecording</key>
+			<real>596040612.18856704</real>
+			<key>timeStoppedRecording</key>
+			<real>596040621.67060399</real>
+			<key>title</key>
+			<string>Build target GyMate</string>
+			<key>uniqueIdentifier</key>
+			<string>FE71165D-7EF7-417D-B73D-2FD60EBA6E38</string>
 		</dict>
 	</dict>
 	<key>preserveOldLogs</key>
