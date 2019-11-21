@@ -9,9 +9,13 @@
 import UIKit
 import Firebase
 
-class PasswordResetViewController: UIViewController {
+class PasswordResetViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet var txtEmail : UITextField!
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        return textField.resignFirstResponder()
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

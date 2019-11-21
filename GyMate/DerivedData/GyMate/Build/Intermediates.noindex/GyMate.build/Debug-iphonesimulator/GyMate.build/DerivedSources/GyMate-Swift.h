@@ -221,6 +221,13 @@ SWIFT_CLASS("_TtC6GyMate12BodyTypeQuiz")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+
+SWIFT_CLASS("_TtC6GyMate8Exercise")
+@interface Exercise : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
 @class UITextField;
 @class UIStoryboardSegue;
 @class UIButton;
@@ -228,9 +235,10 @@ SWIFT_CLASS("_TtC6GyMate12BodyTypeQuiz")
 @class NSCoder;
 
 SWIFT_CLASS("_TtC6GyMate19LoginViewController")
-@interface LoginViewController : UIViewController
+@interface LoginViewController : UIViewController <UITextFieldDelegate>
 @property (nonatomic, strong) IBOutlet UITextField * _Null_unspecified txtUsername;
 @property (nonatomic, strong) IBOutlet UITextField * _Null_unspecified txtPassword;
+- (BOOL)textFieldShouldReturn:(UITextField * _Nonnull)textField SWIFT_WARN_UNUSED_RESULT;
 - (void)viewDidLoad;
 - (IBAction)rewindToLoginVCWithSender:(UIStoryboardSegue * _Null_unspecified)sender;
 - (IBAction)performLoginWithSender:(UIButton * _Null_unspecified)sender;
@@ -255,8 +263,9 @@ SWIFT_CLASS("_TtC6GyMate32ManualTypeSelectorViewController")
 
 
 SWIFT_CLASS("_TtC6GyMate27PasswordResetViewController")
-@interface PasswordResetViewController : UIViewController
+@interface PasswordResetViewController : UIViewController <UITextFieldDelegate>
 @property (nonatomic, strong) IBOutlet UITextField * _Null_unspecified txtEmail;
+- (BOOL)textFieldShouldReturn:(UITextField * _Nonnull)textField SWIFT_WARN_UNUSED_RESULT;
 - (void)viewDidLoad;
 - (IBAction)sendPasswordResetWithSender:(UIButton * _Null_unspecified)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
@@ -330,6 +339,13 @@ SWIFT_CLASS("_TtC6GyMate20SignUpViewController")
 - (IBAction)userWantsSignUpWithSender:(UIButton * _Null_unspecified)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC6GyMate7Workout")
+@interface Workout : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 #if __has_attribute(external_source_symbol)

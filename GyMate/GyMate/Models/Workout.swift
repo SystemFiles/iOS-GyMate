@@ -10,7 +10,6 @@ import UIKit
 
 class Workout: NSObject {
 
-    
     var ID : Int
     var name : String
     var desc : String
@@ -25,9 +24,56 @@ class Workout: NSObject {
         self.exercises = exercises
     }
     
-    
     func addExercise(exercise : Exercise) {
         self.exercises.append(exercise)
     }
     
+    static func deserializeWorkout(workoutDict : NSMutableDictionary!) -> Workout {
+        // Build workout object
+        let workoutObj : Workout = Workout(ID: workoutDict!["id"] as! Int, name: workoutDict!["name"] as! String, desc: workoutDict!["desc"] as! String, time: workoutDict!["time"] as! Double, exercises : [])
+        
+        // Build exercise list in workout
+        for exerciseDict in (workoutDict!["exercises"] as! [NSMutableDictionary]) {
+            let curExercise = Exercise(id: exerciseDict["id"] as! Int, name: exerciseDict["name"] as! String, desc: exerciseDict["desc"] as! String, imgBodyDiagram: exerciseDict["imgBodyDiagram"] as! String, sets: exerciseDict["sets"] as! Int, reps: exerciseDict["reps"] as! Int, restPeriod: exerciseDict["restPeriod"] as! Double)
+            
+            // Add the exercise to the workout
+            workoutObj.exercises.append(curExercise)
+        }
+        
+        return workoutObj
+    }
+    
+    func getFBSerializedFormat() -> NSMutableDictionary {
+        // Build serialized workout object
+        let workoutObj : NSMutableDictionary = [
+            "id" : self.ID,
+            "name" : self.name,
+            "desc" : self.desc,
+            "time" : self.time,
+            "exercises" : []
+        ]
+        
+        var serializedExercises : [NSMutableDictionary] = []
+        
+        // Go through all exercises in workout and serialize them for Firebase
+        for exercise in exercises {
+            let serializedObj : NSMutableDictionary = [
+                "id" : exercise.id,
+                "name" : exercise.name,
+                "desc" : exercise.desc,
+                "imgBodyDiagram" : exercise.imgBodyDiagram,
+                "sets" : exercise.sets,
+                "reps" : exercise.reps,
+                "restPeriod" : exercise.restPeriod
+            ]
+            
+            // Add the exercise to the array
+            serializedExercises.append(serializedObj)
+        }
+        
+        // Add the list of exercises in the workout to the serialized workout object
+        workoutObj["exercises"] = serializedExercises
+        
+        return workoutObj
+    }
 }

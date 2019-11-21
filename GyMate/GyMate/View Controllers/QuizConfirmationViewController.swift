@@ -26,6 +26,25 @@ class QuizConfirmationViewController: UIViewController {
         // Change quiz completion to done for user
         let mainDelegate : AppDelegate = UIApplication.shared.delegate as! AppDelegate
         mainDelegate.userRef.child(Auth.auth().currentUser!.uid).child("quizDone").setValue(true)
+        let ref = mainDelegate.userRef.child(Auth.auth().currentUser!.uid)
+        
+        // Assign a pre-built workout to the user
+        ref.observeSingleEvent(of: .value, with: { snapshot in
+            let bodyType : String = snapshot.childSnapshot(forPath: "bodyType").value as! String
+            
+            switch bodyType {
+            case "ECTOMORPH":
+                ref.child("workouts").child("recommended").setValue(mainDelegate.predefinedWorkouts[0].getFBSerializedFormat())
+            case "MESOMORPH":
+                ref.child("workouts").child("recommended").setValue(mainDelegate.predefinedWorkouts[1].getFBSerializedFormat())
+            case "ENDOMORPH":
+                ref.child("workouts").child("recommended").setValue(mainDelegate.predefinedWorkouts[2].getFBSerializedFormat())
+            default :
+                print("Error: Had trouble assigning workout to user...ignoring it :/")
+            }
+            
+            
+        })
         
         // Move to dashboard
         self.performSegue(withIdentifier: "QuizToDashboardSegue", sender: nil)

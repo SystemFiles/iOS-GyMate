@@ -16,6 +16,8 @@ depends-top-level:
 - !private "Auth"
 - !private "BooleanLiteralType"
 - "CastingPrecedence"
+- "FloatLiteralType"
+- "IntegerLiteralType"
 - "QuizConfirmationViewController"
 - !private "String"
 - !private "StringLiteralType"
@@ -23,10 +25,17 @@ depends-top-level:
 - "UILabel"
 - "UIStoryboardSegue"
 - "UIViewController"
+- !private "print"
+- !private "~="
 depends-member:
+- !private ["6GyMate11AppDelegateC", "predefinedWorkouts"]
 - !private ["6GyMate11AppDelegateC", "userRef"]
+- !private ["Sa", "subscript"]
+- !private ["s10ArraySliceV", "getFBSerializedFormat"]
 - !private ["So7FIRAuthC", "auth"]
 - !private ["So7FIRAuthC", "currentUser"]
+- !private ["SK", "getFBSerializedFormat"]
+- !private ["SK", "subscript"]
 - !private ["So15CALayerDelegateP", "text"]
 - !private ["s7CVarArgP", "Auth"]
 - !private ["s7CVarArgP", "UIApplication"]
@@ -36,18 +45,26 @@ depends-member:
 - !private ["s7CVarArgP", "childSnapshot"]
 - !private ["s7CVarArgP", "currentUser"]
 - !private ["s7CVarArgP", "delegate"]
+- !private ["s7CVarArgP", "getFBSerializedFormat"]
 - !private ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "lbBodyType"]
 - !private ["s7CVarArgP", "observeSingleEvent"]
 - !private ["s7CVarArgP", "performSegue"]
+- !private ["s7CVarArgP", "predefinedWorkouts"]
+- !private ["s7CVarArgP", "print"]
 - !private ["s7CVarArgP", "setValue"]
 - !private ["s7CVarArgP", "shared"]
+- !private ["s7CVarArgP", "subscript"]
 - !private ["s7CVarArgP", "text"]
 - !private ["s7CVarArgP", "uid"]
 - !private ["s7CVarArgP", "updateBodyTypeLabelFromDB"]
 - !private ["s7CVarArgP", "userRef"]
 - !private ["s7CVarArgP", "value"]
 - !private ["s7CVarArgP", "viewDidLoad"]
+- !private ["Sl", "getFBSerializedFormat"]
+- !private ["Sl", "subscript"]
+- !private ["10Foundation15ContiguousBytesP", "getFBSerializedFormat"]
+- !private ["10Foundation15ContiguousBytesP", "subscript"]
 - !private ["s28CustomDebugStringConvertibleP", "Auth"]
 - !private ["s28CustomDebugStringConvertibleP", "UIApplication"]
 - ["s28CustomDebugStringConvertibleP", ""]
@@ -56,12 +73,16 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "childSnapshot"]
 - !private ["s28CustomDebugStringConvertibleP", "currentUser"]
 - !private ["s28CustomDebugStringConvertibleP", "delegate"]
+- !private ["s28CustomDebugStringConvertibleP", "getFBSerializedFormat"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "lbBodyType"]
 - !private ["s28CustomDebugStringConvertibleP", "observeSingleEvent"]
 - !private ["s28CustomDebugStringConvertibleP", "performSegue"]
+- !private ["s28CustomDebugStringConvertibleP", "predefinedWorkouts"]
+- !private ["s28CustomDebugStringConvertibleP", "print"]
 - !private ["s28CustomDebugStringConvertibleP", "setValue"]
 - !private ["s28CustomDebugStringConvertibleP", "shared"]
+- !private ["s28CustomDebugStringConvertibleP", "subscript"]
 - !private ["s28CustomDebugStringConvertibleP", "text"]
 - !private ["s28CustomDebugStringConvertibleP", "uid"]
 - !private ["s28CustomDebugStringConvertibleP", "updateBodyTypeLabelFromDB"]
@@ -69,6 +90,8 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "value"]
 - !private ["s28CustomDebugStringConvertibleP", "viewDidLoad"]
 - !private ["s17CustomReflectableP", "child"]
+- !private ["s17CustomReflectableP", "getFBSerializedFormat"]
+- !private ["s17CustomReflectableP", "subscript"]
 - !private ["s17CustomReflectableP", "text"]
 - !private ["s23CustomStringConvertibleP", "Auth"]
 - !private ["s23CustomStringConvertibleP", "UIApplication"]
@@ -78,12 +101,16 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "childSnapshot"]
 - !private ["s23CustomStringConvertibleP", "currentUser"]
 - !private ["s23CustomStringConvertibleP", "delegate"]
+- !private ["s23CustomStringConvertibleP", "getFBSerializedFormat"]
 - !private ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "lbBodyType"]
 - !private ["s23CustomStringConvertibleP", "observeSingleEvent"]
 - !private ["s23CustomStringConvertibleP", "performSegue"]
+- !private ["s23CustomStringConvertibleP", "predefinedWorkouts"]
+- !private ["s23CustomStringConvertibleP", "print"]
 - !private ["s23CustomStringConvertibleP", "setValue"]
 - !private ["s23CustomStringConvertibleP", "shared"]
+- !private ["s23CustomStringConvertibleP", "subscript"]
 - !private ["s23CustomStringConvertibleP", "text"]
 - !private ["s23CustomStringConvertibleP", "uid"]
 - !private ["s23CustomStringConvertibleP", "updateBodyTypeLabelFromDB"]
@@ -91,6 +118,8 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "value"]
 - !private ["s23CustomStringConvertibleP", "viewDidLoad"]
 - !private ["So16FIRDataEventTypeV", "value"]
+- !private ["10Foundation12DataProtocolP", "getFBSerializedFormat"]
+- !private ["10Foundation12DataProtocolP", "subscript"]
 - !private ["So15FIRDataSnapshotC", "childSnapshot"]
 - !private ["So15FIRDataSnapshotC", "value"]
 - !private ["So16FIRDatabaseQueryC", "child"]
@@ -100,8 +129,10 @@ depends-member:
 - !private ["So20FIRDatabaseReferenceC", "observeSingleEvent"]
 - !private ["So20FIRDatabaseReferenceC", "setValue"]
 - !private ["Se", "child"]
+- !private ["Se", "subscript"]
 - !private ["Se", "text"]
 - !private ["SE", "child"]
+- !private ["SE", "subscript"]
 - !private ["SE", "text"]
 - !private ["SQ", "Auth"]
 - !private ["SQ", "UIApplication"]
@@ -111,19 +142,26 @@ depends-member:
 - !private ["SQ", "childSnapshot"]
 - !private ["SQ", "currentUser"]
 - !private ["SQ", "delegate"]
+- !private ["SQ", "getFBSerializedFormat"]
 - !private ["SQ", "init"]
 - !private ["SQ", "lbBodyType"]
 - !private ["SQ", "observeSingleEvent"]
 - !private ["SQ", "performSegue"]
+- !private ["SQ", "predefinedWorkouts"]
+- !private ["SQ", "print"]
 - !private ["SQ", "setValue"]
 - !private ["SQ", "shared"]
+- !private ["SQ", "subscript"]
 - !private ["SQ", "text"]
 - !private ["SQ", "uid"]
 - !private ["SQ", "updateBodyTypeLabelFromDB"]
 - !private ["SQ", "userRef"]
 - !private ["SQ", "value"]
 - !private ["SQ", "viewDidLoad"]
+- !private ["s25ExpressibleByArrayLiteralP", "getFBSerializedFormat"]
+- !private ["s25ExpressibleByArrayLiteralP", "subscript"]
 - !private ["s23ExpressibleByNilLiteralP", "child"]
+- !private ["s23ExpressibleByNilLiteralP", "subscript"]
 - !private ["s23ExpressibleByNilLiteralP", "text"]
 - !private ["SH", "Auth"]
 - !private ["SH", "UIApplication"]
@@ -133,24 +171,33 @@ depends-member:
 - !private ["SH", "childSnapshot"]
 - !private ["SH", "currentUser"]
 - !private ["SH", "delegate"]
+- !private ["SH", "getFBSerializedFormat"]
 - !private ["SH", "init"]
 - !private ["SH", "lbBodyType"]
 - !private ["SH", "observeSingleEvent"]
 - !private ["SH", "performSegue"]
+- !private ["SH", "predefinedWorkouts"]
+- !private ["SH", "print"]
 - !private ["SH", "setValue"]
 - !private ["SH", "shared"]
+- !private ["SH", "subscript"]
 - !private ["SH", "text"]
 - !private ["SH", "uid"]
 - !private ["SH", "updateBodyTypeLabelFromDB"]
 - !private ["SH", "userRef"]
 - !private ["SH", "value"]
 - !private ["SH", "viewDidLoad"]
+- !private ["s20LazySequenceProtocolP", "getFBSerializedFormat"]
+- !private ["SM", "getFBSerializedFormat"]
+- !private ["SM", "subscript"]
+- !private ["10Foundation19MutableDataProtocolP", "subscript"]
 - !private ["So8NSCodingP", "Auth"]
 - !private ["So8NSCodingP", "UIApplication"]
 - ["So8NSCodingP", ""]
 - !private ["So8NSCodingP", "init"]
 - !private ["So8NSCodingP", "lbBodyType"]
 - !private ["So8NSCodingP", "performSegue"]
+- !private ["So8NSCodingP", "print"]
 - !private ["So8NSCodingP", "text"]
 - !private ["So8NSCodingP", "updateBodyTypeLabelFromDB"]
 - !private ["So8NSCodingP", "viewDidLoad"]
@@ -160,6 +207,7 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "init"]
 - !private ["So26NSExtensionRequestHandlingP", "lbBodyType"]
 - !private ["So26NSExtensionRequestHandlingP", "performSegue"]
+- !private ["So26NSExtensionRequestHandlingP", "print"]
 - !private ["So26NSExtensionRequestHandlingP", "updateBodyTypeLabelFromDB"]
 - !private ["So26NSExtensionRequestHandlingP", "viewDidLoad"]
 - !private ["So8NSObjectC", "AppDelegate"]
@@ -174,10 +222,13 @@ depends-member:
 - ["So8NSObjectC", "confirmQuizResults"]
 - !private ["So8NSObjectC", "currentUser"]
 - !private ["So8NSObjectC", "delegate"]
+- !private ["So8NSObjectC", "getFBSerializedFormat"]
 - ["So8NSObjectC", "init"]
 - ["So8NSObjectC", "lbBodyType"]
 - !private ["So8NSObjectC", "observeSingleEvent"]
 - !private ["So8NSObjectC", "performSegue"]
+- !private ["So8NSObjectC", "predefinedWorkouts"]
+- !private ["So8NSObjectC", "print"]
 - ["So8NSObjectC", "rewindToQuizConfirmationVC"]
 - !private ["So8NSObjectC", "setValue"]
 - !private ["So8NSObjectC", "shared"]
@@ -195,10 +246,13 @@ depends-member:
 - !private ["So8NSObjectP", "childSnapshot"]
 - !private ["So8NSObjectP", "currentUser"]
 - !private ["So8NSObjectP", "delegate"]
+- !private ["So8NSObjectP", "getFBSerializedFormat"]
 - !private ["So8NSObjectP", "init"]
 - !private ["So8NSObjectP", "lbBodyType"]
 - !private ["So8NSObjectP", "observeSingleEvent"]
 - !private ["So8NSObjectP", "performSegue"]
+- !private ["So8NSObjectP", "predefinedWorkouts"]
+- !private ["So8NSObjectP", "print"]
 - !private ["So8NSObjectP", "setValue"]
 - !private ["So8NSObjectP", "shared"]
 - !private ["So8NSObjectP", "text"]
@@ -208,6 +262,7 @@ depends-member:
 - !private ["So8NSObjectP", "value"]
 - !private ["So8NSObjectP", "viewDidLoad"]
 - !private ["Sq", "child"]
+- !private ["Sq", "subscript"]
 - !private ["Sq", "text"]
 - !private ["6GyMate30QuizConfirmationViewControllerC", "AppDelegate"]
 - !private ["6GyMate30QuizConfirmationViewControllerC", "Auth"]
@@ -220,10 +275,18 @@ depends-member:
 - ["6GyMate30QuizConfirmationViewControllerC", "init"]
 - ["6GyMate30QuizConfirmationViewControllerC", "lbBodyType"]
 - !private ["6GyMate30QuizConfirmationViewControllerC", "performSegue"]
+- !private ["6GyMate30QuizConfirmationViewControllerC", "print"]
 - ["6GyMate30QuizConfirmationViewControllerC", "rewindToQuizConfirmationVC"]
 - ["6GyMate30QuizConfirmationViewControllerC", "updateBodyTypeLabelFromDB"]
 - ["6GyMate30QuizConfirmationViewControllerC", "viewDidLoad"]
+- !private ["Sk", "getFBSerializedFormat"]
+- !private ["Sk", "subscript"]
+- !private ["Sm", "getFBSerializedFormat"]
+- !private ["Sm", "subscript"]
 - !private ["SY", "value"]
+- !private ["ST", "getFBSerializedFormat"]
+- !private ["ST", "subscript"]
+- !private ["s5SliceV", "getFBSerializedFormat"]
 - !private ["So29UIAccessibilityIdentificationP", "text"]
 - !private ["So12UIAppearanceP", "text"]
 - !private ["So21UIAppearanceContainerP", "Auth"]
@@ -232,11 +295,13 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "init"]
 - !private ["So21UIAppearanceContainerP", "lbBodyType"]
 - !private ["So21UIAppearanceContainerP", "performSegue"]
+- !private ["So21UIAppearanceContainerP", "print"]
 - !private ["So21UIAppearanceContainerP", "text"]
 - !private ["So21UIAppearanceContainerP", "updateBodyTypeLabelFromDB"]
 - !private ["So21UIAppearanceContainerP", "viewDidLoad"]
 - !private ["So13UIApplicationC", "delegate"]
 - !private ["So13UIApplicationC", "shared"]
+- !private ["So21UIApplicationDelegateP", "predefinedWorkouts"]
 - !private ["So21UIApplicationDelegateP", "userRef"]
 - !private ["So18UIContentContainerP", "Auth"]
 - !private ["So18UIContentContainerP", "UIApplication"]
@@ -244,6 +309,7 @@ depends-member:
 - !private ["So18UIContentContainerP", "init"]
 - !private ["So18UIContentContainerP", "lbBodyType"]
 - !private ["So18UIContentContainerP", "performSegue"]
+- !private ["So18UIContentContainerP", "print"]
 - !private ["So18UIContentContainerP", "updateBodyTypeLabelFromDB"]
 - !private ["So18UIContentContainerP", "viewDidLoad"]
 - !private ["So30UIContentSizeCategoryAdjustingP", "text"]
@@ -255,6 +321,7 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "init"]
 - !private ["So18UIFocusEnvironmentP", "lbBodyType"]
 - !private ["So18UIFocusEnvironmentP", "performSegue"]
+- !private ["So18UIFocusEnvironmentP", "print"]
 - !private ["So18UIFocusEnvironmentP", "text"]
 - !private ["So18UIFocusEnvironmentP", "updateBodyTypeLabelFromDB"]
 - !private ["So18UIFocusEnvironmentP", "viewDidLoad"]
@@ -269,6 +336,8 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "init"]
 - !private ["So30UIPasteConfigurationSupportingP", "lbBodyType"]
 - !private ["So30UIPasteConfigurationSupportingP", "performSegue"]
+- !private ["So30UIPasteConfigurationSupportingP", "predefinedWorkouts"]
+- !private ["So30UIPasteConfigurationSupportingP", "print"]
 - !private ["So30UIPasteConfigurationSupportingP", "shared"]
 - !private ["So30UIPasteConfigurationSupportingP", "text"]
 - !private ["So30UIPasteConfigurationSupportingP", "updateBodyTypeLabelFromDB"]
@@ -285,6 +354,8 @@ depends-member:
 - ["So11UIResponderC", "init"]
 - ["So11UIResponderC", "lbBodyType"]
 - !private ["So11UIResponderC", "performSegue"]
+- !private ["So11UIResponderC", "predefinedWorkouts"]
+- !private ["So11UIResponderC", "print"]
 - ["So11UIResponderC", "rewindToQuizConfirmationVC"]
 - !private ["So11UIResponderC", "shared"]
 - !private ["So11UIResponderC", "text"]
@@ -298,6 +369,8 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "init"]
 - !private ["So30UIResponderStandardEditActionsP", "lbBodyType"]
 - !private ["So30UIResponderStandardEditActionsP", "performSegue"]
+- !private ["So30UIResponderStandardEditActionsP", "predefinedWorkouts"]
+- !private ["So30UIResponderStandardEditActionsP", "print"]
 - !private ["So30UIResponderStandardEditActionsP", "shared"]
 - !private ["So30UIResponderStandardEditActionsP", "text"]
 - !private ["So30UIResponderStandardEditActionsP", "updateBodyTypeLabelFromDB"]
@@ -309,6 +382,7 @@ depends-member:
 - !private ["So16UIStateRestoringP", "init"]
 - !private ["So16UIStateRestoringP", "lbBodyType"]
 - !private ["So16UIStateRestoringP", "performSegue"]
+- !private ["So16UIStateRestoringP", "print"]
 - !private ["So16UIStateRestoringP", "updateBodyTypeLabelFromDB"]
 - !private ["So16UIStateRestoringP", "viewDidLoad"]
 - !private ["So18UITraitEnvironmentP", "Auth"]
@@ -317,6 +391,7 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "init"]
 - !private ["So18UITraitEnvironmentP", "lbBodyType"]
 - !private ["So18UITraitEnvironmentP", "performSegue"]
+- !private ["So18UITraitEnvironmentP", "print"]
 - !private ["So18UITraitEnvironmentP", "text"]
 - !private ["So18UITraitEnvironmentP", "updateBodyTypeLabelFromDB"]
 - !private ["So18UITraitEnvironmentP", "viewDidLoad"]
@@ -327,6 +402,8 @@ depends-member:
 - !private ["So23UIUserActivityRestoringP", "init"]
 - !private ["So23UIUserActivityRestoringP", "lbBodyType"]
 - !private ["So23UIUserActivityRestoringP", "performSegue"]
+- !private ["So23UIUserActivityRestoringP", "predefinedWorkouts"]
+- !private ["So23UIUserActivityRestoringP", "print"]
 - !private ["So23UIUserActivityRestoringP", "shared"]
 - !private ["So23UIUserActivityRestoringP", "text"]
 - !private ["So23UIUserActivityRestoringP", "updateBodyTypeLabelFromDB"]
@@ -344,11 +421,19 @@ depends-member:
 - ["So16UIViewControllerC", "init"]
 - ["So16UIViewControllerC", "lbBodyType"]
 - !private ["So16UIViewControllerC", "performSegue"]
+- !private ["So16UIViewControllerC", "print"]
 - ["So16UIViewControllerC", "rewindToQuizConfirmationVC"]
 - ["So16UIViewControllerC", "updateBodyTypeLabelFromDB"]
 - ["So16UIViewControllerC", "viewDidLoad"]
 - !private ["So7FIRUserC", "uid"]
 - !private ["So11FIRUserInfoP", "uid"]
+- !private ["6GyMate7WorkoutC", "getFBSerializedFormat"]
+- !private ["s14_ArrayProtocolP", "getFBSerializedFormat"]
+- !private ["s14_ArrayProtocolP", "subscript"]
+- !private ["s24_DestructorSafeContainerP", "getFBSerializedFormat"]
+- !private ["s24_DestructorSafeContainerP", "subscript"]
+- !private ["s19_HasContiguousBytesP", "subscript"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "subscript"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "Auth"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIApplication"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
@@ -357,10 +442,13 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "childSnapshot"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "currentUser"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "delegate"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "getFBSerializedFormat"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "lbBodyType"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "observeSingleEvent"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "performSegue"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "predefinedWorkouts"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "print"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "setValue"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "shared"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "text"]
@@ -377,10 +465,13 @@ depends-member:
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "childSnapshot"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "currentUser"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "delegate"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "getFBSerializedFormat"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "init"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "lbBodyType"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "observeSingleEvent"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "performSegue"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "predefinedWorkouts"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "print"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "setValue"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "shared"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "text"]
@@ -390,32 +481,47 @@ depends-member:
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "value"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "viewDidLoad"]
 - !private ["s21_ObjectiveCBridgeableP", "child"]
+- !private ["s21_ObjectiveCBridgeableP", "subscript"]
 - !private ["s21_ObjectiveCBridgeableP", "text"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "text"]
 depends-nominal:
 - !private "6GyMate11AppDelegateC"
+- !private "Sa"
+- !private "s10ArraySliceV"
 - !private "So7FIRAuthC"
+- !private "SK"
 - !private "So15CALayerDelegateP"
 - "s7CVarArgP"
+- !private "Sl"
+- !private "10Foundation15ContiguousBytesP"
 - "s28CustomDebugStringConvertibleP"
 - !private "s17CustomReflectableP"
 - "s23CustomStringConvertibleP"
 - !private "So16FIRDataEventTypeV"
+- !private "10Foundation12DataProtocolP"
 - !private "So15FIRDataSnapshotC"
 - !private "So16FIRDatabaseQueryC"
 - !private "So20FIRDatabaseReferenceC"
 - !private "Se"
 - !private "SE"
 - "SQ"
+- !private "s25ExpressibleByArrayLiteralP"
 - !private "s23ExpressibleByNilLiteralP"
 - "SH"
+- !private "s20LazySequenceProtocolP"
+- !private "SM"
+- !private "10Foundation19MutableDataProtocolP"
 - "So8NSCodingP"
 - "So26NSExtensionRequestHandlingP"
 - "So8NSObjectC"
 - "So8NSObjectP"
 - !private "Sq"
 - "6GyMate30QuizConfirmationViewControllerC"
+- !private "Sk"
+- !private "Sm"
 - !private "SY"
+- !private "ST"
+- !private "s5SliceV"
 - !private "So29UIAccessibilityIdentificationP"
 - !private "So12UIAppearanceP"
 - "So21UIAppearanceContainerP"
@@ -440,6 +546,11 @@ depends-nominal:
 - "So16UIViewControllerC"
 - !private "So7FIRUserC"
 - !private "So11FIRUserInfoP"
+- !private "6GyMate7WorkoutC"
+- !private "s14_ArrayProtocolP"
+- !private "s24_DestructorSafeContainerP"
+- !private "s19_HasContiguousBytesP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
 - "10Foundation27_KeyValueCodingAndObservingP"
 - "10Foundation37_KeyValueCodingAndObservingPublishingP"
 - !private "s21_ObjectiveCBridgeableP"

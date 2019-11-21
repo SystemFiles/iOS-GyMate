@@ -12,7 +12,7 @@
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "GyMate",
   "DVTSourceControlWorkspaceBlueprintVersion" : 204,
-  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "GyMate\/GyMate.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "GyMate\/GyMate.xcworkspace",
   "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/SystemFiles\/iOS-GyMate.git",
