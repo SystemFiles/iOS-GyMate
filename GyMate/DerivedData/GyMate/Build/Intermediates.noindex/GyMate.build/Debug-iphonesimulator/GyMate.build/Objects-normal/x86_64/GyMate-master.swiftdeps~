@@ -1,14 +1,14 @@
 version: "Apple Swift version 5.1.2 (swiftlang-1100.0.278 clang-1100.0.33.9)"
 options: "cac4555f8e3bf7401544dd3c82c5938c"
-build_time: [1574194417, 819492000]
+build_time: [1574348577, 786505000]
 inputs:
-  "/Users/bensykes/DATASYNC/school/Sem5Courses/AdvancedMobileApp/Final Project/GyMate-Application/GyMate/GyMate/View Controllers/LoginViewController.swift": [1574026623, 898068459]
+  "/Users/bensykes/DATASYNC/school/Sem5Courses/AdvancedMobileApp/Final Project/GyMate-Application/GyMate/GyMate/View Controllers/LoginViewController.swift": [1574348577, 690724548]
   "/Users/bensykes/DATASYNC/school/Sem5Courses/AdvancedMobileApp/Final Project/GyMate-Application/GyMate/GyMate/View Controllers/ManualTypeSelectorViewController.swift": [1574026159, 190801570]
   "/Users/bensykes/DATASYNC/school/Sem5Courses/AdvancedMobileApp/Final Project/GyMate-Application/GyMate/GyMate/Models/Question.swift": [1574123609, 799105413]
-  "/Users/bensykes/DATASYNC/school/Sem5Courses/AdvancedMobileApp/Final Project/GyMate-Application/GyMate/GyMate/View Controllers/PasswordResetViewController.swift": [1574026159, 190975259]
+  "/Users/bensykes/DATASYNC/school/Sem5Courses/AdvancedMobileApp/Final Project/GyMate-Application/GyMate/GyMate/View Controllers/PasswordResetViewController.swift": [1574348576, 219874517]
   "/Users/bensykes/DATASYNC/school/Sem5Courses/AdvancedMobileApp/Final Project/GyMate-Application/GyMate/GyMate/Models/Workout.swift": [1574127666, 7565143]
   "/Users/bensykes/DATASYNC/school/Sem5Courses/AdvancedMobileApp/Final Project/GyMate-Application/GyMate/GyMate/View Controllers/QuizViewController.swift": [1574026159, 191271282]
-  "/Users/bensykes/DATASYNC/school/Sem5Courses/AdvancedMobileApp/Final Project/GyMate-Application/GyMate/GyMate/Models/AppDelegate.swift": [1574193719, 544967448]
+  "/Users/bensykes/DATASYNC/school/Sem5Courses/AdvancedMobileApp/Final Project/GyMate-Application/GyMate/GyMate/Models/AppDelegate.swift": [1574347874, 924542110]
   "/Users/bensykes/DATASYNC/school/Sem5Courses/AdvancedMobileApp/Final Project/GyMate-Application/GyMate/GyMate/Models/BodyTypeQuiz.swift": [1574026159, 189127645]
   "/Users/bensykes/DATASYNC/school/Sem5Courses/AdvancedMobileApp/Final Project/GyMate-Application/GyMate/GyMate/View Controllers/SignUpViewController.swift": [1574026159, 191396667]
   "/Users/bensykes/DATASYNC/school/Sem5Courses/AdvancedMobileApp/Final Project/GyMate-Application/GyMate/GyMate/Models/Exercise.swift": [1574126524, 359435132]

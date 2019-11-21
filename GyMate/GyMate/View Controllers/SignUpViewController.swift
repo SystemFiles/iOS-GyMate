@@ -17,7 +17,7 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet var txtConfirmPassword : UITextField!
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        return true
+        return textField.resignFirstResponder()
     }
     
     override func viewDidLoad() {

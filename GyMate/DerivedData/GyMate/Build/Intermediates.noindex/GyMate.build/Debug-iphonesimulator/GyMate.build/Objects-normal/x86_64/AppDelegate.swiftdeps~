@@ -59,11 +59,10 @@ depends-member:
 - ["6GyMate11AppDelegateC", "endoWorkout"]
 - ["6GyMate11AppDelegateC", "init"]
 - ["6GyMate11AppDelegateC", "mesoWorkout"]
+- ["6GyMate11AppDelegateC", "predefinedWorkouts"]
 - ["6GyMate11AppDelegateC", "setWorkouts"]
 - ["6GyMate11AppDelegateC", "userRef"]
 - ["6GyMate11AppDelegateC", "window"]
-- !private ["Sa", "append"]
-- !private ["SK", "append"]
 - ["s7CVarArgP", "ConnectionOptions"]
 - !private ["s7CVarArgP", "Database"]
 - !private ["s7CVarArgP", "Exercise"]
@@ -72,7 +71,7 @@ depends-member:
 - !private ["s7CVarArgP", "UISceneConfiguration"]
 - !private ["s7CVarArgP", "Workout"]
 - ["s7CVarArgP", ""]
-- !private ["s7CVarArgP", "append"]
+- !private ["s7CVarArgP", "addExercise"]
 - ["s7CVarArgP", "application"]
 - ["s7CVarArgP", "applicationDidBecomeActive"]
 - ["s7CVarArgP", "applicationDidEnterBackground"]
@@ -88,16 +87,16 @@ depends-member:
 - !private ["s7CVarArgP", "configure"]
 - !private ["s7CVarArgP", "database"]
 - !private ["s7CVarArgP", "ectoWorkout"]
-- !private ["s7CVarArgP", "exercises"]
+- !private ["s7CVarArgP", "endoWorkout"]
 - !private ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "isPersistenceEnabled"]
+- !private ["s7CVarArgP", "mesoWorkout"]
+- !private ["s7CVarArgP", "predefinedWorkouts"]
 - !private ["s7CVarArgP", "reference"]
 - !private ["s7CVarArgP", "role"]
 - !private ["s7CVarArgP", "setWorkouts"]
 - !private ["s7CVarArgP", "userRef"]
 - ["s7CVarArgP", "window"]
-- !private ["Sl", "append"]
-- !private ["10Foundation15ContiguousBytesP", "append"]
 - ["s28CustomDebugStringConvertibleP", "ConnectionOptions"]
 - !private ["s28CustomDebugStringConvertibleP", "Database"]
 - !private ["s28CustomDebugStringConvertibleP", "Exercise"]
@@ -106,7 +105,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "UISceneConfiguration"]
 - !private ["s28CustomDebugStringConvertibleP", "Workout"]
 - ["s28CustomDebugStringConvertibleP", ""]
-- !private ["s28CustomDebugStringConvertibleP", "append"]
+- !private ["s28CustomDebugStringConvertibleP", "addExercise"]
 - ["s28CustomDebugStringConvertibleP", "application"]
 - ["s28CustomDebugStringConvertibleP", "applicationDidBecomeActive"]
 - ["s28CustomDebugStringConvertibleP", "applicationDidEnterBackground"]
@@ -122,16 +121,17 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "configure"]
 - !private ["s28CustomDebugStringConvertibleP", "database"]
 - !private ["s28CustomDebugStringConvertibleP", "ectoWorkout"]
-- !private ["s28CustomDebugStringConvertibleP", "exercises"]
+- !private ["s28CustomDebugStringConvertibleP", "endoWorkout"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "isPersistenceEnabled"]
+- !private ["s28CustomDebugStringConvertibleP", "mesoWorkout"]
+- !private ["s28CustomDebugStringConvertibleP", "predefinedWorkouts"]
 - !private ["s28CustomDebugStringConvertibleP", "reference"]
 - !private ["s28CustomDebugStringConvertibleP", "role"]
 - !private ["s28CustomDebugStringConvertibleP", "setWorkouts"]
 - !private ["s28CustomDebugStringConvertibleP", "userRef"]
 - ["s28CustomDebugStringConvertibleP", "window"]
-- !private ["s17CustomReflectableP", "append"]
-- !private ["s17CustomReflectableP", "exercises"]
+- !private ["s17CustomReflectableP", "addExercise"]
 - ["s23CustomStringConvertibleP", "ConnectionOptions"]
 - !private ["s23CustomStringConvertibleP", "Database"]
 - !private ["s23CustomStringConvertibleP", "Exercise"]
@@ -140,7 +140,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "UISceneConfiguration"]
 - !private ["s23CustomStringConvertibleP", "Workout"]
 - ["s23CustomStringConvertibleP", ""]
-- !private ["s23CustomStringConvertibleP", "append"]
+- !private ["s23CustomStringConvertibleP", "addExercise"]
 - ["s23CustomStringConvertibleP", "application"]
 - ["s23CustomStringConvertibleP", "applicationDidBecomeActive"]
 - ["s23CustomStringConvertibleP", "applicationDidEnterBackground"]
@@ -156,22 +156,21 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "configure"]
 - !private ["s23CustomStringConvertibleP", "database"]
 - !private ["s23CustomStringConvertibleP", "ectoWorkout"]
-- !private ["s23CustomStringConvertibleP", "exercises"]
+- !private ["s23CustomStringConvertibleP", "endoWorkout"]
 - !private ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "isPersistenceEnabled"]
+- !private ["s23CustomStringConvertibleP", "mesoWorkout"]
+- !private ["s23CustomStringConvertibleP", "predefinedWorkouts"]
 - !private ["s23CustomStringConvertibleP", "reference"]
 - !private ["s23CustomStringConvertibleP", "role"]
 - !private ["s23CustomStringConvertibleP", "setWorkouts"]
 - !private ["s23CustomStringConvertibleP", "userRef"]
 - ["s23CustomStringConvertibleP", "window"]
-- !private ["10Foundation12DataProtocolP", "append"]
 - !private ["So11FIRDatabaseC", "database"]
 - !private ["So11FIRDatabaseC", "isPersistenceEnabled"]
 - !private ["So11FIRDatabaseC", "reference"]
-- !private ["Se", "append"]
-- !private ["Se", "exercises"]
-- !private ["SE", "append"]
-- !private ["SE", "exercises"]
+- !private ["Se", "addExercise"]
+- !private ["SE", "addExercise"]
 - ["SQ", "ConnectionOptions"]
 - !private ["SQ", "Database"]
 - !private ["SQ", "Exercise"]
@@ -180,7 +179,7 @@ depends-member:
 - !private ["SQ", "UISceneConfiguration"]
 - !private ["SQ", "Workout"]
 - ["SQ", ""]
-- !private ["SQ", "append"]
+- !private ["SQ", "addExercise"]
 - ["SQ", "application"]
 - ["SQ", "applicationDidBecomeActive"]
 - ["SQ", "applicationDidEnterBackground"]
@@ -196,17 +195,18 @@ depends-member:
 - !private ["SQ", "configure"]
 - !private ["SQ", "database"]
 - !private ["SQ", "ectoWorkout"]
-- !private ["SQ", "exercises"]
+- !private ["SQ", "endoWorkout"]
 - !private ["SQ", "init"]
 - !private ["SQ", "isPersistenceEnabled"]
+- !private ["SQ", "mesoWorkout"]
+- !private ["SQ", "predefinedWorkouts"]
 - !private ["SQ", "reference"]
 - !private ["SQ", "role"]
 - !private ["SQ", "setWorkouts"]
 - !private ["SQ", "userRef"]
 - ["SQ", "window"]
 - !private ["6GyMate8ExerciseC", "init"]
-- !private ["s25ExpressibleByArrayLiteralP", "append"]
-- !private ["s23ExpressibleByNilLiteralP", "exercises"]
+- !private ["s23ExpressibleByNilLiteralP", "addExercise"]
 - !private ["So6FIRAppC", "configure"]
 - ["SH", "ConnectionOptions"]
 - !private ["SH", "Database"]
@@ -216,7 +216,7 @@ depends-member:
 - !private ["SH", "UISceneConfiguration"]
 - !private ["SH", "Workout"]
 - ["SH", ""]
-- !private ["SH", "append"]
+- !private ["SH", "addExercise"]
 - ["SH", "application"]
 - ["SH", "applicationDidBecomeActive"]
 - ["SH", "applicationDidEnterBackground"]
@@ -232,16 +232,16 @@ depends-member:
 - !private ["SH", "configure"]
 - !private ["SH", "database"]
 - !private ["SH", "ectoWorkout"]
-- !private ["SH", "exercises"]
+- !private ["SH", "endoWorkout"]
 - !private ["SH", "init"]
 - !private ["SH", "isPersistenceEnabled"]
+- !private ["SH", "mesoWorkout"]
+- !private ["SH", "predefinedWorkouts"]
 - !private ["SH", "reference"]
 - !private ["SH", "role"]
 - !private ["SH", "setWorkouts"]
 - !private ["SH", "userRef"]
 - ["SH", "window"]
-- !private ["SM", "append"]
-- !private ["10Foundation19MutableDataProtocolP", "append"]
 - !private ["So8NSCodingP", "init"]
 - !private ["So8NSCodingP", "role"]
 - !private ["So9NSCopyingP", "init"]
@@ -259,6 +259,7 @@ depends-member:
 - ["So8NSObjectC", "UISceneSession"]
 - ["So8NSObjectC", "UIWindow"]
 - ["So8NSObjectC", "Workout"]
+- !private ["So8NSObjectC", "addExercise"]
 - ["So8NSObjectC", "application"]
 - ["So8NSObjectC", "applicationDidBecomeActive"]
 - ["So8NSObjectC", "applicationDidEnterBackground"]
@@ -275,10 +276,10 @@ depends-member:
 - !private ["So8NSObjectC", "database"]
 - ["So8NSObjectC", "ectoWorkout"]
 - ["So8NSObjectC", "endoWorkout"]
-- !private ["So8NSObjectC", "exercises"]
 - ["So8NSObjectC", "init"]
 - !private ["So8NSObjectC", "isPersistenceEnabled"]
 - ["So8NSObjectC", "mesoWorkout"]
+- ["So8NSObjectC", "predefinedWorkouts"]
 - !private ["So8NSObjectC", "reference"]
 - !private ["So8NSObjectC", "role"]
 - ["So8NSObjectC", "setWorkouts"]
@@ -292,6 +293,7 @@ depends-member:
 - !private ["So8NSObjectP", "UISceneConfiguration"]
 - !private ["So8NSObjectP", "Workout"]
 - ["So8NSObjectP", ""]
+- !private ["So8NSObjectP", "addExercise"]
 - ["So8NSObjectP", "application"]
 - ["So8NSObjectP", "applicationDidBecomeActive"]
 - ["So8NSObjectP", "applicationDidEnterBackground"]
@@ -307,9 +309,11 @@ depends-member:
 - !private ["So8NSObjectP", "configure"]
 - !private ["So8NSObjectP", "database"]
 - !private ["So8NSObjectP", "ectoWorkout"]
-- !private ["So8NSObjectP", "exercises"]
+- !private ["So8NSObjectP", "endoWorkout"]
 - !private ["So8NSObjectP", "init"]
 - !private ["So8NSObjectP", "isPersistenceEnabled"]
+- !private ["So8NSObjectP", "mesoWorkout"]
+- !private ["So8NSObjectP", "predefinedWorkouts"]
 - !private ["So8NSObjectP", "reference"]
 - !private ["So8NSObjectP", "role"]
 - !private ["So8NSObjectP", "setWorkouts"]
@@ -317,10 +321,7 @@ depends-member:
 - ["So8NSObjectP", "window"]
 - !private ["So14NSSecureCodingP", "init"]
 - !private ["So14NSSecureCodingP", "role"]
-- !private ["Sq", "exercises"]
-- !private ["Sk", "append"]
-- !private ["Sm", "append"]
-- !private ["ST", "append"]
+- !private ["Sq", "addExercise"]
 - ["So13UIApplicationC", "LaunchOptionsKey"]
 - !private ["So21UIApplicationDelegateP", "Database"]
 - !private ["So21UIApplicationDelegateP", "Exercise"]
@@ -341,6 +342,9 @@ depends-member:
 - ["So21UIApplicationDelegateP", "applicationWillResignActive"]
 - ["So21UIApplicationDelegateP", "applicationWillTerminate"]
 - !private ["So21UIApplicationDelegateP", "ectoWorkout"]
+- !private ["So21UIApplicationDelegateP", "endoWorkout"]
+- !private ["So21UIApplicationDelegateP", "mesoWorkout"]
+- !private ["So21UIApplicationDelegateP", "predefinedWorkouts"]
 - !private ["So21UIApplicationDelegateP", "setWorkouts"]
 - !private ["So21UIApplicationDelegateP", "userRef"]
 - ["So21UIApplicationDelegateP", "window"]
@@ -365,7 +369,10 @@ depends-member:
 - ["So30UIPasteConfigurationSupportingP", "applicationWillResignActive"]
 - ["So30UIPasteConfigurationSupportingP", "applicationWillTerminate"]
 - !private ["So30UIPasteConfigurationSupportingP", "ectoWorkout"]
+- !private ["So30UIPasteConfigurationSupportingP", "endoWorkout"]
 - !private ["So30UIPasteConfigurationSupportingP", "init"]
+- !private ["So30UIPasteConfigurationSupportingP", "mesoWorkout"]
+- !private ["So30UIPasteConfigurationSupportingP", "predefinedWorkouts"]
 - !private ["So30UIPasteConfigurationSupportingP", "setWorkouts"]
 - !private ["So30UIPasteConfigurationSupportingP", "userRef"]
 - ["So30UIPasteConfigurationSupportingP", "window"]
@@ -400,6 +407,7 @@ depends-member:
 - ["So11UIResponderC", "endoWorkout"]
 - ["So11UIResponderC", "init"]
 - ["So11UIResponderC", "mesoWorkout"]
+- ["So11UIResponderC", "predefinedWorkouts"]
 - ["So11UIResponderC", "setWorkouts"]
 - ["So11UIResponderC", "userRef"]
 - ["So11UIResponderC", "window"]
@@ -424,7 +432,10 @@ depends-member:
 - ["So30UIResponderStandardEditActionsP", "applicationWillResignActive"]
 - ["So30UIResponderStandardEditActionsP", "applicationWillTerminate"]
 - !private ["So30UIResponderStandardEditActionsP", "ectoWorkout"]
+- !private ["So30UIResponderStandardEditActionsP", "endoWorkout"]
 - !private ["So30UIResponderStandardEditActionsP", "init"]
+- !private ["So30UIResponderStandardEditActionsP", "mesoWorkout"]
+- !private ["So30UIResponderStandardEditActionsP", "predefinedWorkouts"]
 - !private ["So30UIResponderStandardEditActionsP", "setWorkouts"]
 - !private ["So30UIResponderStandardEditActionsP", "userRef"]
 - ["So30UIResponderStandardEditActionsP", "window"]
@@ -452,16 +463,15 @@ depends-member:
 - ["So23UIUserActivityRestoringP", "applicationWillResignActive"]
 - ["So23UIUserActivityRestoringP", "applicationWillTerminate"]
 - !private ["So23UIUserActivityRestoringP", "ectoWorkout"]
+- !private ["So23UIUserActivityRestoringP", "endoWorkout"]
 - !private ["So23UIUserActivityRestoringP", "init"]
+- !private ["So23UIUserActivityRestoringP", "mesoWorkout"]
+- !private ["So23UIUserActivityRestoringP", "predefinedWorkouts"]
 - !private ["So23UIUserActivityRestoringP", "setWorkouts"]
 - !private ["So23UIUserActivityRestoringP", "userRef"]
 - ["So23UIUserActivityRestoringP", "window"]
-- !private ["6GyMate7WorkoutC", "exercises"]
+- !private ["6GyMate7WorkoutC", "addExercise"]
 - !private ["6GyMate7WorkoutC", "init"]
-- !private ["s14_ArrayProtocolP", "append"]
-- !private ["s24_DestructorSafeContainerP", "append"]
-- !private ["s19_HasContiguousBytesP", "append"]
-- !private ["s35_HasCustomAnyHashableRepresentationP", "append"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "ConnectionOptions"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "Database"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "Exercise"]
@@ -470,6 +480,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UISceneConfiguration"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "Workout"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "addExercise"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "application"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "applicationDidBecomeActive"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "applicationDidEnterBackground"]
@@ -485,9 +496,11 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "configure"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "database"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "ectoWorkout"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "exercises"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "endoWorkout"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "isPersistenceEnabled"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "mesoWorkout"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "predefinedWorkouts"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "reference"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "role"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "setWorkouts"]
@@ -501,6 +514,7 @@ depends-member:
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "UISceneConfiguration"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "Workout"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", ""]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "addExercise"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "application"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "applicationDidBecomeActive"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "applicationDidEnterBackground"]
@@ -516,47 +530,37 @@ depends-member:
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "configure"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "database"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "ectoWorkout"]
-- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "exercises"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "endoWorkout"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "init"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "isPersistenceEnabled"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "mesoWorkout"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "predefinedWorkouts"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "reference"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "role"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "setWorkouts"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "userRef"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "window"]
-- !private ["s21_ObjectiveCBridgeableP", "append"]
-- !private ["s21_ObjectiveCBridgeableP", "exercises"]
+- !private ["s21_ObjectiveCBridgeableP", "addExercise"]
 depends-nominal:
 - "6GyMate11AppDelegateC"
-- !private "Sa"
-- !private "SK"
 - "s7CVarArgP"
-- !private "Sl"
-- !private "10Foundation15ContiguousBytesP"
 - "s28CustomDebugStringConvertibleP"
 - !private "s17CustomReflectableP"
 - "s23CustomStringConvertibleP"
-- !private "10Foundation12DataProtocolP"
 - !private "So11FIRDatabaseC"
 - !private "Se"
 - !private "SE"
 - "SQ"
 - !private "6GyMate8ExerciseC"
-- !private "s25ExpressibleByArrayLiteralP"
 - !private "s23ExpressibleByNilLiteralP"
 - !private "So6FIRAppC"
 - "SH"
-- !private "SM"
-- !private "10Foundation19MutableDataProtocolP"
 - !private "So8NSCodingP"
 - !private "So9NSCopyingP"
 - "So8NSObjectC"
 - "So8NSObjectP"
 - !private "So14NSSecureCodingP"
 - !private "Sq"
-- !private "Sk"
-- !private "Sm"
-- !private "ST"
 - "So13UIApplicationC"
 - "So21UIApplicationDelegateP"
 - "So30UIPasteConfigurationSupportingP"
@@ -567,10 +571,6 @@ depends-nominal:
 - !private "So14UISceneSessionC"
 - "So23UIUserActivityRestoringP"
 - !private "6GyMate7WorkoutC"
-- !private "s14_ArrayProtocolP"
-- !private "s24_DestructorSafeContainerP"
-- !private "s19_HasContiguousBytesP"
-- !private "s35_HasCustomAnyHashableRepresentationP"
 - "10Foundation27_KeyValueCodingAndObservingP"
 - "10Foundation37_KeyValueCodingAndObservingPublishingP"
 - !private "s21_ObjectiveCBridgeableP"
@@ -1835,4 +1835,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "c05b7b64b6c8d3411c338c5a9eca7a85"
+interface-hash: "521103a780f67ea4b67372df64a08421"

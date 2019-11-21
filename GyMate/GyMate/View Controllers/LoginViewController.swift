@@ -9,10 +9,14 @@
 import UIKit
 import Firebase
 
-class LoginViewController: UIViewController {
+class LoginViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet var txtUsername : UITextField!
     @IBOutlet var txtPassword : UITextField!
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        return textField.resignFirstResponder()
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
