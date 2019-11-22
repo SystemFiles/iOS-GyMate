@@ -204,6 +204,48 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <color key="sectionIndexBackgroundColor" red="0.24728178977966309" green="0.25382989645004272" blue="0.3137337863445282" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="workoutCell" rowHeight="111" id="8aA-pK-Rp2" customClass="SelectWorkoutTableViewCell" customModule="GyMate" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="111"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8aA-pK-Rp2" id="SbP-bG-O1u">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="111"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="[Name]" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FGM-yZ-Ai3">
+                                                    <rect key="frame" x="20" y="17" width="118" height="27"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="16"/>
+                                                    <color key="textColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="[Time]" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qbz-2n-mTU">
+                                                    <rect key="frame" x="20" y="54" width="82" height="46"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="16"/>
+                                                    <color key="textColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="[Description]" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jTD-4U-f5X">
+                                                    <rect key="frame" x="131" y="0.0" width="283" height="111"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="10"/>
+                                                    <color key="textColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="workoutDesc" destination="jTD-4U-f5X" id="jut-IE-QlR"/>
+                                            <outlet property="workoutTime" destination="qbz-2n-mTU" id="6CS-ap-9jB"/>
+                                            <outlet property="workoutTitle" destination="FGM-yZ-Ai3" id="RKy-GX-71q"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="jmA-aA-oZz" id="4oB-Oc-5yZ"/>
+                                    <outlet property="delegate" destination="jmA-aA-oZz" id="WWv-7i-idY"/>
+                                </connections>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iDt-UA-e39">
                                 <rect key="frame" x="366" y="83" width="48" height="47"/>
@@ -265,6 +307,10 @@
                         <viewLayoutGuide key="safeArea" id="ZQG-vS-H5j"/>
                     </view>
                     <navigationItem key="navigationItem" id="1Cx-aq-tOQ"/>
+                    <connections>
+                        <outlet property="lbUser" destination="RZL-Gd-giq" id="fE7-wP-TB3"/>
+                        <outlet property="workoutTable" destination="Jsb-dy-GS9" id="9TX-GC-cng"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U8A-YT-o8Y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

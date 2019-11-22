@@ -11,6 +11,7 @@
 		AE2D729A2386E82200E58FC7 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2D72992386E82200E58FC7 /* DashboardViewController.swift */; };
 		AE2D729C2386E85B00E58FC7 /* AddWorkoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2D729B2386E85B00E58FC7 /* AddWorkoutViewController.swift */; };
 		AE730821237DE8AB00456AA1 /* Workout.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE730820237DE8AB00456AA1 /* Workout.swift */; };
+		AE74B645238843D200AB8645 /* SelectWorkoutTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE74B644238843D200AB8645 /* SelectWorkoutTableViewCell.swift */; };
 		B826DB662377244700181369 /* QuizAnswer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B826DB652377244700181369 /* QuizAnswer.swift */; };
 		B82BD8EE2375AF390070130A /* BodyTypeQuiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82BD8ED2375AF390070130A /* BodyTypeQuiz.swift */; };
 		B82BD8F02375AF4A0070130A /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82BD8EF2375AF4A0070130A /* Question.swift */; };
@@ -35,6 +36,7 @@
 		AE2D72992386E82200E58FC7 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 		AE2D729B2386E85B00E58FC7 /* AddWorkoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWorkoutViewController.swift; sourceTree = "<group>"; };
 		AE730820237DE8AB00456AA1 /* Workout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workout.swift; sourceTree = "<group>"; };
+		AE74B644238843D200AB8645 /* SelectWorkoutTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectWorkoutTableViewCell.swift; sourceTree = "<group>"; };
 		B826DB652377244700181369 /* QuizAnswer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizAnswer.swift; sourceTree = "<group>"; };
 		B82BD8ED2375AF390070130A /* BodyTypeQuiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyTypeQuiz.swift; sourceTree = "<group>"; };
 		B82BD8EF2375AF4A0070130A /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
@@ -135,6 +137,7 @@
 				B82BD8EF2375AF4A0070130A /* Question.swift */,
 				B826DB652377244700181369 /* QuizAnswer.swift */,
 				AE730820237DE8AB00456AA1 /* Workout.swift */,
+				AE74B644238843D200AB8645 /* SelectWorkoutTableViewCell.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -282,6 +285,7 @@
 			files = (
 				B87D728923745C3300303955 /* LoginViewController.swift in Sources */,
 				AE2D729A2386E82200E58FC7 /* DashboardViewController.swift in Sources */,
+				AE74B645238843D200AB8645 /* SelectWorkoutTableViewCell.swift in Sources */,
 				B8507879237CF531004E23B9 /* ManualTypeSelectorViewController.swift in Sources */,
 				B82BD8F02375AF4A0070130A /* Question.swift in Sources */,
 				B8C450CC2374D0B800C5F714 /* PasswordResetViewController.swift in Sources */,
