@@ -12,6 +12,8 @@
 		AE2D729C2386E85B00E58FC7 /* AddWorkoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2D729B2386E85B00E58FC7 /* AddWorkoutViewController.swift */; };
 		AE730821237DE8AB00456AA1 /* Workout.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE730820237DE8AB00456AA1 /* Workout.swift */; };
 		AE74B645238843D200AB8645 /* SelectWorkoutTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE74B644238843D200AB8645 /* SelectWorkoutTableViewCell.swift */; };
+		AED9945E2389CFC100647594 /* ExerciseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED9945D2389CFC100647594 /* ExerciseTableViewCell.swift */; };
+		AED994602389D74100647594 /* AddExerciseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED9945F2389D74100647594 /* AddExerciseViewController.swift */; };
 		B826DB662377244700181369 /* QuizAnswer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B826DB652377244700181369 /* QuizAnswer.swift */; };
 		B82BD8EE2375AF390070130A /* BodyTypeQuiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82BD8ED2375AF390070130A /* BodyTypeQuiz.swift */; };
 		B82BD8F02375AF4A0070130A /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82BD8EF2375AF4A0070130A /* Question.swift */; };
@@ -37,6 +39,8 @@
 		AE2D729B2386E85B00E58FC7 /* AddWorkoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWorkoutViewController.swift; sourceTree = "<group>"; };
 		AE730820237DE8AB00456AA1 /* Workout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workout.swift; sourceTree = "<group>"; };
 		AE74B644238843D200AB8645 /* SelectWorkoutTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectWorkoutTableViewCell.swift; sourceTree = "<group>"; };
+		AED9945D2389CFC100647594 /* ExerciseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseTableViewCell.swift; sourceTree = "<group>"; };
+		AED9945F2389D74100647594 /* AddExerciseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExerciseViewController.swift; sourceTree = "<group>"; };
 		B826DB652377244700181369 /* QuizAnswer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizAnswer.swift; sourceTree = "<group>"; };
 		B82BD8ED2375AF390070130A /* BodyTypeQuiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyTypeQuiz.swift; sourceTree = "<group>"; };
 		B82BD8EF2375AF4A0070130A /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
@@ -123,6 +127,7 @@
 				B8507878237CF531004E23B9 /* ManualTypeSelectorViewController.swift */,
 				AE2D72992386E82200E58FC7 /* DashboardViewController.swift */,
 				AE2D729B2386E85B00E58FC7 /* AddWorkoutViewController.swift */,
+				AED9945F2389D74100647594 /* AddExerciseViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -138,6 +143,7 @@
 				B826DB652377244700181369 /* QuizAnswer.swift */,
 				AE730820237DE8AB00456AA1 /* Workout.swift */,
 				AE74B644238843D200AB8645 /* SelectWorkoutTableViewCell.swift */,
+				AED9945D2389CFC100647594 /* ExerciseTableViewCell.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -295,8 +301,10 @@
 				AE2D729C2386E85B00E58FC7 /* AddWorkoutViewController.swift in Sources */,
 				B82BD8EE2375AF390070130A /* BodyTypeQuiz.swift in Sources */,
 				B87D729D237465CD00303955 /* SignUpViewController.swift in Sources */,
+				AED994602389D74100647594 /* AddExerciseViewController.swift in Sources */,
 				B88092062381F4D90030042C /* Exercise.swift in Sources */,
 				B826DB662377244700181369 /* QuizAnswer.swift in Sources */,
+				AED9945E2389CFC100647594 /* ExerciseTableViewCell.swift in Sources */,
 				B85607C5237CE88B0036B693 /* QuizConfirmationViewController.swift in Sources */,
 				B87D728723745C3300303955 /* SceneDelegate.swift in Sources */,
 			);
