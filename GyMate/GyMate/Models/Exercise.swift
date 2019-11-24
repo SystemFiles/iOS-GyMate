@@ -13,7 +13,7 @@ class Exercise: NSObject {
     var id : Int
     var name : String
     var desc : String
-    var imgBodyDiagram : String
+    var imgBodyDiagram : String?
     var sets : Int
     var reps : Int
     var restPeriod : Double
