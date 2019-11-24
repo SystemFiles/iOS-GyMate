@@ -23,7 +23,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var mesoWorkout : Workout!
     var endoWorkout : Workout!
     var predefinedWorkouts : [Workout]!
-    var progressExerciseList : [Exercise]!
+    var progressExerciseList : [Exercise]! = []
+    var exerciseID : Int! = 0
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         FirebaseApp.configure()

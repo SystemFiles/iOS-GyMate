@@ -19,7 +19,16 @@ class AddWorkoutViewController: UIViewController, UITableViewDelegate, UITableVi
     let mainDelegate : AppDelegate = UIApplication.shared.delegate as! AppDelegate
 
     override func viewDidLoad() {
+        exerciseTable.reloadData()
         super.viewDidLoad()
+    }
+    
+    @IBAction func rewindToAddWorkoutVC(sender: UIStoryboardSegue!) {
+        exerciseTable.reloadData()
+    }
+    
+    @IBAction func addWorkoutToDatabase() {
+        //TODO: ADD THIS FUNCTIONALITY
     }
     
     
@@ -36,9 +45,12 @@ class AddWorkoutViewController: UIViewController, UITableViewDelegate, UITableVi
         
         let rowData = mainDelegate.progressExerciseList
         
-        exerciseCell.exerciseName.text = rowData![indexPath.row].name as! String
+        exerciseCell.exerciseName.text = rowData![indexPath.row].name
+        exerciseCell.exerciseDesc.text = rowData![indexPath.row].desc
+        exerciseCell.exerciseReps.text = "\(rowData![indexPath.row].reps)"
+        exerciseCell.exerciseSets.text = "\(rowData![indexPath.row].sets)"
+        exerciseCell.exerciseRestPeriod.text = "\(rowData![indexPath.row].restPeriod) seconds"
         
-        // TO BE CONTINUED...
         return exerciseCell
     }
     
