@@ -15,12 +15,12 @@ depends-top-level:
 - !private "BooleanLiteralType"
 - !private "Database"
 - "DatabaseReference"
-- !private "Exercise"
+- "Exercise"
 - !private "FirebaseApp"
 - !private "FloatLiteralType"
 - !private "IntegerLiteralType"
 - "Set"
-- !private "StringLiteralType"
+- "StringLiteralType"
 - "UIApplication"
 - "UIApplicationDelegate"
 - "UIResponder"
@@ -28,12 +28,13 @@ depends-top-level:
 - "UISceneConfiguration"
 - "UISceneSession"
 - "UIWindow"
+- "UserDefaults"
 - "Workout"
 depends-member:
 - ["6GyMate11AppDelegateC", "Bool"]
 - !private ["6GyMate11AppDelegateC", "Database"]
 - ["6GyMate11AppDelegateC", "DatabaseReference"]
-- !private ["6GyMate11AppDelegateC", "Exercise"]
+- ["6GyMate11AppDelegateC", "Exercise"]
 - !private ["6GyMate11AppDelegateC", "FirebaseApp"]
 - ["6GyMate11AppDelegateC", "Set"]
 - ["6GyMate11AppDelegateC", "UIApplication"]
@@ -41,6 +42,7 @@ depends-member:
 - ["6GyMate11AppDelegateC", "UISceneConfiguration"]
 - ["6GyMate11AppDelegateC", "UISceneSession"]
 - ["6GyMate11AppDelegateC", "UIWindow"]
+- ["6GyMate11AppDelegateC", "UserDefaults"]
 - ["6GyMate11AppDelegateC", "Workout"]
 - ["6GyMate11AppDelegateC", "application"]
 - ["6GyMate11AppDelegateC", "applicationDidBecomeActive"]
@@ -58,9 +60,12 @@ depends-member:
 - ["6GyMate11AppDelegateC", "ectoWorkout"]
 - ["6GyMate11AppDelegateC", "endoWorkout"]
 - ["6GyMate11AppDelegateC", "init"]
+- ["6GyMate11AppDelegateC", "launchedBefore"]
 - ["6GyMate11AppDelegateC", "mesoWorkout"]
 - ["6GyMate11AppDelegateC", "predefinedWorkouts"]
+- ["6GyMate11AppDelegateC", "progressExerciseList"]
 - ["6GyMate11AppDelegateC", "setWorkouts"]
+- ["6GyMate11AppDelegateC", "userDefault"]
 - ["6GyMate11AppDelegateC", "userRef"]
 - ["6GyMate11AppDelegateC", "window"]
 - ["s7CVarArgP", "ConnectionOptions"]
@@ -69,6 +74,7 @@ depends-member:
 - !private ["s7CVarArgP", "FirebaseApp"]
 - ["s7CVarArgP", "LaunchOptionsKey"]
 - !private ["s7CVarArgP", "UISceneConfiguration"]
+- ["s7CVarArgP", "UserDefaults"]
 - !private ["s7CVarArgP", "Workout"]
 - ["s7CVarArgP", ""]
 - !private ["s7CVarArgP", "addExercise"]
@@ -84,6 +90,7 @@ depends-member:
 - ["s7CVarArgP", "applicationWillEnterForeground"]
 - ["s7CVarArgP", "applicationWillResignActive"]
 - ["s7CVarArgP", "applicationWillTerminate"]
+- ["s7CVarArgP", "bool"]
 - !private ["s7CVarArgP", "configure"]
 - !private ["s7CVarArgP", "database"]
 - !private ["s7CVarArgP", "ectoWorkout"]
@@ -95,6 +102,7 @@ depends-member:
 - !private ["s7CVarArgP", "reference"]
 - !private ["s7CVarArgP", "role"]
 - !private ["s7CVarArgP", "setWorkouts"]
+- ["s7CVarArgP", "standard"]
 - !private ["s7CVarArgP", "userRef"]
 - ["s7CVarArgP", "window"]
 - ["s28CustomDebugStringConvertibleP", "ConnectionOptions"]
@@ -103,6 +111,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "FirebaseApp"]
 - ["s28CustomDebugStringConvertibleP", "LaunchOptionsKey"]
 - !private ["s28CustomDebugStringConvertibleP", "UISceneConfiguration"]
+- ["s28CustomDebugStringConvertibleP", "UserDefaults"]
 - !private ["s28CustomDebugStringConvertibleP", "Workout"]
 - ["s28CustomDebugStringConvertibleP", ""]
 - !private ["s28CustomDebugStringConvertibleP", "addExercise"]
@@ -118,6 +127,7 @@ depends-member:
 - ["s28CustomDebugStringConvertibleP", "applicationWillEnterForeground"]
 - ["s28CustomDebugStringConvertibleP", "applicationWillResignActive"]
 - ["s28CustomDebugStringConvertibleP", "applicationWillTerminate"]
+- ["s28CustomDebugStringConvertibleP", "bool"]
 - !private ["s28CustomDebugStringConvertibleP", "configure"]
 - !private ["s28CustomDebugStringConvertibleP", "database"]
 - !private ["s28CustomDebugStringConvertibleP", "ectoWorkout"]
@@ -129,6 +139,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "reference"]
 - !private ["s28CustomDebugStringConvertibleP", "role"]
 - !private ["s28CustomDebugStringConvertibleP", "setWorkouts"]
+- ["s28CustomDebugStringConvertibleP", "standard"]
 - !private ["s28CustomDebugStringConvertibleP", "userRef"]
 - ["s28CustomDebugStringConvertibleP", "window"]
 - !private ["s17CustomReflectableP", "addExercise"]
@@ -138,6 +149,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "FirebaseApp"]
 - ["s23CustomStringConvertibleP", "LaunchOptionsKey"]
 - !private ["s23CustomStringConvertibleP", "UISceneConfiguration"]
+- ["s23CustomStringConvertibleP", "UserDefaults"]
 - !private ["s23CustomStringConvertibleP", "Workout"]
 - ["s23CustomStringConvertibleP", ""]
 - !private ["s23CustomStringConvertibleP", "addExercise"]
@@ -153,6 +165,7 @@ depends-member:
 - ["s23CustomStringConvertibleP", "applicationWillEnterForeground"]
 - ["s23CustomStringConvertibleP", "applicationWillResignActive"]
 - ["s23CustomStringConvertibleP", "applicationWillTerminate"]
+- ["s23CustomStringConvertibleP", "bool"]
 - !private ["s23CustomStringConvertibleP", "configure"]
 - !private ["s23CustomStringConvertibleP", "database"]
 - !private ["s23CustomStringConvertibleP", "ectoWorkout"]
@@ -164,6 +177,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "reference"]
 - !private ["s23CustomStringConvertibleP", "role"]
 - !private ["s23CustomStringConvertibleP", "setWorkouts"]
+- ["s23CustomStringConvertibleP", "standard"]
 - !private ["s23CustomStringConvertibleP", "userRef"]
 - ["s23CustomStringConvertibleP", "window"]
 - !private ["So11FIRDatabaseC", "database"]
@@ -177,6 +191,7 @@ depends-member:
 - !private ["SQ", "FirebaseApp"]
 - ["SQ", "LaunchOptionsKey"]
 - !private ["SQ", "UISceneConfiguration"]
+- ["SQ", "UserDefaults"]
 - !private ["SQ", "Workout"]
 - ["SQ", ""]
 - !private ["SQ", "addExercise"]
@@ -192,6 +207,7 @@ depends-member:
 - ["SQ", "applicationWillEnterForeground"]
 - ["SQ", "applicationWillResignActive"]
 - ["SQ", "applicationWillTerminate"]
+- ["SQ", "bool"]
 - !private ["SQ", "configure"]
 - !private ["SQ", "database"]
 - !private ["SQ", "ectoWorkout"]
@@ -203,6 +219,7 @@ depends-member:
 - !private ["SQ", "reference"]
 - !private ["SQ", "role"]
 - !private ["SQ", "setWorkouts"]
+- ["SQ", "standard"]
 - !private ["SQ", "userRef"]
 - ["SQ", "window"]
 - !private ["6GyMate8ExerciseC", "init"]
@@ -214,6 +231,7 @@ depends-member:
 - !private ["SH", "FirebaseApp"]
 - ["SH", "LaunchOptionsKey"]
 - !private ["SH", "UISceneConfiguration"]
+- ["SH", "UserDefaults"]
 - !private ["SH", "Workout"]
 - ["SH", ""]
 - !private ["SH", "addExercise"]
@@ -229,6 +247,7 @@ depends-member:
 - ["SH", "applicationWillEnterForeground"]
 - ["SH", "applicationWillResignActive"]
 - ["SH", "applicationWillTerminate"]
+- ["SH", "bool"]
 - !private ["SH", "configure"]
 - !private ["SH", "database"]
 - !private ["SH", "ectoWorkout"]
@@ -240,6 +259,7 @@ depends-member:
 - !private ["SH", "reference"]
 - !private ["SH", "role"]
 - !private ["SH", "setWorkouts"]
+- ["SH", "standard"]
 - !private ["SH", "userRef"]
 - ["SH", "window"]
 - !private ["So8NSCodingP", "init"]
@@ -249,7 +269,7 @@ depends-member:
 - ["So8NSObjectC", "ConnectionOptions"]
 - !private ["So8NSObjectC", "Database"]
 - ["So8NSObjectC", "DatabaseReference"]
-- !private ["So8NSObjectC", "Exercise"]
+- ["So8NSObjectC", "Exercise"]
 - !private ["So8NSObjectC", "FirebaseApp"]
 - ["So8NSObjectC", "LaunchOptionsKey"]
 - ["So8NSObjectC", "Set"]
@@ -258,6 +278,7 @@ depends-member:
 - ["So8NSObjectC", "UISceneConfiguration"]
 - ["So8NSObjectC", "UISceneSession"]
 - ["So8NSObjectC", "UIWindow"]
+- ["So8NSObjectC", "UserDefaults"]
 - ["So8NSObjectC", "Workout"]
 - !private ["So8NSObjectC", "addExercise"]
 - ["So8NSObjectC", "application"]
@@ -272,17 +293,22 @@ depends-member:
 - ["So8NSObjectC", "applicationWillEnterForeground"]
 - ["So8NSObjectC", "applicationWillResignActive"]
 - ["So8NSObjectC", "applicationWillTerminate"]
+- ["So8NSObjectC", "bool"]
 - !private ["So8NSObjectC", "configure"]
 - !private ["So8NSObjectC", "database"]
 - ["So8NSObjectC", "ectoWorkout"]
 - ["So8NSObjectC", "endoWorkout"]
 - ["So8NSObjectC", "init"]
 - !private ["So8NSObjectC", "isPersistenceEnabled"]
+- ["So8NSObjectC", "launchedBefore"]
 - ["So8NSObjectC", "mesoWorkout"]
 - ["So8NSObjectC", "predefinedWorkouts"]
+- ["So8NSObjectC", "progressExerciseList"]
 - !private ["So8NSObjectC", "reference"]
 - !private ["So8NSObjectC", "role"]
 - ["So8NSObjectC", "setWorkouts"]
+- ["So8NSObjectC", "standard"]
+- ["So8NSObjectC", "userDefault"]
 - ["So8NSObjectC", "userRef"]
 - ["So8NSObjectC", "window"]
 - ["So8NSObjectP", "ConnectionOptions"]
@@ -291,6 +317,7 @@ depends-member:
 - !private ["So8NSObjectP", "FirebaseApp"]
 - ["So8NSObjectP", "LaunchOptionsKey"]
 - !private ["So8NSObjectP", "UISceneConfiguration"]
+- ["So8NSObjectP", "UserDefaults"]
 - !private ["So8NSObjectP", "Workout"]
 - ["So8NSObjectP", ""]
 - !private ["So8NSObjectP", "addExercise"]
@@ -306,6 +333,7 @@ depends-member:
 - ["So8NSObjectP", "applicationWillEnterForeground"]
 - ["So8NSObjectP", "applicationWillResignActive"]
 - ["So8NSObjectP", "applicationWillTerminate"]
+- ["So8NSObjectP", "bool"]
 - !private ["So8NSObjectP", "configure"]
 - !private ["So8NSObjectP", "database"]
 - !private ["So8NSObjectP", "ectoWorkout"]
@@ -317,6 +345,7 @@ depends-member:
 - !private ["So8NSObjectP", "reference"]
 - !private ["So8NSObjectP", "role"]
 - !private ["So8NSObjectP", "setWorkouts"]
+- ["So8NSObjectP", "standard"]
 - !private ["So8NSObjectP", "userRef"]
 - ["So8NSObjectP", "window"]
 - !private ["So14NSSecureCodingP", "init"]
@@ -327,6 +356,7 @@ depends-member:
 - !private ["So21UIApplicationDelegateP", "Exercise"]
 - !private ["So21UIApplicationDelegateP", "FirebaseApp"]
 - !private ["So21UIApplicationDelegateP", "UISceneConfiguration"]
+- ["So21UIApplicationDelegateP", "UserDefaults"]
 - !private ["So21UIApplicationDelegateP", "Workout"]
 - ["So21UIApplicationDelegateP", ""]
 - ["So21UIApplicationDelegateP", "application"]
@@ -354,6 +384,7 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "FirebaseApp"]
 - ["So30UIPasteConfigurationSupportingP", "LaunchOptionsKey"]
 - !private ["So30UIPasteConfigurationSupportingP", "UISceneConfiguration"]
+- ["So30UIPasteConfigurationSupportingP", "UserDefaults"]
 - !private ["So30UIPasteConfigurationSupportingP", "Workout"]
 - ["So30UIPasteConfigurationSupportingP", ""]
 - ["So30UIPasteConfigurationSupportingP", "application"]
@@ -380,7 +411,7 @@ depends-member:
 - ["So11UIResponderC", "ConnectionOptions"]
 - !private ["So11UIResponderC", "Database"]
 - ["So11UIResponderC", "DatabaseReference"]
-- !private ["So11UIResponderC", "Exercise"]
+- ["So11UIResponderC", "Exercise"]
 - !private ["So11UIResponderC", "FirebaseApp"]
 - ["So11UIResponderC", "LaunchOptionsKey"]
 - ["So11UIResponderC", "Set"]
@@ -389,6 +420,7 @@ depends-member:
 - ["So11UIResponderC", "UISceneConfiguration"]
 - ["So11UIResponderC", "UISceneSession"]
 - ["So11UIResponderC", "UIWindow"]
+- ["So11UIResponderC", "UserDefaults"]
 - ["So11UIResponderC", "Workout"]
 - ["So11UIResponderC", ""]
 - ["So11UIResponderC", "application"]
@@ -406,9 +438,12 @@ depends-member:
 - ["So11UIResponderC", "ectoWorkout"]
 - ["So11UIResponderC", "endoWorkout"]
 - ["So11UIResponderC", "init"]
+- ["So11UIResponderC", "launchedBefore"]
 - ["So11UIResponderC", "mesoWorkout"]
 - ["So11UIResponderC", "predefinedWorkouts"]
+- ["So11UIResponderC", "progressExerciseList"]
 - ["So11UIResponderC", "setWorkouts"]
+- ["So11UIResponderC", "userDefault"]
 - ["So11UIResponderC", "userRef"]
 - ["So11UIResponderC", "window"]
 - ["So30UIResponderStandardEditActionsP", "ConnectionOptions"]
@@ -417,6 +452,7 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "FirebaseApp"]
 - ["So30UIResponderStandardEditActionsP", "LaunchOptionsKey"]
 - !private ["So30UIResponderStandardEditActionsP", "UISceneConfiguration"]
+- ["So30UIResponderStandardEditActionsP", "UserDefaults"]
 - !private ["So30UIResponderStandardEditActionsP", "Workout"]
 - ["So30UIResponderStandardEditActionsP", ""]
 - ["So30UIResponderStandardEditActionsP", "application"]
@@ -448,6 +484,7 @@ depends-member:
 - !private ["So23UIUserActivityRestoringP", "FirebaseApp"]
 - ["So23UIUserActivityRestoringP", "LaunchOptionsKey"]
 - !private ["So23UIUserActivityRestoringP", "UISceneConfiguration"]
+- ["So23UIUserActivityRestoringP", "UserDefaults"]
 - !private ["So23UIUserActivityRestoringP", "Workout"]
 - ["So23UIUserActivityRestoringP", ""]
 - ["So23UIUserActivityRestoringP", "application"]
@@ -470,6 +507,8 @@ depends-member:
 - !private ["So23UIUserActivityRestoringP", "setWorkouts"]
 - !private ["So23UIUserActivityRestoringP", "userRef"]
 - ["So23UIUserActivityRestoringP", "window"]
+- ["So14NSUserDefaultsC", "bool"]
+- ["So14NSUserDefaultsC", "standard"]
 - !private ["6GyMate7WorkoutC", "addExercise"]
 - !private ["6GyMate7WorkoutC", "init"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "ConnectionOptions"]
@@ -478,6 +517,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "FirebaseApp"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "LaunchOptionsKey"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UISceneConfiguration"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "UserDefaults"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "Workout"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "addExercise"]
@@ -493,6 +533,7 @@ depends-member:
 - ["10Foundation27_KeyValueCodingAndObservingP", "applicationWillEnterForeground"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "applicationWillResignActive"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "applicationWillTerminate"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "bool"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "configure"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "database"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "ectoWorkout"]
@@ -504,6 +545,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "reference"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "role"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "setWorkouts"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "standard"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "userRef"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "window"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "ConnectionOptions"]
@@ -512,6 +554,7 @@ depends-member:
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "FirebaseApp"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "LaunchOptionsKey"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "UISceneConfiguration"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "UserDefaults"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "Workout"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", ""]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "addExercise"]
@@ -527,6 +570,7 @@ depends-member:
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "applicationWillEnterForeground"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "applicationWillResignActive"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "applicationWillTerminate"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "bool"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "configure"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "database"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "ectoWorkout"]
@@ -538,6 +582,7 @@ depends-member:
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "reference"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "role"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "setWorkouts"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "standard"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "userRef"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "window"]
 - !private ["s21_ObjectiveCBridgeableP", "addExercise"]
@@ -570,6 +615,7 @@ depends-nominal:
 - !private "So20UISceneConfigurationC"
 - !private "So14UISceneSessionC"
 - "So23UIUserActivityRestoringP"
+- "So14NSUserDefaultsC"
 - !private "6GyMate7WorkoutC"
 - "10Foundation27_KeyValueCodingAndObservingP"
 - "10Foundation37_KeyValueCodingAndObservingPublishingP"
@@ -1835,4 +1881,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "521103a780f67ea4b67372df64a08421"
+interface-hash: "d0bb86232337465d199f8f21670dd500"

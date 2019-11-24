@@ -15,7 +15,7 @@ depends-top-level:
 - !private "BooleanLiteralType"
 - !private "Database"
 - "DatabaseReference"
-- !private "Exercise"
+- "Exercise"
 - !private "FirebaseApp"
 - !private "FloatLiteralType"
 - !private "IntegerLiteralType"
@@ -33,7 +33,7 @@ depends-member:
 - ["6GyMate11AppDelegateC", "Bool"]
 - !private ["6GyMate11AppDelegateC", "Database"]
 - ["6GyMate11AppDelegateC", "DatabaseReference"]
-- !private ["6GyMate11AppDelegateC", "Exercise"]
+- ["6GyMate11AppDelegateC", "Exercise"]
 - !private ["6GyMate11AppDelegateC", "FirebaseApp"]
 - ["6GyMate11AppDelegateC", "Set"]
 - ["6GyMate11AppDelegateC", "UIApplication"]
@@ -60,6 +60,7 @@ depends-member:
 - ["6GyMate11AppDelegateC", "init"]
 - ["6GyMate11AppDelegateC", "mesoWorkout"]
 - ["6GyMate11AppDelegateC", "predefinedWorkouts"]
+- ["6GyMate11AppDelegateC", "progressExerciseList"]
 - ["6GyMate11AppDelegateC", "setWorkouts"]
 - ["6GyMate11AppDelegateC", "userRef"]
 - ["6GyMate11AppDelegateC", "window"]
@@ -249,7 +250,7 @@ depends-member:
 - ["So8NSObjectC", "ConnectionOptions"]
 - !private ["So8NSObjectC", "Database"]
 - ["So8NSObjectC", "DatabaseReference"]
-- !private ["So8NSObjectC", "Exercise"]
+- ["So8NSObjectC", "Exercise"]
 - !private ["So8NSObjectC", "FirebaseApp"]
 - ["So8NSObjectC", "LaunchOptionsKey"]
 - ["So8NSObjectC", "Set"]
@@ -280,6 +281,7 @@ depends-member:
 - !private ["So8NSObjectC", "isPersistenceEnabled"]
 - ["So8NSObjectC", "mesoWorkout"]
 - ["So8NSObjectC", "predefinedWorkouts"]
+- ["So8NSObjectC", "progressExerciseList"]
 - !private ["So8NSObjectC", "reference"]
 - !private ["So8NSObjectC", "role"]
 - ["So8NSObjectC", "setWorkouts"]
@@ -380,7 +382,7 @@ depends-member:
 - ["So11UIResponderC", "ConnectionOptions"]
 - !private ["So11UIResponderC", "Database"]
 - ["So11UIResponderC", "DatabaseReference"]
-- !private ["So11UIResponderC", "Exercise"]
+- ["So11UIResponderC", "Exercise"]
 - !private ["So11UIResponderC", "FirebaseApp"]
 - ["So11UIResponderC", "LaunchOptionsKey"]
 - ["So11UIResponderC", "Set"]
@@ -408,6 +410,7 @@ depends-member:
 - ["So11UIResponderC", "init"]
 - ["So11UIResponderC", "mesoWorkout"]
 - ["So11UIResponderC", "predefinedWorkouts"]
+- ["So11UIResponderC", "progressExerciseList"]
 - ["So11UIResponderC", "setWorkouts"]
 - ["So11UIResponderC", "userRef"]
 - ["So11UIResponderC", "window"]
@@ -1835,4 +1838,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "521103a780f67ea4b67372df64a08421"
+interface-hash: "04edd79038754bff6e5b9a0d5f82b8b1"

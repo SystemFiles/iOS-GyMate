@@ -12,6 +12,11 @@ import Firebase
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
+    // User-Specific
+    let userDefault = UserDefaults.standard
+    let launchedBefore = UserDefaults.standard.bool(forKey: "usersignedin")
+    
+    // Application Specific
     var window: UIWindow?
     var userRef : DatabaseReference!
     var ectoWorkout : Workout!

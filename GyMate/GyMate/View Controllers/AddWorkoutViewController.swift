@@ -39,7 +39,7 @@ class AddWorkoutViewController: UIViewController, UITableViewDelegate, UITableVi
         exerciseCell.exerciseName.text = rowData![indexPath.row].name as! String
         
         // TO BE CONTINUED...
-        
+        return exerciseCell
     }
     
 
