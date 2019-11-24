@@ -355,7 +355,9 @@
                                     <color key="titleColor" red="0.2426791787" green="0.2497816682" blue="0.31197911499999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
+                                    <action selector="addWorkoutToDatabase" destination="D3E-Lq-gLe" eventType="touchUpInside" id="fFl-FA-tOx"/>
                                     <action selector="userWantsSignUpWithSender:" destination="wGH-R3-JDJ" eventType="touchUpInside" id="UZX-ik-fBK"/>
+                                    <segue destination="gNI-pf-qlm" kind="unwind" unwindAction="rewindToDashboardVCWithSender:" id="8MB-OR-PDK"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Username / Email" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="RTm-q1-Wd2">
@@ -486,6 +488,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9DL-hn-OhQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="gNI-pf-qlm" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1682.608695652174" y="137.94642857142856"/>
         </scene>

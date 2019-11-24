@@ -28,7 +28,16 @@ class AddWorkoutViewController: UIViewController, UITableViewDelegate, UITableVi
     }
     
     @IBAction func addWorkoutToDatabase() {
-        //TODO: ADD THIS FUNCTIONALITY
+        
+        let ref = mainDelegate.userRef.child(Auth.auth().currentUser!.uid)
+        //TODO: change the id of the workouts, likely the same way we name them so they're unique
+        let newWorkout : Workout = Workout(ID: 3, name: txtName.text!, desc: txtDesc.text!, time: 115.0, exercises: mainDelegate.progressExerciseList)
+        
+        mainDelegate.progressExerciseList = []
+        //TODO: determine how we will name the new custom workouts
+        let workoutRef = ref.child("workouts/custom").child(String(Int.random(in: 1..<100)))
+        
+        workoutRef.setValue(newWorkout.getFBSerializedFormat())
     }
     
     

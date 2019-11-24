@@ -25,6 +25,7 @@ class DashboardViewController: UIViewController, UITableViewDelegate, UITableVie
         let ref = mainDelegate.userRef.child(Auth.auth().currentUser!.uid)
         
         // Retreive all data
+        //TODO: Change this so it's observe, not observeSingleEvent
         ref.observeSingleEvent(of: .value, with: { snapshot in
             let username = snapshot.childSnapshot(forPath: "username").value as! String
             self.workouts.append(snapshot.childSnapshot(forPath: "workouts/recommended").value as! NSMutableDictionary)
@@ -32,7 +33,11 @@ class DashboardViewController: UIViewController, UITableViewDelegate, UITableVie
             // Make sure no errors when retreiving custom workouts
             var selectedWorkouts : [NSMutableDictionary] = []
             if (snapshot.childSnapshot(forPath: "workouts").childrenCount > 1) {
-                selectedWorkouts = (snapshot.childSnapshot(forPath: "workouts/custom").value as! [NSMutableDictionary])
+                for child in snapshot.childSnapshot(forPath: "workouts/custom").children {
+                    let workoutSnapshot = child as! DataSnapshot
+                    let newWorkoutDict = workoutSnapshot.value as! NSMutableDictionary
+                    selectedWorkouts.append(newWorkoutDict)
+                }
             }
             for workout in selectedWorkouts {
                 self.workouts.append(workout)
@@ -45,7 +50,7 @@ class DashboardViewController: UIViewController, UITableViewDelegate, UITableVie
     }
     
     @IBAction func rewindToDashboardVC(sender: UIStoryboardSegue!) {
-        // DO NOTHING
+        workoutTable.reloadData()
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
