@@ -24,6 +24,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var endoWorkout : Workout!
     var predefinedWorkouts : [Workout]!
     var progressExerciseList : [Exercise]! = []
+    var workoutCurrentID : Int = 0
     var exerciseID : Int! = 0
 
     /// Within app launch configure and start Firebase and retreive a database instance

@@ -22,24 +22,37 @@ class AddWorkoutViewController: UIViewController, UITableViewDelegate, UITableVi
         exerciseTable.reloadData()
         super.viewDidLoad()
     }
+
+    @IBAction func textChanged(sender : UITextField!) {
+        self.checkValidWorkout()
+    }
     
     @IBAction func rewindToAddWorkoutVC(sender: UIStoryboardSegue!) {
         exerciseTable.reloadData()
+        self.checkValidWorkout()
     }
     
     @IBAction func addWorkoutToDatabase() {
         
         let ref = mainDelegate.userRef.child(Auth.auth().currentUser!.uid)
-        //TODO: change the id of the workouts, likely the same way we name them so they're unique
-        let newWorkout : Workout = Workout(ID: 3, name: txtName.text!, desc: txtDesc.text!, time: 115.0, exercises: mainDelegate.progressExerciseList)
+        let newWorkout : Workout = Workout(ID: mainDelegate.workoutCurrentID + 1, name: txtName.text!, desc: txtDesc.text!, time: Double(mainDelegate.progressExerciseList.count * 10), exercises: mainDelegate.progressExerciseList)
         
-        mainDelegate.progressExerciseList = []
-        //TODO: determine how we will name the new custom workouts
-        let workoutRef = ref.child("workouts/custom").child(String(Int.random(in: 1..<100)))
+        mainDelegate.progressExerciseList = [] //reset the workout exercises
+    
+        let workoutRef = ref.child("workouts/custom").child(newWorkout.name) //add the workout to DB
         
         workoutRef.setValue(newWorkout.getFBSerializedFormat())
+        
+        mainDelegate.exerciseID = 0
     }
     
+    func checkValidWorkout() {
+        if !txtName.text!.isEmpty && !txtDesc.text!.isEmpty && mainDelegate.progressExerciseList.count > 0 {
+            self.btnAdd.isEnabled = true
+        } else {
+            self.btnAdd.isEnabled = false
+        }
+    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return mainDelegate.progressExerciseList.count

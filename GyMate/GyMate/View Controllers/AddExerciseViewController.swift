@@ -14,10 +14,11 @@ class AddExerciseViewController: UIViewController {
     @IBOutlet var txtDesc : UITextField!
     @IBOutlet var txtReps : UITextField!
     @IBOutlet var txtSets : UITextField!
+    @IBOutlet var sldRestPeriod : UISlider!
+    @IBOutlet var lbRestPeriod : UILabel!
+    @IBOutlet var btnAddExercise : UIButton!
     
     let mainDelegate : AppDelegate = UIApplication.shared.delegate as! AppDelegate
-    
-    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,29 +26,31 @@ class AddExerciseViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    @IBAction func textChanged(sender: UITextField!) {
+        if !txtName.text!.isEmpty && !txtDesc.text!.isEmpty && !txtSets.text!.isEmpty && !txtReps.text!.isEmpty {
+            btnAddExercise.isEnabled = true
+        } else {
+            btnAddExercise.isEnabled = false
+        }
+    }
     
+    @IBAction func restPeriodChanged(sender: UISlider!) {
+        lbRestPeriod.text = "\(Int(sender.value)) seconds"
+    }
     
     @IBAction func addExerciseToWorkout() {
         
-        //TODO: change restperiod to some sort of multiplication between reps and sets
-        let exercise : Exercise = Exercise(id: mainDelegate.exerciseID, name: txtName.text!, desc: txtDesc.text!, imgBodyDiagram: "", sets: Int(txtReps.text!)!, reps: Int(txtSets.text!)!, restPeriod: 20.0)
-        
-        //check if there's a better way of doing this
-        mainDelegate.exerciseID += 1
-        
-        mainDelegate.progressExerciseList.append(exercise)
-        
-    }
-    
+        if txtName.text == "" || txtDesc.text == "" || txtReps.text == "" || txtSets.text == "" {
+            let errorAlert : UIAlertController = UIAlertController(title: "Error", message: "Missing required fields!", preferredStyle: .actionSheet)
+            errorAlert.addAction(UIAlertAction(title: "Okay", style: .default, handler: nil))
+            
+            self.present(errorAlert, animated: true)
+        } else {
+            let exercise : Exercise = Exercise(id: mainDelegate.exerciseID, name: txtName.text!, desc: txtDesc.text!, imgBodyDiagram: "", sets: Int(txtReps.text!)!, reps: Int(txtSets.text!)!, restPeriod: Double(Int(self.sldRestPeriod!.value)))
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+            mainDelegate.exerciseID += 1
+            mainDelegate.progressExerciseList.append(exercise)
+        }
     }
-    */
 
 }

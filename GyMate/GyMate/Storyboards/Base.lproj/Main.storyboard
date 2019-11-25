@@ -2,7 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -274,6 +274,7 @@
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="38"/>
                                 <state key="normal" title="+"/>
                                 <connections>
+                                    <action selector="addWorkoutWithSender:" destination="jmA-aA-oZz" eventType="touchUpInside" id="MC4-yV-Tuk"/>
                                     <segue destination="D3E-Lq-gLe" kind="presentation" id="o3W-Yb-tdv"/>
                                 </connections>
                             </button>
@@ -360,7 +361,7 @@
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="38"/>
                                 <state key="normal" title="+"/>
                                 <connections>
-                                    <segue destination="MaP-r4-wkt" kind="presentation" id="vGI-Fl-igT"/>
+                                    <segue destination="MaP-r4-wkt" kind="presentation" id="cIX-Fl-SrV"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Exercises" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WQx-oD-JbX">
@@ -370,7 +371,7 @@
                                 <color key="textColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pqh-4f-BPW">
+                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pqh-4f-BPW">
                                 <rect key="frame" x="35" y="735" width="344" height="56"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
@@ -391,6 +392,7 @@
                                 <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="done" textContentType="username"/>
                                 <connections>
+                                    <action selector="textChangedWithSender:" destination="D3E-Lq-gLe" eventType="editingChanged" id="Fbx-pV-net"/>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="lbx-rX-ghV"/>
                                 </connections>
                             </textField>
@@ -409,6 +411,7 @@
                                 <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="done" textContentType="username"/>
                                 <connections>
+                                    <action selector="textChangedWithSender:" destination="D3E-Lq-gLe" eventType="editingChanged" id="aXu-7s-BSP"/>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="q7x-Ea-CT6"/>
                                 </connections>
                             </textField>
@@ -535,6 +538,7 @@
                                 <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="done" textContentType="username"/>
                                 <connections>
+                                    <action selector="textChangedWithSender:" destination="MaP-r4-wkt" eventType="editingChanged" id="TGj-Ik-3eS"/>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="7fs-8E-rN0"/>
                                 </connections>
                             </textField>
@@ -546,6 +550,7 @@
                                 <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="done" textContentType="username"/>
                                 <connections>
+                                    <action selector="textChangedWithSender:" destination="MaP-r4-wkt" eventType="editingChanged" id="P5b-s8-fen"/>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="I4b-I3-uFQ"/>
                                 </connections>
                             </textField>
@@ -555,8 +560,9 @@
                                 <color key="tintColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="20"/>
-                                <textInputTraits key="textInputTraits" returnKeyType="done" textContentType="username"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done" textContentType="username"/>
                                 <connections>
+                                    <action selector="textChangedWithSender:" destination="MaP-r4-wkt" eventType="editingChanged" id="dM6-yj-XKe"/>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="LFy-Ep-e9s"/>
                                 </connections>
                             </textField>
@@ -588,18 +594,26 @@
                                 <color key="textColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Rest Period (in seconds)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0dk-b9-ubY">
+                                <rect key="frame" x="34" y="571" width="344" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
+                                <color key="textColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Username / Email" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Jkv-sB-fkG">
                                 <rect key="frame" x="35" y="506" width="344" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="20"/>
-                                <textInputTraits key="textInputTraits" returnKeyType="done" textContentType="username"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done" textContentType="username"/>
                                 <connections>
+                                    <action selector="textChangedWithSender:" destination="MaP-r4-wkt" eventType="editingChanged" id="SZO-1h-SXd"/>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="e1i-Qe-86M"/>
                                 </connections>
                             </textField>
-                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aa0-ZW-4hb">
+                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aa0-ZW-4hb">
                                 <rect key="frame" x="35" y="735" width="344" height="56"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
@@ -608,7 +622,7 @@
                                 </state>
                                 <connections>
                                     <action selector="addExerciseToWorkout" destination="MaP-r4-wkt" eventType="touchUpInside" id="NCg-K1-XSy"/>
-                                    <segue destination="58l-fo-ubO" kind="unwind" unwindAction="rewindToAddWorkoutVCWithSender:" id="Wsj-tF-3LE"/>
+                                    <segue destination="58l-fo-ubO" kind="unwind" unwindAction="rewindToAddWorkoutVCWithSender:" id="I9g-DJ-JnL"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Add Exercise" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WVy-5s-UYs">
@@ -618,11 +632,29 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="20" minValue="0.0" maxValue="300" translatesAutoresizingMaskIntoConstraints="NO" id="pow-Lw-rMm">
+                                <rect key="frame" x="33" y="601" width="348" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="restPeriodChangedWithSender:" destination="MaP-r4-wkt" eventType="valueChanged" id="KfZ-BN-w2m"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="20 seconds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6hr-Wc-Wgr">
+                                <rect key="frame" x="35" y="638" width="344" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="1gq-Om-cG5"/>
                     </view>
                     <connections>
+                        <outlet property="btnAddExercise" destination="aa0-ZW-4hb" id="JT9-Dx-z8t"/>
+                        <outlet property="lbRestPeriod" destination="6hr-Wc-Wgr" id="46b-Eu-k83"/>
+                        <outlet property="sldRestPeriod" destination="pow-Lw-rMm" id="dbd-H3-v1U"/>
                         <outlet property="txtDesc" destination="web-6g-bJI" id="Yae-3x-Niq"/>
                         <outlet property="txtName" destination="cPH-ye-htE" id="ryF-Ws-34f"/>
                         <outlet property="txtReps" destination="Csh-4s-2ih" id="6c7-r0-X1K"/>

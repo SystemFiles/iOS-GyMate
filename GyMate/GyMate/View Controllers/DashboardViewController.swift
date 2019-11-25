@@ -11,7 +11,7 @@ import Firebase
 
 class DashboardViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    var workouts : [NSMutableDictionary] = []
+    var workouts : [Workout] = []
     
     @IBOutlet var workoutTable : UITableView!
     @IBOutlet var lbUser : UILabel!
@@ -25,20 +25,23 @@ class DashboardViewController: UIViewController, UITableViewDelegate, UITableVie
         let ref = mainDelegate.userRef.child(Auth.auth().currentUser!.uid)
         
         // Retreive all data
-        //TODO: Change this so it's observe, not observeSingleEvent
-        ref.observeSingleEvent(of: .value, with: { snapshot in
+        ref.observe(DataEventType.value, with: { snapshot in
+            self.workouts = []
+            self.workoutTable.reloadData()
+            
             let username = snapshot.childSnapshot(forPath: "username").value as! String
-            self.workouts.append(snapshot.childSnapshot(forPath: "workouts/recommended").value as! NSMutableDictionary)
+            self.workouts.append(Workout.deserializeWorkout(workoutDict: (snapshot.childSnapshot(forPath: "workouts/recommended").value as! NSMutableDictionary)))
         
             // Make sure no errors when retreiving custom workouts
-            var selectedWorkouts : [NSMutableDictionary] = []
-            if (snapshot.childSnapshot(forPath: "workouts").childrenCount > 1) {
+            var selectedWorkouts : [Workout] = []
+            if (snapshot.childSnapshot(forPath: "workouts").childrenCount > 1) { //go through all custom workouts
                 for child in snapshot.childSnapshot(forPath: "workouts/custom").children {
                     let workoutSnapshot = child as! DataSnapshot
                     let newWorkoutDict = workoutSnapshot.value as! NSMutableDictionary
-                    selectedWorkouts.append(newWorkoutDict)
+                    selectedWorkouts.append(Workout.deserializeWorkout(workoutDict: newWorkoutDict))
                 }
             }
+            //add them to the user's workouts
             for workout in selectedWorkouts {
                 self.workouts.append(workout)
             }
@@ -49,6 +52,7 @@ class DashboardViewController: UIViewController, UITableViewDelegate, UITableVie
         // Do any additional setup after loading the view.
     }
     
+    //rewind to dashboard from add workout
     @IBAction func rewindToDashboardVC(sender: UIStoryboardSegue!) {
         workoutTable.reloadData()
     }
@@ -62,6 +66,11 @@ class DashboardViewController: UIViewController, UITableViewDelegate, UITableVie
             // remove user from defaults
             mainDelegate.userDefault.set(false, forKey: "usersignedin")
         }
+    }
+    
+    @IBAction func addWorkout(sender: UIButton!) {
+        let mainDelegate : AppDelegate = UIApplication.shared.delegate as! AppDelegate
+        mainDelegate.workoutCurrentID = self.workouts.count
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -78,9 +87,9 @@ class DashboardViewController: UIViewController, UITableViewDelegate, UITableVie
             
         let rowData = self.workouts
         
-        workoutCell.workoutTitle.text = rowData[indexPath.row]["name"] as? String
-        workoutCell.workoutDesc.text = rowData[indexPath.row]["desc"] as? String
-        workoutCell.workoutTime.text = "\(rowData[indexPath.row]["time"]!)min"
+        workoutCell.workoutTitle.text = rowData[indexPath.row].name
+        workoutCell.workoutDesc.text = rowData[indexPath.row].desc
+        workoutCell.workoutTime.text = "\(rowData[indexPath.row].time)min"
         
             
         return workoutCell
