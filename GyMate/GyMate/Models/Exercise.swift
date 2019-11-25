@@ -18,6 +18,7 @@ class Exercise: NSObject {
     var reps : Int
     var restPeriod : Double
     
+    /// Initalize an instance of Exercise
     init(id : Int, name : String, desc : String, imgBodyDiagram : String, sets : Int, reps : Int, restPeriod : Double) {
         self.id = id
         self.name = name

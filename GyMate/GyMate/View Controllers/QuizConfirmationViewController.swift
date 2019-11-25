@@ -32,6 +32,7 @@ class QuizConfirmationViewController: UIViewController {
         ref.observeSingleEvent(of: .value, with: { snapshot in
             let bodyType : String = snapshot.childSnapshot(forPath: "bodyType").value as! String
             
+            /// Based on body type, set recommended workout
             switch bodyType {
             case "ECTOMORPH":
                 ref.child("workouts").child("recommended").setValue(mainDelegate.predefinedWorkouts[0].getFBSerializedFormat())
@@ -42,14 +43,13 @@ class QuizConfirmationViewController: UIViewController {
             default :
                 print("Error: Had trouble assigning workout to user...ignoring it :/")
             }
-            
-            
         })
         
-        // Move to dashboard
+        /// Move to dashboard
         self.performSegue(withIdentifier: "QuizToDashboardSegue", sender: nil)
     }
     
+    /// Update label for body type if user decides to manually select their known body type instead of the auto generated quiz method
     func updateBodyTypeLabelFromDB() {
         /// Load data into label
         let mainDelegate : AppDelegate = UIApplication.shared.delegate as! AppDelegate

@@ -24,10 +24,12 @@ class Workout: NSObject {
         self.exercises = exercises
     }
     
+    /// Add an exercise to this workout
     func addExercise(exercise : Exercise) {
         self.exercises.append(exercise)
     }
     
+    /// Deserialize a received Firebase response to a instance of the Workout class
     static func deserializeWorkout(workoutDict : NSMutableDictionary!) -> Workout {
         // Build workout object
         let workoutObj : Workout = Workout(ID: workoutDict!["id"] as! Int, name: workoutDict!["name"] as! String, desc: workoutDict!["desc"] as! String, time: workoutDict!["time"] as! Double, exercises : [])
@@ -43,6 +45,7 @@ class Workout: NSObject {
         return workoutObj
     }
     
+    /// Serializes Workout object in a format that Firebase can store automatically (Dictionary)
     func getFBSerializedFormat() -> NSMutableDictionary {
         // Build serialized workout object
         let workoutObj : NSMutableDictionary = [

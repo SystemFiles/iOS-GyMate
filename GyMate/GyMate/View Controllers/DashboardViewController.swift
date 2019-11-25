@@ -53,6 +53,17 @@ class DashboardViewController: UIViewController, UITableViewDelegate, UITableVie
         workoutTable.reloadData()
     }
     
+    @IBAction func logoutUser(sender: UIButton!) {
+        // Perform user logout
+        try! Auth.auth().signOut()
+        
+        // If user used 'stay logged in' feature
+        if mainDelegate.launchedBefore {
+            // remove user from defaults
+            mainDelegate.userDefault.set(false, forKey: "usersignedin")
+        }
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.workouts.count
     }

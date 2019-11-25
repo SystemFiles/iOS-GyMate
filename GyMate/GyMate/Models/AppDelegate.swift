@@ -12,6 +12,11 @@ import Firebase
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
+    // Handle Auto-Login
+    let userDefault = UserDefaults.standard
+    let launchedBefore = UserDefaults.standard.bool(forKey: "usersignedin")
+    
+    // Variables for core app data
     var window: UIWindow?
     var userRef : DatabaseReference!
     var ectoWorkout : Workout!
@@ -21,9 +26,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var progressExerciseList : [Exercise]! = []
     var exerciseID : Int! = 0
 
+    /// Within app launch configure and start Firebase and retreive a database instance
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         FirebaseApp.configure()
-        Database.database().isPersistenceEnabled = true
+        Database.database().isPersistenceEnabled = true // Allow persistence so that recent data can be accessed offline
         self.userRef = Database.database().reference(withPath: "user-data")
         
         // Setup default body type workouts
@@ -47,6 +53,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
     
+    /// Create all recommended workout options that can be assigned to a user (Still trying to figure out a better way to do this)
     func setWorkouts() {
         // Build ecto workout
         ectoWorkout = Workout(ID: 0, name: "The Lean Bulk", desc: "This workout routine, coupled with a bulking diet, will help beginners who struggle to gain muscle mass and weight to start building that lean, chisled, muscle and strenth through a tried and tested workout! Since we aren't too worried about weight gain we will go for a full muscle building routine and the option of doing additional cardiovascular exercise would be your choice.", time: 115.0, exercises: [])

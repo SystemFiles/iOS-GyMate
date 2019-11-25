@@ -19,10 +19,12 @@ class BodyTypeQuiz: NSObject {
         self.numQuestions = numOfQuestions
     }
     
+    /// Add a user answer to the model
     func addAnswer(answer : QuizAnswer) {
         answers.append(answer)
     }
     
+    /// Using data within the model, predict a body type that best fits the users responses to questions
     func predictBodyType() -> QuizAnswer.AnswerType {
         var isMale : Bool = true // Maybe do something with this later
         var ectomorphPoints : Float = 0

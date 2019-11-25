@@ -61,7 +61,6 @@ class AddWorkoutViewController: UIViewController, UITableViewDelegate, UITableVi
         exerciseCell.exerciseRestPeriod.text = "\(rowData![indexPath.row].restPeriod) seconds"
         
         return exerciseCell
-        
     }
     
 

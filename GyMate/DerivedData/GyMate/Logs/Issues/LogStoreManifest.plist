@@ -6,34 +6,6 @@
 	<integer>10</integer>
 	<key>logs</key>
 	<dict>
-		<key>3BD53BC6-C2C0-4295-AD59-7CA50B06322E</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogMajorGroupSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.target.product-type.application</string>
-			<key>fileName</key>
-			<string>3BD53BC6-C2C0-4295-AD59-7CA50B06322E.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-			</dict>
-			<key>signature</key>
-			<string>GyMate-fdtovkmtepullvcwkkcpqplnbjxe</string>
-			<key>timeStartedRecording</key>
-			<real>596041660.66345298</real>
-			<key>timeStoppedRecording</key>
-			<real>596041663.27241695</real>
-			<key>title</key>
-			<string>Build target GyMate</string>
-			<key>uniqueIdentifier</key>
-			<string>3BD53BC6-C2C0-4295-AD59-7CA50B06322E</string>
-		</dict>
 		<key>5B2F7735-1182-4BB1-85E2-F34282D603D8</key>
 		<dict>
 			<key>className</key>
@@ -145,6 +117,34 @@
 			<string>Build target nanopb</string>
 			<key>uniqueIdentifier</key>
 			<string>93FA4817-3C7D-4F1A-ACD6-2A83B838E6AF</string>
+		</dict>
+		<key>9A2AAF0D-A543-453E-8DBE-450F09B2404B</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogMajorGroupSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.target.product-type.application</string>
+			<key>fileName</key>
+			<string>9A2AAF0D-A543-453E-8DBE-450F09B2404B.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>signature</key>
+			<string>GyMate-fdtovkmtepullvcwkkcpqplnbjxe</string>
+			<key>timeStartedRecording</key>
+			<real>596391053.96019304</real>
+			<key>timeStoppedRecording</key>
+			<real>596391062.20202196</real>
+			<key>title</key>
+			<string>Build target GyMate</string>
+			<key>uniqueIdentifier</key>
+			<string>9A2AAF0D-A543-453E-8DBE-450F09B2404B</string>
 		</dict>
 		<key>9D84250F-CC79-4E54-834C-91A3D348CBF3</key>
 		<dict>
