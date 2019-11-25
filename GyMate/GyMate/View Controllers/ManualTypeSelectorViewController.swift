@@ -9,6 +9,7 @@
 import UIKit
 import Firebase
 
+/// Created for manually selecting body type
 class ManualTypeSelectorViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     
     let typeData : [String] = ["ECTOMORPH", "MESOMORPH", "ENDOMORPH"]

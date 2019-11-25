@@ -23,6 +23,7 @@ class PasswordResetViewController: UIViewController, UITextFieldDelegate {
         // Do any additional setup after loading the view.
     }
     
+    /// HANDLE PASSWORD RESET
     @IBAction func sendPasswordReset(sender: UIButton!) {
         // Check email field
         if txtEmail != nil && !txtEmail.text!.isEmpty {

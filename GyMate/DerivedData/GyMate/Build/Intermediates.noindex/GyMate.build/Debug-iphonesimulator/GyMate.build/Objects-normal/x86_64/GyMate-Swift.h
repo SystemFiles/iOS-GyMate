@@ -181,6 +181,8 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
+@import CoreGraphics;
+@import Foundation;
 @import ObjectiveC;
 @import UIKit;
 #endif
@@ -199,6 +201,39 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 # pragma clang attribute push(__attribute__((external_source_symbol(language="Swift", defined_in="GyMate",generated_declaration))), apply_to=any(function,enum,objc_interface,objc_category,objc_protocol))
 # pragma pop_macro("any")
 #endif
+
+@class UITextField;
+@class NSBundle;
+@class NSCoder;
+
+SWIFT_CLASS("_TtC6GyMate25AddExerciseViewController")
+@interface AddExerciseViewController : UIViewController
+@property (nonatomic, strong) IBOutlet UITextField * _Null_unspecified txtName;
+@property (nonatomic, strong) IBOutlet UITextField * _Null_unspecified txtDesc;
+@property (nonatomic, strong) IBOutlet UITextField * _Null_unspecified txtReps;
+@property (nonatomic, strong) IBOutlet UITextField * _Null_unspecified txtSets;
+- (void)viewDidLoad;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class UITableView;
+@class UIButton;
+@class UITableViewCell;
+
+SWIFT_CLASS("_TtC6GyMate24AddWorkoutViewController")
+@interface AddWorkoutViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
+@property (nonatomic, strong) IBOutlet UITableView * _Null_unspecified exerciseTable;
+@property (nonatomic, strong) IBOutlet UITextField * _Null_unspecified txtName;
+@property (nonatomic, strong) IBOutlet UITextField * _Null_unspecified txtDesc;
+@property (nonatomic, strong) IBOutlet UIButton * _Null_unspecified btnAdd;
+- (void)viewDidLoad;
+- (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
+- (CGFloat)tableView:(UITableView * _Nonnull)tableView heightForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+- (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
 
 @class UIWindow;
 @class UIApplication;
@@ -221,6 +256,23 @@ SWIFT_CLASS("_TtC6GyMate12BodyTypeQuiz")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UILabel;
+@class UIStoryboardSegue;
+
+SWIFT_CLASS("_TtC6GyMate23DashboardViewController")
+@interface DashboardViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
+@property (nonatomic, strong) IBOutlet UITableView * _Null_unspecified workoutTable;
+@property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified lbUser;
+- (void)viewDidLoad;
+- (IBAction)rewindToDashboardVCWithSender:(UIStoryboardSegue * _Null_unspecified)sender;
+- (IBAction)logoutUserWithSender:(UIButton * _Null_unspecified)sender;
+- (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
+- (CGFloat)tableView:(UITableView * _Nonnull)tableView heightForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+- (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 
 SWIFT_CLASS("_TtC6GyMate8Exercise")
 @interface Exercise : NSObject
@@ -228,11 +280,22 @@ SWIFT_CLASS("_TtC6GyMate8Exercise")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-@class UITextField;
-@class UIStoryboardSegue;
-@class UIButton;
-@class NSBundle;
-@class NSCoder;
+@class UIImageView;
+
+SWIFT_CLASS("_TtC6GyMate21ExerciseTableViewCell")
+@interface ExerciseTableViewCell : UITableViewCell
+@property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified exerciseName;
+@property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified exerciseDesc;
+@property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified exerciseReps;
+@property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified exerciseSets;
+@property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified exerciseRestPeriod;
+@property (nonatomic, strong) IBOutlet UIImageView * _Nullable exerciseImage;
+- (void)awakeFromNib;
+- (void)setSelected:(BOOL)selected animated:(BOOL)animated;
+- (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER SWIFT_AVAILABILITY(ios,introduced=3.0);
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 
 SWIFT_CLASS("_TtC6GyMate19LoginViewController")
 @interface LoginViewController : UIViewController <UITextFieldDelegate>
@@ -240,7 +303,10 @@ SWIFT_CLASS("_TtC6GyMate19LoginViewController")
 @property (nonatomic, strong) IBOutlet UITextField * _Null_unspecified txtPassword;
 - (BOOL)textFieldShouldReturn:(UITextField * _Nonnull)textField SWIFT_WARN_UNUSED_RESULT;
 - (void)viewDidLoad;
+- (void)viewDidAppear:(BOOL)animated;
 - (IBAction)rewindToLoginVCWithSender:(UIStoryboardSegue * _Null_unspecified)sender;
+/// For animating the check box
+- (IBAction)checkMarkTapped:(UIButton * _Nonnull)sender;
 - (IBAction)performLoginWithSender:(UIButton * _Null_unspecified)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
@@ -286,7 +352,6 @@ SWIFT_CLASS("_TtC6GyMate10QuizAnswer")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-@class UILabel;
 
 SWIFT_CLASS("_TtC6GyMate30QuizConfirmationViewController")
 @interface QuizConfirmationViewController : UIViewController
@@ -325,6 +390,18 @@ SWIFT_CLASS("_TtC6GyMate13SceneDelegate")
 - (void)sceneWillEnterForeground:(UIScene * _Nonnull)scene;
 - (void)sceneDidEnterBackground:(UIScene * _Nonnull)scene;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC6GyMate26SelectWorkoutTableViewCell")
+@interface SelectWorkoutTableViewCell : UITableViewCell
+@property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified workoutTitle;
+@property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified workoutDesc;
+@property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified workoutTime;
+- (void)awakeFromNib;
+- (void)setSelected:(BOOL)selected animated:(BOOL)animated;
+- (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER SWIFT_AVAILABILITY(ios,introduced=3.0);
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
