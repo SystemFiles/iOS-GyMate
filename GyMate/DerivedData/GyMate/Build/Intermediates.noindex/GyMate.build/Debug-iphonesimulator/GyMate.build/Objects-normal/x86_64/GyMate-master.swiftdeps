@@ -1,6 +1,6 @@
 version: "Apple Swift version 5.1.2 (swiftlang-1100.0.278 clang-1100.0.33.9)"
 options: "cac4555f8e3bf7401544dd3c82c5938c"
-build_time: [1574620500, 166492000]
+build_time: [1574698251, 300260000]
 inputs:
   "/Users/bensykes/DATASYNC/school/Sem5Courses/AdvancedMobileApp/Final Project/GyMate-Application/GyMate/GyMate/View Controllers/LoginViewController.swift": [1574620457, 628885690]
   "/Users/bensykes/DATASYNC/school/Sem5Courses/AdvancedMobileApp/Final Project/GyMate-Application/GyMate/GyMate/View Controllers/DashboardViewController.swift": [1574620498, 652287573]

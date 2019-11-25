@@ -28,6 +28,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
+        /// HANDLE AUTO-LOGIN AND FORWARD USER WITH AUTO-LOGIN TO PROPER VIEW
         let mainDelegate : AppDelegate = UIApplication.shared.delegate as! AppDelegate
         if mainDelegate.userDefault.bool(forKey: "usersignedin") {
             // Get data for quiz completion
@@ -54,7 +55,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         txtPassword.text = ""
     }
     
-    /// For animating the check box
+    /// For animating the check box and modifying the stayLoggedIn flag
     @IBAction func checkMarkTapped(_ sender: UIButton) {
         UIView.animate(withDuration: 0.1, delay: 0.0, options: .curveLinear, animations: {
             sender.transform = CGAffineTransform(scaleX: 0.7, y: 0.7)
@@ -83,6 +84,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         }
     }
     
+    /// Support method for authorizing users in GyMate
     func signInUser(email : String, password : String) {
         let mainDelegate : AppDelegate = UIApplication.shared.delegate as! AppDelegate
         Auth.auth().signIn(withEmail: email, password: password) { user, error in
