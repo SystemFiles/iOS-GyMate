@@ -471,9 +471,6 @@
                                 <rect key="frame" x="184" y="704" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <connections>
-                                    <segue destination="64f-CH-Y2D" kind="presentation" id="Zu9-yG-ueV"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -483,6 +480,7 @@
                     <connections>
                         <outlet property="lbUser" destination="RZL-Gd-giq" id="fE7-wP-TB3"/>
                         <outlet property="workoutTable" destination="Jsb-dy-GS9" id="9TX-GC-cng"/>
+                        <segue destination="64f-CH-Y2D" kind="presentation" identifier="ChooseSegueToView" id="PeT-FB-xa2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U8A-YT-o8Y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

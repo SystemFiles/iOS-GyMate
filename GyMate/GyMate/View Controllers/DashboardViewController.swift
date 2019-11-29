@@ -78,13 +78,14 @@ class DashboardViewController: UIViewController, UITableViewDelegate, UITableVie
         let ref = mainDelegate.userRef.child(Auth.auth().currentUser!.uid)
         
         let selectedName = self.workouts[indexPath.row].name
-       
-        let chosenWorkout : String = mainDelegate.selectedWorkout
-        //print(chosenWorkout)
+       print("Selected name is: \(selectedName)")
+
         var selectedWorkouts : [Workout] = []
+        
         // Retreive all data
         ref.observe(DataEventType.value, with: { snapshot in
             
+    selectedWorkouts.append(Workout.deserializeWorkout(workoutDict: (snapshot.childSnapshot(forPath: "workouts/recommended").value as! NSMutableDictionary)))
         //var selectedWorkouts : [Workout] = []
         if (snapshot.childSnapshot(forPath: "workouts").childrenCount > 0) { //go through all custom workouts
             for child in snapshot.childSnapshot(forPath: "workouts/custom").children {
@@ -93,37 +94,48 @@ class DashboardViewController: UIViewController, UITableViewDelegate, UITableVie
                 let workoutSnapshot = child as! DataSnapshot
                 let newWorkoutDict = workoutSnapshot.value as! NSMutableDictionary
                 selectedWorkouts.append(Workout.deserializeWorkout(workoutDict: newWorkoutDict))
-                
-                //let workoutSnapshot = child as! DataSnapshot
-               //let newWorkoutDict = workoutSnapshot.value as! NSMutableDictionary
-                var namedWorkout:String
-                for workout in selectedWorkouts {
-                    if workout.name == selectedName{
-                        namedWorkout = workout.name
- 
-                        print("We have the selected name \(selectedName) and we have data from FB as \(namedWorkout)")
-                        
-                        mainDelegate.selectedWorkout = "custom/\(namedWorkout)"
-                            
-                    }
-                }
-                print("This is the workout \(mainDelegate.selectedWorkout)")
-                ////self.gotoSteps()
+
             }
+            var namedWorkout:String
+            for workout in selectedWorkouts {
+                print("The workout names are: \(workout.name)")
+                if workout.name == selectedName{
+                    namedWorkout = workout.name
+                    if namedWorkout == "The Lean Bulk"
+                    {
+                        print("We have the selected name \(selectedName) and we have data from FB as \(namedWorkout)")
+                                            
+                        mainDelegate.selectedWorkout = "recommended"
+                    }
+                    else if namedWorkout == "All About that Balance"
+                    {
+                        print("We have the selected name \(selectedName) and we have data from FB as \(namedWorkout)")
+                                            
+                        mainDelegate.selectedWorkout = "recommended"
+                    }
+                    else if namedWorkout == "Lean wit Me"
+                    {
+                        print("We have the selected name \(selectedName) and we have data from FB as \(namedWorkout)")
+                                            
+                        mainDelegate.selectedWorkout = "recommended"
+                    }
+                    else
+                    {
+                        print("We have the selected name \(selectedName) and we have data from FB as \(namedWorkout)")
+                                            
+                        mainDelegate.selectedWorkout = "custom/\(namedWorkout)"
+
+                    }
+
+                }
+            }
+            print("This is the workout \(mainDelegate.selectedWorkout)")
+            self.gotoSteps()
             
         }else{
             //mainDelegate.selectedWorkout = "recommended"
             }
-        //mainDelegate.selectedWorkout = ""
-            
         })
-        /*if selectedWorkouts.count != 0 {
-            print("Count of workouts = \(selectedWorkouts.count)")
-            print("This is the workout \(mainDelegate.selectedWorkout)")
-            performSegue(withIdentifier: "ChooseSegueToView", sender: nil)
-           // print("This is the workout \(mainDelegate.selectedWorkout)")
-        }*/
-
     }
     func gotoSteps(){
         performSegue(withIdentifier: "ChooseSegueToView", sender: nil)
