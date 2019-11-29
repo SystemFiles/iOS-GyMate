@@ -12,6 +12,7 @@ import SpriteKit
 
 class StepByStepViewController: UIViewController {
     
+    let mainDelegate : AppDelegate = UIApplication.shared.delegate as! AppDelegate
     var seconds = 30
     var count = -1
     var setCount = 0
@@ -20,6 +21,7 @@ class StepByStepViewController: UIViewController {
     
     @IBOutlet var sceneView: SKView!
     var scene:SpriteScene?
+    var lazy : String = ""
     @IBOutlet var lblTimer: UILabel!
     @IBOutlet var lblDesc: UILabel!
     @IBOutlet var lblSets: UILabel!
@@ -28,6 +30,7 @@ class StepByStepViewController: UIViewController {
     @IBOutlet var startOutlet: UIButton!
     @IBOutlet var stopOutlet: UIButton!
     @IBOutlet var nextOutlet: UIButton!
+    
     
     @IBAction func start (sender: Any){
 
@@ -67,17 +70,17 @@ class StepByStepViewController: UIViewController {
         nextOutlet.isHidden = false
     }
     @IBAction func next (sender: Any){
-        
+        lazy = mainDelegate.selectedWorkout
         nextOutlet.isHidden = true
         startOutlet.isHidden = true
         lblTimer.text = "Loading..."
-        let mainDelegate : AppDelegate = UIApplication.shared.delegate as! AppDelegate
+        //let mainDelegate : AppDelegate = UIApplication.shared.delegate as! AppDelegate
         let ref = mainDelegate.userRef.child(Auth.auth().currentUser!.uid)
         
         if setCount < 0{
             if count < 5 {
                 count += 1
-                ref.child("workouts/recommended").observeSingleEvent(of: .value, with: { snapshot in
+                ref.child("workouts/\(lazy) ").observeSingleEvent(of: .value, with: { snapshot in
                     
                     let name = snapshot.childSnapshot(forPath: "exercises/\(self.count)/name").value  as! String
                     self.lblExerciseTitle.text = name
@@ -116,13 +119,13 @@ class StepByStepViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        lazy = mainDelegate.selectedWorkout
         nextOutlet.isHidden = true
         stopOutlet.isHidden = true
        
-        let mainDelegate : AppDelegate = UIApplication.shared.delegate as! AppDelegate
+        //let mainDelegate : AppDelegate = UIApplication.shared.delegate as! AppDelegate
         let ref = mainDelegate.userRef.child(Auth.auth().currentUser!.uid)
-        ref.child("workouts/recommended").observeSingleEvent(of: .value, with: { snapshot in
+        ref.child("workouts/\(lazy)").observeSingleEvent(of: .value, with: { snapshot in
             
             if self.count == -1 {
                 let name = snapshot.childSnapshot(forPath: "name").value  as! String
@@ -153,11 +156,12 @@ class StepByStepViewController: UIViewController {
     
     func updateFromDB() {
         /// Load data into label
-        let mainDelegate : AppDelegate = UIApplication.shared.delegate as! AppDelegate
+        //let mainDelegate : AppDelegate = UIApplication.shared.delegate as! AppDelegate
+        lazy = mainDelegate.selectedWorkout
         let ref = mainDelegate.userRef.child(Auth.auth().currentUser!.uid)
         
 
-        ref.child("workouts/recommended").observeSingleEvent(of: .value, with: { snapshot in
+        ref.child("workouts/\(lazy)").observeSingleEvent(of: .value, with: { snapshot in
 
             let name = snapshot.childSnapshot(forPath: "exercises/\(self.count)/name").value  as! String
             self.lblExerciseTitle.text = name
