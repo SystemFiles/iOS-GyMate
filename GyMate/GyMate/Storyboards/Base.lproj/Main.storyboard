@@ -292,7 +292,7 @@
                                     <color key="titleColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="nextWithSender:" destination="64f-CH-Y2D" eventType="touchUpInside" id="9bH-hR-ujA"/>
+                                    <action selector="doneWorkoutWithSender:" destination="64f-CH-Y2D" eventType="touchUpInside" id="9bH-hR-ujA"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ay4-xQ-qd9">
@@ -303,7 +303,7 @@
                                     <color key="titleColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="startWithSender:" destination="64f-CH-Y2D" eventType="touchUpInside" id="aRO-IT-b8z"/>
+                                    <action selector="startWorkoutWithSender:" destination="64f-CH-Y2D" eventType="touchUpInside" id="aRO-IT-b8z"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lph-cO-KCJ">
@@ -314,7 +314,7 @@
                                     <color key="titleColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="stopWithSender:" destination="64f-CH-Y2D" eventType="touchUpInside" id="vH8-0K-HWG"/>
+                                    <action selector="skipWorkoutWithSender:" destination="64f-CH-Y2D" eventType="touchUpInside" id="vH8-0K-HWG"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -322,20 +322,85 @@
                         <viewLayoutGuide key="safeArea" id="B5B-cf-mLn"/>
                     </view>
                     <connections>
+                        <outlet property="doneOutlet" destination="arP-zB-UDb" id="5jx-FA-r4I"/>
                         <outlet property="lblCount" destination="V5D-Lh-mtv" id="PAW-UV-mA2"/>
                         <outlet property="lblDesc" destination="SyU-Zo-iCD" id="w39-MO-Qtt"/>
                         <outlet property="lblExerciseTitle" destination="foc-AD-vvI" id="fc9-KC-4V0"/>
                         <outlet property="lblSets" destination="Sj0-xA-EOQ" id="WkU-8p-9kg"/>
                         <outlet property="lblTimer" destination="R1B-0Z-0kf" id="ywJ-qT-l52"/>
-                        <outlet property="nextOutlet" destination="arP-zB-UDb" id="5jx-FA-r4I"/>
                         <outlet property="sceneView" destination="1Ac-ek-Obh" id="GAT-Di-Vdw"/>
+                        <outlet property="skipOutlet" destination="lph-cO-KCJ" id="LHW-4i-oJ2"/>
                         <outlet property="startOutlet" destination="ay4-xQ-qd9" id="3Xq-a6-3Ot"/>
-                        <outlet property="stopOutlet" destination="lph-cO-KCJ" id="LHW-4i-oJ2"/>
+                        <segue destination="ccY-VS-j30" kind="presentation" identifier="WorkOutSummarySegue" id="7Sl-yb-9mc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kLs-NA-Krh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="903" y="-699"/>
+        </scene>
+        <!--Work Out View Controller-->
+        <scene sceneID="E8E-Pj-5kZ">
+            <objects>
+                <viewController id="ccY-VS-j30" customClass="WorkOutViewController" customModule="GyMate" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="68U-ns-N6Z">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="9mV-rx-vSG">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Workout Summary" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dVU-jk-i9T">
+                                <rect key="frame" x="69" y="44" width="278" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <color key="textColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T8L-fm-jyt">
+                                <rect key="frame" x="89" y="356" width="238" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Completion Time" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hEl-A6-2fM">
+                                <rect key="frame" x="105" y="275" width="205" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Great Work!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RyB-rJ-uwm">
+                                <rect key="frame" x="56" y="150" width="291" height="78"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qwD-w5-WzS">
+                                <rect key="frame" x="92" y="555" width="230" height="83"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Back to Dashboard">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="fkd-QZ-CgC" kind="unwind" unwindAction="rewindToDashboardVCWithSender:" id="Snh-L0-ZwC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="Nq0-ZW-Nhx"/>
+                    </view>
+                    <connections>
+                        <outlet property="lblTotalTimer" destination="T8L-fm-jyt" id="0vJ-H2-dDa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4W6-eW-Fjx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="fkd-QZ-CgC" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1934.7826086956522" y="-704.46428571428567"/>
         </scene>
         <!--Dashboard View Controller-->
         <scene sceneID="vUa-4P-2O0">
@@ -467,11 +532,6 @@
                                 <color key="textColor" red="0.24728178980000001" green="0.25382989649999999" blue="0.31373378629999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KAo-53-jj5">
-                                <rect key="frame" x="184" y="704" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="ZQG-vS-H5j"/>
@@ -480,7 +540,7 @@
                     <connections>
                         <outlet property="lbUser" destination="RZL-Gd-giq" id="fE7-wP-TB3"/>
                         <outlet property="workoutTable" destination="Jsb-dy-GS9" id="9TX-GC-cng"/>
-                        <segue destination="64f-CH-Y2D" kind="presentation" identifier="ChooseSegueToView" id="PeT-FB-xa2"/>
+                        <segue destination="64f-CH-Y2D" kind="presentation" identifier="StepByStepSegue" id="PeT-FB-xa2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U8A-YT-o8Y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

@@ -83,7 +83,8 @@ class DashboardViewController: UIViewController, UITableViewDelegate, UITableVie
         
         // Retreive all data
         ref.observe(DataEventType.value, with: { snapshot in
-            
+   
+        //Add recommended workout to list
     selectedWorkouts.append(Workout.deserializeWorkout(workoutDict: (snapshot.childSnapshot(forPath: "workouts/recommended").value as! NSMutableDictionary)))
 
         if (snapshot.childSnapshot(forPath: "workouts").childrenCount > 0) { //go through all custom workouts
@@ -95,8 +96,10 @@ class DashboardViewController: UIViewController, UITableViewDelegate, UITableVie
 
             }
             var namedWorkout:String
+                //Check if selected workout has been appended to list
+                //Then store the URL pathway in the delegate
                 for workout in selectedWorkouts {
-
+            
                     if workout.name == selectedName{
                         namedWorkout = workout.name
                         if namedWorkout == "The Lean Bulk"
@@ -127,7 +130,7 @@ class DashboardViewController: UIViewController, UITableViewDelegate, UITableVie
     }
     //Used to call StepByStep View Controller on the selected row
     func gotoSteps(){
-        performSegue(withIdentifier: "ChooseSegueToView", sender: nil)
+        performSegue(withIdentifier: "StepByStepSegue", sender: nil)
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.workouts.count

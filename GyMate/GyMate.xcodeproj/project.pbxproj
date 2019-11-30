@@ -10,6 +10,7 @@
 		4A03C9C32390E47B00DC48F1 /* SpriteScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A03C9C22390E47B00DC48F1 /* SpriteScene.swift */; };
 		4A03C9C52390E4ED00DC48F1 /* StepByStepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A03C9C42390E4ED00DC48F1 /* StepByStepViewController.swift */; };
 		4A03C9C72390E56700DC48F1 /* SceneImages.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 4A03C9C62390E56700DC48F1 /* SceneImages.atlas */; };
+		4A9950C42391F3BC006C73C0 /* WorkOutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9950C32391F3BC006C73C0 /* WorkOutViewController.swift */; };
 		59C69247C06F95712A69201C /* Pods_GyMate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9994C15FB4503254A3AEFBB8 /* Pods_GyMate.framework */; };
 		AE2D729A2386E82200E58FC7 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2D72992386E82200E58FC7 /* DashboardViewController.swift */; };
 		AE2D729C2386E85B00E58FC7 /* AddWorkoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2D729B2386E85B00E58FC7 /* AddWorkoutViewController.swift */; };
@@ -39,6 +40,7 @@
 		4A03C9C22390E47B00DC48F1 /* SpriteScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpriteScene.swift; sourceTree = "<group>"; };
 		4A03C9C42390E4ED00DC48F1 /* StepByStepViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepByStepViewController.swift; sourceTree = "<group>"; };
 		4A03C9C62390E56700DC48F1 /* SceneImages.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = SceneImages.atlas; sourceTree = SOURCE_ROOT; };
+		4A9950C32391F3BC006C73C0 /* WorkOutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkOutViewController.swift; sourceTree = "<group>"; };
 		50F59808A52EE74937FF330A /* Pods-GyMate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GyMate.debug.xcconfig"; path = "Target Support Files/Pods-GyMate/Pods-GyMate.debug.xcconfig"; sourceTree = "<group>"; };
 		9994C15FB4503254A3AEFBB8 /* Pods_GyMate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GyMate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE2D72992386E82200E58FC7 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
@@ -136,6 +138,7 @@
 				AE2D729B2386E85B00E58FC7 /* AddWorkoutViewController.swift */,
 				AED9945F2389D74100647594 /* AddExerciseViewController.swift */,
 				4A03C9C42390E4ED00DC48F1 /* StepByStepViewController.swift */,
+				4A9950C32391F3BC006C73C0 /* WorkOutViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -311,6 +314,7 @@
 				B87D728523745C3300303955 /* AppDelegate.swift in Sources */,
 				AE2D729C2386E85B00E58FC7 /* AddWorkoutViewController.swift in Sources */,
 				4A03C9C32390E47B00DC48F1 /* SpriteScene.swift in Sources */,
+				4A9950C42391F3BC006C73C0 /* WorkOutViewController.swift in Sources */,
 				B82BD8EE2375AF390070130A /* BodyTypeQuiz.swift in Sources */,
 				B87D729D237465CD00303955 /* SignUpViewController.swift in Sources */,
 				AED994602389D74100647594 /* AddExerciseViewController.swift in Sources */,
