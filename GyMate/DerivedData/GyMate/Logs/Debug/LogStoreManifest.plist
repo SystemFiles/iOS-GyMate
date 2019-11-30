@@ -40,6 +40,34 @@
 			<key>uniqueIdentifier</key>
 			<string>0744E1D8-3F67-4970-B8F2-7A3476B24935</string>
 		</dict>
+		<key>1538D4E3-2F88-457E-A590-ECF9328F5B62</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>1538D4E3-2F88-457E-A590-ECF9328F5B62.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>signature</key>
+			<string>Debug ca.sykesdev.GyMate.watchkitapp.watchkitextension</string>
+			<key>timeStartedRecording</key>
+			<real>596838292.81803095</real>
+			<key>timeStoppedRecording</key>
+			<real>596838321.40367305</real>
+			<key>title</key>
+			<string>Debug ca.sykesdev.GyMate.watchkitapp.watchkitextension</string>
+			<key>uniqueIdentifier</key>
+			<string>1538D4E3-2F88-457E-A590-ECF9328F5B62</string>
+		</dict>
 		<key>16773AB6-488E-403D-B419-BCD6753CEC77</key>
 		<dict>
 			<key>className</key>
@@ -142,6 +170,34 @@
 			<key>uniqueIdentifier</key>
 			<string>1B1A1D3B-1AAF-4C41-A4FD-64F1D09809B0</string>
 		</dict>
+		<key>1D1C78A2-E67C-4ECF-8AE2-8B88E7CD3693</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>1D1C78A2-E67C-4ECF-8AE2-8B88E7CD3693.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>signature</key>
+			<string>Debug ca.sykesdev.GyMate.watchkitapp.watchkitextension</string>
+			<key>timeStartedRecording</key>
+			<real>596838323.06780696</real>
+			<key>timeStoppedRecording</key>
+			<real>596838331.88772798</real>
+			<key>title</key>
+			<string>Debug ca.sykesdev.GyMate.watchkitapp.watchkitextension</string>
+			<key>uniqueIdentifier</key>
+			<string>1D1C78A2-E67C-4ECF-8AE2-8B88E7CD3693</string>
+		</dict>
 		<key>1E532953-1E7D-4BD3-B73E-2D56DD5A998C</key>
 		<dict>
 			<key>className</key>
@@ -175,6 +231,40 @@
 			<string>Debug GyMate</string>
 			<key>uniqueIdentifier</key>
 			<string>1E532953-1E7D-4BD3-B73E-2D56DD5A998C</string>
+		</dict>
+		<key>1FBC6EB1-AF2E-4731-ABF0-CBBC1CA7EC4C</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>1FBC6EB1-AF2E-4731-ABF0-CBBC1CA7EC4C.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>GyMate project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>GyMate Watch Companion</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug GyMate</string>
+			<key>timeStartedRecording</key>
+			<real>596838174.63870704</real>
+			<key>timeStoppedRecording</key>
+			<real>596838196.84256005</real>
+			<key>title</key>
+			<string>Debug GyMate</string>
+			<key>uniqueIdentifier</key>
+			<string>1FBC6EB1-AF2E-4731-ABF0-CBBC1CA7EC4C</string>
 		</dict>
 		<key>22D61D62-9B79-412C-9CBB-FF72E0A0D2A2</key>
 		<dict>
@@ -618,6 +708,40 @@
 			<key>uniqueIdentifier</key>
 			<string>584AF764-94C7-47CA-AA6E-6EF326A36FE6</string>
 		</dict>
+		<key>5A21F9E1-495E-4210-8CB4-7FCAA524C4F3</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>5A21F9E1-495E-4210-8CB4-7FCAA524C4F3.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>GyMate project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>GyMate Watch Companion</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug GyMate</string>
+			<key>timeStartedRecording</key>
+			<real>596838067.04814005</real>
+			<key>timeStoppedRecording</key>
+			<real>596838171.19186795</real>
+			<key>title</key>
+			<string>Debug GyMate</string>
+			<key>uniqueIdentifier</key>
+			<string>5A21F9E1-495E-4210-8CB4-7FCAA524C4F3</string>
+		</dict>
 		<key>5A4099DF-19E2-4543-890D-C0DF4DD7C632</key>
 		<dict>
 			<key>className</key>
@@ -1026,6 +1150,34 @@
 			<key>uniqueIdentifier</key>
 			<string>7886FE8E-0814-4FAD-ACB3-D630A2D679BE</string>
 		</dict>
+		<key>7B1D4028-D0C8-4A0D-B06A-547836CCBDC6</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>7B1D4028-D0C8-4A0D-B06A-547836CCBDC6.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>signature</key>
+			<string>Debug ca.sykesdev.GyMate.watchkitapp.watchkitextension</string>
+			<key>timeStartedRecording</key>
+			<real>596838176.22340703</real>
+			<key>timeStoppedRecording</key>
+			<real>596838197.04001904</real>
+			<key>title</key>
+			<string>Debug ca.sykesdev.GyMate.watchkitapp.watchkitextension</string>
+			<key>uniqueIdentifier</key>
+			<string>7B1D4028-D0C8-4A0D-B06A-547836CCBDC6</string>
+		</dict>
 		<key>8113EC33-C637-496B-9454-649A8500CB5E</key>
 		<dict>
 			<key>className</key>
@@ -1298,6 +1450,40 @@
 			<key>uniqueIdentifier</key>
 			<string>A10A650D-DF09-4B57-B484-CE5FCB614470</string>
 		</dict>
+		<key>A8490C3C-663F-42C5-86B7-4FF4B69B3C9C</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>A8490C3C-663F-42C5-86B7-4FF4B69B3C9C.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>GyMate project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>GyMate Watch Companion</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug GyMate</string>
+			<key>timeStartedRecording</key>
+			<real>596838291.33197904</real>
+			<key>timeStoppedRecording</key>
+			<real>596838321.32140899</real>
+			<key>title</key>
+			<string>Debug GyMate</string>
+			<key>uniqueIdentifier</key>
+			<string>A8490C3C-663F-42C5-86B7-4FF4B69B3C9C</string>
+		</dict>
 		<key>B0268175-1B1D-4BE9-89D6-7E66B40F9E40</key>
 		<dict>
 			<key>className</key>
@@ -1434,6 +1620,40 @@
 			<key>uniqueIdentifier</key>
 			<string>BC8E4DDD-7C79-4086-83F9-8E7DB88EAFC7</string>
 		</dict>
+		<key>BFB01673-C23B-4183-917E-C79FAB94F979</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>BFB01673-C23B-4183-917E-C79FAB94F979.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>GyMate project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>GyMate Watch Companion</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug GyMate</string>
+			<key>timeStartedRecording</key>
+			<real>596837981.94046199</real>
+			<key>timeStoppedRecording</key>
+			<real>596838049.72956502</real>
+			<key>title</key>
+			<string>Debug GyMate</string>
+			<key>uniqueIdentifier</key>
+			<string>BFB01673-C23B-4183-917E-C79FAB94F979</string>
+		</dict>
 		<key>C1AB7B78-D6CA-4B07-957A-91BB3008A923</key>
 		<dict>
 			<key>className</key>
@@ -1536,6 +1756,34 @@
 			<key>uniqueIdentifier</key>
 			<string>C618A140-2859-41E2-AA94-E6E7F18DF316</string>
 		</dict>
+		<key>CC9DEEDB-1C9C-46F5-9936-B48F20DF1AC8</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>CC9DEEDB-1C9C-46F5-9936-B48F20DF1AC8.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>signature</key>
+			<string>Debug ca.sykesdev.GyMate.watchkitapp.watchkitextension</string>
+			<key>timeStartedRecording</key>
+			<real>596838049.26846504</real>
+			<key>timeStoppedRecording</key>
+			<real>596838060.39721298</real>
+			<key>title</key>
+			<string>Debug ca.sykesdev.GyMate.watchkitapp.watchkitextension</string>
+			<key>uniqueIdentifier</key>
+			<string>CC9DEEDB-1C9C-46F5-9936-B48F20DF1AC8</string>
+		</dict>
 		<key>D1F283D0-05A5-4D2F-A853-EC03E264C01F</key>
 		<dict>
 			<key>className</key>
@@ -1637,6 +1885,34 @@
 			<string>Debug GyMate</string>
 			<key>uniqueIdentifier</key>
 			<string>D5F187D2-4381-4DBA-87D6-600A729F1B31</string>
+		</dict>
+		<key>D93521D3-465D-4B5A-B584-03852EBE1C97</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>D93521D3-465D-4B5A-B584-03852EBE1C97.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>signature</key>
+			<string>Debug ca.sykesdev.GyMate.watchkitapp.watchkitextension</string>
+			<key>timeStartedRecording</key>
+			<real>596838069.62311304</real>
+			<key>timeStoppedRecording</key>
+			<real>596838171.521492</real>
+			<key>title</key>
+			<string>Debug ca.sykesdev.GyMate.watchkitapp.watchkitextension</string>
+			<key>uniqueIdentifier</key>
+			<string>D93521D3-465D-4B5A-B584-03852EBE1C97</string>
 		</dict>
 		<key>DED5C7B9-F331-486C-A2C9-562F034A2F77</key>
 		<dict>
@@ -1807,6 +2083,40 @@
 			<string>Debug GyMate</string>
 			<key>uniqueIdentifier</key>
 			<string>EB41D37F-4EBB-4D29-A378-62598EAAF68D</string>
+		</dict>
+		<key>EB761AE4-76D4-42F7-8F97-9287BE5B89B9</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>EB761AE4-76D4-42F7-8F97-9287BE5B89B9.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>GyMate project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>GyMate Watch Companion</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug GyMate</string>
+			<key>timeStartedRecording</key>
+			<real>596838321.48316395</real>
+			<key>timeStoppedRecording</key>
+			<real>596838331.82756901</real>
+			<key>title</key>
+			<string>Debug GyMate</string>
+			<key>uniqueIdentifier</key>
+			<string>EB761AE4-76D4-42F7-8F97-9287BE5B89B9</string>
 		</dict>
 		<key>F2C953D1-F528-4756-9084-2D8FAC9CB8C7</key>
 		<dict>

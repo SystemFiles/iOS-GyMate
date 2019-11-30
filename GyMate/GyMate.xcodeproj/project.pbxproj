@@ -28,9 +28,59 @@
 		B87D729D237465CD00303955 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87D729C237465CD00303955 /* SignUpViewController.swift */; };
 		B87D729F23746A8300303955 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87D729E23746A8300303955 /* QuizViewController.swift */; };
 		B88092062381F4D90030042C /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88092052381F4D90030042C /* Exercise.swift */; };
+		B8A260622393030500AA16AE /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8A260602393030500AA16AE /* Interface.storyboard */; };
+		B8A260642393030700AA16AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8A260632393030700AA16AE /* Assets.xcassets */; };
+		B8A2606B2393030700AA16AE /* GyMate Watch Companion Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B8A2606A2393030700AA16AE /* GyMate Watch Companion Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B8A260702393030700AA16AE /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A2606F2393030700AA16AE /* InterfaceController.swift */; };
+		B8A260722393030700AA16AE /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A260712393030700AA16AE /* ExtensionDelegate.swift */; };
+		B8A260742393030700AA16AE /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A260732393030700AA16AE /* NotificationController.swift */; };
+		B8A260762393030700AA16AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8A260752393030700AA16AE /* Assets.xcassets */; };
+		B8A2607B2393030700AA16AE /* GyMate Watch Companion.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = B8A2605E2393030500AA16AE /* GyMate Watch Companion.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		B8C450CC2374D0B800C5F714 /* PasswordResetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8C450CB2374D0B800C5F714 /* PasswordResetViewController.swift */; };
 		B8D15BC32374A47B004A06AD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B8D15BC22374A47B004A06AD /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B8A2606C2393030700AA16AE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B87D727923745C3300303955 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B8A260692393030700AA16AE;
+			remoteInfo = "GyMate Watch Companion Extension";
+		};
+		B8A260792393030700AA16AE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B87D727923745C3300303955 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B8A2605D2393030500AA16AE;
+			remoteInfo = "GyMate Watch Companion";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B8A2607C2393030800AA16AE /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				B8A2607B2393030700AA16AE /* GyMate Watch Companion.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8A2607F2393030800AA16AE /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				B8A2606B2393030700AA16AE /* GyMate Watch Companion Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		50F59808A52EE74937FF330A /* Pods-GyMate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GyMate.debug.xcconfig"; path = "Target Support Files/Pods-GyMate/Pods-GyMate.debug.xcconfig"; sourceTree = "<group>"; };
@@ -57,6 +107,17 @@
 		B87D729C237465CD00303955 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		B87D729E23746A8300303955 /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
 		B88092052381F4D90030042C /* Exercise.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
+		B8A2605E2393030500AA16AE /* GyMate Watch Companion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GyMate Watch Companion.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8A260612393030500AA16AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		B8A260632393030700AA16AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B8A260652393030700AA16AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B8A2606A2393030700AA16AE /* GyMate Watch Companion Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "GyMate Watch Companion Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8A2606F2393030700AA16AE /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		B8A260712393030700AA16AE /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		B8A260732393030700AA16AE /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		B8A260752393030700AA16AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B8A260772393030700AA16AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B8A260782393030700AA16AE /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		B8C450CA2374B6C800C5F714 /* GyMate.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GyMate.entitlements; sourceTree = "<group>"; };
 		B8C450CB2374D0B800C5F714 /* PasswordResetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordResetViewController.swift; sourceTree = "<group>"; };
 		B8D15BC22374A47B004A06AD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -69,6 +130,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				59C69247C06F95712A69201C /* Pods_GyMate.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8A260672393030700AA16AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +157,8 @@
 			children = (
 				34A035B188775ECAEEB03118 /* Pods */,
 				B87D728323745C3300303955 /* GyMate */,
+				B8A2605F2393030500AA16AE /* GyMate Watch Companion */,
+				B8A2606E2393030700AA16AE /* GyMate Watch Companion Extension */,
 				B87D728223745C3300303955 /* Products */,
 				CF91396A29A1A24C82249A42 /* Frameworks */,
 			);
@@ -98,6 +168,8 @@
 			isa = PBXGroup;
 			children = (
 				B87D728123745C3300303955 /* GyMate.app */,
+				B8A2605E2393030500AA16AE /* GyMate Watch Companion.app */,
+				B8A2606A2393030700AA16AE /* GyMate Watch Companion Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -165,6 +237,29 @@
 			path = Graphics;
 			sourceTree = "<group>";
 		};
+		B8A2605F2393030500AA16AE /* GyMate Watch Companion */ = {
+			isa = PBXGroup;
+			children = (
+				B8A260602393030500AA16AE /* Interface.storyboard */,
+				B8A260632393030700AA16AE /* Assets.xcassets */,
+				B8A260652393030700AA16AE /* Info.plist */,
+			);
+			path = "GyMate Watch Companion";
+			sourceTree = "<group>";
+		};
+		B8A2606E2393030700AA16AE /* GyMate Watch Companion Extension */ = {
+			isa = PBXGroup;
+			children = (
+				B8A2606F2393030700AA16AE /* InterfaceController.swift */,
+				B8A260712393030700AA16AE /* ExtensionDelegate.swift */,
+				B8A260732393030700AA16AE /* NotificationController.swift */,
+				B8A260752393030700AA16AE /* Assets.xcassets */,
+				B8A260772393030700AA16AE /* Info.plist */,
+				B8A260782393030700AA16AE /* PushNotificationPayload.apns */,
+			);
+			path = "GyMate Watch Companion Extension";
+			sourceTree = "<group>";
+		};
 		CF91396A29A1A24C82249A42 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -185,15 +280,51 @@
 				B87D727E23745C3300303955 /* Frameworks */,
 				B87D727F23745C3300303955 /* Resources */,
 				2F946111A63A920710B844ED /* [CP] Embed Pods Frameworks */,
+				B8A2607C2393030800AA16AE /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				B8A2607A2393030700AA16AE /* PBXTargetDependency */,
 			);
 			name = GyMate;
 			productName = GyMate;
 			productReference = B87D728123745C3300303955 /* GyMate.app */;
 			productType = "com.apple.product-type.application";
+		};
+		B8A2605D2393030500AA16AE /* GyMate Watch Companion */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B8A260832393030800AA16AE /* Build configuration list for PBXNativeTarget "GyMate Watch Companion" */;
+			buildPhases = (
+				B8A2605C2393030500AA16AE /* Resources */,
+				B8A2607F2393030800AA16AE /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B8A2606D2393030700AA16AE /* PBXTargetDependency */,
+			);
+			name = "GyMate Watch Companion";
+			productName = "GyMate Watch Companion";
+			productReference = B8A2605E2393030500AA16AE /* GyMate Watch Companion.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		B8A260692393030700AA16AE /* GyMate Watch Companion Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B8A260822393030800AA16AE /* Build configuration list for PBXNativeTarget "GyMate Watch Companion Extension" */;
+			buildPhases = (
+				B8A260662393030700AA16AE /* Sources */,
+				B8A260672393030700AA16AE /* Frameworks */,
+				B8A260682393030700AA16AE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "GyMate Watch Companion Extension";
+			productName = "GyMate Watch Companion Extension";
+			productReference = B8A2606A2393030700AA16AE /* GyMate Watch Companion Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -207,6 +338,12 @@
 				TargetAttributes = {
 					B87D728023745C3300303955 = {
 						CreatedOnToolsVersion = 11.2;
+					};
+					B8A2605D2393030500AA16AE = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+					B8A260692393030700AA16AE = {
+						CreatedOnToolsVersion = 11.2.1;
 					};
 				};
 			};
@@ -224,6 +361,8 @@
 			projectRoot = "";
 			targets = (
 				B87D728023745C3300303955 /* GyMate */,
+				B8A2605D2393030500AA16AE /* GyMate Watch Companion */,
+				B8A260692393030700AA16AE /* GyMate Watch Companion Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -237,6 +376,23 @@
 				B8D15BC32374A47B004A06AD /* GoogleService-Info.plist in Resources */,
 				B87D728E23745C3400303955 /* Assets.xcassets in Resources */,
 				B87D728C23745C3300303955 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8A2605C2393030500AA16AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8A260642393030700AA16AE /* Assets.xcassets in Resources */,
+				B8A260622393030500AA16AE /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8A260682393030700AA16AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8A260762393030700AA16AE /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,7 +466,30 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B8A260662393030700AA16AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8A260742393030700AA16AE /* NotificationController.swift in Sources */,
+				B8A260722393030700AA16AE /* ExtensionDelegate.swift in Sources */,
+				B8A260702393030700AA16AE /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B8A2606D2393030700AA16AE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B8A260692393030700AA16AE /* GyMate Watch Companion Extension */;
+			targetProxy = B8A2606C2393030700AA16AE /* PBXContainerItemProxy */;
+		};
+		B8A2607A2393030700AA16AE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B8A2605D2393030500AA16AE /* GyMate Watch Companion */;
+			targetProxy = B8A260792393030700AA16AE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		B87D728A23745C3300303955 /* Main.storyboard */ = {
@@ -327,6 +506,14 @@
 				B87D729023745C3400303955 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		B8A260602393030500AA16AE /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B8A260612393030500AA16AE /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -486,6 +673,88 @@
 			};
 			name = Release;
 		};
+		B8A2607D2393030800AA16AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L53TEA5UHM;
+				IBSC_MODULE = GyMate_Watch_Companion_Extension;
+				INFOPLIST_FILE = "GyMate Watch Companion/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = ca.sykesdev.GyMate.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Debug;
+		};
+		B8A2607E2393030800AA16AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L53TEA5UHM;
+				IBSC_MODULE = GyMate_Watch_Companion_Extension;
+				INFOPLIST_FILE = "GyMate Watch Companion/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = ca.sykesdev.GyMate.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Release;
+		};
+		B8A260802393030800AA16AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L53TEA5UHM;
+				INFOPLIST_FILE = "GyMate Watch Companion Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ca.sykesdev.GyMate.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Debug;
+		};
+		B8A260812393030800AA16AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L53TEA5UHM;
+				INFOPLIST_FILE = "GyMate Watch Companion Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ca.sykesdev.GyMate.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -503,6 +772,24 @@
 			buildConfigurations = (
 				B87D729623745C3400303955 /* Debug */,
 				B87D729723745C3400303955 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B8A260822393030800AA16AE /* Build configuration list for PBXNativeTarget "GyMate Watch Companion Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B8A260802393030800AA16AE /* Debug */,
+				B8A260812393030800AA16AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B8A260832393030800AA16AE /* Build configuration list for PBXNativeTarget "GyMate Watch Companion" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B8A2607D2393030800AA16AE /* Debug */,
+				B8A2607E2393030800AA16AE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
