@@ -78,7 +78,6 @@ class DashboardViewController: UIViewController, UITableViewDelegate, UITableVie
         let ref = mainDelegate.userRef.child(Auth.auth().currentUser!.uid)
         
         let selectedName = self.workouts[indexPath.row].name
-       print("Selected name is: \(selectedName)")
 
         var selectedWorkouts : [Workout] = []
         
@@ -86,7 +85,7 @@ class DashboardViewController: UIViewController, UITableViewDelegate, UITableVie
         ref.observe(DataEventType.value, with: { snapshot in
             
     selectedWorkouts.append(Workout.deserializeWorkout(workoutDict: (snapshot.childSnapshot(forPath: "workouts/recommended").value as! NSMutableDictionary)))
-        //var selectedWorkouts : [Workout] = []
+
         if (snapshot.childSnapshot(forPath: "workouts").childrenCount > 0) { //go through all custom workouts
             for child in snapshot.childSnapshot(forPath: "workouts/custom").children {
                 let name = child
@@ -97,43 +96,41 @@ class DashboardViewController: UIViewController, UITableViewDelegate, UITableVie
 
             }
             var namedWorkout:String
-            for workout in selectedWorkouts {
-                print("The workout names are: \(workout.name)")
-                if workout.name == selectedName{
-                    namedWorkout = workout.name
-                    if namedWorkout == "The Lean Bulk"
-                    {
-                        print("We have the selected name \(selectedName) and we have data from FB as \(namedWorkout)")
-                                            
-                        mainDelegate.selectedWorkout = "recommended"
-                    }
-                    else if namedWorkout == "All About that Balance"
-                    {
-                        print("We have the selected name \(selectedName) and we have data from FB as \(namedWorkout)")
-                                            
-                        mainDelegate.selectedWorkout = "recommended"
-                    }
-                    else if namedWorkout == "Lean wit Me"
-                    {
-                        print("We have the selected name \(selectedName) and we have data from FB as \(namedWorkout)")
-                                            
-                        mainDelegate.selectedWorkout = "recommended"
-                    }
-                    else
-                    {
-                        print("We have the selected name \(selectedName) and we have data from FB as \(namedWorkout)")
-                                            
-                        mainDelegate.selectedWorkout = "custom/\(namedWorkout)"
+                for workout in selectedWorkouts {
+                    print("The workout names are: \(workout.name)")
+                    if workout.name == selectedName{
+                        namedWorkout = workout.name
+                        if namedWorkout == "The Lean Bulk"
+                        {
+                            print("We have the selected name \(selectedName) and we have data from FB as \(namedWorkout)")
+                                                
+                            mainDelegate.selectedWorkout = "recommended"
+                        }
+                        else if namedWorkout == "All About that Balance"
+                        {
+                            print("We have the selected name \(selectedName) and we have data from FB as \(namedWorkout)")
+                                                
+                            mainDelegate.selectedWorkout = "recommended"
+                        }
+                        else if namedWorkout == "Lean wit Me"
+                        {
+                            print("We have the selected name \(selectedName) and we have data from FB as \(namedWorkout)")
+                                                
+                            mainDelegate.selectedWorkout = "recommended"
+                        }
+                        else
+                        {
+                            print("We have the selected name \(selectedName) and we have data from FB as \(namedWorkout)")
+                                                
+                            mainDelegate.selectedWorkout = "custom/\(namedWorkout)"
+
+                        }
 
                     }
-
                 }
-            }
             print("This is the workout \(mainDelegate.selectedWorkout)")
             self.gotoSteps()
             
-        }else{
-            //mainDelegate.selectedWorkout = "recommended"
             }
         })
     }

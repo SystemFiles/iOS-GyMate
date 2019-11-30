@@ -17,11 +17,12 @@ class StepByStepViewController: UIViewController {
     var count = -1
     var setCount = 0
     var totalSets = 0
+    var totalExercises = 0
     var timer = Timer()
     
     @IBOutlet var sceneView: SKView!
     var scene:SpriteScene?
-    var lazy : String = ""
+    var workoutType : String = ""
     @IBOutlet var lblTimer: UILabel!
     @IBOutlet var lblDesc: UILabel!
     @IBOutlet var lblSets: UILabel!
@@ -70,18 +71,18 @@ class StepByStepViewController: UIViewController {
         nextOutlet.isHidden = false
     }
     @IBAction func next (sender: Any){
-        lazy = mainDelegate.selectedWorkout
+        workoutType = mainDelegate.selectedWorkout
         nextOutlet.isHidden = true
         startOutlet.isHidden = true
         lblTimer.text = "Loading..."
-        //let mainDelegate : AppDelegate = UIApplication.shared.delegate as! AppDelegate
+
         let ref = mainDelegate.userRef.child(Auth.auth().currentUser!.uid)
-        
+
         if setCount < 0{
-            if count < 5 {
-                count += 1
-                ref.child("workouts/\(lazy) ").observeSingleEvent(of: .value, with: { snapshot in
-                    
+            if count < totalExercises-1 {
+                self.count += 1
+                ref.child("workouts/\(workoutType)").observeSingleEvent(of: .value, with: { snapshot in
+
                     let name = snapshot.childSnapshot(forPath: "exercises/\(self.count)/name").value  as! String
                     self.lblExerciseTitle.text = name
                     
@@ -119,13 +120,13 @@ class StepByStepViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        lazy = mainDelegate.selectedWorkout
+        workoutType = mainDelegate.selectedWorkout
         nextOutlet.isHidden = true
         stopOutlet.isHidden = true
        
         //let mainDelegate : AppDelegate = UIApplication.shared.delegate as! AppDelegate
         let ref = mainDelegate.userRef.child(Auth.auth().currentUser!.uid)
-        ref.child("workouts/\(lazy)").observeSingleEvent(of: .value, with: { snapshot in
+        ref.child("workouts/\(workoutType)").observeSingleEvent(of: .value, with: { snapshot in
             
             if self.count == -1 {
                 let name = snapshot.childSnapshot(forPath: "name").value  as! String
@@ -141,6 +142,9 @@ class StepByStepViewController: UIViewController {
 
                 self.lblDesc.text = desc
             }
+            let exercises = snapshot.childSnapshot(forPath: "exercises").childrenCount
+            self.totalExercises = Int(exercises)
+
 
         })
         // Do any additional setup after loading the view.
@@ -156,12 +160,12 @@ class StepByStepViewController: UIViewController {
     
     func updateFromDB() {
         /// Load data into label
-        //let mainDelegate : AppDelegate = UIApplication.shared.delegate as! AppDelegate
-        lazy = mainDelegate.selectedWorkout
+
+        workoutType = mainDelegate.selectedWorkout
         let ref = mainDelegate.userRef.child(Auth.auth().currentUser!.uid)
         
 
-        ref.child("workouts/\(lazy)").observeSingleEvent(of: .value, with: { snapshot in
+        ref.child("workouts/\(workoutType)").observeSingleEvent(of: .value, with: { snapshot in
 
             let name = snapshot.childSnapshot(forPath: "exercises/\(self.count)/name").value  as! String
             self.lblExerciseTitle.text = name
