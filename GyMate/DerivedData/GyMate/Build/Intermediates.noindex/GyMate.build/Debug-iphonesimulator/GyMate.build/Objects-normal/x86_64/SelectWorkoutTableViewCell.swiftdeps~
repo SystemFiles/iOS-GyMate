@@ -8,177 +8,340 @@ provides-member:
 provides-dynamic-lookup:
 - "awakeFromNib"
 - "setSelected"
+- "workoutBackgroundContainer"
 - "workoutDesc"
 - "workoutTime"
 - "workoutTitle"
 depends-top-level:
+- "AssignmentPrecedence"
 - "Bool"
 - "SelectWorkoutTableViewCell"
+- !private "UIColor"
+- "UIImageView"
 - "UILabel"
 - "UITableViewCell"
 depends-member:
+- !private ["So7CALayerC", "shadowColor"]
+- !private ["So15CALayerDelegateP", "UIColor"]
 - ["So15CALayerDelegateP", ""]
 - !private ["So15CALayerDelegateP", "awakeFromNib"]
 - !private ["So15CALayerDelegateP", "init"]
+- !private ["So15CALayerDelegateP", "layer"]
 - !private ["So15CALayerDelegateP", "setSelected"]
+- !private ["So15CALayerDelegateP", "workoutBackgroundContainer"]
+- !private ["So13CAMediaTimingP", "shadowColor"]
+- !private ["s7CVarArgP", "UIColor"]
 - ["s7CVarArgP", ""]
 - !private ["s7CVarArgP", "awakeFromNib"]
+- !private ["s7CVarArgP", "black"]
+- !private ["s7CVarArgP", "cgColor"]
 - !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "layer"]
 - !private ["s7CVarArgP", "setSelected"]
+- !private ["s7CVarArgP", "shadowColor"]
+- !private ["s7CVarArgP", "workoutBackgroundContainer"]
+- !private ["s28CustomDebugStringConvertibleP", "UIColor"]
 - ["s28CustomDebugStringConvertibleP", ""]
 - !private ["s28CustomDebugStringConvertibleP", "awakeFromNib"]
+- !private ["s28CustomDebugStringConvertibleP", "black"]
+- !private ["s28CustomDebugStringConvertibleP", "cgColor"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "layer"]
 - !private ["s28CustomDebugStringConvertibleP", "setSelected"]
+- !private ["s28CustomDebugStringConvertibleP", "shadowColor"]
+- !private ["s28CustomDebugStringConvertibleP", "workoutBackgroundContainer"]
+- !private ["s17CustomReflectableP", "layer"]
+- !private ["s23CustomStringConvertibleP", "UIColor"]
 - ["s23CustomStringConvertibleP", ""]
 - !private ["s23CustomStringConvertibleP", "awakeFromNib"]
+- !private ["s23CustomStringConvertibleP", "black"]
+- !private ["s23CustomStringConvertibleP", "cgColor"]
 - !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "layer"]
 - !private ["s23CustomStringConvertibleP", "setSelected"]
+- !private ["s23CustomStringConvertibleP", "shadowColor"]
+- !private ["s23CustomStringConvertibleP", "workoutBackgroundContainer"]
+- !private ["Se", "layer"]
+- !private ["SE", "layer"]
+- !private ["SQ", "UIColor"]
 - ["SQ", ""]
 - !private ["SQ", "awakeFromNib"]
+- !private ["SQ", "black"]
+- !private ["SQ", "cgColor"]
 - !private ["SQ", "init"]
+- !private ["SQ", "layer"]
 - !private ["SQ", "setSelected"]
+- !private ["SQ", "shadowColor"]
+- !private ["SQ", "workoutBackgroundContainer"]
+- !private ["s23ExpressibleByNilLiteralP", "layer"]
+- !private ["SH", "UIColor"]
 - ["SH", ""]
 - !private ["SH", "awakeFromNib"]
+- !private ["SH", "black"]
+- !private ["SH", "cgColor"]
 - !private ["SH", "init"]
+- !private ["SH", "layer"]
 - !private ["SH", "setSelected"]
+- !private ["SH", "shadowColor"]
+- !private ["SH", "workoutBackgroundContainer"]
+- !private ["So8NSCodingP", "UIColor"]
 - ["So8NSCodingP", ""]
 - !private ["So8NSCodingP", "awakeFromNib"]
+- !private ["So8NSCodingP", "black"]
+- !private ["So8NSCodingP", "cgColor"]
 - !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "layer"]
 - !private ["So8NSCodingP", "setSelected"]
+- !private ["So8NSCodingP", "shadowColor"]
+- !private ["So8NSCodingP", "workoutBackgroundContainer"]
+- !private ["So9NSCopyingP", "black"]
+- !private ["So9NSCopyingP", "cgColor"]
+- !private ["So21NSItemProviderReadingP", "black"]
+- !private ["So21NSItemProviderReadingP", "cgColor"]
+- !private ["So21NSItemProviderWritingP", "black"]
+- !private ["So21NSItemProviderWritingP", "cgColor"]
 - ["So8NSObjectC", "Bool"]
+- !private ["So8NSObjectC", "UIColor"]
+- ["So8NSObjectC", "UIImageView"]
 - ["So8NSObjectC", "UILabel"]
 - ["So8NSObjectC", "awakeFromNib"]
+- !private ["So8NSObjectC", "black"]
+- !private ["So8NSObjectC", "cgColor"]
 - ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "layer"]
 - ["So8NSObjectC", "setSelected"]
+- !private ["So8NSObjectC", "shadowColor"]
+- ["So8NSObjectC", "workoutBackgroundContainer"]
 - ["So8NSObjectC", "workoutDesc"]
 - ["So8NSObjectC", "workoutTime"]
 - ["So8NSObjectC", "workoutTitle"]
+- !private ["So8NSObjectP", "UIColor"]
 - ["So8NSObjectP", ""]
 - !private ["So8NSObjectP", "awakeFromNib"]
+- !private ["So8NSObjectP", "black"]
+- !private ["So8NSObjectP", "cgColor"]
 - !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "layer"]
 - !private ["So8NSObjectP", "setSelected"]
+- !private ["So8NSObjectP", "shadowColor"]
+- !private ["So8NSObjectP", "workoutBackgroundContainer"]
+- !private ["So14NSSecureCodingP", "black"]
+- !private ["So14NSSecureCodingP", "cgColor"]
+- !private ["So14NSSecureCodingP", "shadowColor"]
+- !private ["Sq", "layer"]
 - ["6GyMate26SelectWorkoutTableViewCellC", "Bool"]
+- !private ["6GyMate26SelectWorkoutTableViewCellC", "UIColor"]
+- ["6GyMate26SelectWorkoutTableViewCellC", "UIImageView"]
 - ["6GyMate26SelectWorkoutTableViewCellC", "UILabel"]
 - ["6GyMate26SelectWorkoutTableViewCellC", "awakeFromNib"]
 - ["6GyMate26SelectWorkoutTableViewCellC", "deinit"]
 - ["6GyMate26SelectWorkoutTableViewCellC", "init"]
 - ["6GyMate26SelectWorkoutTableViewCellC", "setSelected"]
+- ["6GyMate26SelectWorkoutTableViewCellC", "workoutBackgroundContainer"]
 - ["6GyMate26SelectWorkoutTableViewCellC", "workoutDesc"]
 - ["6GyMate26SelectWorkoutTableViewCellC", "workoutTime"]
 - ["6GyMate26SelectWorkoutTableViewCellC", "workoutTitle"]
+- !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "layer"]
+- !private ["So29UIAccessibilityIdentificationP", "UIColor"]
 - ["So29UIAccessibilityIdentificationP", ""]
 - !private ["So29UIAccessibilityIdentificationP", "awakeFromNib"]
 - !private ["So29UIAccessibilityIdentificationP", "init"]
+- !private ["So29UIAccessibilityIdentificationP", "layer"]
 - !private ["So29UIAccessibilityIdentificationP", "setSelected"]
+- !private ["So29UIAccessibilityIdentificationP", "workoutBackgroundContainer"]
+- !private ["So12UIAppearanceP", "UIColor"]
 - ["So12UIAppearanceP", ""]
 - !private ["So12UIAppearanceP", "awakeFromNib"]
 - !private ["So12UIAppearanceP", "init"]
+- !private ["So12UIAppearanceP", "layer"]
 - !private ["So12UIAppearanceP", "setSelected"]
+- !private ["So12UIAppearanceP", "workoutBackgroundContainer"]
+- !private ["So21UIAppearanceContainerP", "UIColor"]
 - ["So21UIAppearanceContainerP", ""]
 - !private ["So21UIAppearanceContainerP", "awakeFromNib"]
 - !private ["So21UIAppearanceContainerP", "init"]
+- !private ["So21UIAppearanceContainerP", "layer"]
 - !private ["So21UIAppearanceContainerP", "setSelected"]
+- !private ["So21UIAppearanceContainerP", "workoutBackgroundContainer"]
+- !private ["So7UIColorC", "black"]
+- !private ["So7UIColorC", "cgColor"]
+- !private ["So17UICoordinateSpaceP", "UIColor"]
 - ["So17UICoordinateSpaceP", ""]
 - !private ["So17UICoordinateSpaceP", "awakeFromNib"]
 - !private ["So17UICoordinateSpaceP", "init"]
+- !private ["So17UICoordinateSpaceP", "layer"]
 - !private ["So17UICoordinateSpaceP", "setSelected"]
+- !private ["So17UICoordinateSpaceP", "workoutBackgroundContainer"]
+- !private ["So13UIDynamicItemP", "UIColor"]
 - ["So13UIDynamicItemP", ""]
 - !private ["So13UIDynamicItemP", "awakeFromNib"]
 - !private ["So13UIDynamicItemP", "init"]
+- !private ["So13UIDynamicItemP", "layer"]
 - !private ["So13UIDynamicItemP", "setSelected"]
+- !private ["So13UIDynamicItemP", "workoutBackgroundContainer"]
+- !private ["So18UIFocusEnvironmentP", "UIColor"]
 - ["So18UIFocusEnvironmentP", ""]
 - !private ["So18UIFocusEnvironmentP", "awakeFromNib"]
 - !private ["So18UIFocusEnvironmentP", "init"]
+- !private ["So18UIFocusEnvironmentP", "layer"]
 - !private ["So18UIFocusEnvironmentP", "setSelected"]
+- !private ["So18UIFocusEnvironmentP", "workoutBackgroundContainer"]
+- !private ["So11UIFocusItemP", "UIColor"]
 - ["So11UIFocusItemP", ""]
 - !private ["So11UIFocusItemP", "awakeFromNib"]
 - !private ["So11UIFocusItemP", "init"]
+- !private ["So11UIFocusItemP", "layer"]
 - !private ["So11UIFocusItemP", "setSelected"]
+- !private ["So11UIFocusItemP", "workoutBackgroundContainer"]
+- !private ["So20UIFocusItemContainerP", "UIColor"]
 - ["So20UIFocusItemContainerP", ""]
 - !private ["So20UIFocusItemContainerP", "awakeFromNib"]
 - !private ["So20UIFocusItemContainerP", "init"]
+- !private ["So20UIFocusItemContainerP", "layer"]
 - !private ["So20UIFocusItemContainerP", "setSelected"]
+- !private ["So20UIFocusItemContainerP", "workoutBackgroundContainer"]
+- !private ["So27UIGestureRecognizerDelegateP", "UIColor"]
 - ["So27UIGestureRecognizerDelegateP", ""]
 - !private ["So27UIGestureRecognizerDelegateP", "awakeFromNib"]
 - !private ["So27UIGestureRecognizerDelegateP", "init"]
 - !private ["So27UIGestureRecognizerDelegateP", "setSelected"]
+- !private ["So27UIGestureRecognizerDelegateP", "workoutBackgroundContainer"]
+- !private ["So11UIImageViewC", "layer"]
+- !private ["So24UILargeContentViewerItemP", "UIColor"]
 - ["So24UILargeContentViewerItemP", ""]
 - !private ["So24UILargeContentViewerItemP", "awakeFromNib"]
 - !private ["So24UILargeContentViewerItemP", "init"]
+- !private ["So24UILargeContentViewerItemP", "layer"]
 - !private ["So24UILargeContentViewerItemP", "setSelected"]
+- !private ["So24UILargeContentViewerItemP", "workoutBackgroundContainer"]
+- !private ["So30UIPasteConfigurationSupportingP", "UIColor"]
 - ["So30UIPasteConfigurationSupportingP", ""]
 - !private ["So30UIPasteConfigurationSupportingP", "awakeFromNib"]
 - !private ["So30UIPasteConfigurationSupportingP", "init"]
+- !private ["So30UIPasteConfigurationSupportingP", "layer"]
 - !private ["So30UIPasteConfigurationSupportingP", "setSelected"]
+- !private ["So30UIPasteConfigurationSupportingP", "workoutBackgroundContainer"]
 - ["So11UIResponderC", "Bool"]
+- !private ["So11UIResponderC", "UIColor"]
+- ["So11UIResponderC", "UIImageView"]
 - ["So11UIResponderC", "UILabel"]
 - ["So11UIResponderC", "awakeFromNib"]
 - ["So11UIResponderC", "init"]
+- !private ["So11UIResponderC", "layer"]
 - ["So11UIResponderC", "setSelected"]
+- ["So11UIResponderC", "workoutBackgroundContainer"]
 - ["So11UIResponderC", "workoutDesc"]
 - ["So11UIResponderC", "workoutTime"]
 - ["So11UIResponderC", "workoutTitle"]
+- !private ["So30UIResponderStandardEditActionsP", "UIColor"]
 - ["So30UIResponderStandardEditActionsP", ""]
 - !private ["So30UIResponderStandardEditActionsP", "awakeFromNib"]
 - !private ["So30UIResponderStandardEditActionsP", "init"]
+- !private ["So30UIResponderStandardEditActionsP", "layer"]
 - !private ["So30UIResponderStandardEditActionsP", "setSelected"]
+- !private ["So30UIResponderStandardEditActionsP", "workoutBackgroundContainer"]
 - ["So15UITableViewCellC", "Bool"]
+- !private ["So15UITableViewCellC", "UIColor"]
+- ["So15UITableViewCellC", "UIImageView"]
 - ["So15UITableViewCellC", "UILabel"]
 - ["So15UITableViewCellC", ""]
 - ["So15UITableViewCellC", "awakeFromNib"]
 - ["So15UITableViewCellC", "init"]
 - ["So15UITableViewCellC", "setSelected"]
+- ["So15UITableViewCellC", "workoutBackgroundContainer"]
 - ["So15UITableViewCellC", "workoutDesc"]
 - ["So15UITableViewCellC", "workoutTime"]
 - ["So15UITableViewCellC", "workoutTitle"]
+- !private ["So18UITraitEnvironmentP", "UIColor"]
 - ["So18UITraitEnvironmentP", ""]
 - !private ["So18UITraitEnvironmentP", "awakeFromNib"]
 - !private ["So18UITraitEnvironmentP", "init"]
+- !private ["So18UITraitEnvironmentP", "layer"]
 - !private ["So18UITraitEnvironmentP", "setSelected"]
+- !private ["So18UITraitEnvironmentP", "workoutBackgroundContainer"]
+- !private ["So23UIUserActivityRestoringP", "UIColor"]
 - ["So23UIUserActivityRestoringP", ""]
 - !private ["So23UIUserActivityRestoringP", "awakeFromNib"]
 - !private ["So23UIUserActivityRestoringP", "init"]
+- !private ["So23UIUserActivityRestoringP", "layer"]
 - !private ["So23UIUserActivityRestoringP", "setSelected"]
+- !private ["So23UIUserActivityRestoringP", "workoutBackgroundContainer"]
 - ["So6UIViewC", "Bool"]
+- !private ["So6UIViewC", "UIColor"]
+- ["So6UIViewC", "UIImageView"]
 - ["So6UIViewC", "UILabel"]
 - ["So6UIViewC", "awakeFromNib"]
 - ["So6UIViewC", "init"]
+- !private ["So6UIViewC", "layer"]
 - ["So6UIViewC", "setSelected"]
+- ["So6UIViewC", "workoutBackgroundContainer"]
 - ["So6UIViewC", "workoutDesc"]
 - ["So6UIViewC", "workoutTime"]
 - ["So6UIViewC", "workoutTitle"]
+- !private ["s26_ExpressibleByColorLiteralP", "black"]
+- !private ["s26_ExpressibleByColorLiteralP", "cgColor"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UIColor"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "awakeFromNib"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "black"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "cgColor"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "layer"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "setSelected"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "shadowColor"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "workoutBackgroundContainer"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "UIColor"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", ""]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "awakeFromNib"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "black"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "cgColor"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "init"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "layer"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "setSelected"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "shadowColor"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "workoutBackgroundContainer"]
+- !private ["s21_ObjectiveCBridgeableP", "layer"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "UIColor"]
 - ["s38__DefaultCustomPlaygroundQuickLookableP", ""]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "awakeFromNib"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "init"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "layer"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "setSelected"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "workoutBackgroundContainer"]
 depends-nominal:
+- !private "So7CALayerC"
 - "So15CALayerDelegateP"
+- !private "So13CAMediaTimingP"
 - "s7CVarArgP"
 - "s28CustomDebugStringConvertibleP"
+- !private "s17CustomReflectableP"
 - "s23CustomStringConvertibleP"
+- !private "Se"
+- !private "SE"
 - "SQ"
+- !private "s23ExpressibleByNilLiteralP"
 - "SH"
 - "So8NSCodingP"
+- !private "So9NSCopyingP"
+- !private "So21NSItemProviderReadingP"
+- !private "So21NSItemProviderWritingP"
 - "So8NSObjectC"
 - "So8NSObjectP"
+- !private "So14NSSecureCodingP"
+- !private "Sq"
 - "6GyMate26SelectWorkoutTableViewCellC"
+- !private "So48UIAccessibilityContentSizeCategoryImageAdjustingP"
 - "So29UIAccessibilityIdentificationP"
 - "So12UIAppearanceP"
 - "So21UIAppearanceContainerP"
+- !private "So7UIColorC"
 - "So17UICoordinateSpaceP"
 - "So13UIDynamicItemP"
 - "So18UIFocusEnvironmentP"
 - "So11UIFocusItemP"
 - "So20UIFocusItemContainerP"
 - "So27UIGestureRecognizerDelegateP"
+- !private "So11UIImageViewC"
 - "So24UILargeContentViewerItemP"
 - "So30UIPasteConfigurationSupportingP"
 - "So11UIResponderC"
@@ -187,8 +350,10 @@ depends-nominal:
 - "So18UITraitEnvironmentP"
 - "So23UIUserActivityRestoringP"
 - "So6UIViewC"
+- !private "s26_ExpressibleByColorLiteralP"
 - "10Foundation27_KeyValueCodingAndObservingP"
 - "10Foundation37_KeyValueCodingAndObservingPublishingP"
+- !private "s21_ObjectiveCBridgeableP"
 - "s38__DefaultCustomPlaygroundQuickLookableP"
 depends-dynamic-lookup:
 depends-external:
@@ -1451,4 +1616,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "647c6deeff84ba23578d6bef31099420"
+interface-hash: "53ef9c60784eec3fbb2090a4e62ba8a0"

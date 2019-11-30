@@ -7,6 +7,7 @@ provides-member:
 - ["6GyMate21ExerciseTableViewCellC", ""]
 provides-dynamic-lookup:
 - "awakeFromNib"
+- "exerciseBackgroundContainer"
 - "exerciseDesc"
 - "exerciseImage"
 - "exerciseName"
@@ -15,37 +16,60 @@ provides-dynamic-lookup:
 - "exerciseSets"
 - "setSelected"
 depends-top-level:
+- "AssignmentPrecedence"
 - "Bool"
 - "ExerciseTableViewCell"
+- !private "FloatLiteralType"
+- !private "IntegerLiteralType"
 - "UIImageView"
 - "UILabel"
 - "UITableViewCell"
 depends-member:
+- !private ["So7CALayerC", "cornerRadius"]
 - ["So15CALayerDelegateP", ""]
 - !private ["So15CALayerDelegateP", "awakeFromNib"]
+- !private ["So15CALayerDelegateP", "exerciseBackgroundContainer"]
 - !private ["So15CALayerDelegateP", "init"]
+- !private ["So15CALayerDelegateP", "layer"]
 - !private ["So15CALayerDelegateP", "setSelected"]
+- !private ["So13CAMediaTimingP", "cornerRadius"]
 - ["s7CVarArgP", ""]
 - !private ["s7CVarArgP", "awakeFromNib"]
+- !private ["s7CVarArgP", "cornerRadius"]
+- !private ["s7CVarArgP", "exerciseBackgroundContainer"]
 - !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "layer"]
 - !private ["s7CVarArgP", "setSelected"]
 - ["s28CustomDebugStringConvertibleP", ""]
 - !private ["s28CustomDebugStringConvertibleP", "awakeFromNib"]
+- !private ["s28CustomDebugStringConvertibleP", "cornerRadius"]
+- !private ["s28CustomDebugStringConvertibleP", "exerciseBackgroundContainer"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "layer"]
 - !private ["s28CustomDebugStringConvertibleP", "setSelected"]
+- !private ["s17CustomReflectableP", "layer"]
 - ["s23CustomStringConvertibleP", ""]
 - !private ["s23CustomStringConvertibleP", "awakeFromNib"]
+- !private ["s23CustomStringConvertibleP", "cornerRadius"]
+- !private ["s23CustomStringConvertibleP", "exerciseBackgroundContainer"]
 - !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "layer"]
 - !private ["s23CustomStringConvertibleP", "setSelected"]
+- !private ["Se", "layer"]
+- !private ["SE", "layer"]
 - ["SQ", ""]
 - !private ["SQ", "awakeFromNib"]
+- !private ["SQ", "cornerRadius"]
+- !private ["SQ", "exerciseBackgroundContainer"]
 - !private ["SQ", "init"]
+- !private ["SQ", "layer"]
 - !private ["SQ", "setSelected"]
 - ["6GyMate21ExerciseTableViewCellC", "Bool"]
 - ["6GyMate21ExerciseTableViewCellC", "UIImageView"]
 - ["6GyMate21ExerciseTableViewCellC", "UILabel"]
 - ["6GyMate21ExerciseTableViewCellC", "awakeFromNib"]
 - ["6GyMate21ExerciseTableViewCellC", "deinit"]
+- ["6GyMate21ExerciseTableViewCellC", "exerciseBackgroundContainer"]
 - ["6GyMate21ExerciseTableViewCellC", "exerciseDesc"]
 - ["6GyMate21ExerciseTableViewCellC", "exerciseImage"]
 - ["6GyMate21ExerciseTableViewCellC", "exerciseName"]
@@ -54,18 +78,27 @@ depends-member:
 - ["6GyMate21ExerciseTableViewCellC", "exerciseSets"]
 - ["6GyMate21ExerciseTableViewCellC", "init"]
 - ["6GyMate21ExerciseTableViewCellC", "setSelected"]
+- !private ["s23ExpressibleByNilLiteralP", "layer"]
 - ["SH", ""]
 - !private ["SH", "awakeFromNib"]
+- !private ["SH", "cornerRadius"]
+- !private ["SH", "exerciseBackgroundContainer"]
 - !private ["SH", "init"]
+- !private ["SH", "layer"]
 - !private ["SH", "setSelected"]
 - ["So8NSCodingP", ""]
 - !private ["So8NSCodingP", "awakeFromNib"]
+- !private ["So8NSCodingP", "cornerRadius"]
+- !private ["So8NSCodingP", "exerciseBackgroundContainer"]
 - !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "layer"]
 - !private ["So8NSCodingP", "setSelected"]
 - ["So8NSObjectC", "Bool"]
 - ["So8NSObjectC", "UIImageView"]
 - ["So8NSObjectC", "UILabel"]
 - ["So8NSObjectC", "awakeFromNib"]
+- !private ["So8NSObjectC", "cornerRadius"]
+- ["So8NSObjectC", "exerciseBackgroundContainer"]
 - ["So8NSObjectC", "exerciseDesc"]
 - ["So8NSObjectC", "exerciseImage"]
 - ["So8NSObjectC", "exerciseName"]
@@ -73,59 +106,89 @@ depends-member:
 - ["So8NSObjectC", "exerciseRestPeriod"]
 - ["So8NSObjectC", "exerciseSets"]
 - ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "layer"]
 - ["So8NSObjectC", "setSelected"]
 - ["So8NSObjectP", ""]
 - !private ["So8NSObjectP", "awakeFromNib"]
+- !private ["So8NSObjectP", "cornerRadius"]
+- !private ["So8NSObjectP", "exerciseBackgroundContainer"]
 - !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "layer"]
 - !private ["So8NSObjectP", "setSelected"]
+- !private ["So14NSSecureCodingP", "cornerRadius"]
+- !private ["Sq", "layer"]
+- !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "layer"]
 - ["So29UIAccessibilityIdentificationP", ""]
 - !private ["So29UIAccessibilityIdentificationP", "awakeFromNib"]
+- !private ["So29UIAccessibilityIdentificationP", "exerciseBackgroundContainer"]
 - !private ["So29UIAccessibilityIdentificationP", "init"]
+- !private ["So29UIAccessibilityIdentificationP", "layer"]
 - !private ["So29UIAccessibilityIdentificationP", "setSelected"]
 - ["So12UIAppearanceP", ""]
 - !private ["So12UIAppearanceP", "awakeFromNib"]
+- !private ["So12UIAppearanceP", "exerciseBackgroundContainer"]
 - !private ["So12UIAppearanceP", "init"]
+- !private ["So12UIAppearanceP", "layer"]
 - !private ["So12UIAppearanceP", "setSelected"]
 - ["So21UIAppearanceContainerP", ""]
 - !private ["So21UIAppearanceContainerP", "awakeFromNib"]
+- !private ["So21UIAppearanceContainerP", "exerciseBackgroundContainer"]
 - !private ["So21UIAppearanceContainerP", "init"]
+- !private ["So21UIAppearanceContainerP", "layer"]
 - !private ["So21UIAppearanceContainerP", "setSelected"]
 - ["So17UICoordinateSpaceP", ""]
 - !private ["So17UICoordinateSpaceP", "awakeFromNib"]
+- !private ["So17UICoordinateSpaceP", "exerciseBackgroundContainer"]
 - !private ["So17UICoordinateSpaceP", "init"]
+- !private ["So17UICoordinateSpaceP", "layer"]
 - !private ["So17UICoordinateSpaceP", "setSelected"]
 - ["So13UIDynamicItemP", ""]
 - !private ["So13UIDynamicItemP", "awakeFromNib"]
+- !private ["So13UIDynamicItemP", "exerciseBackgroundContainer"]
 - !private ["So13UIDynamicItemP", "init"]
+- !private ["So13UIDynamicItemP", "layer"]
 - !private ["So13UIDynamicItemP", "setSelected"]
 - ["So18UIFocusEnvironmentP", ""]
 - !private ["So18UIFocusEnvironmentP", "awakeFromNib"]
+- !private ["So18UIFocusEnvironmentP", "exerciseBackgroundContainer"]
 - !private ["So18UIFocusEnvironmentP", "init"]
+- !private ["So18UIFocusEnvironmentP", "layer"]
 - !private ["So18UIFocusEnvironmentP", "setSelected"]
 - ["So11UIFocusItemP", ""]
 - !private ["So11UIFocusItemP", "awakeFromNib"]
+- !private ["So11UIFocusItemP", "exerciseBackgroundContainer"]
 - !private ["So11UIFocusItemP", "init"]
+- !private ["So11UIFocusItemP", "layer"]
 - !private ["So11UIFocusItemP", "setSelected"]
 - ["So20UIFocusItemContainerP", ""]
 - !private ["So20UIFocusItemContainerP", "awakeFromNib"]
+- !private ["So20UIFocusItemContainerP", "exerciseBackgroundContainer"]
 - !private ["So20UIFocusItemContainerP", "init"]
+- !private ["So20UIFocusItemContainerP", "layer"]
 - !private ["So20UIFocusItemContainerP", "setSelected"]
 - ["So27UIGestureRecognizerDelegateP", ""]
 - !private ["So27UIGestureRecognizerDelegateP", "awakeFromNib"]
+- !private ["So27UIGestureRecognizerDelegateP", "exerciseBackgroundContainer"]
 - !private ["So27UIGestureRecognizerDelegateP", "init"]
 - !private ["So27UIGestureRecognizerDelegateP", "setSelected"]
+- !private ["So11UIImageViewC", "layer"]
 - ["So24UILargeContentViewerItemP", ""]
 - !private ["So24UILargeContentViewerItemP", "awakeFromNib"]
+- !private ["So24UILargeContentViewerItemP", "exerciseBackgroundContainer"]
 - !private ["So24UILargeContentViewerItemP", "init"]
+- !private ["So24UILargeContentViewerItemP", "layer"]
 - !private ["So24UILargeContentViewerItemP", "setSelected"]
 - ["So30UIPasteConfigurationSupportingP", ""]
 - !private ["So30UIPasteConfigurationSupportingP", "awakeFromNib"]
+- !private ["So30UIPasteConfigurationSupportingP", "exerciseBackgroundContainer"]
 - !private ["So30UIPasteConfigurationSupportingP", "init"]
+- !private ["So30UIPasteConfigurationSupportingP", "layer"]
 - !private ["So30UIPasteConfigurationSupportingP", "setSelected"]
 - ["So11UIResponderC", "Bool"]
 - ["So11UIResponderC", "UIImageView"]
 - ["So11UIResponderC", "UILabel"]
 - ["So11UIResponderC", "awakeFromNib"]
+- ["So11UIResponderC", "exerciseBackgroundContainer"]
 - ["So11UIResponderC", "exerciseDesc"]
 - ["So11UIResponderC", "exerciseImage"]
 - ["So11UIResponderC", "exerciseName"]
@@ -133,16 +196,20 @@ depends-member:
 - ["So11UIResponderC", "exerciseRestPeriod"]
 - ["So11UIResponderC", "exerciseSets"]
 - ["So11UIResponderC", "init"]
+- !private ["So11UIResponderC", "layer"]
 - ["So11UIResponderC", "setSelected"]
 - ["So30UIResponderStandardEditActionsP", ""]
 - !private ["So30UIResponderStandardEditActionsP", "awakeFromNib"]
+- !private ["So30UIResponderStandardEditActionsP", "exerciseBackgroundContainer"]
 - !private ["So30UIResponderStandardEditActionsP", "init"]
+- !private ["So30UIResponderStandardEditActionsP", "layer"]
 - !private ["So30UIResponderStandardEditActionsP", "setSelected"]
 - ["So15UITableViewCellC", "Bool"]
 - ["So15UITableViewCellC", "UIImageView"]
 - ["So15UITableViewCellC", "UILabel"]
 - ["So15UITableViewCellC", ""]
 - ["So15UITableViewCellC", "awakeFromNib"]
+- ["So15UITableViewCellC", "exerciseBackgroundContainer"]
 - ["So15UITableViewCellC", "exerciseDesc"]
 - ["So15UITableViewCellC", "exerciseImage"]
 - ["So15UITableViewCellC", "exerciseName"]
@@ -153,16 +220,21 @@ depends-member:
 - ["So15UITableViewCellC", "setSelected"]
 - ["So18UITraitEnvironmentP", ""]
 - !private ["So18UITraitEnvironmentP", "awakeFromNib"]
+- !private ["So18UITraitEnvironmentP", "exerciseBackgroundContainer"]
 - !private ["So18UITraitEnvironmentP", "init"]
+- !private ["So18UITraitEnvironmentP", "layer"]
 - !private ["So18UITraitEnvironmentP", "setSelected"]
 - ["So23UIUserActivityRestoringP", ""]
 - !private ["So23UIUserActivityRestoringP", "awakeFromNib"]
+- !private ["So23UIUserActivityRestoringP", "exerciseBackgroundContainer"]
 - !private ["So23UIUserActivityRestoringP", "init"]
+- !private ["So23UIUserActivityRestoringP", "layer"]
 - !private ["So23UIUserActivityRestoringP", "setSelected"]
 - ["So6UIViewC", "Bool"]
 - ["So6UIViewC", "UIImageView"]
 - ["So6UIViewC", "UILabel"]
 - ["So6UIViewC", "awakeFromNib"]
+- ["So6UIViewC", "exerciseBackgroundContainer"]
 - ["So6UIViewC", "exerciseDesc"]
 - ["So6UIViewC", "exerciseImage"]
 - ["So6UIViewC", "exerciseName"]
@@ -170,30 +242,49 @@ depends-member:
 - ["So6UIViewC", "exerciseRestPeriod"]
 - ["So6UIViewC", "exerciseSets"]
 - ["So6UIViewC", "init"]
+- !private ["So6UIViewC", "layer"]
 - ["So6UIViewC", "setSelected"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "awakeFromNib"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "cornerRadius"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "exerciseBackgroundContainer"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "layer"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "setSelected"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", ""]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "awakeFromNib"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "cornerRadius"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "exerciseBackgroundContainer"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "init"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "layer"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "setSelected"]
+- !private ["s21_ObjectiveCBridgeableP", "layer"]
 - ["s38__DefaultCustomPlaygroundQuickLookableP", ""]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "awakeFromNib"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "exerciseBackgroundContainer"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "init"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "layer"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "setSelected"]
 depends-nominal:
+- !private "So7CALayerC"
 - "So15CALayerDelegateP"
+- !private "So13CAMediaTimingP"
 - "s7CVarArgP"
 - "s28CustomDebugStringConvertibleP"
+- !private "s17CustomReflectableP"
 - "s23CustomStringConvertibleP"
+- !private "Se"
+- !private "SE"
 - "SQ"
 - "6GyMate21ExerciseTableViewCellC"
+- !private "s23ExpressibleByNilLiteralP"
 - "SH"
 - "So8NSCodingP"
 - "So8NSObjectC"
 - "So8NSObjectP"
+- !private "So14NSSecureCodingP"
+- !private "Sq"
+- !private "So48UIAccessibilityContentSizeCategoryImageAdjustingP"
 - "So29UIAccessibilityIdentificationP"
 - "So12UIAppearanceP"
 - "So21UIAppearanceContainerP"
@@ -203,6 +294,7 @@ depends-nominal:
 - "So11UIFocusItemP"
 - "So20UIFocusItemContainerP"
 - "So27UIGestureRecognizerDelegateP"
+- !private "So11UIImageViewC"
 - "So24UILargeContentViewerItemP"
 - "So30UIPasteConfigurationSupportingP"
 - "So11UIResponderC"
@@ -213,6 +305,7 @@ depends-nominal:
 - "So6UIViewC"
 - "10Foundation27_KeyValueCodingAndObservingP"
 - "10Foundation37_KeyValueCodingAndObservingPublishingP"
+- !private "s21_ObjectiveCBridgeableP"
 - "s38__DefaultCustomPlaygroundQuickLookableP"
 depends-dynamic-lookup:
 depends-external:
@@ -1475,4 +1568,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "20586782074943a1425a6cc23be5274c"
+interface-hash: "98a2363be0d66dffdd4225d5d8f07f2a"

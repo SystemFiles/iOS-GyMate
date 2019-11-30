@@ -16,7 +16,6 @@ depends-top-level:
 - "NSObject"
 - "String"
 - !private "StringLiteralType"
-- "URL"
 depends-member:
 - ["s7CVarArgP", ""]
 - !private ["s7CVarArgP", "desc"]
@@ -57,7 +56,6 @@ depends-member:
 - ["6GyMate8ExerciseC", "Double"]
 - ["6GyMate8ExerciseC", "Int"]
 - ["6GyMate8ExerciseC", "String"]
-- ["6GyMate8ExerciseC", "URL"]
 - ["6GyMate8ExerciseC", "deinit"]
 - ["6GyMate8ExerciseC", "desc"]
 - ["6GyMate8ExerciseC", "id"]
@@ -79,7 +77,6 @@ depends-member:
 - ["So8NSObjectC", "Double"]
 - ["So8NSObjectC", "Int"]
 - ["So8NSObjectC", "String"]
-- ["So8NSObjectC", "URL"]
 - ["So8NSObjectC", ""]
 - ["So8NSObjectC", "desc"]
 - ["So8NSObjectC", "id"]
@@ -1388,4 +1385,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "66742bcdb472333f955823c2abeec7dc"
+interface-hash: "5c2db7e8e65507f185b58709facaa7f5"

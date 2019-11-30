@@ -17,8 +17,9 @@ depends-top-level:
 - "DatabaseReference"
 - "Exercise"
 - !private "FirebaseApp"
-- !private "FloatLiteralType"
-- !private "IntegerLiteralType"
+- "FloatLiteralType"
+- "Int"
+- "IntegerLiteralType"
 - "Set"
 - "StringLiteralType"
 - "UIApplication"
@@ -36,6 +37,7 @@ depends-member:
 - ["6GyMate11AppDelegateC", "DatabaseReference"]
 - ["6GyMate11AppDelegateC", "Exercise"]
 - !private ["6GyMate11AppDelegateC", "FirebaseApp"]
+- ["6GyMate11AppDelegateC", "Int"]
 - ["6GyMate11AppDelegateC", "Set"]
 - ["6GyMate11AppDelegateC", "UIApplication"]
 - ["6GyMate11AppDelegateC", "UIScene"]
@@ -59,6 +61,7 @@ depends-member:
 - ["6GyMate11AppDelegateC", "deinit"]
 - ["6GyMate11AppDelegateC", "ectoWorkout"]
 - ["6GyMate11AppDelegateC", "endoWorkout"]
+- ["6GyMate11AppDelegateC", "exerciseID"]
 - ["6GyMate11AppDelegateC", "init"]
 - ["6GyMate11AppDelegateC", "launchedBefore"]
 - ["6GyMate11AppDelegateC", "mesoWorkout"]
@@ -68,6 +71,7 @@ depends-member:
 - ["6GyMate11AppDelegateC", "userDefault"]
 - ["6GyMate11AppDelegateC", "userRef"]
 - ["6GyMate11AppDelegateC", "window"]
+- ["6GyMate11AppDelegateC", "workoutCurrentID"]
 - ["s7CVarArgP", "ConnectionOptions"]
 - !private ["s7CVarArgP", "Database"]
 - !private ["s7CVarArgP", "Exercise"]
@@ -271,6 +275,7 @@ depends-member:
 - ["So8NSObjectC", "DatabaseReference"]
 - ["So8NSObjectC", "Exercise"]
 - !private ["So8NSObjectC", "FirebaseApp"]
+- ["So8NSObjectC", "Int"]
 - ["So8NSObjectC", "LaunchOptionsKey"]
 - ["So8NSObjectC", "Set"]
 - ["So8NSObjectC", "UIApplication"]
@@ -298,6 +303,7 @@ depends-member:
 - !private ["So8NSObjectC", "database"]
 - ["So8NSObjectC", "ectoWorkout"]
 - ["So8NSObjectC", "endoWorkout"]
+- ["So8NSObjectC", "exerciseID"]
 - ["So8NSObjectC", "init"]
 - !private ["So8NSObjectC", "isPersistenceEnabled"]
 - ["So8NSObjectC", "launchedBefore"]
@@ -311,6 +317,7 @@ depends-member:
 - ["So8NSObjectC", "userDefault"]
 - ["So8NSObjectC", "userRef"]
 - ["So8NSObjectC", "window"]
+- ["So8NSObjectC", "workoutCurrentID"]
 - ["So8NSObjectP", "ConnectionOptions"]
 - !private ["So8NSObjectP", "Database"]
 - !private ["So8NSObjectP", "Exercise"]
@@ -413,6 +420,7 @@ depends-member:
 - ["So11UIResponderC", "DatabaseReference"]
 - ["So11UIResponderC", "Exercise"]
 - !private ["So11UIResponderC", "FirebaseApp"]
+- ["So11UIResponderC", "Int"]
 - ["So11UIResponderC", "LaunchOptionsKey"]
 - ["So11UIResponderC", "Set"]
 - ["So11UIResponderC", "UIApplication"]
@@ -437,6 +445,7 @@ depends-member:
 - ["So11UIResponderC", "applicationWillTerminate"]
 - ["So11UIResponderC", "ectoWorkout"]
 - ["So11UIResponderC", "endoWorkout"]
+- ["So11UIResponderC", "exerciseID"]
 - ["So11UIResponderC", "init"]
 - ["So11UIResponderC", "launchedBefore"]
 - ["So11UIResponderC", "mesoWorkout"]
@@ -446,6 +455,7 @@ depends-member:
 - ["So11UIResponderC", "userDefault"]
 - ["So11UIResponderC", "userRef"]
 - ["So11UIResponderC", "window"]
+- ["So11UIResponderC", "workoutCurrentID"]
 - ["So30UIResponderStandardEditActionsP", "ConnectionOptions"]
 - !private ["So30UIResponderStandardEditActionsP", "Database"]
 - !private ["So30UIResponderStandardEditActionsP", "Exercise"]
@@ -1881,4 +1891,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "d0bb86232337465d199f8f21670dd500"
+interface-hash: "64a383ef4d6f317930571ec7abf0302d"
