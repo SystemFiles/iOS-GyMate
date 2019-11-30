@@ -148,7 +148,7 @@ class DashboardViewController: UIViewController, UITableViewDelegate, UITableVie
         
         workoutCell.workoutTitle.text = rowData[indexPath.row].name
         workoutCell.workoutDesc.text = rowData[indexPath.row].desc
-        workoutCell.workoutTime.text = "\(rowData[indexPath.row].time)min"
+        workoutCell.workoutTime.text = "\(Int(rowData[indexPath.row].time))m"
         
             
         return workoutCell

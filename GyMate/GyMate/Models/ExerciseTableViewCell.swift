@@ -16,12 +16,15 @@ class ExerciseTableViewCell: UITableViewCell {
     @IBOutlet var exerciseReps : UILabel!
     @IBOutlet var exerciseSets : UILabel!
     @IBOutlet var exerciseRestPeriod : UILabel!
+    @IBOutlet var exerciseBackgroundContainer : UIImageView!
     @IBOutlet var exerciseImage : UIImageView?
     
 
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        
+        exerciseBackgroundContainer.layer.cornerRadius = 5
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
