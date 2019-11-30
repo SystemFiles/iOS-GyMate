@@ -88,8 +88,7 @@ class DashboardViewController: UIViewController, UITableViewDelegate, UITableVie
 
         if (snapshot.childSnapshot(forPath: "workouts").childrenCount > 0) { //go through all custom workouts
             for child in snapshot.childSnapshot(forPath: "workouts/custom").children {
-                let name = child
-                print("This is the name for selected custom workout\(name)")
+
                 let workoutSnapshot = child as! DataSnapshot
                 let newWorkoutDict = workoutSnapshot.value as! NSMutableDictionary
                 selectedWorkouts.append(Workout.deserializeWorkout(workoutDict: newWorkoutDict))
@@ -97,43 +96,36 @@ class DashboardViewController: UIViewController, UITableViewDelegate, UITableVie
             }
             var namedWorkout:String
                 for workout in selectedWorkouts {
-                    print("The workout names are: \(workout.name)")
+
                     if workout.name == selectedName{
                         namedWorkout = workout.name
                         if namedWorkout == "The Lean Bulk"
                         {
-                            print("We have the selected name \(selectedName) and we have data from FB as \(namedWorkout)")
-                                                
                             mainDelegate.selectedWorkout = "recommended"
                         }
                         else if namedWorkout == "All About that Balance"
                         {
-                            print("We have the selected name \(selectedName) and we have data from FB as \(namedWorkout)")
-                                                
                             mainDelegate.selectedWorkout = "recommended"
                         }
                         else if namedWorkout == "Lean wit Me"
                         {
-                            print("We have the selected name \(selectedName) and we have data from FB as \(namedWorkout)")
-                                                
                             mainDelegate.selectedWorkout = "recommended"
                         }
                         else
                         {
-                            print("We have the selected name \(selectedName) and we have data from FB as \(namedWorkout)")
-                                                
                             mainDelegate.selectedWorkout = "custom/\(namedWorkout)"
 
                         }
 
                     }
                 }
-            print("This is the workout \(mainDelegate.selectedWorkout)")
+            
             self.gotoSteps()
             
             }
         })
     }
+    //Used to call StepByStep View Controller on the selected row
     func gotoSteps(){
         performSegue(withIdentifier: "ChooseSegueToView", sender: nil)
     }
