@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import WatchConnectivity
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -36,6 +37,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Setup default body type workouts
         self.setWorkouts()
         predefinedWorkouts = [ectoWorkout, mesoWorkout, endoWorkout]
+        
+        // Activate watch connectivity session
+        let session = WCSession.default
+        session.activate()
         
         return true
     }

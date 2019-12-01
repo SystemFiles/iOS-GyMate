@@ -333,6 +333,14 @@
                                     <segue destination="Hu1-SX-yL4" kind="unwind" unwindAction="rewindToLoginVCWithSender:" id="VFv-bT-Kko"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ltg-Wy-ugQ">
+                                <rect key="frame" x="181" y="447" width="125" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Click To Set Timer"/>
+                                <connections>
+                                    <action selector="tempSendMessageToWatchWithSender:" destination="jmA-aA-oZz" eventType="touchUpInside" id="Zzu-7D-Ced"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="ZQG-vS-H5j"/>

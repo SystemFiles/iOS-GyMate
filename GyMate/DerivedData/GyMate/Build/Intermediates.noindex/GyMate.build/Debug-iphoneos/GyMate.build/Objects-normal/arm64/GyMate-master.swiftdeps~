@@ -1,0 +1,22 @@
+version: "Apple Swift version 5.1.2 (swiftlang-1100.0.278 clang-1100.0.33.9)"
+options: "b4bf2af0725026b21614bfe2500c7f87"
+build_time: [1575168253, 800377000]
+inputs:
+  "/Users/bensykes/DATASYNC/school/Sem5Courses/AdvancedMobileApp/Final Project/GyMate-Application/GyMate/GyMate/View Controllers/LoginViewController.swift": !dirty [1574721692, 487564376]
+  "/Users/bensykes/DATASYNC/school/Sem5Courses/AdvancedMobileApp/Final Project/GyMate-Application/GyMate/GyMate/View Controllers/DashboardViewController.swift": !dirty [1575167333, 89503339]
+  "/Users/bensykes/DATASYNC/school/Sem5Courses/AdvancedMobileApp/Final Project/GyMate-Application/GyMate/GyMate/Models/SelectWorkoutTableViewCell.swift": !dirty [1575143098, 990071767]
+  "/Users/bensykes/DATASYNC/school/Sem5Courses/AdvancedMobileApp/Final Project/GyMate-Application/GyMate/GyMate/View Controllers/ManualTypeSelectorViewController.swift": !dirty [1574721692, 488242822]
+  "/Users/bensykes/DATASYNC/school/Sem5Courses/AdvancedMobileApp/Final Project/GyMate-Application/GyMate/GyMate/Models/Question.swift": !dirty [1574123609, 799105413]
+  "/Users/bensykes/DATASYNC/school/Sem5Courses/AdvancedMobileApp/Final Project/GyMate-Application/GyMate/GyMate/View Controllers/PasswordResetViewController.swift": !dirty [1574721692, 488945819]
+  "/Users/bensykes/DATASYNC/school/Sem5Courses/AdvancedMobileApp/Final Project/GyMate-Application/GyMate/GyMate/Models/Workout.swift": !dirty [1574721692, 484833525]
+  "/Users/bensykes/DATASYNC/school/Sem5Courses/AdvancedMobileApp/Final Project/GyMate-Application/GyMate/GyMate/View Controllers/QuizViewController.swift": !dirty [1574026159, 191271282]
+  "/Users/bensykes/DATASYNC/school/Sem5Courses/AdvancedMobileApp/Final Project/GyMate-Application/GyMate/GyMate/Models/AppDelegate.swift": !dirty [1575167916, 678872785]
+  "/Users/bensykes/DATASYNC/school/Sem5Courses/AdvancedMobileApp/Final Project/GyMate-Application/GyMate/GyMate/View Controllers/AddWorkoutViewController.swift": !dirty [1574721692, 486528976]
+  "/Users/bensykes/DATASYNC/school/Sem5Courses/AdvancedMobileApp/Final Project/GyMate-Application/GyMate/GyMate/Models/BodyTypeQuiz.swift": !dirty [1574721692, 481013628]
+  "/Users/bensykes/DATASYNC/school/Sem5Courses/AdvancedMobileApp/Final Project/GyMate-Application/GyMate/GyMate/View Controllers/SignUpViewController.swift": !dirty [1574721692, 490467343]
+  "/Users/bensykes/DATASYNC/school/Sem5Courses/AdvancedMobileApp/Final Project/GyMate-Application/GyMate/GyMate/View Controllers/AddExerciseViewController.swift": !dirty [1574721692, 486184740]
+  "/Users/bensykes/DATASYNC/school/Sem5Courses/AdvancedMobileApp/Final Project/GyMate-Application/GyMate/GyMate/Models/Exercise.swift": !dirty [1574721692, 481859026]
+  "/Users/bensykes/DATASYNC/school/Sem5Courses/AdvancedMobileApp/Final Project/GyMate-Application/GyMate/GyMate/Models/QuizAnswer.swift": !dirty [1574721692, 483343457]
+  "/Users/bensykes/DATASYNC/school/Sem5Courses/AdvancedMobileApp/Final Project/GyMate-Application/GyMate/GyMate/Models/ExerciseTableViewCell.swift": !dirty [1575142931, 790646778]
+  "/Users/bensykes/DATASYNC/school/Sem5Courses/AdvancedMobileApp/Final Project/GyMate-Application/GyMate/GyMate/View Controllers/QuizConfirmationViewController.swift": !dirty [1574721692, 489605841]
+  "/Users/bensykes/DATASYNC/school/Sem5Courses/AdvancedMobileApp/Final Project/GyMate-Application/GyMate/GyMate/Models/SceneDelegate.swift": !dirty [1574026159, 189680296]

@@ -8,8 +8,9 @@
 
 import UIKit
 import Firebase
+import WatchConnectivity
 
-class DashboardViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class DashboardViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
     
     var workouts : [Workout] = []
     
@@ -49,7 +50,6 @@ class DashboardViewController: UIViewController, UITableViewDelegate, UITableVie
             self.lbUser.text = username
             self.workoutTable.reloadData() // Reload table data for workouts
         })
-        // Do any additional setup after loading the view.
     }
     
     //rewind to dashboard from add workout
@@ -91,11 +91,23 @@ class DashboardViewController: UIViewController, UITableViewDelegate, UITableVie
         workoutCell.workoutDesc.text = rowData[indexPath.row].desc
         workoutCell.workoutTime.text = "\(Int(rowData[indexPath.row].time))m"
         
-            
         return workoutCell
-            
     }
     
+    func sendWatchMessage(_ msgData:Double) {
+        // send a message to the watch if it's reachable
+        if (WCSession.default.isReachable) {
+            let message = ["restTime": msgData]
+            WCSession.default.sendMessage(message, replyHandler: {response in
+                print("Response: \(response["status"] ?? "Failed")")
+            })
+        } else {
+            print("Watch not reachable")
+        }
+    }
     
-
+    @IBAction func tempSendMessageToWatch(sender: UIButton!) {
+        sendWatchMessage(25)
+    }
+    
 }

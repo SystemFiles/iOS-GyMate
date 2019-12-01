@@ -6,11 +6,39 @@
 	<dict>
 		<key>Base.lproj/Interface.plist</key>
 		<data>
-		h4ShWokpX2YY/bjqiF79RizD6TA=
+		R3SgJKA+p6AgnswHGCH8KrQcbAY=
+		</data>
+		<key>Frameworks/libswiftCore.dylib</key>
+		<data>
+		0mCtnogq0ZvE7/gVIddcqFtnnPQ=
+		</data>
+		<key>Frameworks/libswiftCoreFoundation.dylib</key>
+		<data>
+		qTu98bo3OqxtO25/7sDfN5J9szo=
+		</data>
+		<key>Frameworks/libswiftCoreGraphics.dylib</key>
+		<data>
+		wZ9mGEksnjr63WMupmrnSsryw/k=
+		</data>
+		<key>Frameworks/libswiftDarwin.dylib</key>
+		<data>
+		eKFv0izeXafpJ2HwyksdTyCJmOM=
+		</data>
+		<key>Frameworks/libswiftDispatch.dylib</key>
+		<data>
+		2wuukmrQkmTsAVqd/NcMXlCD290=
+		</data>
+		<key>Frameworks/libswiftFoundation.dylib</key>
+		<data>
+		BVZ3Saf0bNm01az6toco7WB6dvA=
+		</data>
+		<key>Frameworks/libswiftObjectiveC.dylib</key>
+		<data>
+		7DCrm3oZXKNgLZn1W8Lii+9TUZg=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		1k3pM91l9gngbs9gjgZXoLb+DPk=
+		Ph2+YQsnSS4a/fIBDeiRSCtQWjg=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -18,15 +46,15 @@
 		</data>
 		<key>PlugIns/GyMate Watch Companion Extension.appex/GyMate Watch Companion Extension</key>
 		<data>
-		ezORkNSq6pbTR0bmf+Mbiz+snfU=
+		Fp1dyV8XGshZ3HZNcSLD5SNLSsE=
 		</data>
 		<key>PlugIns/GyMate Watch Companion Extension.appex/Info.plist</key>
 		<data>
-		ZtuWO7lynz5y7uFN8+N4inMaBh0=
+		EnutNFuX2ACNG0fFxrIWJIYvchQ=
 		</data>
 		<key>PlugIns/GyMate Watch Companion Extension.appex/_CodeSignature/CodeResources</key>
 		<data>
-		3c0qSJkrYasIcb2kXyYKr7PIfXg=
+		Zu8unSXQqh3Z0HzwGF0YfbG3z0E=
 		</data>
 		<key>_WatchKitStub/WK</key>
 		<data>
@@ -39,44 +67,121 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			h4ShWokpX2YY/bjqiF79RizD6TA=
+			R3SgJKA+p6AgnswHGCH8KrQcbAY=
 			</data>
 			<key>hash2</key>
 			<data>
-			zWFlHoFlqPt3Er7XtxpEhTNjQf11I/Qfc7xtrFjYjYU=
+			EsRwMadWPLdnQg7fsxCVpuIxlPJcyY3sgcjLjm39iDY=
+			</data>
+		</dict>
+		<key>Frameworks/libswiftCore.dylib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			0mCtnogq0ZvE7/gVIddcqFtnnPQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			hkLoI0CkJzX3LymPNLi7UQFXEO3BLpmi7c1A7O1UT/w=
+			</data>
+		</dict>
+		<key>Frameworks/libswiftCoreFoundation.dylib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			qTu98bo3OqxtO25/7sDfN5J9szo=
+			</data>
+			<key>hash2</key>
+			<data>
+			ooDj/COnXJzmVt3tx9ElqljneheZhKcBkyQEviES8gg=
+			</data>
+		</dict>
+		<key>Frameworks/libswiftCoreGraphics.dylib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			wZ9mGEksnjr63WMupmrnSsryw/k=
+			</data>
+			<key>hash2</key>
+			<data>
+			FohRi7VB2InLAkM5anFU++0JOFM0sDuyGa6gwEbX/JM=
+			</data>
+		</dict>
+		<key>Frameworks/libswiftDarwin.dylib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			eKFv0izeXafpJ2HwyksdTyCJmOM=
+			</data>
+			<key>hash2</key>
+			<data>
+			0vwXIozItAz9OkRlDCprTrgkKWGysEiHG4ZVhDMqcBE=
+			</data>
+		</dict>
+		<key>Frameworks/libswiftDispatch.dylib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			2wuukmrQkmTsAVqd/NcMXlCD290=
+			</data>
+			<key>hash2</key>
+			<data>
+			R54jIkCouUCQC8ZyT+XFAchn8ierSBY9hqnY5/52N0Q=
+			</data>
+		</dict>
+		<key>Frameworks/libswiftFoundation.dylib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			BVZ3Saf0bNm01az6toco7WB6dvA=
+			</data>
+			<key>hash2</key>
+			<data>
+			FSk24dtyyBBPtMpRhYcMu8Zi4TgknYeAxfm4/5P32Rs=
+			</data>
+		</dict>
+		<key>Frameworks/libswiftObjectiveC.dylib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			7DCrm3oZXKNgLZn1W8Lii+9TUZg=
+			</data>
+			<key>hash2</key>
+			<data>
+			A+1Y1YRfJVIkM8Eym6MOKZ/OybKQZjhFBqIQ4X6M7Zk=
 			</data>
 		</dict>
 		<key>PlugIns/GyMate Watch Companion Extension.appex/GyMate Watch Companion Extension</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ezORkNSq6pbTR0bmf+Mbiz+snfU=
+			Fp1dyV8XGshZ3HZNcSLD5SNLSsE=
 			</data>
 			<key>hash2</key>
 			<data>
-			q+Dv+JziVwa1c+O7spkRyEPibDZpQGjyeY4tiTnsQsE=
+			Buyk05NrAMuPSNQlWizrbRhfga4qX2HlLGhJrX2FEpE=
 			</data>
 		</dict>
 		<key>PlugIns/GyMate Watch Companion Extension.appex/Info.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ZtuWO7lynz5y7uFN8+N4inMaBh0=
+			EnutNFuX2ACNG0fFxrIWJIYvchQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			BRTXlWjGJD0OIXFdO92XSrhSlz13kcoiL0Yz4IkCioA=
+			aF0bC7/KzG0mH0/nCSVYlWS0Fv95WpspjoPYz5cHUXw=
 			</data>
 		</dict>
 		<key>PlugIns/GyMate Watch Companion Extension.appex/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			3c0qSJkrYasIcb2kXyYKr7PIfXg=
+			Zu8unSXQqh3Z0HzwGF0YfbG3z0E=
 			</data>
 			<key>hash2</key>
 			<data>
-			61Z+pdQZcNxk5SbRZtCSUGh8tYZ6GGxMBlXTPLDDq3k=
+			huF1yGLlYVUWnpKoP3xp6wP/k5NbRUZ898wyBgnmZJI=
 			</data>
 		</dict>
 		<key>_WatchKitStub/WK</key>

@@ -1,0 +1,7 @@
+dependencies: \
+  /Users/bensykes/DATASYNC/school/Sem5Courses/AdvancedMobileApp/Final\ Project/GyMate-Application/GyMate/Pods/FirebaseDatabase/Firebase/Database/third_party/FImmutableSortedDictionary/FImmutableSortedDictionary/FTreeSortedDictionaryEnumerator.m \
+  /Users/bensykes/DATASYNC/school/Sem5Courses/AdvancedMobileApp/Final\ Project/GyMate-Application/GyMate/DerivedData/GyMate/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/FirebaseDatabase.build/module.modulemap \
+  /Users/bensykes/DATASYNC/school/Sem5Courses/AdvancedMobileApp/Final\ Project/GyMate-Application/GyMate/Pods/FirebaseDatabase/Firebase/Database/third_party/FImmutableSortedDictionary/FImmutableSortedDictionary/FTreeSortedDictionaryEnumerator.h \
+  /Users/bensykes/DATASYNC/school/Sem5Courses/AdvancedMobileApp/Final\ Project/GyMate-Application/GyMate/Pods/FirebaseDatabase/Firebase/Database/third_party/FImmutableSortedDictionary/FImmutableSortedDictionary/FTreeSortedDictionary.h \
+  /Users/bensykes/DATASYNC/school/Sem5Courses/AdvancedMobileApp/Final\ Project/GyMate-Application/GyMate/Pods/FirebaseDatabase/Firebase/Database/third_party/FImmutableSortedDictionary/FImmutableSortedDictionary/FImmutableSortedDictionary.h \
+  /Users/bensykes/DATASYNC/school/Sem5Courses/AdvancedMobileApp/Final\ Project/GyMate-Application/GyMate/Pods/FirebaseDatabase/Firebase/Database/third_party/FImmutableSortedDictionary/FImmutableSortedDictionary/FLLRBNode.h

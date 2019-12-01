@@ -21,8 +21,15 @@
                         </timer>
                         <button width="1" height="37" alignment="center" verticalAlignment="center" title="Skip" id="FKe-mv-kSn">
                             <color key="backgroundColor" red="0.2426791787" green="0.2497816682" blue="0.31197911499999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="skipRestPeriodWithSender:" destination="AgC-eL-Hgc" id="o4k-eb-JWw"/>
+                            </connections>
                         </button>
                     </items>
+                    <connections>
+                        <outlet property="btnSkipRestPeriod" destination="FKe-mv-kSn" id="D3n-GF-7lc"/>
+                        <outlet property="tmrRestPeriod" destination="gCn-hT-Hr9" id="ahN-Z7-U2m"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="220" y="339"/>

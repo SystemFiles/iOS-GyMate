@@ -182,6 +182,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
 @import ObjectiveC;
+@import WatchConnectivity;
 @import WatchKit;
 #endif
 
@@ -211,12 +212,21 @@ SWIFT_CLASS("_TtC32GyMate_Watch_Companion_Extension17ExtensionDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class WKInterfaceTimer;
+@class WKInterfaceButton;
+@class WCSession;
 
 SWIFT_CLASS("_TtC32GyMate_Watch_Companion_Extension19InterfaceController")
-@interface InterfaceController : WKInterfaceController
+@interface InterfaceController : WKInterfaceController <WCSessionDelegate>
+@property (nonatomic, strong) IBOutlet WKInterfaceTimer * _Null_unspecified tmrRestPeriod;
+@property (nonatomic, strong) IBOutlet WKInterfaceButton * _Null_unspecified btnSkipRestPeriod;
 - (void)awakeWithContext:(id _Nullable)context;
 - (void)willActivate;
+- (void)didAppear;
 - (void)didDeactivate;
+- (void)session:(WCSession * _Nonnull)session activationDidCompleteWithState:(WCSessionActivationState)activationState error:(NSError * _Nullable)error;
+- (void)session:(WCSession * _Nonnull)session didReceiveMessage:(NSDictionary<NSString *, id> * _Nonnull)message replyHandler:(void (^ _Nonnull)(NSDictionary<NSString *, id> * _Nonnull))replyHandler;
+- (IBAction)skipRestPeriodWithSender:(WKInterfaceButton * _Null_unspecified)sender;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
