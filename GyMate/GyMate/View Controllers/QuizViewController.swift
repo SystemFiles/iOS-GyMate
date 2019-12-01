@@ -34,6 +34,16 @@ class QuizViewController: UIViewController {
             return
         }
         
+        // Animate Selection
+        UIView.animate(withDuration: 0.1, delay: 0.0, options: .curveLinear, animations: {
+            sender.transform = CGAffineTransform(scaleX: 0.7, y: 0.7)
+            
+        }) { (success) in
+            UIView.animate(withDuration: 0.1, delay: 0.0, options: .curveLinear, animations: {
+                sender.transform = .identity
+            }, completion: nil)
+        }
+        
         // Add answer to quiz obj
         self.quizObj.addAnswer(answer: self.quizObj.questions[self.currentQuestion].answerData[sender.tag])
         
