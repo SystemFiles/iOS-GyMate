@@ -43,10 +43,12 @@ class QuizConfirmationViewController: UIViewController {
             default :
                 print("Error: Had trouble assigning workout to user...ignoring it :/")
             }
+            
+            /// Move to dashboard (!Important that this is after setting recommended workout!)
+            self.performSegue(withIdentifier: "QuizToDashboardSegue", sender: nil)
         })
         
-        /// Move to dashboard
-        self.performSegue(withIdentifier: "QuizToDashboardSegue", sender: nil)
+        return // If any errors simply return to sender
     }
     
     /// Update label for body type if user decides to manually select their known body type instead of the auto generated quiz method
