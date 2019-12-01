@@ -10,6 +10,9 @@
 		4A03C9C32390E47B00DC48F1 /* SpriteScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A03C9C22390E47B00DC48F1 /* SpriteScene.swift */; };
 		4A03C9C52390E4ED00DC48F1 /* StepByStepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A03C9C42390E4ED00DC48F1 /* StepByStepViewController.swift */; };
 		4A03C9C72390E56700DC48F1 /* SceneImages.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 4A03C9C62390E56700DC48F1 /* SceneImages.atlas */; };
+		4A3CE72F239310F40061F360 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A3CE72E239310F40061F360 /* CoreLocation.framework */; };
+		4A3CE731239310FF0061F360 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A3CE730239310FF0061F360 /* MapKit.framework */; };
+		4A3CE7332393149B0061F360 /* MapKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3CE7322393149B0061F360 /* MapKitViewController.swift */; };
 		4A9950C42391F3BC006C73C0 /* WorkOutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9950C32391F3BC006C73C0 /* WorkOutViewController.swift */; };
 		59C69247C06F95712A69201C /* Pods_GyMate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9994C15FB4503254A3AEFBB8 /* Pods_GyMate.framework */; };
 		AE2D729A2386E82200E58FC7 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2D72992386E82200E58FC7 /* DashboardViewController.swift */; };
@@ -40,6 +43,9 @@
 		4A03C9C22390E47B00DC48F1 /* SpriteScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpriteScene.swift; sourceTree = "<group>"; };
 		4A03C9C42390E4ED00DC48F1 /* StepByStepViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepByStepViewController.swift; sourceTree = "<group>"; };
 		4A03C9C62390E56700DC48F1 /* SceneImages.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = SceneImages.atlas; sourceTree = SOURCE_ROOT; };
+		4A3CE72E239310F40061F360 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		4A3CE730239310FF0061F360 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		4A3CE7322393149B0061F360 /* MapKitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapKitViewController.swift; sourceTree = "<group>"; };
 		4A9950C32391F3BC006C73C0 /* WorkOutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkOutViewController.swift; sourceTree = "<group>"; };
 		50F59808A52EE74937FF330A /* Pods-GyMate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GyMate.debug.xcconfig"; path = "Target Support Files/Pods-GyMate/Pods-GyMate.debug.xcconfig"; sourceTree = "<group>"; };
 		9994C15FB4503254A3AEFBB8 /* Pods_GyMate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GyMate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -76,6 +82,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A3CE72F239310F40061F360 /* CoreLocation.framework in Frameworks */,
+				4A3CE731239310FF0061F360 /* MapKit.framework in Frameworks */,
 				59C69247C06F95712A69201C /* Pods_GyMate.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -139,6 +147,7 @@
 				AED9945F2389D74100647594 /* AddExerciseViewController.swift */,
 				4A03C9C42390E4ED00DC48F1 /* StepByStepViewController.swift */,
 				4A9950C32391F3BC006C73C0 /* WorkOutViewController.swift */,
+				4A3CE7322393149B0061F360 /* MapKitViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -180,6 +189,8 @@
 		CF91396A29A1A24C82249A42 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4A3CE730239310FF0061F360 /* MapKit.framework */,
+				4A3CE72E239310F40061F360 /* CoreLocation.framework */,
 				9994C15FB4503254A3AEFBB8 /* Pods_GyMate.framework */,
 			);
 			name = Frameworks;
@@ -306,6 +317,7 @@
 				AE2D729A2386E82200E58FC7 /* DashboardViewController.swift in Sources */,
 				AE74B645238843D200AB8645 /* SelectWorkoutTableViewCell.swift in Sources */,
 				4A03C9C52390E4ED00DC48F1 /* StepByStepViewController.swift in Sources */,
+				4A3CE7332393149B0061F360 /* MapKitViewController.swift in Sources */,
 				B8507879237CF531004E23B9 /* ManualTypeSelectorViewController.swift in Sources */,
 				B82BD8F02375AF4A0070130A /* Question.swift in Sources */,
 				B8C450CC2374D0B800C5F714 /* PasswordResetViewController.swift in Sources */,
