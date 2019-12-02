@@ -11,7 +11,6 @@ import Firebase
 import SpriteKit
 
 class StepByStepViewController: UIViewController {
-    
     let mainDelegate : AppDelegate = UIApplication.shared.delegate as! AppDelegate
 
     var seconds :Int = 30
@@ -33,6 +32,7 @@ class StepByStepViewController: UIViewController {
     var scene:SpriteScene?
     //Firebase URL path for selected workout
     var workoutType : String = ""
+    @IBOutlet var lblWorkoutName : UILabel!
     @IBOutlet var lblTimer: UILabel!
     @IBOutlet var lblDesc: UILabel!
     @IBOutlet var lblSets: UILabel!
@@ -57,7 +57,7 @@ class StepByStepViewController: UIViewController {
     @objc func counter()
     {
         seconds -= 1
-        lblTimer.text = String(seconds) + " Seconds"
+        lblTimer.text = String(seconds) + "s"
         
         //Reveal buttons when rest timer has ended
         if (seconds == 0)
@@ -97,7 +97,7 @@ class StepByStepViewController: UIViewController {
         workoutType = mainDelegate.selectedWorkout
         doneOutlet.isHidden = true
         startOutlet.isHidden = true
-        lblTimer.text = "Loading..."
+        lblTimer.text = "..."
 
         let ref = mainDelegate.userRef.child(Auth.auth().currentUser!.uid)
         
@@ -116,7 +116,6 @@ class StepByStepViewController: UIViewController {
                     self.setCount -= 1
                     self.lblSets.text = String(self.setCount+1)
                     
-                    
                     let desc = snapshot.childSnapshot(forPath: "exercises/\(self.count)/desc").value  as! String
                     
                     self.lblDesc.text = desc
@@ -127,7 +126,7 @@ class StepByStepViewController: UIViewController {
                     
                 })
                 timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(StepByStepViewController.counter), userInfo: nil, repeats: true)
-                lblCount.text = String(count+1)
+                lblCount.text = "\((count+1)) / \(self.totalExercises)"
                 
             }else
             {
@@ -145,9 +144,12 @@ class StepByStepViewController: UIViewController {
                     workoutRef.setValue(self.completedworkout.getFBSerializedFormat())
                         
                     workoutRef.child("time").setValue(self.totalSeconds)
+                    
+                    // Update total workout time (for dashboard)
+                    ref.child("totalGymTime").setValue((snapshot.childSnapshot(forPath: "totalGymTime").value as? Int ?? 0) + (self.totalSeconds / 3600))
                    
                     //Calories burned might be implemented later
-                    workoutRef.child("calorie").setValue("150")
+                    workoutRef.child("calorie").setValue(150)
                     
                      })
                     mainDelegate.totalTime = self.totalSeconds
@@ -157,7 +159,7 @@ class StepByStepViewController: UIViewController {
         }else{
             updateFromDB()
             timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(StepByStepViewController.counter), userInfo: nil, repeats: true)
-            lblCount.text = String(count+1)
+            lblCount.text = "\((count+1)) / \(self.totalExercises)"
         }
         skipOutlet.isHidden = false
 
@@ -174,21 +176,23 @@ class StepByStepViewController: UIViewController {
             
             if self.count == -1 {
                 let name = snapshot.childSnapshot(forPath: "name").value  as! String
-                 self.lblExerciseTitle.text = name
+                 self.lblWorkoutName.text = name
                  
                  let sets = snapshot.childSnapshot(forPath: "exercises/0/sets").value  as! Int
                  self.totalSets = sets
                  self.lblSets.text = String(self.totalSets)
                  let totalTime = snapshot.childSnapshot(forPath: "time").value  as! Int
-                 self.lblTimer.text = String(totalTime) + "minutes"
-
+                
+                 // TODO: Add total workout time to view somewhere
                  let desc = snapshot.childSnapshot(forPath: "desc").value  as! String
 
                 self.lblDesc.text = desc
             }
             let exercises = snapshot.childSnapshot(forPath: "exercises").childrenCount
             self.totalExercises = Int(exercises)
-
+            
+            // Show exercize number count
+            self.lblCount.text = "\((self.count + 1)) / \(self.totalExercises)"
 
         })
         // Do any additional setup after loading the view.
@@ -229,14 +233,4 @@ class StepByStepViewController: UIViewController {
 
         })
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

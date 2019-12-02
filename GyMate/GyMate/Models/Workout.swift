@@ -64,7 +64,7 @@ class Workout: NSObject {
                 "id" : exercise.id,
                 "name" : exercise.name,
                 "desc" : exercise.desc,
-                "imgBodyDiagram" : exercise.imgBodyDiagram,
+                "imgBodyDiagram" : exercise.imgBodyDiagram as Any,
                 "sets" : exercise.sets,
                 "reps" : exercise.reps,
                 "restPeriod" : exercise.restPeriod
