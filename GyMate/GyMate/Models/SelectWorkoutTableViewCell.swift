@@ -13,10 +13,14 @@ class SelectWorkoutTableViewCell: UITableViewCell {
     @IBOutlet var workoutTitle : UILabel!
     @IBOutlet var workoutDesc : UILabel!
     @IBOutlet var workoutTime : UILabel!
+    @IBOutlet var workoutBackgroundContainer : UIImageView!
 
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        
+        // Style the background to have shadows
+        workoutBackgroundContainer.layer.cornerRadius = 5
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
