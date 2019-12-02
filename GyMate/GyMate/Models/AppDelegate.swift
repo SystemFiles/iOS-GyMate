@@ -26,6 +26,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var progressExerciseList : [Exercise]! = []
     var workoutCurrentID : Int = 0
     var exerciseID : Int! = 0
+    //Used to keep track of workout selected from table
+    var selectedWorkout : String = ""
+    var totalTime : Int = 0
 
     /// Within app launch configure and start Firebase and retreive a database instance
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
