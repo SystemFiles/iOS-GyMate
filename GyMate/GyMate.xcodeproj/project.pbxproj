@@ -21,6 +21,7 @@
 		AE74B645238843D200AB8645 /* SelectWorkoutTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE74B644238843D200AB8645 /* SelectWorkoutTableViewCell.swift */; };
 		AED9945E2389CFC100647594 /* ExerciseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED9945D2389CFC100647594 /* ExerciseTableViewCell.swift */; };
 		AED994602389D74100647594 /* AddExerciseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED9945F2389D74100647594 /* AddExerciseViewController.swift */; };
+		B821856C23948B470016A735 /* UIAnimatedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B821856B23948B470016A735 /* UIAnimatedButton.swift */; };
 		B826DB662377244700181369 /* QuizAnswer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B826DB652377244700181369 /* QuizAnswer.swift */; };
 		B82BD8EE2375AF390070130A /* BodyTypeQuiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82BD8ED2375AF390070130A /* BodyTypeQuiz.swift */; };
 		B82BD8F02375AF4A0070130A /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82BD8EF2375AF4A0070130A /* Question.swift */; };
@@ -55,6 +56,7 @@
 		AE74B644238843D200AB8645 /* SelectWorkoutTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectWorkoutTableViewCell.swift; sourceTree = "<group>"; };
 		AED9945D2389CFC100647594 /* ExerciseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseTableViewCell.swift; sourceTree = "<group>"; };
 		AED9945F2389D74100647594 /* AddExerciseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExerciseViewController.swift; sourceTree = "<group>"; };
+		B821856B23948B470016A735 /* UIAnimatedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIAnimatedButton.swift; sourceTree = "<group>"; };
 		B826DB652377244700181369 /* QuizAnswer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizAnswer.swift; sourceTree = "<group>"; };
 		B82BD8ED2375AF390070130A /* BodyTypeQuiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyTypeQuiz.swift; sourceTree = "<group>"; };
 		B82BD8EF2375AF4A0070130A /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
@@ -165,6 +167,7 @@
 				AE74B644238843D200AB8645 /* SelectWorkoutTableViewCell.swift */,
 				AED9945D2389CFC100647594 /* ExerciseTableViewCell.swift */,
 				4A03C9C22390E47B00DC48F1 /* SpriteScene.swift */,
+				B821856B23948B470016A735 /* UIAnimatedButton.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -326,6 +329,7 @@
 				B87D728523745C3300303955 /* AppDelegate.swift in Sources */,
 				AE2D729C2386E85B00E58FC7 /* AddWorkoutViewController.swift in Sources */,
 				4A03C9C32390E47B00DC48F1 /* SpriteScene.swift in Sources */,
+				B821856C23948B470016A735 /* UIAnimatedButton.swift in Sources */,
 				4A9950C42391F3BC006C73C0 /* WorkOutViewController.swift in Sources */,
 				B82BD8EE2375AF390070130A /* BodyTypeQuiz.swift in Sources */,
 				B87D729D237465CD00303955 /* SignUpViewController.swift in Sources */,
