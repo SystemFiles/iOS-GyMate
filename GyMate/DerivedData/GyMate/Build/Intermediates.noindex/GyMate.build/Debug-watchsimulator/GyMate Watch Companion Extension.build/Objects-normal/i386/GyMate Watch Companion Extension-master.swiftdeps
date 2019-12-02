@@ -1,7 +1,7 @@
 version: "Apple Swift version 5.1.2 (swiftlang-1100.0.278 clang-1100.0.33.9)"
-options: "8a626921c7fece93cdbd5ee85327f259"
-build_time: [1575171703, 820937000]
+options: "5b916f313dec8e2a2ad42bade3d16d2b"
+build_time: [1575255338, 240865000]
 inputs:
-  "/Users/bensykes/DATASYNC/school/Sem5Courses/AdvancedMobileApp/Final Project/GyMate-Application/GyMate/GyMate Watch Companion Extension/NotificationController.swift": [1575144327, 396362653]
-  "/Users/bensykes/DATASYNC/school/Sem5Courses/AdvancedMobileApp/Final Project/GyMate-Application/GyMate/GyMate Watch Companion Extension/ExtensionDelegate.swift": [1575144327, 391456996]
-  "/Users/bensykes/DATASYNC/school/Sem5Courses/AdvancedMobileApp/Final Project/GyMate-Application/GyMate/GyMate Watch Companion Extension/InterfaceController.swift": [1575171680, 842028839]
+  "/Users/bensykes/DATASYNC/school/Sem5Courses/AdvancedMobileApp/Final Project/GyMate-Application/GyMate/GyMate Watch Companion Extension/NotificationController.swift": [1575254375, 836805177]
+  "/Users/bensykes/DATASYNC/school/Sem5Courses/AdvancedMobileApp/Final Project/GyMate-Application/GyMate/GyMate Watch Companion Extension/ExtensionDelegate.swift": [1575254375, 835993104]
+  "/Users/bensykes/DATASYNC/school/Sem5Courses/AdvancedMobileApp/Final Project/GyMate-Application/GyMate/GyMate Watch Companion Extension/InterfaceController.swift": [1575254375, 836537099]
