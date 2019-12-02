@@ -73,65 +73,6 @@ class DashboardViewController: UIViewController, UITableViewDelegate, UITableVie
         mainDelegate.workoutCurrentID = self.workouts.count
     }
     
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let mainDelegate : AppDelegate = UIApplication.shared.delegate as! AppDelegate
-        let ref = mainDelegate.userRef.child(Auth.auth().currentUser!.uid)
-        
-        let selectedName = self.workouts[indexPath.row].name
-
-        var selectedWorkouts : [Workout] = []
-        
-        // Retreive all data
-        ref.observe(DataEventType.value, with: { snapshot in
-   
-        //Add recommended workout to list
-    selectedWorkouts.append(Workout.deserializeWorkout(workoutDict: (snapshot.childSnapshot(forPath: "workouts/recommended").value as! NSMutableDictionary)))
-
-        if (snapshot.childSnapshot(forPath: "workouts").childrenCount > 0) { //go through all custom workouts
-            for child in snapshot.childSnapshot(forPath: "workouts/custom").children {
-
-                let workoutSnapshot = child as! DataSnapshot
-                let newWorkoutDict = workoutSnapshot.value as! NSMutableDictionary
-                selectedWorkouts.append(Workout.deserializeWorkout(workoutDict: newWorkoutDict))
-
-            }
-            var namedWorkout:String
-                //Check if selected workout has been appended to list
-                //Then store the URL pathway in the delegate
-                for workout in selectedWorkouts {
-            
-                    if workout.name == selectedName{
-                        namedWorkout = workout.name
-                        if namedWorkout == "The Lean Bulk"
-                        {
-                            mainDelegate.selectedWorkout = "recommended"
-                        }
-                        else if namedWorkout == "All About that Balance"
-                        {
-                            mainDelegate.selectedWorkout = "recommended"
-                        }
-                        else if namedWorkout == "Lean wit Me"
-                        {
-                            mainDelegate.selectedWorkout = "recommended"
-                        }
-                        else
-                        {
-                            mainDelegate.selectedWorkout = "custom/\(namedWorkout)"
-
-                        }
-
-                    }
-                }
-            
-            self.gotoSteps()
-            
-            }
-        })
-    }
-    //Used to call StepByStep View Controller on the selected row
-    func gotoSteps(){
-        performSegue(withIdentifier: "StepByStepSegue", sender: nil)
-    }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.workouts.count
     }

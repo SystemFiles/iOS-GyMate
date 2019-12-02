@@ -46,7 +46,7 @@ class AddExerciseViewController: UIViewController {
             
             self.present(errorAlert, animated: true)
         } else {
-            let exercise : Exercise = Exercise(id: mainDelegate.exerciseID, name: txtName.text!, desc: txtDesc.text!, imgBodyDiagram: "", sets: Int(txtSets.text!)!, reps: Int(txtReps.text!)!, restPeriod: Double(Int(self.sldRestPeriod!.value)))
+            let exercise : Exercise = Exercise(id: mainDelegate.exerciseID, name: txtName.text!, desc: txtDesc.text!, imgBodyDiagram: "", sets: Int(txtReps.text!)!, reps: Int(txtSets.text!)!, restPeriod: Double(Int(self.sldRestPeriod!.value)))
 
             mainDelegate.exerciseID += 1
             mainDelegate.progressExerciseList.append(exercise)

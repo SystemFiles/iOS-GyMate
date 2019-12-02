@@ -182,11 +182,8 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
 @import CoreGraphics;
-@import CoreLocation;
 @import Foundation;
-@import MapKit;
 @import ObjectiveC;
-@import SpriteKit;
 @import UIKit;
 #endif
 
@@ -206,9 +203,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 @class UITextField;
-@class UISlider;
-@class UILabel;
-@class UIButton;
 @class NSBundle;
 @class NSCoder;
 
@@ -218,19 +212,13 @@ SWIFT_CLASS("_TtC6GyMate25AddExerciseViewController")
 @property (nonatomic, strong) IBOutlet UITextField * _Null_unspecified txtDesc;
 @property (nonatomic, strong) IBOutlet UITextField * _Null_unspecified txtReps;
 @property (nonatomic, strong) IBOutlet UITextField * _Null_unspecified txtSets;
-@property (nonatomic, strong) IBOutlet UISlider * _Null_unspecified sldRestPeriod;
-@property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified lbRestPeriod;
-@property (nonatomic, strong) IBOutlet UIButton * _Null_unspecified btnAddExercise;
 - (void)viewDidLoad;
-- (IBAction)textChangedWithSender:(UITextField * _Null_unspecified)sender;
-- (IBAction)restPeriodChangedWithSender:(UISlider * _Null_unspecified)sender;
-- (IBAction)addExerciseToWorkout;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
 @class UITableView;
-@class UIStoryboardSegue;
+@class UIButton;
 @class UITableViewCell;
 
 SWIFT_CLASS("_TtC6GyMate24AddWorkoutViewController")
@@ -240,9 +228,6 @@ SWIFT_CLASS("_TtC6GyMate24AddWorkoutViewController")
 @property (nonatomic, strong) IBOutlet UITextField * _Null_unspecified txtDesc;
 @property (nonatomic, strong) IBOutlet UIButton * _Null_unspecified btnAdd;
 - (void)viewDidLoad;
-- (IBAction)textChangedWithSender:(UITextField * _Null_unspecified)sender;
-- (IBAction)rewindToAddWorkoutVCWithSender:(UIStoryboardSegue * _Null_unspecified)sender;
-- (IBAction)addWorkoutToDatabase;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 - (CGFloat)tableView:(UITableView * _Nonnull)tableView heightForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
@@ -259,7 +244,6 @@ SWIFT_CLASS("_TtC6GyMate24AddWorkoutViewController")
 SWIFT_CLASS("_TtC6GyMate11AppDelegate")
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 @property (nonatomic, strong) UIWindow * _Nullable window;
-/// Within app launch configure and start Firebase and retreive a database instance
 - (BOOL)application:(UIApplication * _Nonnull)application didFinishLaunchingWithOptions:(NSDictionary<UIApplicationLaunchOptionsKey, id> * _Nullable)launchOptions SWIFT_WARN_UNUSED_RESULT;
 - (UISceneConfiguration * _Nonnull)application:(UIApplication * _Nonnull)application configurationForConnectingSceneSession:(UISceneSession * _Nonnull)connectingSceneSession options:(UISceneConnectionOptions * _Nonnull)options SWIFT_WARN_UNUSED_RESULT;
 - (void)application:(UIApplication * _Nonnull)application didDiscardSceneSessions:(NSSet<UISceneSession *> * _Nonnull)sceneSessions;
@@ -272,6 +256,8 @@ SWIFT_CLASS("_TtC6GyMate12BodyTypeQuiz")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UILabel;
+@class UIStoryboardSegue;
 
 SWIFT_CLASS("_TtC6GyMate23DashboardViewController")
 @interface DashboardViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
@@ -280,8 +266,6 @@ SWIFT_CLASS("_TtC6GyMate23DashboardViewController")
 - (void)viewDidLoad;
 - (IBAction)rewindToDashboardVCWithSender:(UIStoryboardSegue * _Null_unspecified)sender;
 - (IBAction)logoutUserWithSender:(UIButton * _Null_unspecified)sender;
-- (IBAction)addWorkoutWithSender:(UIButton * _Null_unspecified)sender;
-- (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 - (CGFloat)tableView:(UITableView * _Nonnull)tableView heightForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
@@ -321,7 +305,7 @@ SWIFT_CLASS("_TtC6GyMate19LoginViewController")
 - (void)viewDidLoad;
 - (void)viewDidAppear:(BOOL)animated;
 - (IBAction)rewindToLoginVCWithSender:(UIStoryboardSegue * _Null_unspecified)sender;
-/// For animating the check box and modifying the stayLoggedIn flag
+/// For animating the check box
 - (IBAction)checkMarkTapped:(UIButton * _Nonnull)sender;
 - (IBAction)performLoginWithSender:(UIButton * _Null_unspecified)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
@@ -331,7 +315,6 @@ SWIFT_CLASS("_TtC6GyMate19LoginViewController")
 @class UIPickerView;
 @class NSAttributedString;
 
-/// Created for manually selecting body type
 SWIFT_CLASS("_TtC6GyMate32ManualTypeSelectorViewController")
 @interface ManualTypeSelectorViewController : UIViewController <UIPickerViewDataSource, UIPickerViewDelegate>
 - (void)viewDidLoad;
@@ -344,48 +327,12 @@ SWIFT_CLASS("_TtC6GyMate32ManualTypeSelectorViewController")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class MKMapView;
-@class UISearchBar;
-@protocol MKOverlay;
-@class MKOverlayRenderer;
-
-SWIFT_CLASS("_TtC6GyMate20MapKitViewController")
-@interface MapKitViewController : UIViewController <MKMapViewDelegate, UITableViewDataSource, UITableViewDelegate, UITextFieldDelegate>
-@property (nonatomic, strong) IBOutlet MKMapView * _Null_unspecified mapView;
-@property (nonatomic, strong) IBOutlet UISearchBar * _Null_unspecified searchBar;
-@property (nonatomic, strong) IBOutlet UITableView * _Null_unspecified tblView;
-- (void)viewDidLoad;
-- (IBAction)findDestination;
-- (MKOverlayRenderer * _Nonnull)mapView:(MKMapView * _Nonnull)mapView rendererForOverlay:(id <MKOverlay> _Nonnull)overlay SWIFT_WARN_UNUSED_RESULT;
-- (void)tableView:(UITableView * _Nonnull)tableView willDisplayCell:(UITableViewCell * _Nonnull)cell forRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
-- (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
-- (CGFloat)tableView:(UITableView * _Nonnull)tableView heightForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
-- (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
-- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-@interface MapKitViewController (SWIFT_EXTENSION(GyMate)) <UISearchBarDelegate>
-- (void)searchBarSearchButtonClicked:(UISearchBar * _Nonnull)searchBar;
-@end
-
-@class CLLocationManager;
-@class CLLocation;
-
-@interface MapKitViewController (SWIFT_EXTENSION(GyMate)) <CLLocationManagerDelegate>
-- (void)locationManager:(CLLocationManager * _Nonnull)manager didChangeAuthorizationStatus:(CLAuthorizationStatus)status;
-- (void)locationManager:(CLLocationManager * _Nonnull)manager didUpdateLocations:(NSArray<CLLocation *> * _Nonnull)locations;
-- (void)locationManager:(CLLocationManager * _Nonnull)manager didFailWithError:(NSError * _Nonnull)error;
-@end
-
 
 SWIFT_CLASS("_TtC6GyMate27PasswordResetViewController")
 @interface PasswordResetViewController : UIViewController <UITextFieldDelegate>
 @property (nonatomic, strong) IBOutlet UITextField * _Null_unspecified txtEmail;
 - (BOOL)textFieldShouldReturn:(UITextField * _Nonnull)textField SWIFT_WARN_UNUSED_RESULT;
 - (void)viewDidLoad;
-/// HANDLE PASSWORD RESET
 - (IBAction)sendPasswordResetWithSender:(UIButton * _Null_unspecified)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
@@ -467,57 +414,6 @@ SWIFT_CLASS("_TtC6GyMate20SignUpViewController")
 - (BOOL)textFieldShouldReturn:(UITextField * _Nonnull)textField SWIFT_WARN_UNUSED_RESULT;
 - (void)viewDidLoad;
 - (IBAction)userWantsSignUpWithSender:(UIButton * _Null_unspecified)sender;
-- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
-@end
-
-@class SKView;
-
-SWIFT_CLASS("_TtC6GyMate11SpriteScene")
-@interface SpriteScene : SKScene
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
-- (void)didMoveToView:(SKView * _Nonnull)view;
-- (nonnull instancetype)initWithSize:(CGSize)size OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-
-SWIFT_CLASS("_TtC6GyMate24StepByStepViewController")
-@interface StepByStepViewController : UIViewController
-@property (nonatomic, strong) IBOutlet SKView * _Null_unspecified sceneView;
-@property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified lblTimer;
-@property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified lblDesc;
-@property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified lblSets;
-@property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified lblExerciseTitle;
-@property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified lblCount;
-@property (nonatomic, strong) IBOutlet UIButton * _Null_unspecified startOutlet;
-@property (nonatomic, strong) IBOutlet UIButton * _Null_unspecified skipOutlet;
-@property (nonatomic, strong) IBOutlet UIButton * _Null_unspecified doneOutlet;
-- (IBAction)startWorkoutWithSender:(id _Nonnull)sender;
-- (void)counter;
-- (void)totalTime;
-- (IBAction)skipWorkoutWithSender:(id _Nonnull)sender;
-- (IBAction)doneWorkoutWithSender:(id _Nonnull)sender;
-- (void)viewDidLoad;
-- (void)viewDidAppear:(BOOL)animated;
-- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-SWIFT_CLASS("_TtC6GyMate16UIAnimatedButton")
-@interface UIAnimatedButton : UIButton
-- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
-- (void)buttonPressed:(UIButton * _Nonnull)sender;
-@end
-
-
-SWIFT_CLASS("_TtC6GyMate21WorkOutViewController")
-@interface WorkOutViewController : UIViewController
-@property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified lblTotalTimer;
-- (void)viewDidLoad;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
