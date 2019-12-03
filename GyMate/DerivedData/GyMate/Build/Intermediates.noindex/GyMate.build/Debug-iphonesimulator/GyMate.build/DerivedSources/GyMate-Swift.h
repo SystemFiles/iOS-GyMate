@@ -493,8 +493,10 @@ SWIFT_CLASS("_TtC6GyMate24StepByStepViewController")
 @property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified lblTimer;
 @property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified lblDesc;
 @property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified lblSets;
+@property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified lblRepCount;
 @property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified lblExerciseTitle;
 @property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified lblCount;
+@property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified lblEstimatedTime;
 @property (nonatomic, strong) IBOutlet UIButton * _Null_unspecified startOutlet;
 @property (nonatomic, strong) IBOutlet UIButton * _Null_unspecified skipOutlet;
 @property (nonatomic, strong) IBOutlet UIButton * _Null_unspecified doneOutlet;

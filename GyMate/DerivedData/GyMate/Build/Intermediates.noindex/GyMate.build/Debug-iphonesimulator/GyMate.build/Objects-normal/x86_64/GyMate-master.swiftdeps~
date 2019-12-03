@@ -1,11 +1,11 @@
 version: "Apple Swift version 5.1.2 (swiftlang-1100.0.278 clang-1100.0.33.9)"
 options: "6b932a85d42dd5ff4a3710487b069f12"
-build_time: [1575326994, 278079000]
+build_time: [1575332192, 252316000]
 inputs:
   "/Users/bensykes/DATASYNC/school/Sem5Courses/AdvancedMobileApp/Final Project/Application/GyMate/GyMate/View Controllers/LoginViewController.swift": [1575319552, 690465964]
   "/Users/bensykes/DATASYNC/school/Sem5Courses/AdvancedMobileApp/Final Project/Application/GyMate/GyMate/View Controllers/DashboardViewController.swift": [1575320632, 443069783]
   "/Users/bensykes/DATASYNC/school/Sem5Courses/AdvancedMobileApp/Final Project/Application/GyMate/GyMate/Models/SelectWorkoutTableViewCell.swift": [1575317980, 8228550]
-  "/Users/bensykes/DATASYNC/school/Sem5Courses/AdvancedMobileApp/Final Project/Application/GyMate/GyMate/View Controllers/StepByStepViewController.swift": [1575326989, 88962309]
+  "/Users/bensykes/DATASYNC/school/Sem5Courses/AdvancedMobileApp/Final Project/Application/GyMate/GyMate/View Controllers/StepByStepViewController.swift": [1575332012, 46997872]
   "/Users/bensykes/DATASYNC/school/Sem5Courses/AdvancedMobileApp/Final Project/Application/GyMate/GyMate/View Controllers/MapKitViewController.swift": [1575319670, 983475727]
   "/Users/bensykes/DATASYNC/school/Sem5Courses/AdvancedMobileApp/Final Project/Application/GyMate/GyMate/View Controllers/ManualTypeSelectorViewController.swift": [1575317980, 11949683]
   "/Users/bensykes/DATASYNC/school/Sem5Courses/AdvancedMobileApp/Final Project/Application/GyMate/GyMate/Models/Question.swift": [1575317980, 7819992]
