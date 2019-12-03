@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<string>MapKit</string>
+	<string>FirebaseCore</string>
+	<string>WebKit</string>
+	<string>FirebaseStorage</string>
+	<string>FirebaseInAppMessaging</string>
+	<string>GameplayKit</string>
+	<string>CoreLocation</string>
+	<string>GameKit</string>
+	<string>FirebaseDatabase</string>
+	<string>Firebase</string>
+	<string>CoreServices</string>
+	<string>FirebaseFunctions</string>
+	<string>FirebaseMLVisionTextModel</string>
+	<string>FirebaseMLCommon</string>
+	<string>SafariServices</string>
+	<string>FirebaseMLModelInterpreter</string>
+	<string>FirebaseMessaging</string>
+	<string>FirebaseCoreDiagnosticsInterop</string>
+	<string>GoogleMobileAds</string>
+	<string>WatchKit</string>
+	<string>FirebaseInstanceID</string>
+	<string>FirebaseMLVisionFaceModel</string>
+	<string>FirebaseMLNaturalLanguage</string>
+	<string>FirebaseAuthInterop</string>
+	<string>FirebaseAuth</string>
+	<string>SpriteKit</string>
+	<string>FirebaseMLVisionLabelModel</string>
+	<string>AppKit</string>
+	<string>FirebasePerformance</string>
+	<string>FirebaseMLNLTranslate</string>
+	<string>Crashlytics</string>
+	<string>FirebaseMLVisionAutoML</string>
+	<string>netinet</string>
+	<string>GoogleDataTransport</string>
+	<string>FirebaseMLNLSmartReply</string>
+	<string>CommonCrypto</string>
+	<string>GoogleUtilities</string>
+	<string>FirebaseRemoteConfig</string>
+	<string>unicode</string>
+	<string>FirebaseMLVision</string>
+	<string>GTMSessionFetcher</string>
+	<string>FirebaseMLNLLanguageID</string>
+	<string>SystemConfiguration</string>
+	<string>FirebaseAnalytics</string>
+	<string>Security</string>
+	<string>FirebaseMLVisionObjectDetection</string>
+	<string>objc</string>
+	<string>FirebaseDynamicLinks</string>
+	<string>UIKit</string>
+	<string>UserNotifications</string>
+	<string>Fabric</string>
+	<string>FirebaseMLVisionBarcodeModel</string>
+	<string>Foundation</string>
+	<string>sys</string>
+	<string>nanopb</string>
+	<string>FirebaseFirestore</string>
+</array>
+</plist>

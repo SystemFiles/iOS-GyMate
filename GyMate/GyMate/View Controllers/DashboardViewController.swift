@@ -15,6 +15,7 @@ class DashboardViewController: UIViewController, UITableViewDelegate, UITableVie
     
     @IBOutlet var workoutTable : UITableView!
     @IBOutlet var lbUser : UILabel!
+    @IBOutlet var lbGymTime : UILabel!
     
     let mainDelegate : AppDelegate = UIApplication.shared.delegate as! AppDelegate
 
@@ -45,6 +46,9 @@ class DashboardViewController: UIViewController, UITableViewDelegate, UITableVie
             for workout in selectedWorkouts {
                 self.workouts.append(workout)
             }
+            
+            // Update Dashboard Gym Time Statistic
+            self.lbGymTime.text = "\(snapshot.childSnapshot(forPath: "totalGymTime").value as? Int ?? 0)hrs @ The Gym!"
             
             self.lbUser.text = username
             self.workoutTable.reloadData() // Reload table data for workouts

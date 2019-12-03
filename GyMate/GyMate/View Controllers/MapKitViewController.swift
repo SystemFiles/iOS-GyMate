@@ -123,7 +123,7 @@ class MapKitViewController: UIViewController, UITextFieldDelegate, MKMapViewDele
       
       func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let tableCell = tableView.dequeueReusableCell(withIdentifier: "cell") ?? UITableViewCell(style: .default, reuseIdentifier: "cell")
-        tableCell.textLabel?.text = routeSteps[indexPath.row] as! String
+        tableCell.textLabel?.text = (routeSteps[indexPath.row] as! String)
         //Fix table cell seperator insets
         tableCell.separatorInset = UIEdgeInsets.zero
         tableCell.layoutMargins = UIEdgeInsets.zero
