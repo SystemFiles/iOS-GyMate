@@ -136,14 +136,13 @@ class StepByStepViewController: UIViewController {
             {
                     //Save completed workout to Firebase
                     let ref = mainDelegate.userRef.child(Auth.auth().currentUser!.uid)
-                ref.observeSingleEvent(of: DataEventType.value, with: { snapshot in
+                    ref.observeSingleEvent(of: DataEventType.value, with: { snapshot in
 
 
                     self.completedworkout = Workout.deserializeWorkout(workoutDict: (snapshot.childSnapshot(forPath: "workouts/\(self.workoutType)").value as! NSMutableDictionary))
-                        let name = self.completedworkout.name
                         
-                        
-                        let workoutRef = ref.child("workoutsCompleted").child("finishedWorkouts/\(name)")
+                    let currentDate : String = Date().description.split(separator: " ")[0].lowercased()
+                    let workoutRef = ref.child("workoutsCompleted").child("finishedWorkouts/\(currentDate)")
                     //Using helper function to serializes Workout object in a format that Firebase can store automatically (Dictionary)
                     workoutRef.setValue(self.completedworkout.getFBSerializedFormat())
                         
