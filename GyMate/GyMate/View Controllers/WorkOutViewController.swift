@@ -16,6 +16,10 @@ class WorkOutViewController: UIViewController {
     var minutes = 0
     var seconds = 0
     
+    @IBAction func dissmissView(sender: UIButton!) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
     @IBOutlet var lblTotalTimer: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()

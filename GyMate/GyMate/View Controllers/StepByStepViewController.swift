@@ -44,7 +44,9 @@ class StepByStepViewController: UIViewController {
     @IBOutlet var skipOutlet: UIButton!
     @IBOutlet var doneOutlet: UIButton!
     
-    
+    @IBAction func dissmissView(sender: UIButton!) {
+        self.dismiss(animated: true, completion: nil)
+    }
     @IBAction func startWorkout (sender: Any){
         self.count = 0
         self.setCount = self.totalSets

@@ -31,6 +31,10 @@ class AddWorkoutViewController: UIViewController, UITableViewDelegate, UITableVi
         exerciseTable.reloadData()
         self.checkValidWorkout()
     }
+    @IBAction func dissmissView(sender: UIButton!) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
     
     @IBAction func addWorkoutToDatabase() {
         

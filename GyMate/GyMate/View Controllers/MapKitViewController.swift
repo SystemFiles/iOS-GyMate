@@ -29,6 +29,9 @@ class MapKitViewController: UIViewController, UITextFieldDelegate, MKMapViewDele
           mapView.setRegion(coordinateRegion, animated: true)
 
       }
+    @IBAction func dissmissView(sender: UIButton!) {
+        self.dismiss(animated: true, completion: nil)
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
