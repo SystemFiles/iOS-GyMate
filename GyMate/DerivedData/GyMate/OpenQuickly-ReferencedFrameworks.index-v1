@@ -50,8 +50,8 @@
 	<string>FirebaseMLVisionObjectDetection</string>
 	<string>objc</string>
 	<string>FirebaseDynamicLinks</string>
-	<string>UIKit</string>
 	<string>UserNotifications</string>
+	<string>UIKit</string>
 	<string>Fabric</string>
 	<string>FirebaseMLVisionBarcodeModel</string>
 	<string>Foundation</string>

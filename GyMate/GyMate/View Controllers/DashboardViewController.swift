@@ -38,35 +38,25 @@ class DashboardViewController: UIViewController, UITableViewDelegate, UITableVie
             self.workouts.append(Workout.deserializeWorkout(workoutDict: (snapshot.childSnapshot(forPath: "workouts/recommended").value as! NSMutableDictionary)))
         
             // Make sure no errors when retreiving custom workouts
-            var selectedWorkouts : [Workout] = []
             if (snapshot.childSnapshot(forPath: "workouts").childrenCount > 1) { //go through all custom workouts
                 for child in snapshot.childSnapshot(forPath: "workouts/custom").children {
                     let workoutSnapshot = child as! DataSnapshot
                     let newWorkoutDict = workoutSnapshot.value as! NSMutableDictionary
-                    selectedWorkouts.append(Workout.deserializeWorkout(workoutDict: newWorkoutDict))
+                    self.workouts.append(Workout.deserializeWorkout(workoutDict: newWorkoutDict))
                 }
             }
             
-            //add them to the user's workouts
-            for workout in selectedWorkouts {
-                self.workouts.append(workout)
-            }
-            
-            var selectedCompletedWorkouts : [CompletedWorkout] = []
-            for child in snapshot.childSnapshot(forPath: "workoutsCompleted/finishedWorkouts").children {
-                
-                let completedWorkoutSnapshot = child as! DataSnapshot
-                let newWorkoutDict = completedWorkoutSnapshot.value as! NSMutableDictionary
-                selectedCompletedWorkouts.append(CompletedWorkout.deserializeWorkout(workoutDict: newWorkoutDict))
-            }
-            
-            for completedWorkout in selectedCompletedWorkouts {
-                self.completedWorkouts.append(completedWorkout)
+            // Load in completed workouts
+            let completedWorkoutsRef = snapshot.childSnapshot(forPath: "workoutsCompleted/finishedWorkouts")
+            for workout in completedWorkoutsRef.children.allObjects as! [DataSnapshot] {
+                let workoutObj = CompletedWorkout(ID: workout.childSnapshot(forPath: "id").value as! Int, date: workout.key, name: workout.childSnapshot(forPath: "name").value as! String, desc: workout.childSnapshot(forPath: "desc").value as! String, time: workout.childSnapshot(forPath: "time").value as! Double)
+                self.completedWorkouts.append(workoutObj)
             }
             
             // Update Dashboard Gym Time Statistic
             self.lbGymTime.text = "\(snapshot.childSnapshot(forPath: "totalGymTime").value as? Int ?? 0)hrs @ The Gym!"
             
+            // Update other user-data
             self.lbUser.text = username
             self.workoutTable.reloadData() // Reload table data for workouts
             self.completedWorkoutTable.reloadData() //reload table data for completed workouts
@@ -96,14 +86,10 @@ class DashboardViewController: UIViewController, UITableViewDelegate, UITableVie
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
         if tableView == workoutTable {
-
                  let mainDelegate : AppDelegate = UIApplication.shared.delegate as! AppDelegate
                  let ref = mainDelegate.userRef.child(Auth.auth().currentUser!.uid)
-                 
                  let selectedName = self.workouts[indexPath.row].name
-
                  var selectedWorkouts : [Workout] = []
                  
                  // Retreive all data
@@ -118,7 +104,6 @@ class DashboardViewController: UIViewController, UITableViewDelegate, UITableVie
                          let workoutSnapshot = child as! DataSnapshot
                          let newWorkoutDict = workoutSnapshot.value as! NSMutableDictionary
                          selectedWorkouts.append(Workout.deserializeWorkout(workoutDict: newWorkoutDict))
-
                      }
                      var namedWorkout:String
                          //Check if selected workout has been appended to list
@@ -142,18 +127,13 @@ class DashboardViewController: UIViewController, UITableViewDelegate, UITableVie
                                  else
                                  {
                                      mainDelegate.selectedWorkout = "custom/\(namedWorkout)"
-
                                  }
-
                              }
                          }
-                     
-                     self.gotoSteps()
-                     
+                        self.gotoSteps()
                      }
                  })
         }
-        
     }
     //Used to call StepByStep View Controller on the selected row
     func gotoSteps(){
@@ -180,18 +160,18 @@ class DashboardViewController: UIViewController, UITableViewDelegate, UITableVie
             workoutCell.workoutTitle.text = rowData[indexPath.row].name
             workoutCell.workoutDesc.text = rowData[indexPath.row].desc
             workoutCell.workoutTime.text = "\(Int(rowData[indexPath.row].time))m"
-            
                 
             return workoutCell
             
         } else {
-            
             let completedWorkoutCell : CompletedWorkoutTableViewCell = tableView.dequeueReusableCell(withIdentifier: "completedWorkoutCell") as? CompletedWorkoutTableViewCell ?? CompletedWorkoutTableViewCell(style: .default, reuseIdentifier: "completedWorkoutCell")
             
             let rowData = self.completedWorkouts
             
+            completedWorkoutCell.lbDesc.text = "\(rowData[indexPath.row].desc)"
             completedWorkoutCell.lbName.text = rowData[indexPath.row].name
             completedWorkoutCell.lbTime.text = "\(Int(rowData[indexPath.row].time))m"
+            completedWorkoutCell.lbDate.text = "\(rowData[indexPath.row].date)"
             
             return completedWorkoutCell
         }
