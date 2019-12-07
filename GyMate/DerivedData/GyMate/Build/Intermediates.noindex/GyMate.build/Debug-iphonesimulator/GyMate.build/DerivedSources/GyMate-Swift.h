@@ -273,11 +273,34 @@ SWIFT_CLASS("_TtC6GyMate12BodyTypeQuiz")
 @end
 
 
+SWIFT_CLASS("_TtC6GyMate16CompletedWorkout")
+@interface CompletedWorkout : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+@class UIImageView;
+
+SWIFT_CLASS("_TtC6GyMate29CompletedWorkoutTableViewCell")
+@interface CompletedWorkoutTableViewCell : UITableViewCell
+@property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified lbTime;
+@property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified lbName;
+@property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified lbDate;
+@property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified lbDesc;
+@property (nonatomic, strong) IBOutlet UIImageView * _Null_unspecified workoutBackgroundContainer;
+- (void)awakeFromNib;
+- (void)setSelected:(BOOL)selected animated:(BOOL)animated;
+- (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER SWIFT_AVAILABILITY(ios,introduced=3.0);
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
 SWIFT_CLASS("_TtC6GyMate23DashboardViewController")
 @interface DashboardViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 @property (nonatomic, strong) IBOutlet UITableView * _Null_unspecified workoutTable;
 @property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified lbUser;
 @property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified lbGymTime;
+@property (nonatomic, strong) IBOutlet UITableView * _Null_unspecified completedWorkoutTable;
 - (void)viewDidLoad;
 - (IBAction)rewindToDashboardVCWithSender:(UIStoryboardSegue * _Null_unspecified)sender;
 - (IBAction)logoutUserWithSender:(UIButton * _Null_unspecified)sender;
@@ -297,7 +320,6 @@ SWIFT_CLASS("_TtC6GyMate8Exercise")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-@class UIImageView;
 
 SWIFT_CLASS("_TtC6GyMate21ExerciseTableViewCell")
 @interface ExerciseTableViewCell : UITableViewCell
