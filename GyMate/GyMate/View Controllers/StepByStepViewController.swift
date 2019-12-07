@@ -95,7 +95,7 @@ class StepByStepViewController: UIViewController {
         startOutlet.isHidden = true
         doneOutlet.isHidden = false
     }
-    @IBAction func doneWorkout (sender: Any){
+    @IBAction func doneWorkout (sender: UIButton!){
         completionTimer.invalidate()
         workoutType = mainDelegate.selectedWorkout
         doneOutlet.isHidden = true
@@ -136,30 +136,30 @@ class StepByStepViewController: UIViewController {
                 
             }else
             {
-                    //Save completed workout to Firebase
-                    let ref = mainDelegate.userRef.child(Auth.auth().currentUser!.uid)
-                    ref.observeSingleEvent(of: DataEventType.value, with: { snapshot in
-
-
-                    self.completedworkout = Workout.deserializeWorkout(workoutDict: (snapshot.childSnapshot(forPath: "workouts/\(self.workoutType)").value as! NSMutableDictionary))
-                        
-                    let currentDate : String = Date().description.split(separator: " ")[0].lowercased()
-                    let workoutRef = ref.child("workoutsCompleted").child("finishedWorkouts/\(currentDate)")
-                    //Using helper function to serializes Workout object in a format that Firebase can store automatically (Dictionary)
-                    workoutRef.setValue(self.completedworkout.getFBSerializedFormat())
-                        
-                    workoutRef.child("time").setValue(self.totalSeconds)
+                //Save completed workout to Firebase
+                let ref = mainDelegate.userRef.child(Auth.auth().currentUser!.uid)
+                ref.observeSingleEvent(of: DataEventType.value, with: { snapshot in
                     
-                    // Update total workout time (for dashboard)
-                    ref.child("totalGymTime").setValue((snapshot.childSnapshot(forPath: "totalGymTime").value as? Int ?? 0) + (self.totalSeconds / 3600))
-                   
-                    //Calories burned might be implemented later
-                    workoutRef.child("calorie").setValue(150)
+                self.completedworkout = Workout.deserializeWorkout(workoutDict: (snapshot.childSnapshot(forPath: "workouts/\(self.workoutType)").value as! NSMutableDictionary))
+                        
+                let currentDate : String = Date().description.split(separator: " ")[0].lowercased()
+                let workoutRef = ref.child("workoutsCompleted").child("finishedWorkouts/\(currentDate)")
+                //Using helper function to serializes Workout object in a format that Firebase can store automatically (Dictionary)
+                workoutRef.setValue(self.completedworkout.getFBSerializedFormat())
+                        
+                workoutRef.child("time").setValue(self.totalSeconds)
                     
-                     })
-                    mainDelegate.totalTime = self.totalSeconds
-                    //Goto WorkOutSummary View controller once workout has been completed
-                    performSegue(withIdentifier: "WorkOutSummarySegue", sender: nil)
+                // Update total workout time (for dashboard)
+                ref.child("totalGymTime").setValue((snapshot.childSnapshot(forPath: "totalGymTime").value as? Int ?? 0) + (self.totalSeconds / 3600))
+                    
+                mainDelegate.totalTime = self.totalSeconds
+                
+                // Stop all running timers
+                self.timer.invalidate()
+                self.completionTimer.invalidate()
+                
+                //Goto WorkOutSummary View controller once workout has been completed
+                performSegue(withIdentifier: "WorkOutSummarySegue", sender: self)
             }
         }else{
             updateFromDB()
@@ -186,7 +186,7 @@ class StepByStepViewController: UIViewController {
                 let sets = snapshot.childSnapshot(forPath: "exercises/0/sets").value  as! Int
                 self.totalSets = sets
                 self.lblSets.text = String(self.totalSets)
-                let totalTime = snapshot.childSnapshot(forPath: "time").value  as! Int
+                let totalTime = Int(snapshot.childSnapshot(forPath: "time").value  as! Double)
                 
                 // TODO: Add total workout time to view somewhere
                 self.lblEstimatedTime.text = "Estimated Completion Time: \(totalTime) minutes"
@@ -201,7 +201,6 @@ class StepByStepViewController: UIViewController {
             self.lblCount.text = "\((self.count + 1)) / \(self.totalExercises)"
 
         })
-        // Do any additional setup after loading the view.
     }
     
     override func viewDidAppear(_ animated: Bool) {

@@ -25,9 +25,6 @@ class AddExerciseViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
-    @IBAction func dissmissView(sender: UIButton!) {
-        self.dismiss(animated: true, completion: nil)
-    }
     @IBAction func textChanged(sender: UITextField!) {
         if !txtName.text!.isEmpty && !txtDesc.text!.isEmpty && !txtSets.text!.isEmpty && !txtReps.text!.isEmpty {
             btnAddExercise.isEnabled = true

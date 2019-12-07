@@ -358,6 +358,7 @@ SWIFT_CLASS("_TtC6GyMate19LoginViewController")
 /// Created for manually selecting body type
 SWIFT_CLASS("_TtC6GyMate32ManualTypeSelectorViewController")
 @interface ManualTypeSelectorViewController : UIViewController <UIPickerViewDataSource, UIPickerViewDelegate>
+- (IBAction)dissmissViewWithSender:(UIButton * _Null_unspecified)sender;
 - (void)viewDidLoad;
 - (IBAction)confirmSelectionWithSender:(UIButton * _Null_unspecified)sender;
 - (NSInteger)numberOfComponentsInPickerView:(UIPickerView * _Nonnull)pickerView SWIFT_WARN_UNUSED_RESULT;
@@ -378,6 +379,7 @@ SWIFT_CLASS("_TtC6GyMate20MapKitViewController")
 @property (nonatomic, strong) IBOutlet MKMapView * _Null_unspecified mapView;
 @property (nonatomic, strong) IBOutlet UISearchBar * _Null_unspecified searchBar;
 @property (nonatomic, strong) IBOutlet UITableView * _Null_unspecified tblView;
+- (IBAction)dissmissViewWithSender:(UIButton * _Null_unspecified)sender;
 - (void)viewDidLoad;
 - (IBAction)findDestination;
 - (MKOverlayRenderer * _Nonnull)mapView:(MKMapView * _Nonnull)mapView rendererForOverlay:(id <MKOverlay> _Nonnull)overlay SWIFT_WARN_UNUSED_RESULT;
@@ -522,11 +524,12 @@ SWIFT_CLASS("_TtC6GyMate24StepByStepViewController")
 @property (nonatomic, strong) IBOutlet UIButton * _Null_unspecified startOutlet;
 @property (nonatomic, strong) IBOutlet UIButton * _Null_unspecified skipOutlet;
 @property (nonatomic, strong) IBOutlet UIButton * _Null_unspecified doneOutlet;
+- (IBAction)dissmissViewWithSender:(UIButton * _Null_unspecified)sender;
 - (IBAction)startWorkoutWithSender:(id _Nonnull)sender;
 - (void)counter;
 - (void)totalTime;
 - (IBAction)skipWorkoutWithSender:(id _Nonnull)sender;
-- (IBAction)doneWorkoutWithSender:(id _Nonnull)sender;
+- (IBAction)doneWorkoutWithSender:(UIButton * _Null_unspecified)sender;
 - (void)viewDidLoad;
 - (void)viewDidAppear:(BOOL)animated;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
