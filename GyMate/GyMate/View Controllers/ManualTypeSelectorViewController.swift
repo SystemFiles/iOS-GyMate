@@ -15,6 +15,9 @@ class ManualTypeSelectorViewController: UIViewController, UIPickerViewDelegate, 
     let typeData : [String] = ["ECTOMORPH", "MESOMORPH", "ENDOMORPH"]
     var selected : Int = 0
     
+    @IBAction func dissmissView(sender: UIButton!) {
+        self.dismiss(animated: true, completion: nil)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
