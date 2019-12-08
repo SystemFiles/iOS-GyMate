@@ -16,6 +16,7 @@ provides-dynamic-lookup:
 - "viewDidLoad"
 - "workoutTable"
 depends-top-level:
+- !private "/"
 - !private "=="
 - !private ">"
 - !private "??"

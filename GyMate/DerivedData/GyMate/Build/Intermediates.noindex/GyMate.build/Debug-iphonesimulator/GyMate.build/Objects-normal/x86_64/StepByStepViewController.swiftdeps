@@ -7,6 +7,7 @@ provides-member:
 - ["6GyMate06StepByC14ViewControllerC", ""]
 provides-dynamic-lookup:
 - "counter"
+- "dissmissView"
 - "doneOutlet"
 - "doneWorkout"
 - "lblCount"
@@ -43,6 +44,7 @@ depends-top-level:
 - "CastingPrecedence"
 - !private "DataEventType"
 - !private "Date"
+- !private "Double"
 - "ExtendedGraphemeClusterType"
 - "FloatLiteralType"
 - "Int"
@@ -105,6 +107,7 @@ depends-member:
 - !private ["s7CVarArgP", "currentUser"]
 - ["s7CVarArgP", "delegate"]
 - !private ["s7CVarArgP", "deserializeWorkout"]
+- !private ["s7CVarArgP", "dismiss"]
 - !private ["s7CVarArgP", "doneOutlet"]
 - !private ["s7CVarArgP", "frame"]
 - !private ["s7CVarArgP", "getFBSerializedFormat"]
@@ -184,6 +187,7 @@ depends-member:
 - ["s28CustomDebugStringConvertibleP", "delegate"]
 - !private ["s28CustomDebugStringConvertibleP", "description"]
 - !private ["s28CustomDebugStringConvertibleP", "deserializeWorkout"]
+- !private ["s28CustomDebugStringConvertibleP", "dismiss"]
 - !private ["s28CustomDebugStringConvertibleP", "doneOutlet"]
 - !private ["s28CustomDebugStringConvertibleP", "frame"]
 - !private ["s28CustomDebugStringConvertibleP", "getFBSerializedFormat"]
@@ -273,6 +277,7 @@ depends-member:
 - ["s23CustomStringConvertibleP", "delegate"]
 - !private ["s23CustomStringConvertibleP", "description"]
 - !private ["s23CustomStringConvertibleP", "deserializeWorkout"]
+- !private ["s23CustomStringConvertibleP", "dismiss"]
 - !private ["s23CustomStringConvertibleP", "doneOutlet"]
 - !private ["s23CustomStringConvertibleP", "frame"]
 - !private ["s23CustomStringConvertibleP", "getFBSerializedFormat"]
@@ -385,6 +390,7 @@ depends-member:
 - ["SQ", "delegate"]
 - !private ["SQ", "description"]
 - !private ["SQ", "deserializeWorkout"]
+- !private ["SQ", "dismiss"]
 - !private ["SQ", "doneOutlet"]
 - !private ["SQ", "frame"]
 - !private ["SQ", "getFBSerializedFormat"]
@@ -482,6 +488,7 @@ depends-member:
 - ["SH", "delegate"]
 - !private ["SH", "description"]
 - !private ["SH", "deserializeWorkout"]
+- !private ["SH", "dismiss"]
 - !private ["SH", "doneOutlet"]
 - !private ["SH", "frame"]
 - !private ["SH", "getFBSerializedFormat"]
@@ -554,6 +561,7 @@ depends-member:
 - !private ["So8NSCodingP", "completionTimer"]
 - !private ["So8NSCodingP", "count"]
 - !private ["So8NSCodingP", "counter"]
+- !private ["So8NSCodingP", "dismiss"]
 - !private ["So8NSCodingP", "doneOutlet"]
 - !private ["So8NSCodingP", "frame"]
 - !private ["So8NSCodingP", "init"]
@@ -607,6 +615,7 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "completionTimer"]
 - !private ["So26NSExtensionRequestHandlingP", "count"]
 - !private ["So26NSExtensionRequestHandlingP", "counter"]
+- !private ["So26NSExtensionRequestHandlingP", "dismiss"]
 - !private ["So26NSExtensionRequestHandlingP", "doneOutlet"]
 - !private ["So26NSExtensionRequestHandlingP", "init"]
 - !private ["So26NSExtensionRequestHandlingP", "lblCount"]
@@ -644,6 +653,7 @@ depends-member:
 - !private ["So8NSObjectC", "CGSize"]
 - !private ["So8NSObjectC", "DataEventType"]
 - !private ["So8NSObjectC", "Date"]
+- !private ["So8NSObjectC", "Double"]
 - ["So8NSObjectC", "Int"]
 - !private ["So8NSObjectC", "NSMutableDictionary"]
 - ["So8NSObjectC", "SKView"]
@@ -666,6 +676,8 @@ depends-member:
 - !private ["So8NSObjectC", "currentUser"]
 - ["So8NSObjectC", "delegate"]
 - !private ["So8NSObjectC", "deserializeWorkout"]
+- !private ["So8NSObjectC", "dismiss"]
+- ["So8NSObjectC", "dissmissView"]
 - ["So8NSObjectC", "doneOutlet"]
 - ["So8NSObjectC", "doneWorkout"]
 - ["So8NSObjectC", "estimatedCompletionTime"]
@@ -737,6 +749,7 @@ depends-member:
 - !private ["So8NSObjectP", "currentUser"]
 - ["So8NSObjectP", "delegate"]
 - !private ["So8NSObjectP", "deserializeWorkout"]
+- !private ["So8NSObjectP", "dismiss"]
 - !private ["So8NSObjectP", "doneOutlet"]
 - !private ["So8NSObjectP", "frame"]
 - !private ["So8NSObjectP", "getFBSerializedFormat"]
@@ -825,6 +838,7 @@ depends-member:
 - !private ["6GyMate06StepByC14ViewControllerC", "CGSize"]
 - !private ["6GyMate06StepByC14ViewControllerC", "DataEventType"]
 - !private ["6GyMate06StepByC14ViewControllerC", "Date"]
+- !private ["6GyMate06StepByC14ViewControllerC", "Double"]
 - ["6GyMate06StepByC14ViewControllerC", "Int"]
 - !private ["6GyMate06StepByC14ViewControllerC", "NSMutableDictionary"]
 - ["6GyMate06StepByC14ViewControllerC", "SKView"]
@@ -841,6 +855,8 @@ depends-member:
 - ["6GyMate06StepByC14ViewControllerC", "count"]
 - ["6GyMate06StepByC14ViewControllerC", "counter"]
 - ["6GyMate06StepByC14ViewControllerC", "deinit"]
+- !private ["6GyMate06StepByC14ViewControllerC", "dismiss"]
+- ["6GyMate06StepByC14ViewControllerC", "dissmissView"]
 - ["6GyMate06StepByC14ViewControllerC", "doneOutlet"]
 - ["6GyMate06StepByC14ViewControllerC", "doneWorkout"]
 - ["6GyMate06StepByC14ViewControllerC", "estimatedCompletionTime"]
@@ -918,6 +934,7 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "completionTimer"]
 - !private ["So21UIAppearanceContainerP", "count"]
 - !private ["So21UIAppearanceContainerP", "counter"]
+- !private ["So21UIAppearanceContainerP", "dismiss"]
 - !private ["So21UIAppearanceContainerP", "doneOutlet"]
 - !private ["So21UIAppearanceContainerP", "frame"]
 - !private ["So21UIAppearanceContainerP", "init"]
@@ -972,6 +989,7 @@ depends-member:
 - !private ["So18UIContentContainerP", "completionTimer"]
 - !private ["So18UIContentContainerP", "count"]
 - !private ["So18UIContentContainerP", "counter"]
+- !private ["So18UIContentContainerP", "dismiss"]
 - !private ["So18UIContentContainerP", "doneOutlet"]
 - !private ["So18UIContentContainerP", "init"]
 - !private ["So18UIContentContainerP", "lblCount"]
@@ -1026,6 +1044,7 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "completionTimer"]
 - !private ["So18UIFocusEnvironmentP", "count"]
 - !private ["So18UIFocusEnvironmentP", "counter"]
+- !private ["So18UIFocusEnvironmentP", "dismiss"]
 - !private ["So18UIFocusEnvironmentP", "doneOutlet"]
 - !private ["So18UIFocusEnvironmentP", "frame"]
 - !private ["So18UIFocusEnvironmentP", "init"]
@@ -1091,6 +1110,7 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "count"]
 - !private ["So30UIPasteConfigurationSupportingP", "counter"]
 - ["So30UIPasteConfigurationSupportingP", "delegate"]
+- !private ["So30UIPasteConfigurationSupportingP", "dismiss"]
 - !private ["So30UIPasteConfigurationSupportingP", "doneOutlet"]
 - !private ["So30UIPasteConfigurationSupportingP", "frame"]
 - !private ["So30UIPasteConfigurationSupportingP", "init"]
@@ -1133,6 +1153,7 @@ depends-member:
 - !private ["So11UIResponderC", "CGSize"]
 - !private ["So11UIResponderC", "DataEventType"]
 - !private ["So11UIResponderC", "Date"]
+- !private ["So11UIResponderC", "Double"]
 - ["So11UIResponderC", "Int"]
 - !private ["So11UIResponderC", "NSMutableDictionary"]
 - ["So11UIResponderC", "SKView"]
@@ -1149,6 +1170,8 @@ depends-member:
 - ["So11UIResponderC", "count"]
 - ["So11UIResponderC", "counter"]
 - ["So11UIResponderC", "delegate"]
+- !private ["So11UIResponderC", "dismiss"]
+- ["So11UIResponderC", "dissmissView"]
 - ["So11UIResponderC", "doneOutlet"]
 - ["So11UIResponderC", "doneWorkout"]
 - ["So11UIResponderC", "estimatedCompletionTime"]
@@ -1206,6 +1229,7 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "count"]
 - !private ["So30UIResponderStandardEditActionsP", "counter"]
 - ["So30UIResponderStandardEditActionsP", "delegate"]
+- !private ["So30UIResponderStandardEditActionsP", "dismiss"]
 - !private ["So30UIResponderStandardEditActionsP", "doneOutlet"]
 - !private ["So30UIResponderStandardEditActionsP", "frame"]
 - !private ["So30UIResponderStandardEditActionsP", "init"]
@@ -1259,6 +1283,7 @@ depends-member:
 - !private ["So16UIStateRestoringP", "completionTimer"]
 - !private ["So16UIStateRestoringP", "count"]
 - !private ["So16UIStateRestoringP", "counter"]
+- !private ["So16UIStateRestoringP", "dismiss"]
 - !private ["So16UIStateRestoringP", "doneOutlet"]
 - !private ["So16UIStateRestoringP", "init"]
 - !private ["So16UIStateRestoringP", "lblCount"]
@@ -1303,6 +1328,7 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "completionTimer"]
 - !private ["So18UITraitEnvironmentP", "count"]
 - !private ["So18UITraitEnvironmentP", "counter"]
+- !private ["So18UITraitEnvironmentP", "dismiss"]
 - !private ["So18UITraitEnvironmentP", "doneOutlet"]
 - !private ["So18UITraitEnvironmentP", "frame"]
 - !private ["So18UITraitEnvironmentP", "init"]
@@ -1352,6 +1378,7 @@ depends-member:
 - !private ["So23UIUserActivityRestoringP", "count"]
 - !private ["So23UIUserActivityRestoringP", "counter"]
 - ["So23UIUserActivityRestoringP", "delegate"]
+- !private ["So23UIUserActivityRestoringP", "dismiss"]
 - !private ["So23UIUserActivityRestoringP", "doneOutlet"]
 - !private ["So23UIUserActivityRestoringP", "frame"]
 - !private ["So23UIUserActivityRestoringP", "init"]
@@ -1398,6 +1425,7 @@ depends-member:
 - !private ["So16UIViewControllerC", "CGSize"]
 - !private ["So16UIViewControllerC", "DataEventType"]
 - !private ["So16UIViewControllerC", "Date"]
+- !private ["So16UIViewControllerC", "Double"]
 - ["So16UIViewControllerC", "Int"]
 - !private ["So16UIViewControllerC", "NSMutableDictionary"]
 - ["So16UIViewControllerC", "SKView"]
@@ -1414,6 +1442,8 @@ depends-member:
 - ["So16UIViewControllerC", "completionTimer"]
 - ["So16UIViewControllerC", "count"]
 - ["So16UIViewControllerC", "counter"]
+- !private ["So16UIViewControllerC", "dismiss"]
+- ["So16UIViewControllerC", "dissmissView"]
 - ["So16UIViewControllerC", "doneOutlet"]
 - ["So16UIViewControllerC", "doneWorkout"]
 - ["So16UIViewControllerC", "estimatedCompletionTime"]
@@ -1498,6 +1528,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "currentUser"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "delegate"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "deserializeWorkout"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "dismiss"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "doneOutlet"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "frame"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "getFBSerializedFormat"]
@@ -1565,6 +1596,7 @@ depends-member:
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "currentUser"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "delegate"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "deserializeWorkout"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "dismiss"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "doneOutlet"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "frame"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "getFBSerializedFormat"]
@@ -3299,4 +3331,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/GameplayKit.framework/Headers/GameplayKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "4b87461645ecd80b7e72a15d3dfdeb11"
+interface-hash: "da6b88cfa8fa5598c9a2665b8edd0947"
