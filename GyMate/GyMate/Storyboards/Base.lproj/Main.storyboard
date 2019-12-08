@@ -432,7 +432,7 @@
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" image="arrow.left" catalog="system"/>
                                 <connections>
-                                    <segue destination="YOo-Ql-QP7" kind="unwind" unwindAction="rewindToDashboardVCWithSender:" id="tHS-iH-svw"/>
+                                    <action selector="dissmissViewWithSender:" destination="64f-CH-Y2D" eventType="touchUpInside" id="7GJ-RW-0Ko"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -456,7 +456,6 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kLs-NA-Krh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <exit id="YOo-Ql-QP7" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="902.89855072463774" y="-699.10714285714278"/>
         </scene>
@@ -501,7 +500,7 @@
                                     <color key="titleColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                                 </state>
                                 <connections>
-                                    <segue destination="fkd-QZ-CgC" kind="unwind" unwindAction="rewindToDashboardVCWithSender:" id="zLu-x7-8ZS"/>
+                                    <segue destination="fkd-QZ-CgC" kind="unwind" unwindAction="rewindToDashboardVCWithSender:" id="Snh-L0-ZwC"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Great Work!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RyB-rJ-uwm">
@@ -783,7 +782,8 @@
                                 </state>
                                 <connections>
                                     <action selector="addWorkoutToDatabase" destination="D3E-Lq-gLe" eventType="touchUpInside" id="fFl-FA-tOx"/>
-                                    <segue destination="gNI-pf-qlm" kind="unwind" unwindAction="rewindToDashboardVCWithSender:" id="Yw5-Md-0vh"/>
+                                    <action selector="userWantsSignUpWithSender:" destination="wGH-R3-JDJ" eventType="touchUpInside" id="UZX-ik-fBK"/>
+                                    <segue destination="gNI-pf-qlm" kind="unwind" unwindAction="rewindToDashboardVCWithSender:" id="8MB-OR-PDK"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Username / Email" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="RTm-q1-Wd2">
@@ -916,7 +916,7 @@
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" image="arrow.left" catalog="system"/>
                                 <connections>
-                                    <segue destination="gNI-pf-qlm" kind="unwind" unwindAction="rewindToDashboardVCWithSender:" id="Kkx-df-4W5"/>
+                                    <action selector="dissmissViewWithSender:" destination="D3E-Lq-gLe" eventType="touchUpInside" id="aLU-Wx-kEd"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1039,7 +1039,7 @@
                                 </state>
                                 <connections>
                                     <action selector="addExerciseToWorkout" destination="MaP-r4-wkt" eventType="touchUpInside" id="NCg-K1-XSy"/>
-                                    <segue destination="58l-fo-ubO" kind="unwind" unwindAction="rewindToAddWorkoutVCWithSender:" id="rGF-4I-nD9"/>
+                                    <segue destination="58l-fo-ubO" kind="unwind" unwindAction="rewindToAddWorkoutVCWithSender:" id="I9g-DJ-JnL"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Add Exercise" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WVy-5s-UYs">
@@ -1071,7 +1071,7 @@
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" image="arrow.left" catalog="system"/>
                                 <connections>
-                                    <segue destination="58l-fo-ubO" kind="unwind" unwindAction="rewindToAddWorkoutVCWithSender:" id="GHs-e4-PUp"/>
+                                    <action selector="dissmissViewWithSender:" destination="MaP-r4-wkt" eventType="touchUpInside" id="iQj-xS-gIw"/>
                                 </connections>
                             </button>
                         </subviews>
