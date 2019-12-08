@@ -20,8 +20,6 @@ depends-top-level:
 - !private "&&"
 - !private "*"
 - !private "+"
-- !private "+="
-- !private "/"
 - !private ">"
 - !private "??"
 - "AddWorkoutViewController"
@@ -190,7 +188,6 @@ depends-member:
 - ["s7CVarArgP", "tableView"]
 - ["s7CVarArgP", "tableViewDidEndMultipleSelectionInteraction"]
 - !private ["s7CVarArgP", "text"]
-- !private ["s7CVarArgP", "time"]
 - !private ["s7CVarArgP", "txtDesc"]
 - !private ["s7CVarArgP", "txtName"]
 - !private ["s7CVarArgP", "uid"]
@@ -278,7 +275,6 @@ depends-member:
 - ["s28CustomDebugStringConvertibleP", "tableView"]
 - ["s28CustomDebugStringConvertibleP", "tableViewDidEndMultipleSelectionInteraction"]
 - !private ["s28CustomDebugStringConvertibleP", "text"]
-- !private ["s28CustomDebugStringConvertibleP", "time"]
 - !private ["s28CustomDebugStringConvertibleP", "txtDesc"]
 - !private ["s28CustomDebugStringConvertibleP", "txtName"]
 - !private ["s28CustomDebugStringConvertibleP", "uid"]
@@ -362,7 +358,6 @@ depends-member:
 - ["s23CustomStringConvertibleP", "tableView"]
 - ["s23CustomStringConvertibleP", "tableViewDidEndMultipleSelectionInteraction"]
 - !private ["s23CustomStringConvertibleP", "text"]
-- !private ["s23CustomStringConvertibleP", "time"]
 - !private ["s23CustomStringConvertibleP", "txtDesc"]
 - !private ["s23CustomStringConvertibleP", "txtName"]
 - !private ["s23CustomStringConvertibleP", "uid"]
@@ -463,7 +458,6 @@ depends-member:
 - ["SQ", "tableView"]
 - ["SQ", "tableViewDidEndMultipleSelectionInteraction"]
 - !private ["SQ", "text"]
-- !private ["SQ", "time"]
 - !private ["SQ", "txtDesc"]
 - !private ["SQ", "txtName"]
 - !private ["SQ", "uid"]
@@ -564,7 +558,6 @@ depends-member:
 - ["SH", "tableView"]
 - ["SH", "tableViewDidEndMultipleSelectionInteraction"]
 - !private ["SH", "text"]
-- !private ["SH", "time"]
 - !private ["SH", "txtDesc"]
 - !private ["SH", "txtName"]
 - !private ["SH", "uid"]
@@ -742,7 +735,6 @@ depends-member:
 - ["So8NSObjectC", "tableViewDidEndMultipleSelectionInteraction"]
 - !private ["So8NSObjectC", "text"]
 - ["So8NSObjectC", "textChanged"]
-- !private ["So8NSObjectC", "time"]
 - ["So8NSObjectC", "txtDesc"]
 - ["So8NSObjectC", "txtName"]
 - !private ["So8NSObjectC", "uid"]
@@ -807,7 +799,6 @@ depends-member:
 - ["So8NSObjectP", "tableView"]
 - ["So8NSObjectP", "tableViewDidEndMultipleSelectionInteraction"]
 - !private ["So8NSObjectP", "text"]
-- !private ["So8NSObjectP", "time"]
 - !private ["So8NSObjectP", "txtDesc"]
 - !private ["So8NSObjectP", "txtName"]
 - !private ["So8NSObjectP", "uid"]
@@ -1575,7 +1566,6 @@ depends-member:
 - !private ["6GyMate7WorkoutC", "getFBSerializedFormat"]
 - !private ["6GyMate7WorkoutC", "init"]
 - !private ["6GyMate7WorkoutC", "name"]
-- !private ["6GyMate7WorkoutC", "time"]
 - !private ["s14_ArrayProtocolP", "count"]
 - !private ["s14_ArrayProtocolP", "desc"]
 - !private ["s14_ArrayProtocolP", "name"]
@@ -1662,7 +1652,6 @@ depends-member:
 - ["10Foundation27_KeyValueCodingAndObservingP", "tableView"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "tableViewDidEndMultipleSelectionInteraction"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "text"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "time"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "txtDesc"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "txtName"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "uid"]
@@ -1727,7 +1716,6 @@ depends-member:
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "tableView"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "tableViewDidEndMultipleSelectionInteraction"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "text"]
-- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "time"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "txtDesc"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "txtName"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "uid"]

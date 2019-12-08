@@ -31,14 +31,15 @@ class AddWorkoutViewController: UIViewController, UITableViewDelegate, UITableVi
         exerciseTable.reloadData()
         self.checkValidWorkout()
     }
+    @IBAction func dissmissView(sender: UIButton!) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
     
     @IBAction func addWorkoutToDatabase() {
+        
         let ref = mainDelegate.userRef.child(Auth.auth().currentUser!.uid)
         let newWorkout : Workout = Workout(ID: mainDelegate.workoutCurrentID + 1, name: txtName.text!, desc: txtDesc.text!, time: Double(mainDelegate.progressExerciseList.count * 10), exercises: mainDelegate.progressExerciseList)
-        
-        for exercise in mainDelegate.progressExerciseList {
-            newWorkout.time += Double(((exercise.restPeriod * Double(exercise.sets)) / 60))
-        }
         
         mainDelegate.progressExerciseList = [] //reset the workout exercises
     

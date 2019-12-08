@@ -61,12 +61,12 @@ class DashboardViewController: UIViewController, UITableViewDelegate, UITableVie
             self.workoutTable.reloadData() // Reload table data for workouts
             self.completedWorkoutTable.reloadData() //reload table data for completed workouts
         })
+        // Do any additional setup after loading the view.
     }
     
     //rewind to dashboard from add workout
     @IBAction func rewindToDashboardVC(sender: UIStoryboardSegue!) {
         workoutTable.reloadData()
-        completedWorkoutTable.reloadData()
     }
     
     @IBAction func logoutUser(sender: UIButton!) {
@@ -170,10 +170,15 @@ class DashboardViewController: UIViewController, UITableViewDelegate, UITableVie
             
             completedWorkoutCell.lbDesc.text = "\(rowData[indexPath.row].desc)"
             completedWorkoutCell.lbName.text = rowData[indexPath.row].name
-            completedWorkoutCell.lbTime.text = "\(Int(rowData[indexPath.row].time / 60))m"
+            completedWorkoutCell.lbTime.text = "\(Int(rowData[indexPath.row].time))m"
             completedWorkoutCell.lbDate.text = "\(rowData[indexPath.row].date)"
             
             return completedWorkoutCell
         }
+        
+            
     }
+    
+    
+
 }
