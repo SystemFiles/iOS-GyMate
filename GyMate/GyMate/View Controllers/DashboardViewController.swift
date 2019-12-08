@@ -135,7 +135,8 @@ class DashboardViewController: UIViewController, UITableViewDelegate, UITableVie
                  })
         }
     }
-    //Used to call StepByStep View Controller on the selected row
+    
+    /// Used to call StepByStep View Controller on the selected row
     func gotoSteps(){
         performSegue(withIdentifier: "StepByStepSegue", sender: nil)
     }
@@ -149,6 +150,30 @@ class DashboardViewController: UIViewController, UITableViewDelegate, UITableVie
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 120
+    }
+    
+    
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return tableView == workoutTable && indexPath.row != 0
+    }
+    
+    /// Style the action
+    func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        let action = UIContextualAction(style: .destructive, title: "DELETE", handler: {_,_,_ in
+            // Delete data from local and remote locations simultaneously
+            let mainDelegate = UIApplication.shared.delegate as! AppDelegate
+            let deleteRef = mainDelegate.userRef.child("\(Auth.auth().currentUser!.uid)/workouts/custom/\(self.workouts[indexPath.row].name)")
+            deleteRef.removeValue()
+            self.workouts.remove(at: indexPath.row)
+            
+            // Update table
+            tableView.beginUpdates()
+            tableView.deleteRows(at: [indexPath], with: .automatic)
+            tableView.endUpdates()
+        })
+        
+        action.backgroundColor = UIColor.init(red: 0, green: 0, blue: 0, alpha: 0.0)
+        return UISwipeActionsConfiguration(actions: [action])
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

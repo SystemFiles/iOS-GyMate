@@ -3,6 +3,14 @@
    version = "1.0">
    <ContextStates>
       <ContextState
+         contextName = "DashboardViewController.tableView(_:commit:forRowAt:):DashboardViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "indexPath.row">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "closure #1 in DashboardViewController.viewDidLoad():DashboardViewController.swift">
       </ContextState>
       <ContextState
