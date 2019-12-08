@@ -84,7 +84,6 @@ depends-member:
 - !private ["SK", "subscript"]
 - !private ["SK", "time"]
 - !private ["Sz", "init"]
-- ["So15CALayerDelegateP", "EditingStyle"]
 - !private ["So15CALayerDelegateP", "beginUpdates"]
 - !private ["So15CALayerDelegateP", "deleteRows"]
 - !private ["So15CALayerDelegateP", "dequeueReusableCell"]
@@ -103,7 +102,6 @@ depends-member:
 - !private ["s7CVarArgP", "CompletedWorkout"]
 - !private ["s7CVarArgP", "CompletedWorkoutTableViewCell"]
 - !private ["s7CVarArgP", "DataEventType"]
-- ["s7CVarArgP", "EditingStyle"]
 - !private ["s7CVarArgP", "Int"]
 - !private ["s7CVarArgP", "SelectWorkoutTableViewCell"]
 - ["s7CVarArgP", "UIApplication"]
@@ -225,7 +223,6 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "CompletedWorkout"]
 - !private ["s28CustomDebugStringConvertibleP", "CompletedWorkoutTableViewCell"]
 - !private ["s28CustomDebugStringConvertibleP", "DataEventType"]
-- ["s28CustomDebugStringConvertibleP", "EditingStyle"]
 - !private ["s28CustomDebugStringConvertibleP", "Int"]
 - !private ["s28CustomDebugStringConvertibleP", "SelectWorkoutTableViewCell"]
 - ["s28CustomDebugStringConvertibleP", "UIApplication"]
@@ -330,7 +327,6 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "CompletedWorkout"]
 - !private ["s23CustomStringConvertibleP", "CompletedWorkoutTableViewCell"]
 - !private ["s23CustomStringConvertibleP", "DataEventType"]
-- ["s23CustomStringConvertibleP", "EditingStyle"]
 - !private ["s23CustomStringConvertibleP", "Int"]
 - !private ["s23CustomStringConvertibleP", "SelectWorkoutTableViewCell"]
 - ["s23CustomStringConvertibleP", "UIApplication"]
@@ -513,7 +509,6 @@ depends-member:
 - !private ["Se", "text"]
 - !private ["s26DefaultStringInterpolationV", "appendInterpolation"]
 - !private ["s26DefaultStringInterpolationV", "appendLiteral"]
-- !private ["So27UITableViewCellEditingStyleV", "delete"]
 - !private ["SE", "append"]
 - !private ["SE", "child"]
 - !private ["SE", "count"]
@@ -527,7 +522,6 @@ depends-member:
 - !private ["SQ", "CompletedWorkout"]
 - !private ["SQ", "CompletedWorkoutTableViewCell"]
 - !private ["SQ", "DataEventType"]
-- ["SQ", "EditingStyle"]
 - !private ["SQ", "Int"]
 - !private ["SQ", "SelectWorkoutTableViewCell"]
 - ["SQ", "UIApplication"]
@@ -553,7 +547,6 @@ depends-member:
 - !private ["SQ", "date"]
 - !private ["SQ", "default"]
 - ["SQ", "delegate"]
-- !private ["SQ", "delete"]
 - !private ["SQ", "deleteRows"]
 - !private ["SQ", "dequeueReusableCell"]
 - !private ["SQ", "desc"]
@@ -637,7 +630,6 @@ depends-member:
 - !private ["SH", "CompletedWorkout"]
 - !private ["SH", "CompletedWorkoutTableViewCell"]
 - !private ["SH", "DataEventType"]
-- ["SH", "EditingStyle"]
 - !private ["SH", "Int"]
 - !private ["SH", "SelectWorkoutTableViewCell"]
 - ["SH", "UIApplication"]
@@ -663,7 +655,6 @@ depends-member:
 - !private ["SH", "date"]
 - !private ["SH", "default"]
 - ["SH", "delegate"]
-- !private ["SH", "delete"]
 - !private ["SH", "deleteRows"]
 - !private ["SH", "dequeueReusableCell"]
 - !private ["SH", "desc"]
@@ -750,7 +741,6 @@ depends-member:
 - !private ["So8NSCodingP", "CompletedWorkout"]
 - !private ["So8NSCodingP", "CompletedWorkoutTableViewCell"]
 - !private ["So8NSCodingP", "DataEventType"]
-- ["So8NSCodingP", "EditingStyle"]
 - !private ["So8NSCodingP", "Int"]
 - !private ["So8NSCodingP", "SelectWorkoutTableViewCell"]
 - ["So8NSCodingP", "UIApplication"]
@@ -866,7 +856,6 @@ depends-member:
 - !private ["So8NSObjectC", "DataEventType"]
 - !private ["So8NSObjectC", "DataSnapshot"]
 - !private ["So8NSObjectC", "Double"]
-- ["So8NSObjectC", "EditingStyle"]
 - ["So8NSObjectC", "IndexPath"]
 - ["So8NSObjectC", "Int"]
 - !private ["So8NSObjectC", "NSMutableDictionary"]
@@ -963,7 +952,6 @@ depends-member:
 - !private ["So8NSObjectP", "CompletedWorkout"]
 - !private ["So8NSObjectP", "CompletedWorkoutTableViewCell"]
 - !private ["So8NSObjectP", "DataEventType"]
-- ["So8NSObjectP", "EditingStyle"]
 - !private ["So8NSObjectP", "Int"]
 - !private ["So8NSObjectP", "SelectWorkoutTableViewCell"]
 - ["So8NSObjectP", "UIApplication"]
@@ -1070,7 +1058,6 @@ depends-member:
 - !private ["Sm", "time"]
 - !private ["SY", "automatic"]
 - !private ["SY", "default"]
-- !private ["SY", "delete"]
 - !private ["SY", "destructive"]
 - !private ["SY", "value"]
 - !private ["10Foundation20ReferenceConvertibleP", "row"]
@@ -1099,7 +1086,6 @@ depends-member:
 - !private ["So23UIContextualActionStyleV", "destructive"]
 - !private ["s16TextOutputStreamP", "appendInterpolation"]
 - !private ["s16TextOutputStreamP", "appendLiteral"]
-- ["So29UIAccessibilityIdentificationP", "EditingStyle"]
 - !private ["So29UIAccessibilityIdentificationP", "beginUpdates"]
 - !private ["So29UIAccessibilityIdentificationP", "deleteRows"]
 - !private ["So29UIAccessibilityIdentificationP", "dequeueReusableCell"]
@@ -1114,7 +1100,6 @@ depends-member:
 - !private ["So29UIAccessibilityIdentificationP", "workoutDesc"]
 - !private ["So29UIAccessibilityIdentificationP", "workoutTime"]
 - !private ["So29UIAccessibilityIdentificationP", "workoutTitle"]
-- ["So12UIAppearanceP", "EditingStyle"]
 - !private ["So12UIAppearanceP", "beginUpdates"]
 - !private ["So12UIAppearanceP", "deleteRows"]
 - !private ["So12UIAppearanceP", "dequeueReusableCell"]
@@ -1133,7 +1118,6 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "CompletedWorkout"]
 - !private ["So21UIAppearanceContainerP", "CompletedWorkoutTableViewCell"]
 - !private ["So21UIAppearanceContainerP", "DataEventType"]
-- ["So21UIAppearanceContainerP", "EditingStyle"]
 - !private ["So21UIAppearanceContainerP", "Int"]
 - !private ["So21UIAppearanceContainerP", "SelectWorkoutTableViewCell"]
 - ["So21UIAppearanceContainerP", "UIApplication"]
@@ -1246,7 +1230,6 @@ depends-member:
 - !private ["So30UIContentSizeCategoryAdjustingP", "text"]
 - !private ["So18UIContextualActionC", "backgroundColor"]
 - !private ["So18UIContextualActionC", "init"]
-- ["So17UICoordinateSpaceP", "EditingStyle"]
 - !private ["So17UICoordinateSpaceP", "beginUpdates"]
 - !private ["So17UICoordinateSpaceP", "deleteRows"]
 - !private ["So17UICoordinateSpaceP", "dequeueReusableCell"]
@@ -1266,7 +1249,6 @@ depends-member:
 - !private ["So23UIDataSourceTranslatingP", "dequeueReusableCell"]
 - !private ["So23UIDataSourceTranslatingP", "endUpdates"]
 - !private ["So23UIDataSourceTranslatingP", "reloadData"]
-- ["So13UIDynamicItemP", "EditingStyle"]
 - !private ["So13UIDynamicItemP", "beginUpdates"]
 - !private ["So13UIDynamicItemP", "deleteRows"]
 - !private ["So13UIDynamicItemP", "dequeueReusableCell"]
@@ -1285,7 +1267,6 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "CompletedWorkout"]
 - !private ["So18UIFocusEnvironmentP", "CompletedWorkoutTableViewCell"]
 - !private ["So18UIFocusEnvironmentP", "DataEventType"]
-- ["So18UIFocusEnvironmentP", "EditingStyle"]
 - !private ["So18UIFocusEnvironmentP", "Int"]
 - !private ["So18UIFocusEnvironmentP", "SelectWorkoutTableViewCell"]
 - ["So18UIFocusEnvironmentP", "UIApplication"]
@@ -1341,7 +1322,6 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "workoutTime"]
 - !private ["So18UIFocusEnvironmentP", "workoutTitle"]
 - !private ["So18UIFocusEnvironmentP", "workouts"]
-- ["So11UIFocusItemP", "EditingStyle"]
 - !private ["So11UIFocusItemP", "beginUpdates"]
 - !private ["So11UIFocusItemP", "deleteRows"]
 - !private ["So11UIFocusItemP", "dequeueReusableCell"]
@@ -1356,7 +1336,6 @@ depends-member:
 - !private ["So11UIFocusItemP", "workoutDesc"]
 - !private ["So11UIFocusItemP", "workoutTime"]
 - !private ["So11UIFocusItemP", "workoutTitle"]
-- ["So20UIFocusItemContainerP", "EditingStyle"]
 - !private ["So20UIFocusItemContainerP", "beginUpdates"]
 - !private ["So20UIFocusItemContainerP", "deleteRows"]
 - !private ["So20UIFocusItemContainerP", "dequeueReusableCell"]
@@ -1376,7 +1355,6 @@ depends-member:
 - !private ["So30UIFocusItemScrollableContainerP", "dequeueReusableCell"]
 - !private ["So30UIFocusItemScrollableContainerP", "endUpdates"]
 - !private ["So30UIFocusItemScrollableContainerP", "reloadData"]
-- ["So27UIGestureRecognizerDelegateP", "EditingStyle"]
 - !private ["So27UIGestureRecognizerDelegateP", "init"]
 - !private ["So27UIGestureRecognizerDelegateP", "lbDate"]
 - !private ["So27UIGestureRecognizerDelegateP", "lbDesc"]
@@ -1386,7 +1364,6 @@ depends-member:
 - !private ["So27UIGestureRecognizerDelegateP", "workoutTime"]
 - !private ["So27UIGestureRecognizerDelegateP", "workoutTitle"]
 - !private ["So7UILabelC", "text"]
-- ["So24UILargeContentViewerItemP", "EditingStyle"]
 - !private ["So24UILargeContentViewerItemP", "beginUpdates"]
 - !private ["So24UILargeContentViewerItemP", "deleteRows"]
 - !private ["So24UILargeContentViewerItemP", "dequeueReusableCell"]
@@ -1405,7 +1382,6 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "CompletedWorkout"]
 - !private ["So30UIPasteConfigurationSupportingP", "CompletedWorkoutTableViewCell"]
 - !private ["So30UIPasteConfigurationSupportingP", "DataEventType"]
-- ["So30UIPasteConfigurationSupportingP", "EditingStyle"]
 - !private ["So30UIPasteConfigurationSupportingP", "Int"]
 - !private ["So30UIPasteConfigurationSupportingP", "SelectWorkoutTableViewCell"]
 - ["So30UIPasteConfigurationSupportingP", "UIApplication"]
@@ -1477,7 +1453,6 @@ depends-member:
 - !private ["So11UIResponderC", "DataEventType"]
 - !private ["So11UIResponderC", "DataSnapshot"]
 - !private ["So11UIResponderC", "Double"]
-- ["So11UIResponderC", "EditingStyle"]
 - ["So11UIResponderC", "IndexPath"]
 - ["So11UIResponderC", "Int"]
 - !private ["So11UIResponderC", "NSMutableDictionary"]
@@ -1554,7 +1529,6 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "CompletedWorkout"]
 - !private ["So30UIResponderStandardEditActionsP", "CompletedWorkoutTableViewCell"]
 - !private ["So30UIResponderStandardEditActionsP", "DataEventType"]
-- ["So30UIResponderStandardEditActionsP", "EditingStyle"]
 - !private ["So30UIResponderStandardEditActionsP", "Int"]
 - !private ["So30UIResponderStandardEditActionsP", "SelectWorkoutTableViewCell"]
 - ["So30UIResponderStandardEditActionsP", "UIApplication"]
@@ -1723,7 +1697,6 @@ depends-member:
 - !private ["So11UITableViewC", "dequeueReusableCell"]
 - !private ["So11UITableViewC", "endUpdates"]
 - !private ["So11UITableViewC", "reloadData"]
-- ["So15UITableViewCellC", "EditingStyle"]
 - !private ["So15UITableViewCellC", "init"]
 - !private ["So15UITableViewCellC", "lbDate"]
 - !private ["So15UITableViewCellC", "lbDesc"]
@@ -1824,7 +1797,6 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "CompletedWorkout"]
 - !private ["So18UITraitEnvironmentP", "CompletedWorkoutTableViewCell"]
 - !private ["So18UITraitEnvironmentP", "DataEventType"]
-- ["So18UITraitEnvironmentP", "EditingStyle"]
 - !private ["So18UITraitEnvironmentP", "Int"]
 - !private ["So18UITraitEnvironmentP", "SelectWorkoutTableViewCell"]
 - ["So18UITraitEnvironmentP", "UIApplication"]
@@ -1884,7 +1856,6 @@ depends-member:
 - !private ["So23UIUserActivityRestoringP", "CompletedWorkout"]
 - !private ["So23UIUserActivityRestoringP", "CompletedWorkoutTableViewCell"]
 - !private ["So23UIUserActivityRestoringP", "DataEventType"]
-- ["So23UIUserActivityRestoringP", "EditingStyle"]
 - !private ["So23UIUserActivityRestoringP", "Int"]
 - !private ["So23UIUserActivityRestoringP", "SelectWorkoutTableViewCell"]
 - ["So23UIUserActivityRestoringP", "UIApplication"]
@@ -1947,7 +1918,6 @@ depends-member:
 - !private ["So23UIUserActivityRestoringP", "workoutTime"]
 - !private ["So23UIUserActivityRestoringP", "workoutTitle"]
 - !private ["So23UIUserActivityRestoringP", "workouts"]
-- ["So6UIViewC", "EditingStyle"]
 - !private ["So6UIViewC", "beginUpdates"]
 - !private ["So6UIViewC", "deleteRows"]
 - !private ["So6UIViewC", "dequeueReusableCell"]
@@ -2063,7 +2033,6 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "CompletedWorkout"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "CompletedWorkoutTableViewCell"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "DataEventType"]
-- ["10Foundation27_KeyValueCodingAndObservingP", "EditingStyle"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "Int"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "SelectWorkoutTableViewCell"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "UIApplication"]
@@ -2150,7 +2119,6 @@ depends-member:
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "CompletedWorkout"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "CompletedWorkoutTableViewCell"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "DataEventType"]
-- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "EditingStyle"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "Int"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "SelectWorkoutTableViewCell"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "UIApplication"]
@@ -2242,7 +2210,6 @@ depends-member:
 - !private ["s21_ObjectiveCBridgeableP", "row"]
 - !private ["s21_ObjectiveCBridgeableP", "subscript"]
 - !private ["s21_ObjectiveCBridgeableP", "text"]
-- ["s38__DefaultCustomPlaygroundQuickLookableP", "EditingStyle"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "beginUpdates"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "deleteRows"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "dequeueReusableCell"]
@@ -2265,7 +2232,7 @@ depends-nominal:
 - !private "So7FIRAuthC"
 - !private "SK"
 - !private "Sz"
-- "So15CALayerDelegateP"
+- !private "So15CALayerDelegateP"
 - "s7CVarArgP"
 - !private "So20UITableViewCellStyleV"
 - !private "Sl"
@@ -2284,7 +2251,6 @@ depends-nominal:
 - !private "So20FIRDatabaseReferenceC"
 - !private "Se"
 - !private "s26DefaultStringInterpolationV"
-- !private "So27UITableViewCellEditingStyleV"
 - !private "SE"
 - "SQ"
 - !private "s25ExpressibleByArrayLiteralP"
@@ -2324,8 +2290,8 @@ depends-nominal:
 - !private "s27StringInterpolationProtocolP"
 - !private "So23UIContextualActionStyleV"
 - !private "s16TextOutputStreamP"
-- "So29UIAccessibilityIdentificationP"
-- "So12UIAppearanceP"
+- !private "So29UIAccessibilityIdentificationP"
+- !private "So12UIAppearanceP"
 - "So21UIAppearanceContainerP"
 - "So13UIApplicationC"
 - !private "So21UIApplicationDelegateP"
@@ -2333,16 +2299,16 @@ depends-nominal:
 - "So18UIContentContainerP"
 - !private "So30UIContentSizeCategoryAdjustingP"
 - !private "So18UIContextualActionC"
-- "So17UICoordinateSpaceP"
+- !private "So17UICoordinateSpaceP"
 - !private "So23UIDataSourceTranslatingP"
-- "So13UIDynamicItemP"
+- !private "So13UIDynamicItemP"
 - "So18UIFocusEnvironmentP"
-- "So11UIFocusItemP"
-- "So20UIFocusItemContainerP"
+- !private "So11UIFocusItemP"
+- !private "So20UIFocusItemContainerP"
 - !private "So30UIFocusItemScrollableContainerP"
-- "So27UIGestureRecognizerDelegateP"
+- !private "So27UIGestureRecognizerDelegateP"
 - !private "So7UILabelC"
-- "So24UILargeContentViewerItemP"
+- !private "So24UILargeContentViewerItemP"
 - "So30UIPasteConfigurationSupportingP"
 - "So11UIResponderC"
 - "So30UIResponderStandardEditActionsP"
@@ -2352,12 +2318,12 @@ depends-nominal:
 - "So16UIStateRestoringP"
 - !private "So27UISwipeActionsConfigurationC"
 - !private "So11UITableViewC"
-- "So15UITableViewCellC"
+- !private "So15UITableViewCellC"
 - "So21UITableViewDataSourceP"
 - "So19UITableViewDelegateP"
 - "So18UITraitEnvironmentP"
 - "So23UIUserActivityRestoringP"
-- "So6UIViewC"
+- !private "So6UIViewC"
 - "So16UIViewControllerC"
 - !private "So7FIRUserC"
 - !private "So14NSUserDefaultsC"
@@ -2373,7 +2339,7 @@ depends-nominal:
 - "10Foundation27_KeyValueCodingAndObservingP"
 - "10Foundation37_KeyValueCodingAndObservingPublishingP"
 - !private "s21_ObjectiveCBridgeableP"
-- "s38__DefaultCustomPlaygroundQuickLookableP"
+- !private "s38__DefaultCustomPlaygroundQuickLookableP"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/lib/swift/ObjectiveC.swiftmodule/x86_64.swiftinterface"
@@ -3924,4 +3890,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/GameplayKit.framework/Headers/GameplayKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "ac53571456f85ecc3e7e15b900fab6c4"
+interface-hash: "0d2482eebee29fc4dbbf17fbcd355442"

@@ -152,12 +152,11 @@ class DashboardViewController: UIViewController, UITableViewDelegate, UITableVie
         return 120
     }
     
-    
     func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
         return tableView == workoutTable && indexPath.row != 0
     }
     
-    /// Style the action
+    /// Custom Action Method for deleting workouts
     func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
         let action = UIContextualAction(style: .destructive, title: "DELETE", handler: {_,_,_ in
             // Delete data from local and remote locations simultaneously
