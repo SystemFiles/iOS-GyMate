@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+//Initalze a Workout Object
 class Workout: NSObject {
 
     var ID : Int

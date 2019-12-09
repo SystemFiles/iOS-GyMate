@@ -14,6 +14,7 @@ class CompletedWorkoutTableViewCell: UITableViewCell {
     @IBOutlet var lbName : UILabel!
     @IBOutlet var lbDate : UILabel!
     @IBOutlet var lbDesc : UILabel!
+    //CompletedWorkout table cell background
     @IBOutlet var workoutBackgroundContainer : UIImageView!
 
     override func awakeFromNib() {

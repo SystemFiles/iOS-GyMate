@@ -11,17 +11,21 @@ import MapKit
 import CoreLocation
 class MapKitViewController: UIViewController, UITextFieldDelegate, MKMapViewDelegate, UITableViewDataSource, UITableViewDelegate {
     
-    
+    //Initalize location manger
     let locationManger = CLLocationManager()
+    //Initalize inital location
     var initalLocation = CLLocation()
+    //Navigation steps
     var routeSteps = ["Enter a destination to see steps"] as NSMutableArray
 
-    
+    //Map view outlet
     @IBOutlet var mapView: MKMapView!
+    //Search bar out let
     @IBOutlet var searchBar: UISearchBar!
+    //Table view outlet
     @IBOutlet var tblView: UITableView!
     
-
+    //Center the maplocation on userlocation
     func centerMapOnLocation(location : CLLocation)
       {
           let regionRadius : CLLocationDistance = 2000
@@ -35,6 +39,7 @@ class MapKitViewController: UIViewController, UITextFieldDelegate, MKMapViewDele
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        //Ask location perivaliges
         locationManger.delegate = self
         locationManger.desiredAccuracy = kCLLocationAccuracyBest
         locationManger.requestWhenInUseAuthorization()
@@ -43,10 +48,10 @@ class MapKitViewController: UIViewController, UITextFieldDelegate, MKMapViewDele
         
         // Do any additional setup after loading the view.
     }
-    
+    ///Find location according to the text the user entered
     @IBAction func findDestination(){
         if (searchBar.text != ""){
-            
+            //Initalize geocoder
             let geocoder = CLGeocoder()
             geocoder.geocodeAddressString(searchBar.text!){ (placemarks, error)
                 in
@@ -60,18 +65,23 @@ class MapKitViewController: UIViewController, UITextFieldDelegate, MKMapViewDele
                     //Remove any existing map annotions except the user location
                     let annotationsToRemove = self.mapView.annotations.filter { $0 !== self.mapView.userLocation }
                     self.mapView.removeAnnotations( annotationsToRemove )
+                    //Initalize dropPin annotation
                     let dropPin = MKPointAnnotation()
-            
+                    //Set dropPin on serarched location
                     dropPin.coordinate = coordinates
+                    //Set dropPin title
                     dropPin.title = placemark.name
+                    //Add dropPin to Mapview
                     self.mapView.addAnnotation(dropPin)
                     self.mapView.selectAnnotation(dropPin, animated: true)
                     
+                    //Add directions from inital location to desired location
                     let request = MKDirections.Request()
                     request.source = MKMapItem(placemark: MKPlacemark(coordinate: self.initalLocation.coordinate))
                     request.destination = MKMapItem(placemark: MKPlacemark(coordinate: coordinates))
                     
                     request.requestsAlternateRoutes = false
+                    //Car type directions
                     request.transportType = .automobile
 
                     let directions = MKDirections(request: request)
@@ -115,7 +125,7 @@ class MapKitViewController: UIViewController, UITextFieldDelegate, MKMapViewDele
         cell.textLabel?.textColor = UIColor.white
         
     }
-    
+    //Set number of rows in table according to number of directions
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
           return routeSteps.count
       }
@@ -137,6 +147,7 @@ class MapKitViewController: UIViewController, UITextFieldDelegate, MKMapViewDele
 
 
 }
+///Used to add current user location functonality
 extension MapKitViewController : CLLocationManagerDelegate {
     //Ask user for location authorization
     func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
@@ -160,6 +171,7 @@ extension MapKitViewController : CLLocationManagerDelegate {
     
     
 }
+//Add search bar functionality
 extension MapKitViewController: UISearchBarDelegate {
 
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {

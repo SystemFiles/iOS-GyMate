@@ -8,7 +8,7 @@
 
 import UIKit
 import Firebase
-
+///Display  a workout summary showing the time taken to complete the workout
 class WorkOutViewController: UIViewController {
     //Workout Summary
     let mainDelegate : AppDelegate =
@@ -19,7 +19,7 @@ class WorkOutViewController: UIViewController {
     @IBAction func dissmissView(sender: UIButton!) {
         self.dismiss(animated: true, completion: nil)
     }
-    
+    //Outlet to display workout completion time
     @IBOutlet var lblTotalTimer: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -10,7 +10,7 @@ import UIKit
 
 class ExerciseTableViewCell: UITableViewCell {
     
-    
+    //Self explanatory
     @IBOutlet var exerciseName : UILabel!
     @IBOutlet var exerciseDesc : UILabel!
     @IBOutlet var exerciseReps : UILabel!
