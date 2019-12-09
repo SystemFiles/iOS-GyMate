@@ -10,7 +10,7 @@ import UIKit
 import Firebase
 
 class AddWorkoutViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    
+    // View Outlets
     @IBOutlet var exerciseTable : UITableView!
     @IBOutlet var txtName : UITextField!
     @IBOutlet var txtDesc : UITextField!
@@ -19,12 +19,12 @@ class AddWorkoutViewController: UIViewController, UITableViewDelegate, UITableVi
     let mainDelegate : AppDelegate = UIApplication.shared.delegate as! AppDelegate
 
     override func viewDidLoad() {
-        exerciseTable.reloadData()
+        exerciseTable.reloadData() // Reload data in exercise table
         super.viewDidLoad()
     }
 
     @IBAction func textChanged(sender : UITextField!) {
-        self.checkValidWorkout()
+        self.checkValidWorkout() // Make sure workout is still valid
     }
     
     @IBAction func rewindToAddWorkoutVC(sender: UIStoryboardSegue!) {
@@ -41,8 +41,12 @@ class AddWorkoutViewController: UIViewController, UITableViewDelegate, UITableVi
         let ref = mainDelegate.userRef.child(Auth.auth().currentUser!.uid)
         let newWorkout : Workout = Workout(ID: mainDelegate.workoutCurrentID + 1, name: txtName.text!, desc: txtDesc.text!, time: Double(mainDelegate.progressExerciseList.count * 10), exercises: mainDelegate.progressExerciseList)
         
+        // Calculate completion time
+        for exercise in newWorkout.exercises {
+            newWorkout.time += (Double(exercise.restPeriod * Double(exercise.sets))/60)
+        }
+        
         mainDelegate.progressExerciseList = [] //reset the workout exercises
-    
         let workoutRef = ref.child("workouts/custom").child(newWorkout.name) //add the workout to DB
         
         workoutRef.setValue(newWorkout.getFBSerializedFormat())

@@ -279,6 +279,7 @@ SWIFT_CLASS("_TtC6GyMate12BodyTypeQuiz")
 @end
 
 
+/// CompletedWorkout object to define object attributes
 SWIFT_CLASS("_TtC6GyMate16CompletedWorkout")
 @interface CompletedWorkout : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -301,6 +302,7 @@ SWIFT_CLASS("_TtC6GyMate29CompletedWorkoutTableViewCell")
 @end
 
 
+/// Completed by  Liam Stickney and modified by Malik Sheharyaar Talhat
 SWIFT_CLASS("_TtC6GyMate23DashboardViewController")
 @interface DashboardViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 @property (nonatomic, strong) IBOutlet UITableView * _Null_unspecified workoutTable;
@@ -308,12 +310,17 @@ SWIFT_CLASS("_TtC6GyMate23DashboardViewController")
 @property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified lbGymTime;
 @property (nonatomic, strong) IBOutlet UITableView * _Null_unspecified completedWorkoutTable;
 - (void)viewDidLoad;
+/// rewind to dashboard from add workout
 - (IBAction)rewindToDashboardVCWithSender:(UIStoryboardSegue * _Null_unspecified)sender;
 - (IBAction)logoutUserWithSender:(UIButton * _Null_unspecified)sender;
+/// Add workouts
 - (IBAction)addWorkoutWithSender:(UIButton * _Null_unspecified)sender;
+/// Open respective workout depending on which row was selected from the workouts table (Added by Malik Sheharyaar Talhat)
 - (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
+/// Table row height
 - (CGFloat)tableView:(UITableView * _Nonnull)tableView heightForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+/// If table row can be edited
 - (BOOL)tableView:(UITableView * _Nonnull)tableView canEditRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
 /// Custom Action Method for deleting workouts
 - (UISwipeActionsConfiguration * _Nullable)tableView:(UITableView * _Nonnull)tableView trailingSwipeActionsConfigurationForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
@@ -370,6 +377,7 @@ SWIFT_CLASS("_TtC6GyMate32ManualTypeSelectorViewController")
 - (IBAction)dissmissViewWithSender:(UIButton * _Null_unspecified)sender;
 - (void)viewDidLoad;
 - (IBAction)confirmSelectionWithSender:(UIButton * _Null_unspecified)sender;
+/// BELOW IS REQUIRED METHODS FOR PICKERVIEW
 - (NSInteger)numberOfComponentsInPickerView:(UIPickerView * _Nonnull)pickerView SWIFT_WARN_UNUSED_RESULT;
 - (NSInteger)pickerView:(UIPickerView * _Nonnull)pickerView numberOfRowsInComponent:(NSInteger)component SWIFT_WARN_UNUSED_RESULT;
 - (NSAttributedString * _Nullable)pickerView:(UIPickerView * _Nonnull)pickerView attributedTitleForRow:(NSInteger)row forComponent:(NSInteger)component SWIFT_WARN_UNUSED_RESULT;
@@ -390,8 +398,10 @@ SWIFT_CLASS("_TtC6GyMate20MapKitViewController")
 @property (nonatomic, strong) IBOutlet UITableView * _Null_unspecified tblView;
 - (IBAction)dissmissViewWithSender:(UIButton * _Null_unspecified)sender;
 - (void)viewDidLoad;
+/// Find location according to the text the user entered
 - (IBAction)findDestination;
 - (MKOverlayRenderer * _Nonnull)mapView:(MKMapView * _Nonnull)mapView rendererForOverlay:(id <MKOverlay> _Nonnull)overlay SWIFT_WARN_UNUSED_RESULT;
+/// STANDARD TABLEVIEW METHODS (as used multiple times in this app)
 - (void)tableView:(UITableView * _Nonnull)tableView willDisplayCell:(UITableViewCell * _Nonnull)cell forRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 - (CGFloat)tableView:(UITableView * _Nonnull)tableView heightForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
@@ -420,7 +430,7 @@ SWIFT_CLASS("_TtC6GyMate27PasswordResetViewController")
 @property (nonatomic, strong) IBOutlet UITextField * _Null_unspecified txtEmail;
 - (BOOL)textFieldShouldReturn:(UITextField * _Nonnull)textField SWIFT_WARN_UNUSED_RESULT;
 - (void)viewDidLoad;
-/// HANDLE PASSWORD RESET
+/// HANDLE PASSWORD RESET (using firebase methods)
 - (IBAction)sendPasswordResetWithSender:(UIButton * _Null_unspecified)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
@@ -509,6 +519,7 @@ SWIFT_CLASS("_TtC6GyMate20SignUpViewController")
 
 @class SKView;
 
+/// Used to add animated scene in the background during the exercise
 SWIFT_CLASS("_TtC6GyMate11SpriteScene")
 @interface SpriteScene : SKScene
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
@@ -519,6 +530,10 @@ SWIFT_CLASS("_TtC6GyMate11SpriteScene")
 @end
 
 
+/// Completed by Malik Sheharyaar Talhat and modifications made by Ben Sykes
+/// This class includes two timers, first the completionTimer is used to determine total time spent on a workout
+/// Second timer is used to determine the rest time per exercise
+/// Note: Only one timer is active at a time, when the rest phase begins, the completion timer is halted and the normal timer beings. Once the rest time ends, it is halted and the completion  timer resumes again
 SWIFT_CLASS("_TtC6GyMate24StepByStepViewController")
 @interface StepByStepViewController : UIViewController
 @property (nonatomic, strong) IBOutlet SKView * _Null_unspecified sceneView;
@@ -535,9 +550,12 @@ SWIFT_CLASS("_TtC6GyMate24StepByStepViewController")
 @property (nonatomic, strong) IBOutlet UIButton * _Null_unspecified doneOutlet;
 - (IBAction)dissmissViewWithSender:(UIButton * _Null_unspecified)sender;
 - (IBAction)startWorkoutWithSender:(id _Nonnull)sender;
+/// Function to handle computation of timer
 - (void)counter;
+/// Function to handle computation of completionTimer
 - (void)totalTime;
 - (IBAction)skipWorkoutWithSender:(id _Nonnull)sender;
+/// Handles workout progression
 - (IBAction)doneWorkoutWithSender:(id _Nonnull)sender;
 - (void)viewDidLoad;
 - (void)viewDidAppear:(BOOL)animated;
@@ -554,6 +572,7 @@ SWIFT_CLASS("_TtC6GyMate16UIAnimatedButton")
 @end
 
 
+/// Display  a workout summary showing the time taken to complete the workout
 SWIFT_CLASS("_TtC6GyMate21WorkOutViewController")
 @interface WorkOutViewController : UIViewController
 - (IBAction)dissmissViewWithSender:(UIButton * _Null_unspecified)sender;

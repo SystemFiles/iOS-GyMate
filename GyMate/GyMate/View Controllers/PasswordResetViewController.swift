@@ -10,9 +10,9 @@ import UIKit
 import Firebase
 
 class PasswordResetViewController: UIViewController, UITextFieldDelegate {
-
     @IBOutlet var txtEmail : UITextField!
     
+    // Make sure text field returns so it does not block reset button
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         return textField.resignFirstResponder()
     }
@@ -22,7 +22,7 @@ class PasswordResetViewController: UIViewController, UITextFieldDelegate {
 
         // Do any additional setup after loading the view.
     }
-    /// HANDLE PASSWORD RESET
+    /// HANDLE PASSWORD RESET (using firebase methods)
     @IBAction func sendPasswordReset(sender: UIButton!) {
         // Check email field
         if txtEmail != nil && !txtEmail.text!.isEmpty {

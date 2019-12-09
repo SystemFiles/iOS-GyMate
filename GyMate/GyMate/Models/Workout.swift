@@ -2,7 +2,7 @@
 //  Workout.swift
 //  GyMate
 //
-//  Created by Liam Stickney on 2019-11-14.
+//  Created by Liam Stickney(Fields, AddExercise, Init) and Benjamin Sykes(Serialization/Deserialization) on 2019-11-14.
 //  Copyright © 2019 The Burrito Boys. All rights reserved.
 //
 
@@ -56,7 +56,7 @@ class Workout: NSObject {
             "exercises" : []
         ]
         
-        var serializedExercises : [NSMutableDictionary] = []
+        var serializedExercises : [NSMutableDictionary] = [] // Target dictionary
         
         // Go through all exercises in workout and serialize them for Firebase
         for exercise in exercises {
@@ -77,6 +77,6 @@ class Workout: NSObject {
         // Add the list of exercises in the workout to the serialized workout object
         workoutObj["exercises"] = serializedExercises
         
-        return workoutObj
+        return workoutObj // Return the disctionary serialized and ready for storage
     }
 }

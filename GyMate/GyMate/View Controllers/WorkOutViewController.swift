@@ -24,11 +24,11 @@ class WorkOutViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // Perform time calculation for display
         minutes = mainDelegate.totalTime / 60
         seconds = mainDelegate.totalTime % 60
         
+        // Show the user total workout completion time
         lblTotalTimer.text = "\(minutes) minutes and \(seconds) seconds"
-        
     }
-
 }

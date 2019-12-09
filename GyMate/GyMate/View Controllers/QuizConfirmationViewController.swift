@@ -15,13 +15,15 @@ class QuizConfirmationViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        // Update the body type label based on predicted value
         updateBodyTypeLabelFromDB()
     }
     
     @IBAction func rewindToQuizConfirmationVC(sender : UIStoryboardSegue!) {
-        updateBodyTypeLabelFromDB()
+        updateBodyTypeLabelFromDB() // Update the body type label when we come back from manual selection
     }
     
+    // Confirm the result of the quiz as accurate and proceed to dashboard
     @IBAction func confirmQuizResults() {
         // Change quiz completion to done for user
         let mainDelegate : AppDelegate = UIApplication.shared.delegate as! AppDelegate

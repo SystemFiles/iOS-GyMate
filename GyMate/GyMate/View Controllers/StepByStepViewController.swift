@@ -232,7 +232,7 @@ class StepByStepViewController: UIViewController {
                 let sets = snapshot.childSnapshot(forPath: "exercises/0/sets").value  as! Int
                 self.totalSets = sets
                 self.lblSets.text = String(self.totalSets)
-                let totalTime = snapshot.childSnapshot(forPath: "time").value  as! Int
+                let totalTime = Int(snapshot.childSnapshot(forPath: "time").value  as! Double)
                 
                 // TODO: Add total workout time to view somewhere
                 self.lblEstimatedTime.text = "Estimated Completion Time: \(totalTime) minutes"

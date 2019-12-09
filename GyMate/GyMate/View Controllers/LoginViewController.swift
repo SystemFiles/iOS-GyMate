@@ -10,11 +10,11 @@ import UIKit
 import Firebase
 
 class LoginViewController: UIViewController, UITextFieldDelegate {
-
+    // View outlets
     @IBOutlet var txtUsername : UITextField!
     @IBOutlet var txtPassword : UITextField!
     
-    var stayLoggedIn : Bool = false
+    var stayLoggedIn : Bool = false // Control whether the user wants to stay signed-in using Auto-Login feature
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         return textField.resignFirstResponder()
@@ -57,6 +57,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     
     /// For animating the check box and modifying the stayLoggedIn flag
     @IBAction func checkMarkTapped(_ sender: UIButton) {
+        // Handle animation of button check
         UIView.animate(withDuration: 0.1, delay: 0.0, options: .curveLinear, animations: {
             sender.transform = CGAffineTransform(scaleX: 0.7, y: 0.7)
             
@@ -71,6 +72,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         self.stayLoggedIn = !self.stayLoggedIn
     }
     
+    // Perform the login for the user
     @IBAction func performLogin(sender: UIButton!) {
         // Check formatting and text field data
         if txtUsername.text!.isEmpty || txtPassword.text!.isEmpty {

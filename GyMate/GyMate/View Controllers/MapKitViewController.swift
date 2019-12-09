@@ -33,10 +33,13 @@ class MapKitViewController: UIViewController, UITextFieldDelegate, MKMapViewDele
           mapView.setRegion(coordinateRegion, animated: true)
 
       }
+    
+    // Used to dismiss map
     @IBAction func dissmissView(sender: UIButton!) {
         self.dismiss(animated: true, completion: nil)
     }
 
+    // IMPORTANT (Location Manager Methods and delegate)
     override func viewDidLoad() {
         super.viewDidLoad()
         //Ask location perivaliges
@@ -119,6 +122,8 @@ class MapKitViewController: UIViewController, UITextFieldDelegate, MKMapViewDele
         renderer.alpha = 0.5
         return renderer
     }
+    
+    /// STANDARD TABLEVIEW METHODS (as used multiple times in this app)
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         //Clear default table color and change text color
         cell.backgroundColor = .clear

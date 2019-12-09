@@ -80,7 +80,6 @@ class SpriteScene: SKScene {
         }
         
         let allActions = SKAction.sequence([moveAction, removeAction])
-        //bee.run(SKAction.sequence([moveAction,removeAction]))
         star.run(allActions)
         
         
