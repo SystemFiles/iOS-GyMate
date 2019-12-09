@@ -222,6 +222,7 @@ SWIFT_CLASS("_TtC6GyMate25AddExerciseViewController")
 @property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified lbRestPeriod;
 @property (nonatomic, strong) IBOutlet UIButton * _Null_unspecified btnAddExercise;
 - (void)viewDidLoad;
+- (IBAction)dissmissViewWithSender:(UIButton * _Null_unspecified)sender;
 - (IBAction)textChangedWithSender:(UITextField * _Null_unspecified)sender;
 - (IBAction)restPeriodChangedWithSender:(UISlider * _Null_unspecified)sender;
 - (IBAction)addExerciseToWorkout;
@@ -231,6 +232,7 @@ SWIFT_CLASS("_TtC6GyMate25AddExerciseViewController")
 
 @class UITableView;
 @class UIStoryboardSegue;
+@class UISwipeActionsConfiguration;
 @class UITableViewCell;
 
 SWIFT_CLASS("_TtC6GyMate24AddWorkoutViewController")
@@ -242,9 +244,13 @@ SWIFT_CLASS("_TtC6GyMate24AddWorkoutViewController")
 - (void)viewDidLoad;
 - (IBAction)textChangedWithSender:(UITextField * _Null_unspecified)sender;
 - (IBAction)rewindToAddWorkoutVCWithSender:(UIStoryboardSegue * _Null_unspecified)sender;
+- (IBAction)dissmissViewWithSender:(UIButton * _Null_unspecified)sender;
 - (IBAction)addWorkoutToDatabase;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 - (CGFloat)tableView:(UITableView * _Nonnull)tableView heightForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+- (BOOL)tableView:(UITableView * _Nonnull)tableView canEditRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+/// Custom Action Method for deleting exercises from this workout creation
+- (UISwipeActionsConfiguration * _Nullable)tableView:(UITableView * _Nonnull)tableView trailingSwipeActionsConfigurationForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
@@ -308,6 +314,9 @@ SWIFT_CLASS("_TtC6GyMate23DashboardViewController")
 - (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 - (CGFloat)tableView:(UITableView * _Nonnull)tableView heightForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+- (BOOL)tableView:(UITableView * _Nonnull)tableView canEditRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+/// Custom Action Method for deleting workouts
+- (UISwipeActionsConfiguration * _Nullable)tableView:(UITableView * _Nonnull)tableView trailingSwipeActionsConfigurationForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
@@ -358,6 +367,7 @@ SWIFT_CLASS("_TtC6GyMate19LoginViewController")
 /// Created for manually selecting body type
 SWIFT_CLASS("_TtC6GyMate32ManualTypeSelectorViewController")
 @interface ManualTypeSelectorViewController : UIViewController <UIPickerViewDataSource, UIPickerViewDelegate>
+- (IBAction)dissmissViewWithSender:(UIButton * _Null_unspecified)sender;
 - (void)viewDidLoad;
 - (IBAction)confirmSelectionWithSender:(UIButton * _Null_unspecified)sender;
 - (NSInteger)numberOfComponentsInPickerView:(UIPickerView * _Nonnull)pickerView SWIFT_WARN_UNUSED_RESULT;
@@ -378,6 +388,7 @@ SWIFT_CLASS("_TtC6GyMate20MapKitViewController")
 @property (nonatomic, strong) IBOutlet MKMapView * _Null_unspecified mapView;
 @property (nonatomic, strong) IBOutlet UISearchBar * _Null_unspecified searchBar;
 @property (nonatomic, strong) IBOutlet UITableView * _Null_unspecified tblView;
+- (IBAction)dissmissViewWithSender:(UIButton * _Null_unspecified)sender;
 - (void)viewDidLoad;
 - (IBAction)findDestination;
 - (MKOverlayRenderer * _Nonnull)mapView:(MKMapView * _Nonnull)mapView rendererForOverlay:(id <MKOverlay> _Nonnull)overlay SWIFT_WARN_UNUSED_RESULT;
@@ -522,6 +533,7 @@ SWIFT_CLASS("_TtC6GyMate24StepByStepViewController")
 @property (nonatomic, strong) IBOutlet UIButton * _Null_unspecified startOutlet;
 @property (nonatomic, strong) IBOutlet UIButton * _Null_unspecified skipOutlet;
 @property (nonatomic, strong) IBOutlet UIButton * _Null_unspecified doneOutlet;
+- (IBAction)dissmissViewWithSender:(UIButton * _Null_unspecified)sender;
 - (IBAction)startWorkoutWithSender:(id _Nonnull)sender;
 - (void)counter;
 - (void)totalTime;
@@ -544,6 +556,7 @@ SWIFT_CLASS("_TtC6GyMate16UIAnimatedButton")
 
 SWIFT_CLASS("_TtC6GyMate21WorkOutViewController")
 @interface WorkOutViewController : UIViewController
+- (IBAction)dissmissViewWithSender:(UIButton * _Null_unspecified)sender;
 @property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified lblTotalTimer;
 - (void)viewDidLoad;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;

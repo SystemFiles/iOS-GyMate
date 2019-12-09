@@ -66,6 +66,30 @@ class AddWorkoutViewController: UIViewController, UITableViewDelegate, UITableVi
         return 120
     }
     
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+    
+    /// Custom Action Method for deleting exercises from this workout creation
+    func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        let action = UIContextualAction(style: .destructive, title: "DELETE", handler: {_,_,_ in
+            // Delete exercise from this list in progress
+            let mainDelegate = UIApplication.shared.delegate as! AppDelegate
+            mainDelegate.progressExerciseList.remove(at: indexPath.row)
+            
+            // Reset button if needed
+            self.checkValidWorkout()
+            
+            // Update table
+            tableView.beginUpdates()
+            tableView.deleteRows(at: [indexPath], with: .automatic)
+            tableView.endUpdates()
+        })
+        
+        action.backgroundColor = UIColor.init(red: 0, green: 0, blue: 0, alpha: 0.0)
+        return UISwipeActionsConfiguration(actions: [action])
+    }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
          let exerciseCell : ExerciseTableViewCell = tableView.dequeueReusableCell(withIdentifier: "exerciseCell") as? ExerciseTableViewCell ?? ExerciseTableViewCell(style: .default, reuseIdentifier: "exerciseCell")
         

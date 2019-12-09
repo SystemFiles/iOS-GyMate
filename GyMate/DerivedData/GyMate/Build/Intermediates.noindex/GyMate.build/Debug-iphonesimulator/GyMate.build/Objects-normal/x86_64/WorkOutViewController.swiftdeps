@@ -6,6 +6,7 @@ provides-nominal:
 provides-member:
 - ["6GyMate21WorkOutViewControllerC", ""]
 provides-dynamic-lookup:
+- "dissmissView"
 - "lblTotalTimer"
 - "viewDidLoad"
 depends-top-level:
@@ -13,11 +14,13 @@ depends-top-level:
 - !private "/"
 - "AppDelegate"
 - "AssignmentPrecedence"
+- !private "BooleanLiteralType"
 - "CastingPrecedence"
 - "FloatLiteralType"
 - "IntegerLiteralType"
 - !private "StringLiteralType"
 - "UIApplication"
+- "UIButton"
 - "UILabel"
 - "UIViewController"
 - "WorkOutViewController"
@@ -27,6 +30,7 @@ depends-member:
 - ["s7CVarArgP", "UIApplication"]
 - ["s7CVarArgP", ""]
 - ["s7CVarArgP", "delegate"]
+- !private ["s7CVarArgP", "dismiss"]
 - !private ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "lblTotalTimer"]
 - !private ["s7CVarArgP", "mainDelegate"]
@@ -39,6 +43,7 @@ depends-member:
 - ["s28CustomDebugStringConvertibleP", "UIApplication"]
 - ["s28CustomDebugStringConvertibleP", ""]
 - ["s28CustomDebugStringConvertibleP", "delegate"]
+- !private ["s28CustomDebugStringConvertibleP", "dismiss"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "lblTotalTimer"]
 - !private ["s28CustomDebugStringConvertibleP", "mainDelegate"]
@@ -54,6 +59,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "appendInterpolation"]
 - !private ["s23CustomStringConvertibleP", "appendLiteral"]
 - ["s23CustomStringConvertibleP", "delegate"]
+- !private ["s23CustomStringConvertibleP", "dismiss"]
 - !private ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "lblTotalTimer"]
 - !private ["s23CustomStringConvertibleP", "mainDelegate"]
@@ -70,6 +76,7 @@ depends-member:
 - ["SQ", "UIApplication"]
 - ["SQ", ""]
 - ["SQ", "delegate"]
+- !private ["SQ", "dismiss"]
 - !private ["SQ", "init"]
 - !private ["SQ", "lblTotalTimer"]
 - !private ["SQ", "mainDelegate"]
@@ -83,6 +90,7 @@ depends-member:
 - ["SH", "UIApplication"]
 - ["SH", ""]
 - ["SH", "delegate"]
+- !private ["SH", "dismiss"]
 - !private ["SH", "init"]
 - !private ["SH", "lblTotalTimer"]
 - !private ["SH", "mainDelegate"]
@@ -94,6 +102,7 @@ depends-member:
 - !private ["SH", "viewDidLoad"]
 - ["So8NSCodingP", "UIApplication"]
 - ["So8NSCodingP", ""]
+- !private ["So8NSCodingP", "dismiss"]
 - !private ["So8NSCodingP", "init"]
 - !private ["So8NSCodingP", "lblTotalTimer"]
 - !private ["So8NSCodingP", "mainDelegate"]
@@ -103,6 +112,7 @@ depends-member:
 - !private ["So8NSCodingP", "viewDidLoad"]
 - ["So26NSExtensionRequestHandlingP", "UIApplication"]
 - ["So26NSExtensionRequestHandlingP", ""]
+- !private ["So26NSExtensionRequestHandlingP", "dismiss"]
 - !private ["So26NSExtensionRequestHandlingP", "init"]
 - !private ["So26NSExtensionRequestHandlingP", "lblTotalTimer"]
 - !private ["So26NSExtensionRequestHandlingP", "mainDelegate"]
@@ -111,8 +121,11 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "viewDidLoad"]
 - ["So8NSObjectC", "AppDelegate"]
 - ["So8NSObjectC", "UIApplication"]
+- ["So8NSObjectC", "UIButton"]
 - ["So8NSObjectC", "UILabel"]
 - ["So8NSObjectC", "delegate"]
+- !private ["So8NSObjectC", "dismiss"]
+- ["So8NSObjectC", "dissmissView"]
 - ["So8NSObjectC", "init"]
 - ["So8NSObjectC", "lblTotalTimer"]
 - ["So8NSObjectC", "mainDelegate"]
@@ -125,6 +138,7 @@ depends-member:
 - ["So8NSObjectP", "UIApplication"]
 - ["So8NSObjectP", ""]
 - ["So8NSObjectP", "delegate"]
+- !private ["So8NSObjectP", "dismiss"]
 - !private ["So8NSObjectP", "init"]
 - !private ["So8NSObjectP", "lblTotalTimer"]
 - !private ["So8NSObjectP", "mainDelegate"]
@@ -143,6 +157,7 @@ depends-member:
 - !private ["So12UIAppearanceP", "text"]
 - ["So21UIAppearanceContainerP", "UIApplication"]
 - ["So21UIAppearanceContainerP", ""]
+- !private ["So21UIAppearanceContainerP", "dismiss"]
 - !private ["So21UIAppearanceContainerP", "init"]
 - !private ["So21UIAppearanceContainerP", "lblTotalTimer"]
 - !private ["So21UIAppearanceContainerP", "mainDelegate"]
@@ -155,6 +170,7 @@ depends-member:
 - !private ["So21UIApplicationDelegateP", "totalTime"]
 - ["So18UIContentContainerP", "UIApplication"]
 - ["So18UIContentContainerP", ""]
+- !private ["So18UIContentContainerP", "dismiss"]
 - !private ["So18UIContentContainerP", "init"]
 - !private ["So18UIContentContainerP", "lblTotalTimer"]
 - !private ["So18UIContentContainerP", "mainDelegate"]
@@ -166,6 +182,7 @@ depends-member:
 - !private ["So13UIDynamicItemP", "text"]
 - ["So18UIFocusEnvironmentP", "UIApplication"]
 - ["So18UIFocusEnvironmentP", ""]
+- !private ["So18UIFocusEnvironmentP", "dismiss"]
 - !private ["So18UIFocusEnvironmentP", "init"]
 - !private ["So18UIFocusEnvironmentP", "lblTotalTimer"]
 - !private ["So18UIFocusEnvironmentP", "mainDelegate"]
@@ -180,6 +197,7 @@ depends-member:
 - ["So30UIPasteConfigurationSupportingP", "UIApplication"]
 - ["So30UIPasteConfigurationSupportingP", ""]
 - ["So30UIPasteConfigurationSupportingP", "delegate"]
+- !private ["So30UIPasteConfigurationSupportingP", "dismiss"]
 - !private ["So30UIPasteConfigurationSupportingP", "init"]
 - !private ["So30UIPasteConfigurationSupportingP", "lblTotalTimer"]
 - !private ["So30UIPasteConfigurationSupportingP", "mainDelegate"]
@@ -191,8 +209,11 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "viewDidLoad"]
 - ["So11UIResponderC", "AppDelegate"]
 - ["So11UIResponderC", "UIApplication"]
+- ["So11UIResponderC", "UIButton"]
 - ["So11UIResponderC", "UILabel"]
 - ["So11UIResponderC", "delegate"]
+- !private ["So11UIResponderC", "dismiss"]
+- ["So11UIResponderC", "dissmissView"]
 - ["So11UIResponderC", "init"]
 - ["So11UIResponderC", "lblTotalTimer"]
 - ["So11UIResponderC", "mainDelegate"]
@@ -205,6 +226,7 @@ depends-member:
 - ["So30UIResponderStandardEditActionsP", "UIApplication"]
 - ["So30UIResponderStandardEditActionsP", ""]
 - ["So30UIResponderStandardEditActionsP", "delegate"]
+- !private ["So30UIResponderStandardEditActionsP", "dismiss"]
 - !private ["So30UIResponderStandardEditActionsP", "init"]
 - !private ["So30UIResponderStandardEditActionsP", "lblTotalTimer"]
 - !private ["So30UIResponderStandardEditActionsP", "mainDelegate"]
@@ -216,6 +238,7 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "viewDidLoad"]
 - ["So16UIStateRestoringP", "UIApplication"]
 - ["So16UIStateRestoringP", ""]
+- !private ["So16UIStateRestoringP", "dismiss"]
 - !private ["So16UIStateRestoringP", "init"]
 - !private ["So16UIStateRestoringP", "lblTotalTimer"]
 - !private ["So16UIStateRestoringP", "mainDelegate"]
@@ -224,6 +247,7 @@ depends-member:
 - !private ["So16UIStateRestoringP", "viewDidLoad"]
 - ["So18UITraitEnvironmentP", "UIApplication"]
 - ["So18UITraitEnvironmentP", ""]
+- !private ["So18UITraitEnvironmentP", "dismiss"]
 - !private ["So18UITraitEnvironmentP", "init"]
 - !private ["So18UITraitEnvironmentP", "lblTotalTimer"]
 - !private ["So18UITraitEnvironmentP", "mainDelegate"]
@@ -234,6 +258,7 @@ depends-member:
 - ["So23UIUserActivityRestoringP", "UIApplication"]
 - ["So23UIUserActivityRestoringP", ""]
 - ["So23UIUserActivityRestoringP", "delegate"]
+- !private ["So23UIUserActivityRestoringP", "dismiss"]
 - !private ["So23UIUserActivityRestoringP", "init"]
 - !private ["So23UIUserActivityRestoringP", "lblTotalTimer"]
 - !private ["So23UIUserActivityRestoringP", "mainDelegate"]
@@ -246,8 +271,11 @@ depends-member:
 - !private ["So6UIViewC", "text"]
 - ["So16UIViewControllerC", "AppDelegate"]
 - ["So16UIViewControllerC", "UIApplication"]
+- ["So16UIViewControllerC", "UIButton"]
 - ["So16UIViewControllerC", "UILabel"]
 - ["So16UIViewControllerC", ""]
+- !private ["So16UIViewControllerC", "dismiss"]
+- ["So16UIViewControllerC", "dissmissView"]
 - ["So16UIViewControllerC", "init"]
 - ["So16UIViewControllerC", "lblTotalTimer"]
 - ["So16UIViewControllerC", "mainDelegate"]
@@ -256,8 +284,11 @@ depends-member:
 - ["So16UIViewControllerC", "viewDidLoad"]
 - ["6GyMate21WorkOutViewControllerC", "AppDelegate"]
 - ["6GyMate21WorkOutViewControllerC", "UIApplication"]
+- ["6GyMate21WorkOutViewControllerC", "UIButton"]
 - ["6GyMate21WorkOutViewControllerC", "UILabel"]
 - ["6GyMate21WorkOutViewControllerC", "deinit"]
+- !private ["6GyMate21WorkOutViewControllerC", "dismiss"]
+- ["6GyMate21WorkOutViewControllerC", "dissmissView"]
 - ["6GyMate21WorkOutViewControllerC", "init"]
 - ["6GyMate21WorkOutViewControllerC", "lblTotalTimer"]
 - ["6GyMate21WorkOutViewControllerC", "mainDelegate"]
@@ -267,6 +298,7 @@ depends-member:
 - ["10Foundation27_KeyValueCodingAndObservingP", "UIApplication"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
 - ["10Foundation27_KeyValueCodingAndObservingP", "delegate"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "dismiss"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "lblTotalTimer"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "mainDelegate"]
@@ -279,6 +311,7 @@ depends-member:
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "UIApplication"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", ""]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "delegate"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "dismiss"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "init"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "lblTotalTimer"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "mainDelegate"]
@@ -1887,4 +1920,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/GameplayKit.framework/Headers/GameplayKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "08bdeb759735680c68af30898b296c35"
+interface-hash: "39ac999dd41caca3d8edee130e0b283b"
