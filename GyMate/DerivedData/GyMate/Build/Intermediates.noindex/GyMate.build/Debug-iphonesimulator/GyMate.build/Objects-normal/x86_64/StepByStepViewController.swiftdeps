@@ -44,6 +44,7 @@ depends-top-level:
 - "CastingPrecedence"
 - !private "DataEventType"
 - !private "Date"
+- !private "Double"
 - "ExtendedGraphemeClusterType"
 - "FloatLiteralType"
 - "Int"
@@ -652,6 +653,7 @@ depends-member:
 - !private ["So8NSObjectC", "CGSize"]
 - !private ["So8NSObjectC", "DataEventType"]
 - !private ["So8NSObjectC", "Date"]
+- !private ["So8NSObjectC", "Double"]
 - ["So8NSObjectC", "Int"]
 - !private ["So8NSObjectC", "NSMutableDictionary"]
 - ["So8NSObjectC", "SKView"]
@@ -836,6 +838,7 @@ depends-member:
 - !private ["6GyMate06StepByC14ViewControllerC", "CGSize"]
 - !private ["6GyMate06StepByC14ViewControllerC", "DataEventType"]
 - !private ["6GyMate06StepByC14ViewControllerC", "Date"]
+- !private ["6GyMate06StepByC14ViewControllerC", "Double"]
 - ["6GyMate06StepByC14ViewControllerC", "Int"]
 - !private ["6GyMate06StepByC14ViewControllerC", "NSMutableDictionary"]
 - ["6GyMate06StepByC14ViewControllerC", "SKView"]
@@ -1150,6 +1153,7 @@ depends-member:
 - !private ["So11UIResponderC", "CGSize"]
 - !private ["So11UIResponderC", "DataEventType"]
 - !private ["So11UIResponderC", "Date"]
+- !private ["So11UIResponderC", "Double"]
 - ["So11UIResponderC", "Int"]
 - !private ["So11UIResponderC", "NSMutableDictionary"]
 - ["So11UIResponderC", "SKView"]
@@ -1421,6 +1425,7 @@ depends-member:
 - !private ["So16UIViewControllerC", "CGSize"]
 - !private ["So16UIViewControllerC", "DataEventType"]
 - !private ["So16UIViewControllerC", "Date"]
+- !private ["So16UIViewControllerC", "Double"]
 - ["So16UIViewControllerC", "Int"]
 - !private ["So16UIViewControllerC", "NSMutableDictionary"]
 - ["So16UIViewControllerC", "SKView"]

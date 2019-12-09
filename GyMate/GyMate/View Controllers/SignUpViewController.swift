@@ -10,7 +10,7 @@ import UIKit
 import Firebase
 
 class SignUpViewController: UIViewController, UITextFieldDelegate {
-
+    // View outlets
     @IBOutlet var txtUsername : UITextField!
     @IBOutlet var txtEmail : UITextField!
     @IBOutlet var txtPassword : UITextField!
@@ -26,17 +26,19 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
         // Do any additional setup after loading the view.
     }
     
+    // Handler the user sign up
     @IBAction func userWantsSignUp(sender: UIButton!) {
+        // Validate input
         if txtUsername.text!.isEmpty || txtEmail.text!.isEmpty || txtPassword.text!.isEmpty || txtConfirmPassword.text!.isEmpty {
             // error: field missing
             let alertSheet : UIAlertController = UIAlertController(title: "Error", message: "oops! We found a missing field...", preferredStyle: .actionSheet)
             
             alertSheet.addAction(UIAlertAction(title: "Oops", style: .default, handler: nil))
-            
             self.present(alertSheet, animated: true) // Show error message
         } else {
+            // Valid Input (Now check for matching passwords)
             if txtPassword.text == txtConfirmPassword.text {
-                // Perform auth sign up
+                // Create the user
                 self.createUser(email: txtEmail.text!, password: txtPassword.text!, username: txtUsername.text!)
             } else {
                 // error: passwords don't match
@@ -49,12 +51,11 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
         }
     }
     
-    /**
-        function for creating firebase auth user account for GyMate
-     */
+    /// Function for creating firebase auth user account for GyMate
     func createUser(email : String, password : String, username: String) {
         let mainDelegate : AppDelegate = UIApplication.shared.delegate as! AppDelegate
         
+        // Using Firebase create the user and instantiate starting data values in database
         Auth.auth().createUser(withEmail: email, password: password) { user, error in
             if error == nil {
                 Auth.auth().signIn(withEmail: email, password: password)

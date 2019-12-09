@@ -9,10 +9,13 @@
 import UIKit
 
 class SelectWorkoutTableViewCell: UITableViewCell {
-    
+    //Workout title
     @IBOutlet var workoutTitle : UILabel!
+    //Workout description
     @IBOutlet var workoutDesc : UILabel!
+    //Workout time
     @IBOutlet var workoutTime : UILabel!
+    //Workout cell background
     @IBOutlet var workoutBackgroundContainer : UIImageView!
 
     override func awakeFromNib() {

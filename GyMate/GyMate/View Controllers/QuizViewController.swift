@@ -10,13 +10,13 @@ import UIKit
 import Firebase
 
 class QuizViewController: UIViewController {
-
+    // Controller outlets
     @IBOutlet var lbQuestion : UILabel!
     @IBOutlet var btnOptOne : UIButton!
     @IBOutlet var btnOptTwo : UIButton!
     @IBOutlet var btnOptThree : UIButton!
     
-    // Extras
+    // The quiz to be used and keep track of the current question
     var quizObj : BodyTypeQuiz = BodyTypeQuiz()
     var currentQuestion : Int = 0
     
@@ -55,14 +55,17 @@ class QuizViewController: UIViewController {
         }
     }
     
+    // Restart the quiz at the beginning
     @IBAction func restartQuiz(sender: UIButton!) {
         self.resetQuizToStart()
     }
     
+    // Restart the quiz if the user returns from completion page
     @IBAction func rewindToQuizVC(sender: UIStoryboardSegue!) {
         self.resetQuizToStart()
     }
     
+    // Set all questions and weights to answers based on research
     func setupQuiz() {
         let questions : [Question] = [Question(question: "Are you", answers: ["Male", "Female"], answerData: [QuizAnswer(ansType: .ECTOMORPH, ansWeight: 0), QuizAnswer(ansType: .ECTOMORPH, ansWeight: 0)]),
                                       Question(question: "My shoulders are: ", answers: ["Wider than my hips", "The same width as my hips", "Narrower than my hips"], answerData: [QuizAnswer(ansType: .ENDOMORPH, ansWeight: 1.2),
@@ -81,9 +84,10 @@ class QuizViewController: UIViewController {
                                                                                                                                                                                                                                                                                      QuizAnswer(ansType: .MESOMORPH, ansWeight: 0.5), QuizAnswer(ansType: .ECTOMORPH, ansWeight: 0.5)]),
                                       Question(question: "Concerning my weight, I", answers: ["Gain weight easily, but find it hard to lose", "I gain and lose weight easily", "I have trouble gaining weight"], answerData: [QuizAnswer(ansType: .ENDOMORPH, ansWeight: 1), QuizAnswer(ansType: .MESOMORPH, ansWeight: 1), QuizAnswer(ansType: .ECTOMORPH, ansWeight: 1)]),
                                       Question(question: "Which range best describes your chest measurements", answers: ["43 inches or more", "37-43 inches", "37 inches or less"], answerData: [QuizAnswer(ansType: .ENDOMORPH, ansWeight: 0.75), QuizAnswer(ansType: .MESOMORPH, ansWeight: 0.75), QuizAnswer(ansType: .ECTOMORPH, ansWeight: 0.75)])]
-        quizObj.initWithData(questions: questions, numOfQuestions: questions.count)
+        quizObj.initWithData(questions: questions, numOfQuestions: questions.count) // Initialize the quiz object
     }
     
+    // Start the quiz setting up the view
     func startQuiz() {
         // Basically just load in the first question set
         lbQuestion.text = quizObj.questions[self.currentQuestion].question
@@ -92,6 +96,7 @@ class QuizViewController: UIViewController {
         btnOptThree.setTitle("", for: .normal)
     }
     
+    // Reset all parameters
     func resetQuizToStart() {
         // Reset everything
         self.quizObj = BodyTypeQuiz()
@@ -100,6 +105,7 @@ class QuizViewController: UIViewController {
         startQuiz()
     }
     
+    // Load the next question in sequence
     func loadNextQuestion() {
         self.currentQuestion += 1
         

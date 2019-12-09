@@ -10,10 +10,11 @@ import UIKit
 import Firebase
 
 class BodyTypeQuiz: NSObject {
-    var questions : [Question] = []
-    var numQuestions : Int = 0
-    var answers : [QuizAnswer] = []
+    var questions : [Question] = [] // A list of all the questions in the quiz
+    var numQuestions : Int = 0 // Keep track of the number of questions
+    var answers : [QuizAnswer] = [] // A list of all current responses/answers by user
     
+    // Initialize the model
     func initWithData(questions : [Question], numOfQuestions : Int) {
         self.questions = questions
         self.numQuestions = numOfQuestions
@@ -46,14 +47,15 @@ class BodyTypeQuiz: NSObject {
                 mesomorphPoints += (answer.ansWeight)
             }
         }
-        
+        // Aggregate everything in an array so that we can determine with most confidence the users body type
         let aggregatePoints = [ectomorphPoints, endomorphPoints, mesomorphPoints]
         let winnerIndex = aggregatePoints.firstIndex(of: aggregatePoints.max()!)
         
-        // Before determining body type, store gender of user (used for workout)
+        // Before determining body type, store gender of user (might use for workout recommendations in the future)
         let mainDelegate : AppDelegate = UIApplication.shared.delegate as! AppDelegate
         mainDelegate.userRef.child(Auth.auth().currentUser!.uid).child("gender").setValue(isMale ? "Male" : "Female")
         
+        // Make decision
         switch winnerIndex {
         case 0:
             return QuizAnswer.AnswerType.ECTOMORPH
@@ -62,9 +64,9 @@ class BodyTypeQuiz: NSObject {
         case 2:
             return QuizAnswer.AnswerType.MESOMORPH
         case .some(_):
-            return QuizAnswer.AnswerType.ECTOMORPH
+            return QuizAnswer.AnswerType.MESOMORPH
         case .none:
-            return QuizAnswer.AnswerType.ECTOMORPH
+            return QuizAnswer.AnswerType.MESOMORPH
         }
         
     }

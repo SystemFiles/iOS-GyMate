@@ -18,12 +18,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     // Variables for core app data
     var window: UIWindow?
-    var userRef : DatabaseReference!
-    var ectoWorkout : Workout!
-    var mesoWorkout : Workout!
-    var endoWorkout : Workout!
-    var predefinedWorkouts : [Workout]!
-    var progressExerciseList : [Exercise]! = []
+    var userRef : DatabaseReference! // Used to store the user-data reference in firebase
+    var ectoWorkout : Workout! // The recommended workout for ectomorphs
+    var mesoWorkout : Workout! // '' '' '' '' mesomorphs
+    var endoWorkout : Workout! // '' '' '' '' endomorphs
+    var predefinedWorkouts : [Workout]! // List of predefined (recommended) workouts
+    var progressExerciseList : [Exercise]! = [] // Used in workout/exercise creation
     var workoutCurrentID : Int = 0
     var exerciseID : Int! = 0
     //Used to keep track of workout selected from table
@@ -57,7 +57,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
     
-    /// Create all recommended workout options that can be assigned to a user (Still trying to figure out a better way to do this)
+    /// Create all recommended workout options that can be assigned to a user
     func setWorkouts() {
         // Build ecto workout
         ectoWorkout = Workout(ID: 0, name: "The Lean Bulk", desc: "This workout routine, coupled with a bulking diet, will help beginners who struggle to gain muscle mass and weight to start building that lean, chisled, muscle and strenth through a tried and tested workout! Since we aren't too worried about weight gain we will go for a full muscle building routine and the option of doing additional cardiovascular exercise would be your choice.", time: 115.0, exercises: [])

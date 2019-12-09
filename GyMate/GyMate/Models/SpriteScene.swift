@@ -10,6 +10,7 @@ import UIKit
 import SpriteKit
 import GameplayKit
 
+///Used to add animated scene in the background during the exercise
 class SpriteScene: SKScene {
     var background = SKSpriteNode(imageNamed: "Background")
     var sceneFrames: [SKTexture]?
@@ -27,21 +28,19 @@ class SpriteScene: SKScene {
         super.init(size: size)
         self.backgroundColor = UIColor.white
         var frames:[SKTexture] = []
-        
+        //Path
         let starAtlas = SKTextureAtlas(named: "SceneImages")
-        
+        //Interate over the frames
         for index in 0 ... 2 {
             let textureName = "star_\(index)"
             let texture = starAtlas.textureNamed(textureName)
             frames.append(texture)
         }
-        /*let textureName = "bee_1"
-        let texture = beeAtlas.textureNamed(textureName)
-        frames.append(texture)
-        */
+        //Add frames to the scene
         self.sceneFrames = frames
 
     }
+    //Scene frame attributes
     func starScene() {
         let texture = self.sceneFrames![0]
         let star = SKSpriteNode(texture: texture)
@@ -81,7 +80,6 @@ class SpriteScene: SKScene {
         }
         
         let allActions = SKAction.sequence([moveAction, removeAction])
-        //bee.run(SKAction.sequence([moveAction,removeAction]))
         star.run(allActions)
         
         

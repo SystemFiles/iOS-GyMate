@@ -10,6 +10,7 @@ import UIKit
 
 class UIAnimatedButton: UIButton {
 
+    // Initialize button
     override init(frame: CGRect) {
         super.init(frame: frame)
         configeBtn()
@@ -25,6 +26,7 @@ class UIAnimatedButton: UIButton {
         self.addTarget(self, action: #selector(buttonPressed(_:)), for: .touchUpInside)
     }
 
+    // Animate the button when it is pressed
     @objc func buttonPressed(_ sender:UIButton) {
         // Perform Animation
         UIView.animate(withDuration: 0.1, delay: 0.0, options: .curveLinear, animations: {

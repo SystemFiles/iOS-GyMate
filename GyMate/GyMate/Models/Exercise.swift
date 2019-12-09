@@ -10,6 +10,7 @@ import UIKit
 
 class Exercise: NSObject {
     
+    // Exercise fields
     var id : Int
     var name : String
     var desc : String

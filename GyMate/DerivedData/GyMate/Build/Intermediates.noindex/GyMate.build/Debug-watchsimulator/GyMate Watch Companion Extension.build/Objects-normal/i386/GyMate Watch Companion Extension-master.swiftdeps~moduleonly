@@ -1,6 +1,6 @@
 version: "Apple Swift version 5.1.2 (swiftlang-1100.0.278 clang-1100.0.33.9)"
 options: "e8c62e77d7e4857e487b5c48df6283e7"
-build_time: [1575844427, 718745000]
+build_time: [1575859141, 786150000]
 inputs:
   "/Users/bensykes/DATASYNC/school/Sem5Courses/AdvancedMobileApp/Final Project/Application/GyMate/GyMate Watch Companion Extension/NotificationController.swift": [1575844050, 761767378]
   "/Users/bensykes/DATASYNC/school/Sem5Courses/AdvancedMobileApp/Final Project/Application/GyMate/GyMate Watch Companion Extension/ExtensionDelegate.swift": [1575844050, 761326959]

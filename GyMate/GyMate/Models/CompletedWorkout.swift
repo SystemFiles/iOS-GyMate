@@ -7,15 +7,20 @@
 //
 
 import UIKit
-
+///CompletedWorkout object to define object attributes
 class CompletedWorkout: NSObject {
-    
+    //Workout ID
     var ID : Int
+    //Workout date
     var date : String
+    //Workout name
     var name : String
+    //Workout description
     var desc : String
+    //Workout completion time
     var time : Double
     
+    //Initalize attributes
     init(ID: Int, date: String?, name: String, desc: String, time: Double) {
         self.ID = ID
         self.date = date!

@@ -8,11 +8,13 @@
 
 import UIKit
 
+// The question class used in quiz
 class Question: NSObject {
-    var question : String = ""
-    var answers : [String] = []
-    var answerData : [QuizAnswer] = []
+    var question : String = "" // The question text (ie: "What is your gender?")
+    var answers : [String] = [] // A list of possible answers to the question in text form (FOR DISPLAY)
+    var answerData : [QuizAnswer] = [] // The Answer data as used by the program
     
+    // Initailize the Question
     init(question : String, answers : [String], answerData : [QuizAnswer]) {
         self.question = question
         self.answers = answers
